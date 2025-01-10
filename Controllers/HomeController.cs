@@ -35,7 +35,10 @@ namespace DUNWorkflow.Controllers
         public IActionResult LoadCard(string codeNumber)
         {
             // Ruta al archivo JSON
-            string jsonFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "json", "Guia.json");
+            var currentCulture = CultureInfo.CurrentUICulture.Name; // "es", "en", etc.
+            string jsonFileName = currentCulture.StartsWith("es") ? "Guia_es.json" : "Guia_en.json";
+            string jsonFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "json", jsonFileName);
+
 
             // Leer el JSON
             string jsonData = System.IO.File.ReadAllText(jsonFilePath);
