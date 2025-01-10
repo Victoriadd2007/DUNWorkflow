@@ -1,0 +1,32 @@
+﻿@model DUNWorkflow.Models.CardData
+
+<div class="card">
+    <div class="card-header">
+        <h3>@Model.CodeNumber</h3>
+        <h3>@Model.Header</h3>
+    </div>
+    <div class="card-body">
+        @if (Model.Options != null && Model.Options.Any())
+        {
+            <ul>
+                @foreach (var option in Model.Options)
+                {
+                    <li>
+                        <strong>@option.OptionLabel:</strong> @option.RulebookText
+                        <a href="#" class="load-card" data-next-code="@option.NextCodeNumber">
+                            @option.NextCodeNumber
+                        </a>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>@Model.RulebookText</p>
+        }
+    </div>
+    <div class="card-footer">
+        <a href="#" id="btn-volver" class="material-icons">arrow_back</a>
+    </div>
+
+</div>

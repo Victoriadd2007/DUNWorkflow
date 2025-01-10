@@ -1,0 +1,3129 @@
+[
+  {
+    "CodeNumber": "CAMPAIGN_10",
+    "Header": "Estás jugando Campaña o Aventura?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "Aventura",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "SETUP_10"
+      },
+      {
+        "OptionLabel": "Campaña",
+        "Value": 1,
+        "RulebookText": "Otra semana cualquiera en Arasca...",
+        "NextCodeNumber": "CAMPAIGN_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_20",
+    "Header": "Aumenta el Turno de Campaña",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Un turno de campaña representa varios días de tiempo real (una semana). Cuando juegues en el mundo de Arasca, deberás contabilizar los turnos de campaña que juegas. Un año estará formado por 52 turnos de campaña, equivalentes a semanas. Los primeros 12 turnos formarán la estación de invierno. Por tanto, el ciclo climatológico tendrá la secuencia 12/40/fin de año/12/40.Los héroes elegirán el turno de campaña (o semana) del año en que comienzan una campaña. Mientras transcurra el invierno, todas las zonas marítimas adyacentes a Glaciar se considerarán un territorio Glaciar. Además, durante el invierno, al final de cada turno de campaña en que los héroes transiten o permanezcan en un territorio de Glaciar (incluso las zonas marítimas convertidas en Glaciar) o Montañoso (salvo que permanezcan en una Población), cada uno sufrirá 1 dado de daño contra su Armadura natural debido al intenso frío.",
+        "NextCodeNumber": "CAMPAIGN_25"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_25",
+    "Header": "Cansancio, Heridas?",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Durante una campaña, las lesiones sufridas por los héroes se mantienen, y sus puntos de Maná, Vitalidad y Fortuna no se recuperan hasta que acuden a ciertos lugares (posadas, sanadores...) o toman pociones o hierbas curativas. Recuerda que los efectos Fuera de Combate, Herido y Enfermo no se anulan al finalizar la aventura.",
+        "NextCodeNumber": "CAMPAIGN_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_30",
+    "Header": "Viajar, o permanecer en territorio?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "Viajar",
+        "Value": 0,
+        "RulebookText": "Se podrá elegir entrar o salir de una población (o permanecer en ella), del territorio donde comienza el turno de campaña o al territorio que se desplaza. Solo se podrá realizar una aventura durante un turno de campaña.",
+        "NextCodeNumber": "CAMPAIGN_40"
+      },
+      {
+        "OptionLabel": "Permanecer en territorio",
+        "Value": 1,
+        "RulebookText": "Se podrá elegir entrar o salir de una población (o permanecer en ella), del territorio donde comienza el turno de campaña o al territorio que se desplaza. Solo se podrá realizar una aventura durante un turno de campaña.",
+        "NextCodeNumber": "CAMPAIGN_43"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_40",
+    "Header": "Viajar. Durante un turno de campaña, un grupo de héroes puede moverse esta distancia:",
+    "AnswerType": "List",
+    "Options": [
+      {
+        "OptionLabel": "Desplazarse a un territorio adyacente.",
+        "Value": 0,
+        "RulebookText": "Un héroe deberá emplear dos turnos de campaña para desplazarse a un territorio adyacente si infringe alguna de las limitaciones de equipo señaladas en la página 79.",
+        "NextCodeNumber": "CAMPAIGN_41"
+      },
+      {
+        "OptionLabel": "Desplazarse un territorio extra de distancia si viajan por territorio con llanura o camino, siempre que todos los héroes del grupo vayan sobre monturas.",
+        "Value": 1,
+        "RulebookText": "Un héroe deberá emplear dos turnos de campaña para desplazarse a un territorio adyacente si infringe alguna de las limitaciones de equipo señaladas en la página 79.",
+        "NextCodeNumber": "CAMPAIGN_41"
+      },
+      {
+        "OptionLabel": "Si usan embarcación, desplazarse a una zona marítima adyacente o hasta a dos iconos de distancia en un río navegable.",
+        "Value": 2,
+        "RulebookText": "2 iconos de distancia desde el original si se hace río abajo, hacia la desembocadura. Si se viaja río arriba (contracorriente), solo podrá navegarse turno a un icono adyacente. Un grupo de héroes podrá tomar un bote de remos, un barco mercante o un barco de guerra en un embarcadero (observa las cartas de Lugares y Servicios) para poder transitar por ríos navegables o territorios marítimos. Desde ese momento, hasta que decidan abandonar la embarcación, viajarán exclusivamente por el río o zona marítima. Un grupo de héroes podrá desembarcar en un territorio y adentrarse en el mismo. Sin embargo, si se desplazan hacia territorios diferentes al que desembarcaron, perderán la embarcación salvo que al volver al territorio en el que la dejaron paguen 1 moneda por cada turno de campaña que hayan estado fuera de dicho territorio. La navegación será posible mientras la embarcación conserve algún punto de Estructura, dado que habrá eventos que podrán dañarla e incluso hundirla. Una embarcación se considerará hundida en el momento en que pierda todos sus puntos de Estructura.",
+        "NextCodeNumber": "CAMPAIGN_42"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_41",
+    "Header": "Cruzando un puente?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_60"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Si durante un viaje se alcanza un río que divide dos territorios, se podrá entrar en el territorio de la otra orilla si existe un puente que une ambas orillas. En este caso se leerá el contenido de la carta 'Puente' del mazo de Lugares y Servicios, antes de cruzar al otro lado.",
+        "NextCodeNumber": "CAMPAIGN_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_42",
+    "Header": "Hundimiento?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No, seguimos navegando!",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_60"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Si durante un viaje una embarcación se queda sin puntos de Estructura mientras esta transcurre por una zona marítima, se considerará hundida. A consecuencia de esto, los animales que carezcan de la habilidad 'Volar' se ahogarán, y todos los personajes aparecerán en el territorio más cercano a la zona marítima donde transitaban al suceder el hundimiento. Cada héroe perderá 2 cartas de su Equipo al azar. Si sucede en zona marítima (no fluvial), además todos los héroes y mercenarios sufrirán 2 dados de daño contra su Armadura Natural.",
+        "NextCodeNumber": "CAMPAIGN_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_43",
+    "Header": "Acampar?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_60"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Coloca un marcador de hoguera en el territorio si quieres representar que han acampado. Durante el turno en que acampan no podrán visitar Lugares y Servicios ni entrar en poblaciones. En este caso, todos los integrantes del grupo recuperarán 2 puntos de Vitalidad y 1 de Maná por cada turno de campaña que permanezcan. Además de lo anterior, se aplicará un modificador de +1 a cada tirada de Eventos de viaje que se realice cuando los héroes permanezcan acampados en un territorio. NOTA: ten en cuenta que un grupo de héroes que decida acampar en un territorio de alineamiento diferente al suyo tendrá un modificador total de +2 a las tiradas de Eventos de viaje.",
+        "NextCodeNumber": "CAMPAIGN_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_60",
+    "Header": "Acciones en un Turno de Campaña",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Los personajes pueden consumir objetos (pociones, provisiones) o lanzar hechizos (curaciones) durante un turno de campaña, antes de realizarse la tirada de eventos de viaje.",
+        "NextCodeNumber": "CAMPAIGN_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_70",
+    "Header": "Eventos de Viaje",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Se debe realizar una tirada de Eventos de viaje cada vez que los héroes entren o permanezcan en un territorio o población, cada vez que abandonen una población, o cada vez que alcancen un icono de Río navegable.",
+        "NextCodeNumber": "CAMPAIGN_80"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_80",
+    "Header": "Ocurre un Evento de Viaje (1D6 iguala o supera el resultado de la carta, Modificador de +1 si la población es de Alineamiento diferente)?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_95"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Coge una carta al azar de ese tipo de territorio o población dale la vuelta a la misma y lee el contenido. No se pueden emplear puntos de Fortuna para cambiar la tirada de Eventos de viaje, pero sí para cambiar o evitar los resultados de algún evento.",
+        "NextCodeNumber": "CAMPAIGN_90"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_90",
+    "Header": "El Evento provoca un Evento Épico?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_95"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Cuando los héroes comiencen una aventura, y salvo que estos decidan otra cosa, se considerará que la montura quedó en el exterior con las pertenencias designadas por los héroes. Durante los Eventos épicos, sin embargo, el héroe aparecerá sobre su montura o adyacente a esta, a su elección.",
+        "NextCodeNumber": "SETUP_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_95",
+    "Header": "Podemos cumplir un Evento Personal? (New Challenges)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_98"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Resolver",
+        "NextCodeNumber": "CAMPAIGN_97"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_97",
+    "Header": "El Evento personal requiere jugar Aventura?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_100"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "A las armas!",
+        "NextCodeNumber": "SETUP_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_98",
+    "Header": "Llegamos al destino de una nueva aventura?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_100"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "A las armas!",
+        "NextCodeNumber": "SETUP_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_100",
+    "Header": "Encontramos Lugares y Servicios?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_130"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Cada turno de campaña en que el grupo de héroes entre o permanezca en una población, cada héroe podrá acudir hasta a 3 Lugares y Servicios de cuantos haya disponibles en dicha población, después de haber resuelto la oportuna tirada de Eventos de viaje. Se resolverá cada una de las visitas realizadas por cada héroe antes de realizar las visitas de otro. No se pueden emplear puntos de Fortuna para cambiar resultados de estas cartas. Poblaciones y Alineamiento diferente:  toda adquisición  de objetos o servicios que se realice o contrate costará una moneda más que su precio original",
+        "NextCodeNumber": "CAMPAIGN_105"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_105",
+    "Header": "Crafting? (Requiere Alquimista / Escuela Hechicería, New Challenges)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_110"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Consultar New Challenges, Página 9",
+        "NextCodeNumber": "CAMPAIGN_110"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_110",
+    "Header": "Vender Equipo?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_120"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Los héroes podrán vender cualquiera de sus pertenencias en cualquier población. Todos los objetos (incluidos los mágicos) podrán venderse automáticamente por la mitad del precio original (redondeo hacia arriba).",
+        "NextCodeNumber": "CAMPAIGN_120"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_120",
+    "Header": "Adquirir Hogar?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_130"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Los héroes podrán decidir en cualquier momento de la campaña adquirir una vivienda en una población de un territorio donde permanezcan. Esta vivienda se considerará su hogar. Será el lugar donde el coste de descanso será menor que en las posadas y además podrán guardar allí cuantos objetos deseen conservar pero no quieran transportar durante sus viajes. Cuando decidan esto, extrae la carta de Hogar del mazo Lugares y Servicios. Tenla en cuenta cada vez que los héroes regresen a este lugar",
+        "NextCodeNumber": "CAMPAIGN_130"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_130",
+    "Header": "Descansan los Héroes en una posada o equivalente, recuperando Fortuna?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_135"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "El Jugador Oscuro lanzará 1D6 por cada 10 PV del grupo de héroes en ese momento. Por cada resultado de 6, colocará un marcador de Peligro en el territorio designado como base al inicio de la campaña (estos nuevos marcadores solo serán situados y no avanzarán este turno).",
+        "NextCodeNumber": "CAMPAIGN_135"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_135",
+    "Header": "Consultar el Tablón de Anuncios? (Requiere Taberna, New Challenges)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_140"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Página 3 New Challenges",
+        "NextCodeNumber": "CAMPAIGN_140"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_140",
+    "Header": "Hay más de 10 Marcadores de Peligro sobre el mapa?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Se puede colocar los nuevos marcadores",
+        "NextCodeNumber": "CAMPAIGN_150"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "No podrá haber más de 10 marcadores de Peligro a la vez sobre el mapa.",
+        "NextCodeNumber": "CAMPAIGN_150"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_150",
+    "Header": "Mover los Marcadores de Peligro",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Tras la decisión de los héroes de moverse o permanecer en un territorio, realizando la oportuna tirada de eventos de viaje, el Jugador Oscuro deberá mover todos sus marcadores de Peligro situados sobre el mapa, acercándolos siempre hacia los héroes de la forma que estime adecuada, incluso a través de territorios marítimos. Los marcadores de Peligro no tienen en cuenta obstáculos como ríos. En cuanto un marcador de Peligro coincida en un mismo territorio con los héroes, se deberá extraer una carta de \"Peligro en campaña\" al azar y resolver el evento descrito en la misma",
+        "NextCodeNumber": "CAMPAIGN_160"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_160",
+    "Header": "Ganó el JO a los Héroes en Logros anteriormente o ganó la partida?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_20"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Coloca un Marcador de Peligro adicional",
+        "NextCodeNumber": "CAMPAIGN_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_10",
+    "Header": "Elegir la aventura",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 0,
+        "RulebookText": "Los jugadores deben escoger entre jugar una partida independiente (al margen de una campaña) o empezar o continuar una aventura perteneciente a una campaña o dentro de un mapa de campaña.",
+        "NextCodeNumber": "SETUP_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_20",
+    "Header": "Designar al Jugador Oscuro",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Es imprescindible que consulte con antelación la Hoja de Aventura.",
+        "NextCodeNumber": "SETUP_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_30",
+    "Header": "Marcadores",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Se colocan al alcance de todos los jugadores los diversos marcadores circulares del juego.",
+        "NextCodeNumber": "SETUP_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_40",
+    "Header": "Cartas de tesoros",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Se barajan los mazos de cartas de Tesoros, Objetos Mágicos y Reliquias, colocándose boca abajo.",
+        "NextCodeNumber": "SETUP_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_50",
+    "Header": "Resto de mazos",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Se colocan los siguientes mazos de cartas (sin barajarse): Mobiliario, Elementos Especiales, Habilidades y Equipo (este se divide en seis mazos diferentes: Objetos Comunes, Objetos Especiales, Armas de Cuerpo a Cuerpo, Armaduras, Escudos y Armas a distancia).",
+        "NextCodeNumber": "SETUP_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_60",
+    "Header": "Contadores",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Se colocan los marcadores (uno para las decenas y otro para las unidades) de Jugador Oscuro y de Héroes junto al contador de Logros. Deja la carta de Logros junto a este.",
+        "NextCodeNumber": "CHOOSEHEROES_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_10",
+    "Header": "Elegir el héroe que se desea controlar.",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "Héroe predefinido",
+        "Value": 0,
+        "RulebookText": "Se escogerá la carta de héroe predefinido que prefiera (busca las cartas con las siglas HE en la numeración). Algunos poseen su propio trasfondo mostrado en las cartas con las siglas NA junto a su numeración). Estos héroes comienzan con todas las habilidades que les corresponden por raza y profesión, además de las que posean según su trasfondo.",
+        "NextCodeNumber": "CHOOSEHEROES_20"
+      },
+      {
+        "OptionLabel": "Heroe Propio",
+        "Value": 1,
+        "RulebookText": "Podrán decidir confeccionar sus propios héroes sobre una ficha en blanco con las reglas de creación de personajes (proceso descrito en la página 76).",
+        "NextCodeNumber": "CHOOSEHEROES_15"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_15",
+    "Header": "Generar nuevo héroe?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No, me gusta el mío",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "JOASETUP_10"
+      },
+      {
+        "OptionLabel": "Sí, cambiar es bueno",
+        "Value": 1,
+        "RulebookText": "-",
+        "NextCodeNumber": "CHOOSEHEROES_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_20",
+    "Header": "Escoger las habilidades",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Si el héroe es predefinido, bastará con coger la carta de cada habilidad que tenga inicialmente. Si confeccionas el héroe o este puede aprender nuevas habilidades tras haber ganado experiencia, deberás elegirlas según las limitaciones por profesión.",
+        "NextCodeNumber": "CHOOSEHEROES_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_30",
+    "Header": "Escoger los hechizos",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Los personajes hechiceros escogerán los hechizos con que comenzarán la partida. Si no es la primera aventura, conocerán los hechizos que ya tuvieron en la anterior misión y aquellos que hayan aprendido. Dos héroes no podrán conocer el mismo hechizo.",
+        "NextCodeNumber": "CHOOSEHEROES_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_40",
+    "Header": "Escoger el equipo",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Cada jugador comenzará con el equipo que tenga predeterminado para su héroe o el que adquiera durante su creación. Antes de cada aventura independiente (y en los casos descritos para las campañas) también tendrá oportunidad de adquirir nuevo equipo con el dinero acumulado que posea.",
+        "NextCodeNumber": "CHOOSEHEROES_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_50",
+    "Header": "Escoger Mercenario o Animal",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Escoger el Mercenario o Animal que acompañe a cada héroe, en caso de haberse adquirido (página 74).",
+        "NextCodeNumber": "CHOOSEHEROES_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_60",
+    "Header": "Coger Marcadores",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Cada jugador cogerá los marcadores que representen los puntos de Maná y Fortuna de su héroe.",
+        "NextCodeNumber": "CHOOSEHEROES_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_70",
+    "Header": "Colocar Héroes",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Salvo que se indique otra cosa, se colocará a los héroes fuera del escenario. Cada uno de ellos comenzará su activación en la casilla de inicio indicada por el Jugador Oscuro.",
+        "NextCodeNumber": "CHOOSEHEROES_80"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_80",
+    "Header": "Valoración del grupo de héroes",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "PV = PV Héroes + PV Mercenarios y Animales + PV Objetos Especiales + PV Objetos Mágicos y Reliquias.",
+        "NextCodeNumber": "JOASETUP_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_10",
+    "Header": "Leer la Hoja de Aventura",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "El Jugador Conductor leerá la introducción de la aventura y los distintos apartados de la misma, salvo aquellos incluidos en un recuadro sombreado rojo y los señalados con el símbolo (JOA). Estos solo se leerán cuando se descubra la sección o elemento oportuno o se den las circunstancias descritas.",
+        "NextCodeNumber": "JOASETUP_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_20",
+    "Header": "Consultar Bestiario",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Consultar la facción o los personajes y criaturas del Bestiario que podrán utilizarse durante la aventura. Prepara las cartas de comportamiento de criaturas.",
+        "NextCodeNumber": "JOASETUP_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_30",
+    "Header": "Puntos de Reserva",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "PR = (PV total del grupo de héroes) + (2 x cada Héroe si es el segundo intento) - (PV Líder del Escenario).",
+        "NextCodeNumber": "JOASETUP_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_40",
+    "Header": "Separar Cartas",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Coge las cartas de Jugador Oscuro y deja a un lado las siguientes cartas de Encuentro: \"Refuerzos\", \"Ladrón\" y \"Emboscada\".",
+        "NextCodeNumber": "JOASETUP_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_50",
+    "Header": "Confeccionar Mazo Obstáculos (I) : Hay alguna restricción de Escenario?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "JOASETUP_60"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Descarta primero las cartas que no puedan escogerse.",
+        "NextCodeNumber": "JOASETUP_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_60",
+    "Header": "Confeccionar Mazo Obstáculos (II)",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Coge tantas cartas al azar de Obstáculos como sea el número de héroes por 6. A este grupo de cartas se añadirá una de las cartas de Encuentro \"Ladrón\" y \"Emboscada\". Se añadirá la segunda carta de \"Emboscada\" si hay más de 2 héroes en el grupo.",
+        "NextCodeNumber": "JOASETUP_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_70",
+    "Header": "Confeccionar Mazo Poder (I) : Hay alguna restricción de Escenario?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "JOASETUP_80"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Descarta primero las cartas que no puedan escogerse.",
+        "NextCodeNumber": "JOASETUP_80"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_80",
+    "Header": "Confeccionar Mazo Poder (II)",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Coge tantas cartas al azar de Poder como sea el número de héroes por 6. A este grupo de cartas se añadirá una de las cartas de Encuentro \"Refuerzos\". Se añadirá la segunda carta de \"Refuerzos\" si hay más de 2 héroes en el grupo.",
+        "NextCodeNumber": "JOASETUP_90"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_90",
+    "Header": "Confeccionar Mazo Encuentros (I) : Hay alguna restricción de Escenario?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "JOASETUP_100"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Descarta primero las cartas que no puedan escogerse.",
+        "NextCodeNumber": "JOASETUP_100"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_100",
+    "Header": "Confeccionar Mazo Encuentros (II)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Coge tantas cartas al azar de Encuentros como sea el PV del grupo de héroes dividido por 10 (redondeo hacia arriba).",
+        "NextCodeNumber": "JOASETUP_110"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "JOASETUP_110"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_110",
+    "Header": "Barajar Mazos",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Se barajarán las cartas de estos nuevos mazos y estas serán colocadas junto a sus símbolos correspondientes del contador de Puntos de Reserva. Con estas cartas formarás los mazos definitivos de partida, mientras las demás cartas no serán empleadas durante la misma y podrás retirarlas de la mesa.",
+        "NextCodeNumber": "PREGAME_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "PREGAME_10",
+    "Header": "Usar Meteo? (New Challenges)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "PREGAME_20"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Tira en la tabla de Meteo del libro New Challenges.",
+        "NextCodeNumber": "PREGAME_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "PREGAME_20",
+    "Header": "Usar Horario? (New Challenges)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "1D6. 1 = Noche, todas las zonas EXTERIORES se consideran PENUMBRA.",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_30",
+    "Header": "Activar Siguiente Personaje",
+    "AnswerType": "List",
+    "Options": [
+      {
+        "OptionLabel": "Quedan personajes por activar",
+        "Value": 0,
+        "RulebookText": "Cada personaje deberá realizar las siguientes fases durante su activación (y en este orden): 1.Recuperación 2.Realizar acciones y movimientos",
+        "NextCodeNumber": "GAMEON_31"
+      },
+      {
+        "OptionLabel": "Todos los personajes han sido activados",
+        "Value": 1,
+        "RulebookText": "Es turno del Jugador Oscuro...",
+        "NextCodeNumber": "JOAON_10"
+      },
+      {
+        "OptionLabel": "Todos los personajes han quedado Fuera de Combate",
+        "Value": 2,
+        "RulebookText": "Oh no...",
+        "NextCodeNumber": "END_5"
+      },
+      {
+        "OptionLabel": "Misión cumplida!",
+        "Value": 3,
+        "RulebookText": "Hurra!",
+        "NextCodeNumber": "END_5"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_31",
+    "Header": "El personaje tiene al menos una herida?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Este personaje no puede activarse, está fuera de combate",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_35"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_35",
+    "Header": "Chequeo de Estados",
+    "AnswerType": "Boollist",
+    "Options": [
+      {
+        "OptionLabel": "DERRIBADO",
+        "Value": 0,
+        "RulebookText": "El personaje tiene una penalización de –1 a todas sus características (excepto Armadura natural, Maná y Vitalidad). El personaje no bloqueará la LdV ni tendrá Zona de Influencia. No podrá mover ni realizar ninguna acción ni empujar mientras permanezca en este estado, pero podrá defenderse normalmente y dispersar",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "ATURDIDO",
+        "Value": 1,
+        "RulebookText": "El personaje tiene una penalización de –1 a todas sus características (excepto Armadura natural, Maná y Vitalidad) y no podrá correr.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "ATEMORIZADO",
+        "Value": 2,
+        "RulebookText": "Los mismos que Aturdido, pero el personaje podrá correr. Fallará las siguientes pruebas de Valentía ante enemigos Temibles. Si no se indica otra cosa, perdurará hasta el inicio de su siguiente activación.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "HERIDO",
+        "Value": 3,
+        "RulebookText": "Cuando un personaje haya recibido tantas heridas que solo le falte una más para igualar su Vitalidad, se considerará Herido (es decir, cuando solo le quede 1 punto de Vitalidad). Efectos: los mismos que Aturdido.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "ENFERMO",
+        "Value": 4,
+        "RulebookText": "Efectos: los mismos que Aturdido. Duración: permanece tras la aventura. Generalmente solo las pociones, hechizos de curación o sanadores pueden eliminar sus efectos.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "ENVENENADO",
+        "Value": 5,
+        "RulebookText": "Efectos: los mismos que Aturdido. Duración: hasta el final de la aventura. Generalmente solo las pociones o hechizos de curación pueden eliminar sus efectos.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "INMÓVIL",
+        "Value": 6,
+        "RulebookText": "El personaje no puede activarse este turno. Es impactado cuerpo a cuerpo de forma automática y es un objetivo fácil ante disparos. No puede dispersar. Carece de Zona de Influencia.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "DESARMADO",
+        "Value": 7,
+        "RulebookText": "Un personaje desarmado tendrá -1 a su Cuerpo a Cuerpo, lanzará tantos dados de daño como sea su Fuerza y aumentará la Armadura del objetivo al que ataque en +1.",
+        "NextCodeNumber": "GAMEON_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_40",
+    "Header": "Fase de Recuperación I: Se encuentra el personaje Aturdido?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "GAMEON_50"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Si el personaje está Aturdido, lanzará 1D6. Con resultado de 4 o más, dejará de verse afectado.",
+        "NextCodeNumber": "GAMEON_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_50",
+    "Header": "Fase de Recuperación II: Se encuentra el personaje Derribado?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Si el personaje está Derribado, podrá incorporarse automáticamente. Si tiene uno o varios enemigos adyacentes, deberá superar una prueba de Agilidad para lograr incorporarse. Si ya estuvo Derribado en su activación anterior, superará automáticamente la prueba. Si se incorpora, podrá actuar normalmente este turno, pero se considerará Aturdido.",
+        "NextCodeNumber": "GAMEON_55"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_55",
+    "Header": "Chequear Efectos de Escenario",
+    "AnswerType": "Text",
+    "RulebookText": "Tener en cuenta Modificadores como Penumbra, etc y de Equipo. Revisar Estados, peso del Equipo, etc",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Siempre adelante!",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_60",
+    "Header": "Realizar acciones y movimientos",
+    "AnswerType": "Text",
+    "RulebookText": "Cada héroe podrá efectuar una Acción y un movimiento, en el orden que quiera. Las acciones con la indicación * serán Acciones Exploratorias. Además, podrá realizar una Acción rápida sin coste. Podrá sustituir una Acción por una segunda Acción Rápida.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Siempre adelante!",
+        "NextCodeNumber": "GAMEON_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_70",
+    "Header": "Elige Opción",
+    "AnswerType": "List",
+    "Options": [
+      {
+        "OptionLabel": "Movimiento",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "GAMEON_80"
+      },
+      {
+        "OptionLabel": "Acción",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_100"
+      },
+      {
+        "OptionLabel": "Acción Rápida",
+        "Value": 2,
+        "RulebookText": "-",
+        "NextCodeNumber": "QUICKACTION_60"
+      },
+      {
+        "OptionLabel": "No hacer nada",
+        "Value": 3,
+        "RulebookText": "-",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_80",
+    "Header": "Movimiento, Tipos",
+    "AnswerType": "List",
+    "RulebookText": "Los personajes pueden mover en esta fase tantas casillas como venga indicado en su característica de Movimiento. Podrá moverse en cualquier dirección (horizontal, diagonal). Sin embargo, no podrán realizarse desplazamientos diagonales si la trayectoria de los mismos se ve obstaculizada parcialmente por un muro, la esquina de un obstáculo o la de una escalera.",
+    "Options": [
+      {
+        "OptionLabel": "Encaramientos",
+        "Value": 0,
+        "RulebookText": "Un personaje podrá girar cambiando su encaramiento en cualquier momento durante su activación. Si declara realizar una acción ofensiva, deberá encararse con el rival al que pretende atacar, permaneciendo dicho encaramiento si termina su activación estando adyacente a dicho rival. Ten en cuenta que un giro o cambio de encaramiento, por sí solo no se considerará movimiento.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Escaleras",
+        "Value": 1,
+        "RulebookText": "Si un personaje avanza hacia una casilla ocupada por una escalera ascendente (generalmente las escaleras de entrada a un dungeon son descendentes), deberá invertir un punto más de Movimiento por cada casilla que recorra de esta forma. Considera que cada casilla ascendente de una escalera equivale a subir 1 punto de altura respecto a la casilla que le precede. Solo será posible acceder a una escalera desde los accesos a la misma. Se encontrará en una posición elevada respecto al resto de personajes de su tamaño que se encuentren en una superficie más baja. Deberás tener esto en cuenta cuando observes la Línea de Visión (consulta la página 31) y el posible modificador para impactar cuerpo a cuerpo (consulta la página 37).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Escaleras verticales",
+        "Value": 2,
+        "RulebookText": "Un personaje podrá subir o bajar una escalera vertical como si realizase un movimiento normal (sin poder correr), pero se considerará que toda la extensión de dicha escalera es terreno difícil si tiene alguna mano equipada.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Interactuar con puerta",
+        "Value": 3,
+        "RulebookText": "Las puertas y accesos son elementos de separación de secciones y no ocupan casillas. Para hallarse adyacente a una puerta e interactuar con esta, la miniatura deberá situarse en una casilla en la que uno de sus lados esté delimitado por dicha puerta (usa como referencia el dintel y arco de las ilustraciones de puertas y accesos).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Mover a través de casillas ocupadas",
+        "Value": 4,
+        "RulebookText": "Un personaje o criatura no podrá atravesar la casilla ocupada por un enemigo o por un obstáculo impasable. Podrá atravesar la casilla de un aliado (siempre que éste no se encuentre trabado en combate), pero invirtiendo un punto más de movimiento en este caso, por cada casilla ocupada por un aliado. Ningún personaje podrá terminar su movimiento sobre otro.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Subirse a un elemento de mobiliario",
+        "Value": 5,
+        "RulebookText": "Un personaje podrá avanzar a una casilla ocupada por un elemento de mobiliario más bajo que él, pero invertirá un punto más de movimiento para subir a este. Se encontrará en una posición elevada respecto al resto de personajes de su tamaño que se encuentren en una superficie más baja. Deberás tener esto en cuenta cuando observes la Línea de Visión (consulta la página 31) y el posible modificador para impactar cuerpo a cuerpo (consulta la página 37).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Obstáculo impasable",
+        "Value": 6,
+        "RulebookText": "Si la mayor parte de una casilla está ocupada por un muro, pilar u otro elemento impasable, considera toda la casilla como impasable. Ninguna criatura podrá atravesar elementos de su misma altura o superior, salvo que pueda trepar por ellos y sortearlos.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Terreno Difícil",
+        "Value": 7,
+        "RulebookText": "Si un personaje desea avanzar sobre una casilla de terreno considerado difícil, deberá invertir un punto más de Movimiento por cada casilla que desee avanzar de esta forma. Un personaje situado en terreno difícil tiene una penalización de -1 a Cuerpo a Cuerpo, Disparo, lanzamiento y dispersión de hechizos.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Aguas profundas",
+        "Value": 8,
+        "RulebookText": "En el agua profunda, solo podrá combatirse contra enemigos adyacentes, con dagas o armas naturales (garras, colmillos, cuernos, tentáculos), y todas las criaturas no acuáticas tendrán una penalización de -1 a su Cuerpo a Cuerpo. No se podrá disparar ni lanzar hechizos o dispersar. Mientras un personaje o criatura se encuentra en aguas profundas, tiene cobertura ligera ante los ataques procedentes desde fuera del agua. También ignorará las Zonas de Influencia de los rivales situados fuera del agua, y viceversa.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Nadar",
+        "Value": 9,
+        "RulebookText": "Si un personaje quiere avanzar nadando, podrá recorrer hasta un número de casillas equivalente a su característica de Agilidad. Tendrá una penalización extra de -1 si usa una armadura pesada, además de los penalizadores habituales. Si su Agilidad es negativa al final de su activación, recibirá 3 dados de daño contra su Armadura Natural. Además, lanzará 2D6 al inicio de su activación si declara que quiere avanzar nadando. Con un doble 1, el personaje habrá notado que algo le rozaba la pierna bajo el agua y no avanzará ninguna casilla, permaneciendo toda su activación en la misma. Con un doble 6, podrá avanzar 1 casilla extra. Cuando un personaje pretenda nadar durante un turno, todo su movimiento dentro y fuera del agua se realizará con su característica de Agilidad.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_100",
+    "Header": "Acciones. Hay algún enemigo a 12 casillas o menos?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Turno de Exploración",
+        "NextCodeNumber": "GAMEON_110"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Turno de Combate, acciones limitadas",
+        "NextCodeNumber": "GAMEON_120"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_110",
+    "Header": "Turno de Exploración, posibles acciones",
+    "AnswerType": "List",
+    "RulebookText": "Durante el turno de exploración, los héroes pueden realizar diversas acciones para interactuar con el escenario, desvelar zonas nuevas, abrir puertas, o realizar otras acciones específicas. Cada acción puede requerir el uso de recursos, superar pruebas o interactuar con elementos del entorno.",
+    "Options": [
+      {
+        "OptionLabel": "Desvelar Zona",
+        "Value": 1,
+        "RulebookText": "Si un héroe se encuentra sobre una flecha de exploración y declara que desvela zona, se mostrará la sección existente a la que da acceso dicha flecha de exploración. Esto incluye también los elementos y criaturas que se encuentran en dicha sección. Una vez se haya visualizado la sección a la que conduce una flecha de exploración, dicha flecha (y las adyacentes con la misma orientación) serán retiradas del tablero.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Abrir Puertas Inexploradas",
+        "Value": 2,
+        "RulebookText": "Si un héroe está adyacente a una puerta o acceso que no ha sido abierta previamente durante la partida, podrá declarar abrirla. Se mostrará la sección existente a la que da acceso dicha puerta. Esto incluye también los elementos y criaturas que se encuentran en dicha sección. Una vez se ha visualizado la sección a la que conduce la puerta, se le dará la vuelta a la loseta de puerta para mostrar su reverso e indicar que está abierta. Si la puerta no puede abrirse por algún obstáculo (trampa, puerta cerrada con llave, acertijo, etc.), la acción NO se habrá consumido.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Abrir Puerta Cerrada con Llave",
+        "Value": 3,
+        "RulebookText": "Si cuando un héroe declara abrir una puerta o acceso y la Hoja de Aventura o una carta de Jugador Oscuro indican que la puerta está cerrada con llave, este u otro héroe adyacente a la puerta podrá dedicar una acción a realizar una prueba de Destreza para abrirla (esto quiere decir que intentarán abrirla con sigilo). El grupo solo dispondrá de un intento para lograrlo.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Abrir Cofre",
+        "Value": 4,
+        "RulebookText": "Un héroe adyacente a un cofre podrá dedicar una acción a realizar una prueba de Destreza para abrirlo y conseguir el botín. El grupo solo dispondrá de un intento para lograrlo. Éxito: el cofre se abrirá. Extrae una carta del mazo de Tesoro para indicar lo que posee en su interior. Los objetos encontrados podrán repartirse inmediatamente entre el grupo de héroes. Fracaso: el cofre solo podrá abrirse rompiéndose.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Resolver Acertijo",
+        "Value": 5,
+        "RulebookText": "Si cuando un héroe declara abrir una puerta o cofre y la Hoja de Aventura o una carta de Jugador Oscuro indican que el elemento está protegido por un acertijo, este u otro héroe adyacente a dicho elemento podrá dedicar una acción a realizar una prueba de Inteligencia para abrirla. El grupo solo dispondrá de un intento para lograrlo.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Romper Puertas, Cofres u Otros Objetos",
+        "Value": 6,
+        "RulebookText": "Un personaje o criatura podrá declarar que emplea su acción en golpear una puerta, cofre u otro objeto adyacente. Solo podrán golpearse puertas y cofres después de haber intentado abrirlos sin violencia. No se realizará tirada enfrentada de Cuerpo a Cuerpo contra estos elementos, ya que serán impactados de forma automática. Solo deben lanzarse los dados de daño de la forma habitual. Si se golpea uno de estos elementos, coloca un marcador de Ruido en el tablero junto al elemento golpeado. Deberás indicar con un dado el número de turnos que los héroes lo han golpeado. En el próximo encuentro con enemigos, estos obtendrán un bonificador de +1 a la tirada de Iniciativa por cada turno en el que los héroes hayan golpeado el elemento.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Correr",
+        "Value": 7,
+        "RulebookText": "Un personaje podrá decidir correr para ampliar el número de casillas que avanzará ese turno. El jugador que lo maneje deberá declarar que corre antes de iniciar el movimiento. Entonces lanzará 2D6 y avanzará tantas casillas como su valor de Movimiento más el resultado obtenido, sin que la distancia recorrida pueda exceder del doble de su valor de Movimiento. Si obtiene un resultado de doble 1 al intentar correr, solo avanzará ese turno la mitad de su capacidad de Movimiento normal.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Salto Destacado",
+        "Value": 8,
+        "RulebookText": "Para sortear un foso o precipicio (o, incluso, descender a un piso inferior) de hasta 3 casillas de anchura, un personaje adyacente a dicho obstáculo podrá realizar un salto destacado hacia adelante, siendo necesario una prueba de Agilidad. La distancia total de casillas que puede desplazarse, contando movimiento y salto, no podrá exceder de su característica de Movimiento.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Trepar Fosos",
+        "Value": 9,
+        "RulebookText": "Si un personaje ha caído a un foso, podrá trepar para salir de este. Necesitará superar una prueba de Agilidad. Éxito: subirá y terminará su activación en una casilla libre adyacente al foso. Fracaso: el personaje finalizará su activación y continuará en el fondo del foso.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Buscar Puertas Secretas",
+        "Value": 10,
+        "RulebookText": "Un héroe podrá declarar que busca puertas secretas en la sección en que se encuentre. Deberá superar una prueba de Percepción. Éxito: si hay una puerta secreta oculta en dicha sección, se colocará la misma. Esta puerta secreta tendrá la misma consideración que una puerta normal, pudiendo abrirse de la forma habitual.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Registrar Habitación",
+        "Value": 11,
+        "RulebookText": "Si un personaje se encuentra en una habitación que no haya sido antes examinada a tal efecto, podrá declarar que la registra para buscar tesoros. Deberá superar una prueba de Percepción. Éxito: encontrará objetos ocultos en un escondite, por valor de 1D3+1 monedas. Si obtiene un doble 6 en la prueba, extraerá una carta del mazo de Tesoro en lugar de monedas.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Registrar o Interactuar con Elemento",
+        "Value": 12,
+        "RulebookText": "Un personaje podrá registrar o interactuar con un elemento adyacente (Mobiliario, Elemento especial) para resolver sus efectos. Se leerá el contenido de la carta correspondiente a cada tipo de elemento y se resolverán los efectos. Solo se puede registrar una vez cada elemento.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Colocarse o Quitarse la Armadura",
+        "Value": 13,
+        "RulebookText": "Un personaje podrá ponerse o quitarse una armadura. Únicamente se refiere a la armadura que cubre el cuerpo, no así a elementos como los escudos o los yelmos.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Desactivar Trampas",
+        "Value": 14,
+        "RulebookText": "Si una trampa está latente (en un cofre o puerta o sobre cualquier otra casilla), un héroe adyacente a dicho elemento o casilla podrá desactivarla si supera una prueba de Destreza. Éxito: la trampa se habrá desactivado. Fracaso: la trampa se activará y se leerá su efecto.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Registrar Cadáveres",
+        "Value": 15,
+        "RulebookText": "Tras finalizar un combate y siempre antes de que sea revelada una nueva sección, un héroe podrá dedicar su primera acción a registrar los cadáveres de sus enemigos. Lanza 1D6 por cada enemigo eliminado. Con un resultado de 1-3, obtendrás una moneda. Con un resultado de 4-5, obtendrás una carta del mazo de Tesoro. Con un resultado de 6, obtendrás una carta especial del mazo de Tesoro.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "ENCENDER FUENTE DE LUZ",
+        "Value": 16,
+        "RulebookText": "Por regla general, las secciones están suficientemente iluminadas. Pero existen cartas de Jugador Oscuro que pueden afectar a la visibilidad.\nUn personaje podrá declarar que enciende un objeto que sea fuente de luz (antorcha, linterna), para evitar los efectos de las cartas \"Penumbra\" y \"Oscuridad Total\". La fuente de luz podrá indicarse con el marcador oportuno.\nSalvo que se indique lo contrario, el personaje deberá mantener en su mano la fuente de luz (generalmente antorchas o linternas) para que esta ilumine la sección.\nSi la deposita en una casilla, deberá indicar su posición mediante el mismo marcador.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "MOVIMIENTO DE MOBILIARIO",
+        "Value": 17,
+        "RulebookText": "Un personaje podrá emplear una Acción en desplazar un elemento de Mobiliario (con el que esté en contacto y siempre que el mueble pueda moverse) a una casilla adyacente.\nSi el elemento de mobiliario es de igual altura a quien pretende moverlo, este podrá desplazarlo si supera una prueba de Fuerza.\nNo podrán moverse elementos de Mobiliario de mayor altura que quien pretende moverlos.\nSi un elemento de Mobiliario obstruye un acceso tras haber sido movido, este podrá moverse nuevamente o incluso romperse del mismo modo que si se tratase de una puerta (Armadura 5, Vitalidad 5).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "CONSTRUIR PASARELA",
+        "Value": 18,
+        "RulebookText": "Se puede construir una pasarela sobre un precipicio. Dos personajes pueden declarar durante el mismo turno construir una pasarela si se encuentran adyacentes al precipicio en los extremos opuestos. Uno de ellos deberá gastar inmediatamente una carta de Piquetas y Cuerda (que no podrán reutilizarse).\nLas pasarelas se consideran terreno difícil. Cada vez que una criatura de tamaño Grande atraviese una pasarela, lanzará 1D6.\nCon resultado de 1, la pasarela se hundirá, sin poder volver a utilizarse, y la criatura caerá con esta. Las criaturas Enormes no pueden pisar una pasarela o se hundirán automáticamente con esta.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "PERSUADIR MEDIANTE LA INTELIGENCIA",
+        "Value": 19,
+        "RulebookText": "La propia carta o situación narrativa permitirá que el héroe realice una tirada enfrentada de Persuasión con Inteligencia contra el personaje objetivo. Ambos personajes lanzarán 2D6 y sumarán sus características de Inteligencia*. El intento de persuasión solo tendrá éxito si el resultado de quien lo realiza supera al del objetivo.\n*Si no se indica nada, los atributos del objetivo siempre serán de 3.\nExisten habilidades que representan la mayor locuacidad o capacidad de seducción de un personaje, y pueden permitirle modificar sus tiradas de persuasión.\nExisten estos modificadores para quien intenta persuadir:\n-1 Si el héroe intenta persuadir a un personaje de un alineamiento opuesto al suyo (benigno-maligno).\n+1 Si el héroe intenta persuadir a un personaje de la misma raza que él.\nUn héroe solo podrá realizar una misma tirada de Persuasión una sola vez por cada PNJ. Si falla y otro héroe lo intenta después, este tendrá un penalizador de -1 a su tirada por cada héroe previo que intentó la misma prueba.\nSi un héroe comete pifia en una tirada de Persuasión, todos los siguientes intentos propios o aliados serán fallidos contra el mismo PNJ.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "PERSUADIR MEDIANTE EL MIEDO",
+        "Value": 20,
+        "RulebookText": "La propia carta o situación narrativa permitirá que realice una tirada enfrentada de Persuasión con Fuerza contra el personaje objetivo. Ambos personajes lanzarán 2D6. El héroe que intenta persuadir sumará su característica de Fuerza, mientras el personaje objetivo añadirá su característica de Valentía*.\nEl intento de persuasión solo tendrá éxito si el resultado de quien lo realiza supera al del objetivo.\n*Si no se indica nada, los atributos del objetivo siempre serán de 3.\nQuien posea la habilidad Temible tendrá un modificador de +1 a la tirada.\nUn grupo de héroes solo podrá realizar una vez una tirada de Persuasión con Fuerza por cada PNJ.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "DETECTAR PODERES MÁGICOS Y POCIONES",
+        "Value": 21,
+        "RulebookText": "Si los héroes hallan un Objeto Mágico, Reliquia o una Pócima, generalmente no conocerán su tipología ni sus efectos salvo que uno de ellos tenga la habilidad oportuna (y supere una prueba de Inteligencia) o se pague a un experto en una población tras salir del escenario (cartas de Lugares y Servicios).\nMientras los héroes desconozcan las virtudes de un Objeto Mágico, este podrá ser utilizado sin aplicar estas, como su homólogo no mágico (considerándose que los objetos mágicos como armas repiten la tirada de rotura, como se indica en la página 72). Es decir, una Espada ancha mágica podrá ser empleada como una Espada ancha normal, pero repitiendo las tiradas de rotura. Cuando los héroes obtengan una poción sin identificar, extrae la carta oportuna del mazo de Objetos especiales. No se podrá consumir una pócima sin identificar.\nCuando los héroes puedan conocer los efectos de una poción, se lanzará 1D6 por cada una y se verá su tipología, cogiendo del mazo de Objeto Especial la pócima concreta:\n1 Veneno 2 Destreza 3 Héroes 4 Fuerza 5 Maná 6 Curación\nSi no quedan cartas en el mazo del tipo de poción que ha aparecido, entonces se considerará que la poción no tendrá ningún efecto y será descartada del juego.\nEfectos de pociones: los efectos no son acumulativos. Es decir, no se pueden tomar o usar dos o más pociones del mismo tipo o diferentes para acumular sus beneficios. En el momento en que se toma o emplea una poción, se anulan los efectos de la anterior.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "ATACAR CUERPO A CUERPO",
+        "Value": 22,
+        "RulebookText": "",
+        "NextCodeNumber": "CLOSECOMBAT_10"
+      },
+      {
+        "OptionLabel": "ATACAR A DISTANCIA",
+        "Value": 23,
+        "RulebookText": "",
+        "NextCodeNumber": "RANGEDCOMBAT_10"
+      },
+      {
+        "OptionLabel": "LANZAR HECHIZOS",
+        "Value": 24,
+        "RulebookText": "",
+        "NextCodeNumber": "SPELL_10"
+      },
+      {
+        "OptionLabel": "BUSCAR RECURSOS",
+        "Value": 25,
+        "RulebookText": "NEW CHALLENGES",
+        "NextCodeNumber": "ACTION_90"
+      },
+      {
+        "OptionLabel": "TRANSPORTAR A COMPAÑEROS",
+        "Value": 26,
+        "RulebookText": "Si un personaje termina la aventura en estado Fuera de combate, los compañeros podrán llevarse el cuerpo (y todas sus pertenencias con este).\nNOTA: durante un Evento de viaje (no Evento épico), se considerará que los compañeros siempre pueden llevarse el cuerpo.\nUn personaje (incluso una montura) podrá transportar a un aliado que haya quedado Fuera de combate. Deberá colocarse adyacente al aliado caído y emplear una acción para transportarlo, pudiendo moverse ambos tantas casillas como sea el atributo de Fuerza de quien lo transporta.\nUn personaje no podrá transportar a un aliado de mayor tamaño que él, pero dos personajes adyacentes podrán unir sus esfuerzos y acciones para hacerlo (moviéndose tantas casillas como sea la Fuerza del más fuerte).\nPara realizar saltos junto con el compañero caído, será necesario superar una prueba de Fuerza además de la prueba de Agilidad.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "OTRAS PRUEBAS DE CARACTERÍSTICAS",
+        "Value": 27,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Continuar",
+        "Value": 28,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "GAMEON_120",
+    "Header": "Turno de Combate, posibles acciones",
+    "AnswerType": "List",
+    "RulebookText": "Durante el turno de combate, los héroes pueden realizar diversas acciones para interactuar con el escenario, desvelar zonas nuevas, abrir puertas, o realizar otras acciones específicas. Cada acción puede requerir el uso de recursos, superar pruebas o interactuar con elementos del entorno.",
+    "Options": [
+      {
+        "OptionLabel": "Desvelar Zona",
+        "Value": 1,
+        "RulebookText": "Si un héroe se encuentra sobre una flecha de exploración y declara que desvela zona, se mostrará la sección existente a la que da acceso dicha flecha de exploración. Esto incluye también los elementos y criaturas que se encuentran en dicha sección. Una vez se haya visualizado la sección a la que conduce una flecha de exploración, dicha flecha (y las adyacentes con la misma orientación) serán retiradas del tablero.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Abrir Puertas Inexploradas",
+        "Value": 2,
+        "RulebookText": "Si un héroe está adyacente a una puerta o acceso que no ha sido abierta previamente durante la partida, podrá declarar abrirla. Se mostrará la sección existente a la que da acceso dicha puerta. Esto incluye también los elementos y criaturas que se encuentran en dicha sección. Una vez se ha visualizado la sección a la que conduce la puerta, se le dará la vuelta a la loseta de puerta para mostrar su reverso e indicar que está abierta. Si la puerta no puede abrirse por algún obstáculo (trampa, puerta cerrada con llave, acertijo, etc.), la acción NO se habrá consumido.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+
+      {
+        "OptionLabel": "Correr",
+        "Value": 7,
+        "RulebookText": "Un personaje podrá decidir correr para ampliar el número de casillas que avanzará ese turno. El jugador que lo maneje deberá declarar que corre antes de iniciar el movimiento. Entonces lanzará 2D6 y avanzará tantas casillas como su valor de Movimiento más el resultado obtenido, sin que la distancia recorrida pueda exceder del doble de su valor de Movimiento. Si obtiene un resultado de doble 1 al intentar correr, solo avanzará ese turno la mitad de su capacidad de Movimiento normal.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Salto Destacado",
+        "Value": 8,
+        "RulebookText": "Para sortear un foso o precipicio (o, incluso, descender a un piso inferior) de hasta 3 casillas de anchura, un personaje adyacente a dicho obstáculo podrá realizar un salto destacado hacia adelante, siendo necesario una prueba de Agilidad. La distancia total de casillas que puede desplazarse, contando movimiento y salto, no podrá exceder de su característica de Movimiento.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Trepar Fosos",
+        "Value": 9,
+        "RulebookText": "Si un personaje ha caído a un foso, podrá trepar para salir de este. Necesitará superar una prueba de Agilidad. Éxito: subirá y terminará su activación en una casilla libre adyacente al foso. Fracaso: el personaje finalizará su activación y continuará en el fondo del foso.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+
+      {
+        "OptionLabel": "Colocarse o Quitarse la Armadura",
+        "Value": 13,
+        "RulebookText": "Un personaje podrá ponerse o quitarse una armadura. Únicamente se refiere a la armadura que cubre el cuerpo, no así a elementos como los escudos o los yelmos.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+
+      {
+        "OptionLabel": "ENCENDER FUENTE DE LUZ",
+        "Value": 16,
+        "RulebookText": "Por regla general, las secciones están suficientemente iluminadas. Pero existen cartas de Jugador Oscuro que pueden afectar a la visibilidad.\nUn personaje podrá declarar que enciende un objeto que sea fuente de luz (antorcha, linterna), para evitar los efectos de las cartas \"Penumbra\" y \"Oscuridad Total\". La fuente de luz podrá indicarse con el marcador oportuno.\nSalvo que se indique lo contrario, el personaje deberá mantener en su mano la fuente de luz (generalmente antorchas o linternas) para que esta ilumine la sección.\nSi la deposita en una casilla, deberá indicar su posición mediante el mismo marcador.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "MOVIMIENTO DE MOBILIARIO",
+        "Value": 17,
+        "RulebookText": "Un personaje podrá emplear una Acción en desplazar un elemento de Mobiliario (con el que esté en contacto y siempre que el mueble pueda moverse) a una casilla adyacente.\nSi el elemento de mobiliario es de igual altura a quien pretende moverlo, este podrá desplazarlo si supera una prueba de Fuerza.\nNo podrán moverse elementos de Mobiliario de mayor altura que quien pretende moverlos.\nSi un elemento de Mobiliario obstruye un acceso tras haber sido movido, este podrá moverse nuevamente o incluso romperse del mismo modo que si se tratase de una puerta (Armadura 5, Vitalidad 5).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "CONSTRUIR PASARELA",
+        "Value": 18,
+        "RulebookText": "Se puede construir una pasarela sobre un precipicio. Dos personajes pueden declarar durante el mismo turno construir una pasarela si se encuentran adyacentes al precipicio en los extremos opuestos. Uno de ellos deberá gastar inmediatamente una carta de Piquetas y Cuerda (que no podrán reutilizarse).\nLas pasarelas se consideran terreno difícil. Cada vez que una criatura de tamaño Grande atraviese una pasarela, lanzará 1D6.\nCon resultado de 1, la pasarela se hundirá, sin poder volver a utilizarse, y la criatura caerá con esta. Las criaturas Enormes no pueden pisar una pasarela o se hundirán automáticamente con esta.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "PERSUADIR MEDIANTE LA INTELIGENCIA",
+        "Value": 19,
+        "RulebookText": "La propia carta o situación narrativa permitirá que el héroe realice una tirada enfrentada de Persuasión con Inteligencia contra el personaje objetivo. Ambos personajes lanzarán 2D6 y sumarán sus características de Inteligencia*. El intento de persuasión solo tendrá éxito si el resultado de quien lo realiza supera al del objetivo.\n*Si no se indica nada, los atributos del objetivo siempre serán de 3.\nExisten habilidades que representan la mayor locuacidad o capacidad de seducción de un personaje, y pueden permitirle modificar sus tiradas de persuasión.\nExisten estos modificadores para quien intenta persuadir:\n-1 Si el héroe intenta persuadir a un personaje de un alineamiento opuesto al suyo (benigno-maligno).\n+1 Si el héroe intenta persuadir a un personaje de la misma raza que él.\nUn héroe solo podrá realizar una misma tirada de Persuasión una sola vez por cada PNJ. Si falla y otro héroe lo intenta después, este tendrá un penalizador de -1 a su tirada por cada héroe previo que intentó la misma prueba.\nSi un héroe comete pifia en una tirada de Persuasión, todos los siguientes intentos propios o aliados serán fallidos contra el mismo PNJ.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "PERSUADIR MEDIANTE EL MIEDO",
+        "Value": 20,
+        "RulebookText": "La propia carta o situación narrativa permitirá que realice una tirada enfrentada de Persuasión con Fuerza contra el personaje objetivo. Ambos personajes lanzarán 2D6. El héroe que intenta persuadir sumará su característica de Fuerza, mientras el personaje objetivo añadirá su característica de Valentía*.\nEl intento de persuasión solo tendrá éxito si el resultado de quien lo realiza supera al del objetivo.\n*Si no se indica nada, los atributos del objetivo siempre serán de 3.\nQuien posea la habilidad Temible tendrá un modificador de +1 a la tirada.\nUn grupo de héroes solo podrá realizar una vez una tirada de Persuasión con Fuerza por cada PNJ.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+
+      {
+        "OptionLabel": "ATACAR CUERPO A CUERPO",
+        "Value": 22,
+        "RulebookText": "",
+        "NextCodeNumber": "CLOSECOMBAT_10"
+      },
+      {
+        "OptionLabel": "ATACAR A DISTANCIA",
+        "Value": 23,
+        "RulebookText": "",
+        "NextCodeNumber": "RANGEDCOMBAT_10"
+      },
+      {
+        "OptionLabel": "LANZAR HECHIZOS",
+        "Value": 24,
+        "RulebookText": "",
+        "NextCodeNumber": "SPELL_10"
+      },
+
+      {
+        "OptionLabel": "TRANSPORTAR A COMPAÑEROS",
+        "Value": 26,
+        "RulebookText": "Si un personaje termina la aventura en estado Fuera de combate, los compañeros podrán llevarse el cuerpo (y todas sus pertenencias con este).\nNOTA: durante un Evento de viaje (no Evento épico), se considerará que los compañeros siempre pueden llevarse el cuerpo.\nUn personaje (incluso una montura) podrá transportar a un aliado que haya quedado Fuera de combate. Deberá colocarse adyacente al aliado caído y emplear una acción para transportarlo, pudiendo moverse ambos tantas casillas como sea el atributo de Fuerza de quien lo transporta.\nUn personaje no podrá transportar a un aliado de mayor tamaño que él, pero dos personajes adyacentes podrán unir sus esfuerzos y acciones para hacerlo (moviéndose tantas casillas como sea la Fuerza del más fuerte).\nPara realizar saltos junto con el compañero caído, será necesario superar una prueba de Fuerza además de la prueba de Agilidad.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "OTRAS PRUEBAS DE CARACTERÍSTICAS",
+        "Value": 27,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Continuar",
+        "Value": 28,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "QUICKACTION_60",
+    "Header": "Turno de Exploración, posibles acciones",
+    "AnswerType": "List",
+    "RulebookText": "Durante el turno de exploración, los héroes pueden realizar diversas acciones para interactuar con el escenario, desvelar zonas nuevas, abrir puertas, o realizar otras acciones específicas. Cada acción puede requerir el uso de recursos, superar pruebas o interactuar con elementos del entorno.",
+    "Options": [
+      {
+        "OptionLabel": "Dar un objeto a un compañero adyacente",
+        "Value": 0,
+        "RulebookText": "Un mismo objeto no podrá ser empleado por dos personajes durante el mismo turno de juego.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Depositar o coger algo situado en un lugar alcanzable",
+        "Value": 1,
+        "RulebookText": "En la propia casilla por la que se transita o en adyacentes.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Activar una palanca",
+        "Value": 2,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Abrir o cerrar una puerta que dé acceso a una zona ya explorada",
+        "Value": 3,
+        "RulebookText": "Una puerta que ya ha sido abierta previamente durante la actual partida.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Equipar objetos",
+        "Value": 4,
+        "RulebookText": "Si el héroe hace algún cambio de objetos, intercambiándolos con los que porte en su mochila.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Beber una Pócima o tomar otros objetos consumibles",
+        "Value": 5,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Desenvainar o cambiar arma",
+        "Value": 6,
+        "RulebookText": "Si el héroe decide utilizar un arma que portaba en su mochila. Esta Acción rápida puede realizarse en la Zona de Influencia de un enemigo o adyacente a este.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_5",
+    "Header": "Desvelar Zona",
+    "AnswerType": "Bool",
+    "RulebookText": "Siempre se activará una carta de ENCUENTRO, pagando su coste habitual, si la sección desvelada es grande (de más de 40 casillas) pero no sección principal.",
+    "Options": [
+      {
+        "OptionLabel": "Siempre adelante!",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "ACTION_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_10",
+    "Header": "Obstáculos y Trampas",
+    "AnswerType": "Bool",
+    "RulebookText": "Se lanzará el Dado de Escenario en estos supuestos: 1º Cuando un personaje del grupo de héroes declare realizar una de estas acciones: Desvelar zona, Abrir puerta inexplorada (se incluyen en este concepto puertas, trampillas, rejas), Abrir cofre, Registrar habitación, Registrar mobiliario (solo en caso de que cometa una pifia, si así lo indica la carta de mobiliario). 2º Cuando un personaje pise la primera casilla fuera de una Zona de Seguridad.",
+    "Options": [
+      {
+        "OptionLabel": "No hay resultado de Obstáculo",
+        "Value": 0,
+        "RulebookText": "Se desvela la zona.",
+        "NextCodeNumber": "ACTION_35"
+      },
+      {
+        "OptionLabel": "Hay Resultado de Obstáculo",
+        "Value": 1,
+        "RulebookText": "Se desvelará una carta del mazo de Obstáculos. Si esta puede ser activada según las condiciones y requisitos incluidos en la carta, se detraerán sus puntos de coste del presupuesto de puntos de Reserva y se activará la carta.",
+        "NextCodeNumber": "ACTION_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_20",
+    "Header": "Reacción Ante Trampa",
+    "AnswerType": "Bool",
+    "RulebookText": "En cuanto se active una trampa, el héroe que haya motivado la activación de esta debido a una acción o movimiento, deberá superar una prueba de Percepción, debiendo igualar o superar el valor indicado en la carta. Si hay Pifia, el JOA recibe 1 Punto de Reserva.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 0,
+        "RulebookText": "La trampa se habrá descubierto y quedará latente en la puerta, cofre o casilla donde se pretendía realizar la acción o movimiento (deja la carta de Jugador Oscuro boca arriba para recordarlo). La acción que pretendía realizar el héroe no se habrá realizado (por tanto, podrá desactivarla en el mismo turno). Si la trampa aparece debido a haberse pisado una casilla, el personaje dará un paso atrás, regresando a la casilla anterior de la que procedía. Si la trampa aparece por cualquier otro motivo, el personaje podrá desplazarse a una casilla libre adyacente. En cualquier caso, el personaje no podrá moverse durante el resto de su activación. Tanto el héroe que ha descubierto la trampa como cualquier otro podrá emplear una acción en desactivarla. Si se obtuvo un doble 6 al superar la prueba de Percepción para detectar la trampa, cualquier personaje del grupo de héroes recibirá un modificador de +1 a desactivarla.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 1,
+        "RulebookText": "La trampa se activará y se leerá su efecto. La acción que pretendía realizar el héroe no se habrá realizado. Finalizará la activación del héroe.",
+        "NextCodeNumber": "ACTION_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_25",
+    "Header": "Desactivar Trampa",
+    "AnswerType": "Bool",
+    "RulebookText": "Prueba de Destreza, debiendo obtener el resultado requerido en la carta de trampa. Modificadores a la prueba de Destreza: +1: si se obtuvo un doble 6 al superar la prueba de Percepción para detectar la trampa por parte de cualquier personaje del grupo de héroes. Si hay Pifia, el JOA recibe 1 Punto de Reserva.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 0,
+        "RulebookText": "Éxito: la trampa se habrá desactivado. Retira la carta. La puerta o cofre no se consideran abiertos.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 1,
+        "RulebookText": "Fracaso: la trampa se activará y se leerá su efecto. La puerta o cofre no se consideran abiertos.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_30",
+    "Header": "Caída?",
+    "AnswerType": "Bool",
+    "RulebookText": "",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_110"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "ACTION_32"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_32",
+    "Header": "Efecto de la Caída",
+    "AnswerType": "Text",
+    "RulebookText": "En caso de caída por fallarse la prueba al realizar un salto destacado o cualquier otro suceso, el personaje caerá en la casilla del precipicio donde fue empujado o a la más cercana al objetivo de su salto, y sufrirá el efecto de Aturdido, recibiendo 1 dado de daño contra su Armadura Natural por cada punto de altura desde la que cayó (si no se indica la altura, recibirá 1 solo dado de daño). Tras resolver el daño, finalizará su activación. *Por ejemplo, los fosos causan 4 dados de daño por considerarse que se cae desde una altura 4. Un personaje situado en un foso no podrá ser atacado cuerpo a cuerpo por sus enemigos, ni tampoco podrá atacarles de esta forma. Solo podrá disparar y lanzar hechizos a enemigos adyacentes al foso, considerándolos tras cobertura pesada. Los enemigos adyacentes podrán dispararle y lanzar hechizos contra él sin obstáculos o restricciones.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "Siempre adelante!"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_35",
+    "Header": "Se descubre la Sala Principal?",
+    "AnswerType": "Bool",
+    "RulebookText": "",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "ACTION_45"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_40",
+    "Header": "Encuentros",
+    "AnswerType": "Bool",
+    "RulebookText": "Se lanzará el Dado de Escenario cada vez que un personaje visualice una nueva sección (excepto en el primer turno de los héroes). Si se obtiene un resultado de , se desvelará una carta del mazo de Encuentros. Se observará el contenido de la carta desvelada y se lanzará 1D6. Con el resultado obtenido se consultará la Tabla de Generación de Criaturas* que figure en la hoja de la facción oportuna en el libro de Bestiario, para determinar el tipo y número de enemigos que deben colocarse. 1º Se reducirán tantos puntos de Reserva como sea el coste de los enemigos colocados. 2º Se colocarán los enemigos en la nueva sección. 3º Se realizará la tirada de Iniciativa.",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Si no se obtuvo un resultado de tras visualizarse una nueva sección, deberá repetirse la tirada si los héroes han accedido a la sección rompiendo una puerta o si no aparecieron enemigos en las dos últimas secciones descubiertas.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Se desvelará una carta del mazo de Encuentros. Se observará el contenido de la carta desvelada y se lanzará 1D6. Con el resultado obtenido se consultará la Tabla de Generación de Criaturas* que figure en la hoja de la facción oportuna en el libro de Bestiario, para determinar el tipo y número de enemigos que deben colocarse. 1º Se reducirán tantos puntos de Reserva como sea el coste de los enemigos colocados. 2º Se colocarán los enemigos en la nueva sección. 3º Se realizará la tirada de Iniciativa.",
+        "NextCodeNumber": "ACTION_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_45",
+    "Header": "Sala Principal",
+    "AnswerType": "Text",
+    "RulebookText": "Se desvelará una carta del mazo de Encuentros. Se observará el contenido de la carta desvelada y se lanzará 1D6. Con el resultado obtenido se consultará la Tabla de Generación de Criaturas* que figure en la hoja de la facción oportuna en el libro de Bestiario, para determinar el tipo y número de enemigos que deben colocarse. 1º Se reducirán tantos puntos de Reserva como sea el coste de los enemigos colocados. 2º Se colocarán los enemigos en la nueva sección. 3º Se realizará la tirada de Iniciativa. Si no se poseen suficientes Puntos de Reserva para activar una carta de Encuentros, pasa al resultado anterior en la Tabla de Generación de Criaturas de la facción. Si no puede colocarse el mínimo de criaturas indicado en la columna, descarta la carta de la forma habitual.",
+    "Options": [
+      {
+        "OptionLabel": "Siempre adelante!",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "COMBAT_5"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_50",
+    "Header": "Abrir Puerta Cerrada con Llave",
+    "AnswerType": "Bool",
+    "RulebookText": "Éxito: la puerta se abrirá.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 0,
+        "RulebookText": "La puerta se abrirá.",
+        "NextCodeNumber": "ACTION_10"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 1,
+        "RulebookText": "La puerta solo podrá abrirse rompiéndose. Si hubo Pifia, el JOA gana 1 Punto de Reserva.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_60",
+    "Header": "Resolver Acertijo",
+    "AnswerType": "Bool",
+    "RulebookText": "Éxito: la puerta o cofre se abrirá.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 0,
+        "RulebookText": "La puerta o cofre se abrirá.",
+        "NextCodeNumber": "ACTION_70"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 1,
+        "RulebookText": "La puerta solo podrá abrirse rompiéndose. El cofre no podrá abrirse ni romperse de ningún modo durante la actual aventura. Si hubo Pifia, el JOA gana 1 Punto de Reserva.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_70",
+    "Header": "Romper Puertas, Cofres u Otros Objetos",
+    "AnswerType": "Bool",
+    "RulebookText": "¿Se rompe?",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Añadir Marcador de Ruido. En el próximo Turno de Combate los enemigos tienen +1 por cada turno que se haya empleado en romper.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "ACTION_75"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_75",
+    "Header": "Romper Puertas, Cofres u Otros Objetos",
+    "AnswerType": "Bool",
+    "RulebookText": "¿Se rompió! Puerta o Cofre?",
+    "Options": [
+      {
+        "OptionLabel": "Puerta",
+        "Value": 0,
+        "RulebookText": "Una vez se rompa una puerta, se mostrará la sección existente a la que da acceso la misma, como si se hubiera abierto normalmente (en este caso, visualizar la nueva sección no supondrá una Acción exploratoria). Esto incluye también los elementos y criaturas que se encuentran en dicha sección. Sin embargo, esta puerta no podrá volver a cerrarse.",
+        "NextCodeNumber": "ACTION_10"
+      },
+      {
+        "OptionLabel": "Cofre",
+        "Value": 1,
+        "RulebookText": "Una vez se rompa un cofre, se extraerá una carta del mazo de Tesoro.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_80",
+    "Header": "Registrar o Interactuar con Elemento",
+    "AnswerType": "Bool",
+    "RulebookText": "¿Pifia?",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "No pasa nada.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Se activa una trampa. El JOA gana 1 Punto de Reserva.",
+        "NextCodeNumber": "ACTION_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_90",
+    "Header": "Buscar Recursos",
+    "AnswerType": "Bool",
+    "RulebookText": "Tirada de Percepción",
+    "Options": [
+      {
+        "OptionLabel": "Fracaso (Pifia)",
+        "Value": 0,
+        "RulebookText": "Un animal oculto muerde tu mano. Pierdes 1 Vitalidad. El JOA gana 1 Punto de Reserva.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 1,
+        "RulebookText": "No encuentras nada.",
+        "NextCodeNumber": "ACTION_10"
+      },
+      {
+        "OptionLabel": "Éxito",
+        "Value": 2,
+        "RulebookText": "Encuentras 1 Recurso. Coge una Carta de Recurso que coincida con el Biomio donde te encuentras.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Éxito (Crítico)",
+        "Value": 3,
+        "RulebookText": "Encuentras 2 Recursos, independientes del Biomio donde te encuentras.",
+        "NextCodeNumber": "GAMEON_55"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_100",
+    "Header": "Correr. Tira 2D6",
+    "AnswerType": "Bool",
+    "RulebookText": "¿Pifia?",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Solo avanza la mitad de su Movimiento. Si durante cualquier momento de su movimiento en el turno en que decide correr, se requiere que haga una prueba de Percepción, el personaje tendrá -2 de penalización a la misma (por ejemplo, para detectar trampas).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Avanzará tantas casillas como su valor de Movimiento más el resultado obtenido, sin que la distancia recorrida pueda exceder del doble de su valor de Movimiento. Si durante cualquier momento de su movimiento en el turno en que decide correr, se requiere que haga una prueba de Percepción, el personaje tendrá -2 de penalización a la misma (por ejemplo, para detectar trampas). No puede entrar en la ZI de ningún enemigo corriendo.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_110",
+    "Header": "Salto Destacado",
+    "AnswerType": "Bool",
+    "RulebookText": "Modificadores a la prueba de Agilidad:\n-1: si salta sobre un obstáculo de más de una casilla de anchura.\n-1: si realiza el salto encontrándose adyacente a algún enemigo.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 1,
+        "RulebookText": "El personaje terminará el salto en una casilla libre adyacente al foso o precipicio. Si no hay casillas libres debido a estar ocupadas por aliados o enemigos, el personaje podrá terminar su salto en una casilla ocupada, empujando hacia atrás a quien ocupase la casilla y finalizando su movimiento.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 0,
+        "RulebookText": "Si no puede ser ayudado, el personaje finalizará su activación y deberás consultar el apartado de Caídas en la página 28.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_115",
+    "Header": "Salto Destacado: Ayuda de un Aliado",
+    "AnswerType": "Bool",
+    "RulebookText": "Si hay algún aliado (héroe o mercenario) adyacente al foso en el lado al que pretendía trepar el héroe que falló la prueba de Agilidad, y dicho aliado posee una Cuerda, prueba de Fuerza (incluso si ya se activó durante el turno). Modificadores a la prueba de Fuerza:\n-1: si a quien pretende ayudar tiene tamaño Grande.\n-1: si tiene a algún enemigo adyacente.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 1,
+        "RulebookText": "El salto destacado del compañero será exitoso.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 0,
+        "RulebookText": "El personaje que intentó el salto finalizará su activación y deberás consultar el apartado de Caídas en la página 28.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_120",
+    "Header": "Trepar Fosos",
+    "AnswerType": "Bool",
+    "RulebookText": "Prueba de Agilidad. Modificadores a la prueba de Agilidad:\n-1: si tiene a algún enemigo adyacente al foso.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 1,
+        "RulebookText": "Subirá y terminará su activación en una casilla libre adyacente al foso. Si no hay casillas libres debido a estar ocupadas por aliados o enemigos, el personaje podrá ascender a una casilla ocupada, empujando hacia atrás a quien ocupase la casilla y finalizando su movimiento.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 0,
+        "RulebookText": "Si no puede ser ayudado, el personaje finalizará su activación y continuará en el fondo del foso.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_125",
+    "Header": "Trepar Fosos: Ayuda de un Aliado",
+    "AnswerType": "Bool",
+    "RulebookText": "Si hay algún aliado (héroe o mercenario) adyacente al foso en el lado al que pretendía trepar el héroe que falló la prueba de Agilidad, y dicho aliado posee una Cuerda, este podrá realizar una prueba de Fuerza inmediatamente para ayudarle (incluso si ya se activó durante el turno). Modificadores: -1: si a quien pretende ayudar tiene tamaño Grande. -1: si quien posee la cuerda tiene a algún enemigo adyacente.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 1,
+        "RulebookText": "Subirá y terminará su activación en una casilla libre adyacente al foso. Si no hay casillas libres debido a estar ocupadas por aliados o enemigos, el personaje podrá ascender a una casilla ocupada, empujando hacia atrás a quien ocupase la casilla y finalizando su movimiento.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 0,
+        "RulebookText": "Si no puede ser ayudado, el personaje finalizará su activación y continuará en el fondo del foso. Un personaje situado en un foso no podrá ser atacado cuerpo a cuerpo por sus enemigos, ni tampoco podrá atacarles de esta forma. Solo podrá disparar y lanzar hechizos a enemigos adyacentes al foso, considerándolos tras cobertura pesada. Los enemigos adyacentes podrán dispararle y lanzar hechizos contra él sin obstáculos o restricciones.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_130",
+    "Header": "Buscar Puertas Secretas",
+    "AnswerType": "Bool",
+    "RulebookText": "Esta acción no podrá combinarse con un movimiento en el mismo turno. Un héroe podrá declarar que busca puertas secretas en la sección en que se encuentre. No necesitará estar adyacente a ninguna pared o elemento. Deberá superar una prueba de Percepción.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 1,
+        "RulebookText": "Si hay una puerta secreta oculta en dicha sección (indicada en la Hoja de Aventura), se colocará la misma. Esta puerta secreta tendrá la misma consideración que una puerta normal, pudiendo abrirse de la forma habitual (y pudiendo aplicarse obstáculos a la misma por parte del Jugador Oscuro como con cualquier otra).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 0,
+        "RulebookText": "Fracaso: no encontrará nada. Si hubo Pifia, El JOA gana 1 Punto de Reserva.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_5",
+    "Header": "Preparación del Líder",
+    "AnswerType": "Text",
+    "RulebookText": "El Líder se colocará en la casilla indicada en la Hoja de Aventura. De no tener ubicación definida en el mapa, se colocará en una fila por detrás del resto de criaturas de su bando. En esta fila, se ubicará en el extremo que esté más alejado del héroe que visualizó la sección (o donde tenga más ventaja o protección respecto a este).",
+    "Options": [
+      {
+        "OptionLabel": "Siempre adelante!",
+        "Value": 1,
+        "RulebookText": "Continuar con el siguiente paso.",
+        "NextCodeNumber": "COMBAT_6"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_6",
+    "Header": "Mejora del Líder",
+    "AnswerType": "Text",
+    "RulebookText": "Cuando los héroes visualicen la sala Principal, una vez colocadas todas las criaturas, reduce el contador de Puntos de Reserva a 10. Los puntos no gastados se invertirán de la siguiente manera: Por cada 2 Puntos de Reserva no gastados, el Líder recibirá 1 Punto de Vitalidad extra. Si el Líder tiene la habilidad 'Invulnerable' o un valor de Armadura 6, recibirá solo 1 punto de Vitalidad extra por cada 3 puntos de Reserva no gastados. El Líder recibe 1 acción extra al inicio de su activación por cada héroe por encima de 2 que haya en el grupo (como máximo recibirá 2 acciones extra cada turno). Por ejemplo, si el grupo está formado por 4 héroes, el Líder del escenario recibirá 2 acciones extra por turno. Si una criatura posee la habilidad 'Dos ataques' y recibe 1 acción extra, significará que podrá realizar 3 ataques durante su activación. *En aventuras donde no haya Contador de Puntos de Reserva, el Líder recibirá 1 punto de Vitalidad por cada 10 PV que tenga el grupo de héroes en el momento de visualizarlo. Si el Líder tiene la habilidad 'Invulnerable' o un valor de Armadura 6, recibirá solo 1 punto de Vitalidad extra por cada 20 PV del grupo de héroes.",
+    "Options": [
+      {
+        "OptionLabel": "Siempre adelante!",
+        "Value": 1,
+        "RulebookText": "Continuar con el siguiente paso.",
+        "NextCodeNumber": "COMBAT_7"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_7",
+    "Header": "HABILIDADES EXTRA",
+    "AnswerType": "Text",
+    "RulebookText": "En cuanto un Líder es colocado, se debe lanzar 1D6 por cada héroe existente en la partida para determinar las habilidades extra que posee. El icono del perfil de la criatura indica las habilidades extra que puede adquirir al coste indicado, aumentando su P.V. Con cada resultado de 1, ganará 1 de 1PV. Con cada resultado de 2, ganará 1 de 2PV. Así sucesivamente. Con cada resultado de 6, ganará 1 de 6PV o superior. Tales habilidades* deberán pagarse con Puntos de Reserva. Se pagarán primero las de mayor PV y en el orden de izquierda a derecha, según vengan recogidas en el perfil de la criatura. Se deben ignorar las habilidades que no sean aplicables para ese combate (ejemplo: habilidad 'Tiro rápido' para un Líder que no posea armas a distancia). *Si la criatura ya posee alguna de las habilidades extra indicadas, ignórala en cuanto a la presente tirada.",
+    "Options": [
+      {
+        "OptionLabel": "Siempre adelante!",
+        "Value": 1,
+        "RulebookText": "Continuar con el siguiente paso.",
+        "NextCodeNumber": "COMBAT_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_20",
+    "Header": "Tirada de Iniciativa",
+    "AnswerType": "Bool",
+    "RulebookText": "2D6 + Percepción del héroe más cercano a los enemigos. Pifia? CONTRA 2D6 + Percepción del enemigo más cercano ¿Empate? Gana quien posee mayor Inteligencia.",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Aplicar regla de sorprendidos, salvo que un bando ya se encuentre en combate.",
+        "NextCodeNumber": "COMBAT_22"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Tirada de Sorprendidos!",
+        "NextCodeNumber": "COMBAT_25"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_22",
+    "Header": "Sorprendidos! - Pifia",
+    "AnswerType": "Text",
+    "RulebookText": "Si un bando obtiene un resultado de pifia (doble 1) en la tirada de Iniciativa, todos sus personajes situados en el radio de 6 casillas mencionado, sufrirán la regla '¡sorprendidos!' automáticamente.",
+    "Options": [
+      {
+        "OptionLabel": "Siempre adelante!",
+        "Value": 1,
+        "RulebookText": "Continuar con el siguiente paso.",
+        "NextCodeNumber": "COMBAT_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_25",
+    "Header": "Sorprendidos!",
+    "AnswerType": "Bool",
+    "RulebookText": "En cuanto se realice una tirada de Iniciativa al encontrarse ambos bandos tras descubrirse una nueva sección, los enemigos situados en un radio de 6 casillas del personaje o criatura que gana la prueba de Iniciativa se verán afectados por la regla '¡Sorprendidos!' si los resultados individuales de los dos dados lanzados por el bando ganador igualan o superan su Inteligencia (excepto si se obtiene algún resultado de 1 en los dados).",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 0,
+        "RulebookText": "Los personajes del bando perdedor afectados por esta regla, podrán ser movidos por el ganador (con el encaramiento que desee este) a una casilla adyacente libre de obstáculos o personajes. Los personajes o criaturas nunca sufrirán esta regla si ha sido necesario entrar en la sección rompiendo la puerta de acceso.",
+        "NextCodeNumber": "COMBAT_30"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "RulebookText": "Continuar con el siguiente paso.",
+        "NextCodeNumber": "COMBAT_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_30",
+    "Header": "Tirada de Iniciativa - Resultado",
+    "AnswerType": "Text",
+    "RulebookText": "Turno de los héroes, Héroes descubren nueva sección en la que aparecen enemigos (se activa carta 'Criatura errante', 'Criatura especial' o 'Enemigos').\n* Aparecen enemigos durante un combate al visualizarse una nueva sección.",
+    "Options": [
+      {
+        "OptionLabel": "0",
+        "Value": 0,
+        "RulebookText": "Héroes finalizan su turno. Comienza turno de Jugador Oscuro.",
+        "NextCodeNumber": "JOAON_10"
+      },
+      {
+        "OptionLabel": "1",
+        "Value": 1,
+        "RulebookText": "Turno de los héroes, Héroes descubren nueva sección en la que aparecen enemigos (se activa carta 'Criatura errante', 'Criatura especial' o 'Enemigos').\n* Aparecen enemigos durante un combate al visualizarse una nueva sección. Ganan los Héroes.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "2",
+        "Value": 2,
+        "RulebookText": "Turno de los héroes, Se activa carta '¡Emboscada!'. Ganan los Héroes.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "3",
+        "Value": 3,
+        "RulebookText": "Turno de los héroes, Se activa carta '¡Emboscada!'. Ganan el JOA.",
+        "NextCodeNumber": "JOAON_10"
+      },
+      {
+        "OptionLabel": "4",
+        "Value": 4,
+        "RulebookText": "Turno del Jugador Oscuro. Aparecen nuevos enemigos durante un combate al activarse la carta 'Refuerzos' o abrir una puerta una criatura con la habilidad 'Centinela'. Gana el Jugador Oscuro.",
+        "NextCodeNumber": "JOAON_70"
+      },
+      {
+        "OptionLabel": "5",
+        "Value": 5,
+        "RulebookText": "Turno del Jugador Oscuro. Aparecen nuevos enemigos durante un combate al activarse la carta 'Refuerzos' o abrir una puerta una criatura con la habilidad 'Centinela'. Ganan los Héroes.",
+        "NextCodeNumber": "JOAON_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CLOSECOMBAT_10",
+    "Header": "COMBATE: MODIFICADORES",
+    "AnswerType": "Boollist",
+    "RulebookText": "Máximo +3, +5 con Armas y/o Objetos Mágicos o por efecto de hechizos.",
+    "Options": [
+      {
+        "OptionLabel": "Modificador de Arma",
+        "Value": 1,
+        "RulebookText": "Modificador general aplicado a la tirada de Cuerpo a Cuerpo."
+      },
+      {
+        "OptionLabel": "Cobertura",
+        "Value": 2,
+        "RulebookText": "Si en la trayectoria de un ataque cuerpo a cuerpo hay un obstáculo, el atacante aplicará un penalizador de -1 a su tirada, independientemente de que sea una cobertura ligera o pesada."
+      },
+      {
+        "OptionLabel": "Objetivo o Atacante Volando",
+        "Value": 3,
+        "RulebookText": "Si el objetivo está volando, el atacante tendrá una penalización de -1 a su tirada de Cuerpo a Cuerpo. Un personaje o criatura que vuela deberá dejar de volar si desea atacar cuerpo a cuerpo a un enemigo que está en el suelo."
+      },
+      {
+        "OptionLabel": "Combatir desde Posición Elevada",
+        "Value": 4,
+        "RulebookText": "Si un combatiente se encuentra en una posición elevada (no volando) respecto a un rival de su mismo tamaño, obtendrá +1 a su tirada enfrentada de Cuerpo a Cuerpo contra ese rival."
+      },
+      {
+        "OptionLabel": "Ataques por la Espalda",
+        "Value": 5,
+        "RulebookText": "Si un personaje ataca desde la espalda* del objetivo (o este se encuentra derribado), obtendrá +1 a su tirada de Cuerpo a Cuerpo y el defensor no podrá emplear su escudo. *Todo su movimiento previo al ataque deberá efectuarse por la espalda del enemigo a quien pretende atacar, de manera que nunca entre en su LdV."
+      },
+      {
+        "OptionLabel": "Terreno Difícil",
+        "Value": 6,
+        "RulebookText": "Un personaje situado en terreno difícil tiene una penalización de -1 a su tirada de Cuerpo a Cuerpo."
+      },
+      {
+        "OptionLabel": "Objetivo Inmóvil",
+        "Value": 7,
+        "RulebookText": "Los ataques contra objetivos inmóviles (puertas, mobiliario o personajes afectados por Inmovilidad) no requerirán tirada enfrentada e impactarán automáticamente. Si el objetivo es un personaje, este verá reducida su Armadura en -1."
+      },
+      {
+        "OptionLabel": "Desenvainar",
+        "Value": 8,
+        "RulebookText": "Si un personaje decide realizar una Acción rápida de cambio de arma encontrándose en la Zona de Influencia de un rival, tendrá un penalizador de -1 a la tirada enfrentada de Cuerpo a Cuerpo contra dicho rival."
+      },
+      {
+        "OptionLabel": "Armas Largas",
+        "Value": 9,
+        "RulebookText": "Como se describe en el capítulo de \"Equipo\", con este tipo de armas el usuario puede atacar a 2 casillas de distancia (recuerda las reglas de LdV de la página 31). Sin embargo, tiene una penalización de -1 al atacar a enemigos adyacentes. También obtiene la capacidad para empujar tras ganar una tirada de Cuerpo a Cuerpo como defensor, igual que si emplease un escudo."
+      },
+      {
+        "OptionLabel": "Desarmado",
+        "Value": 10,
+        "RulebookText": "Un personaje desarmado tendrá -1 a su Cuerpo a Cuerpo, lanzará tantos dados de daño como sea su Fuerza y aumentará la Armadura del objetivo al que ataque en +1. Un personaje armado con un arma de proyectiles se considerará desarmado si pretende atacar o defender cuerpo a cuerpo con ella, excepto que el arma indique lo contrario."
+      },
+      {
+        "OptionLabel": "Habilidades del Personaje",
+        "Value": 11,
+        "RulebookText": "Añade cualquier modificador proveniente de las Habilidades del Personaje."
+      },
+      {
+        "OptionLabel": "Habilidades Inferidas en el Turno",
+        "Value": 12,
+        "RulebookText": "Añade cualquier modificador proveniente de HECHIZOS, ESTADOS, etc."
+      },
+      {
+        "OptionLabel": "Habilidades del Contrario",
+        "Value": 13,
+        "RulebookText": "Ten en cuenta las habilidades del contrario que puedan afectar a la tirada o al resultado."
+      },
+      {
+        "OptionLabel": "Habilidades del Contrario Inferidas en el Turno",
+        "Value": 14,
+        "RulebookText": "Añade cualquier modificador proveniente de HECHIZOS, ESTADOS, etc. que afecten al contrario."
+      },
+      {
+        "OptionLabel": "El Objetivo tiene Escudo y declara 'ESCUDARSE'",
+        "Value": 15,
+        "RulebookText": "Un personaje podrá, en el momento en que un enemigo declare realizar un ataque contra él, declarar que se escuda. Ese turno podrá repetir todas las tiradas para intentar bloquear impactos con su escudo, pero durante su siguiente activación renunciará a efectuar cualquier ataque y no podrá correr."
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CLOSECOMBAT_20",
+    "Header": "GANAR EL COMBATE E IMPACTAR",
+    "AnswerType": "List",
+    "RulebookText": "Tirada enfrentada de Cuerpo a Cuerpo*: 2D6 + Cuerpo a Cuerpo del atacante CONTRA 2D6 + Cuerpo a Cuerpo del defensor",
+    "Options": [
+      {
+        "OptionLabel": "Éxito (Críticos)",
+        "Value": 1,
+        "RulebookText": "Impacta al enemigo. Los Críticos, salvo regla al contrario, se añadirán a la Tirada para Herir."
+      },
+      {
+        "OptionLabel": "Éxito",
+        "Value": 2,
+        "RulebookText": "Impacta al enemigo."
+      },
+      {
+        "OptionLabel": "Empate, gana el Atacante",
+        "Value": 3,
+        "RulebookText": "Los empates en las tiradas enfrentadas de Cuerpo a Cuerpo los ganará el contendiente que tenga un valor de Agilidad más alto. Así se premia a los personajes más rápidos, quienes tendrán más facilidad para evitar golpes o buscar los resquicios del rival. En caso de empate en Agilidad, vencerá quien emplee un escudo. Si sigue habiendo empate, vencerá el defensor."
+      },
+      {
+        "OptionLabel": "Empate, gana el Defensor",
+        "Value": 4,
+        "RulebookText": "Los empates en las tiradas enfrentadas de Cuerpo a Cuerpo los ganará el contendiente que tenga un valor de Agilidad más alto. Así se premia a los personajes más rápidos, quienes tendrán más facilidad para evitar golpes o buscar los resquicios del rival. En caso de empate en Agilidad, vencerá quien emplee un escudo. Si sigue habiendo empate, vencerá el defensor.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Empate, gana el Defensor y tiene Escudo",
+        "Value": 5,
+        "RulebookText": "Si un defensor que embraza un escudo gana la tirada enfrentada de Cuerpo a Cuerpo, podrá empujar a su contrincante adyacente (sin ocupar su casilla), siempre que este defensor sea de igual o superior tamaño que el rival. De no haber casillas libres, el rival permanecerá en el lugar.",
+        "NextCodeNumber": "COMBAT_60"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 6,
+        "RulebookText": ""
+      },
+      {
+        "OptionLabel": "Fracaso, el enemigo tiene Escudo",
+        "Value": 7,
+        "RulebookText": "Si un defensor que embraza un escudo gana la tirada enfrentada de Cuerpo a Cuerpo, podrá empujar a su contrincante adyacente (sin ocupar su casilla), siempre que este defensor sea de igual o superior tamaño que el rival. De no haber casillas libres, el rival permanecerá en el lugar.",
+        "NextCodeNumber": "COMBAT_60"
+      },
+      {
+        "OptionLabel": "Fracaso, el enemigo obtiene doble Crítico y tiene Escudo",
+        "Value": 8,
+        "RulebookText": "Comprobar si el personaje es ATURDIDO.",
+        "NextCodeNumber": "GAMEON_35"
+      },
+      {
+        "OptionLabel": "Fracaso (Pifias)",
+        "Value": 9,
+        "RulebookText": "El arma empleada caerá inmediatamente al suelo, en la casilla ocupada por el rival, y deberá efectuarse una tirada de rotura para determinar si se rompe o no. Si un defensor que embraza un escudo gana la tirada enfrentada de Cuerpo a Cuerpo, podrá empujar a su contrincante adyacente (sin ocupar su casilla), siempre que este defensor sea de igual o superior tamaño que el rival. De no haber casillas libres, el rival permanecerá en el lugar.",
+        "NextCodeNumber": "CLOSECOMBAT_100"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CLOSECOMBAT_30",
+    "Header": "EMPUJAR",
+    "AnswerType": "Text",
+    "RulebookText": "Si un atacante gana la tirada enfrentada de Cuerpo a Cuerpo a un rival de su mismo tamaño o inferior, podrá empujarle a una casilla adyacente hacia atrás (incluido en diagonal) tras resolver la tirada de daño. El empujado mantendrá el encaramiento. De no haber casillas libres debido a la presencia de otros personajes, el defensor permanecerá en el lugar. Si no puede ser empujado debido a un obstáculo impasable o elemento de mobiliario (muro, biblioteca, columna), recibirá 1 dado extra de daño procedente del mismo ataque.",
+    "Options": [
+      {
+        "OptionText": "EMPUJAR!",
+        "Value": 1,
+        "NextCodeNumber": "COMBAT_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CLOSECOMBAT_100",
+    "Header": "Pifia con Arma",
+    "AnswerType": "List",
+    "RulebookText": "Las armas pueden romperse cuando el atacante o el defensor comete una pifia con ella. Cuando esto suceda, quien obtuvo la pifia lanzará 1D6 y su arma se romperá, quedando inutilizada, si el resultado es igual o inferior al indicado según el tipo de arma. Las armas de asta o que tengan mangos de madera como las lanzas o hachas suelen tener más probabilidad de rotura que las espadas y armas similares.",
+    "Options": [
+      {
+        "OptionLabel": "El arma del Héroe se rompe",
+        "Value": 0,
+        "RulebookText": "El arma queda inutilizada y el personaje finaliza su turno de Activación DESARMADO.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "El Arma del Héroe NO se rompe",
+        "Value": 1,
+        "RulebookText": "El arma queda en el suelo y el personaje finaliza su turno de Activación DESARMADO.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "El Arma del Personaje del JOA se rompe",
+        "Value": 2,
+        "RulebookText": "El arma queda inutilizada y el personaje finaliza su turno de Activación DESARMADO.",
+        "NextCodeNumber": "JOAON_70"
+      },
+      {
+        "OptionLabel": "El Arma del Personaje del JOA NO se rompe",
+        "Value": 3,
+        "RulebookText": "El arma queda en el suelo y el personaje finaliza su turno de Activación DESARMADO.",
+        "NextCodeNumber": "JOAON_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_40",
+    "Header": "El enemigo ha sido impactado, pero TIENE escudo y NO es atacado por la espalda",
+    "AnswerType": "List",
+    "RulebookText": "Un defensor que embrace un escudo podrá bloquear un impacto de cualquier ataque recibido (de cuerpo a cuerpo o disparo). Para ello deberá lanzar 1D6 y obtener un resultado igual o superior a su capacidad de bloqueo. Un resultado de crítico del atacante reducirá la tirada de bloqueo de un escudo. Así, un escudo que bloquea los impactos normales con resultado de 5 o más, solo conseguirá bloquear un impacto con crítico con un resultado de 6. Si el impacto se ha conseguido obteniendo un doble crítico, este será imparable (independientemente del tipo de escudo).",
+    "Options": [
+      {
+        "OptionLabel": "Éxito (Críticos)",
+        "Value": 0,
+        "RulebookText": "El impacto no le causará daño. Sin embargo, el bloqueo de un escudo no anula el efecto de derribo producido por dicho impacto. La mayoría de escudos causan aturdimiento al rival si el defensor obtiene un doble crítico al defenderse en CaC.",
+        "NextCodeNumber": "COMBAT_50"
+      },
+      {
+        "OptionLabel": "Éxito",
+        "Value": 1,
+        "RulebookText": "El impacto no le causará daño. Sin embargo, el bloqueo de un escudo no anula el efecto de derribo producido por dicho impacto.",
+        "NextCodeNumber": "COMBAT_50"
+      },
+      {
+        "OptionLabel": "Éxito, pero el ataque ROMPE ESCUDOS",
+        "Value": 2,
+        "RulebookText": "El portador del mismo deberá realizar una tirada de rotura para determinar si su escudo se rompe o aguanta el impacto.",
+        "NextCodeNumber": "COMBAT_200"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 3,
+        "RulebookText": "El defensor recibirá el Daño del ataque.",
+        "NextCodeNumber": "COMBAT_100"
+      },
+      {
+        "OptionLabel": "Fracaso (Pifias)",
+        "Value": 4,
+        "RulebookText": "Un defensor que use un escudo y obtenga una pifia al defender, perderá el escudo del mismo modo que si fuera un arma (por tanto, no pierde el arma sino el escudo), realizando la oportuna tirada de rotura.",
+        "NextCodeNumber": "COMBAT_200"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_50",
+    "Header": "Resolver Efecto (CaC)",
+    "AnswerType": "List",
+    "RulebookText": "Si un atacante consigue un impacto sobre su objetivo (con un ataque cuerpo a cuerpo, disparo o proyectil mágico), además de los dados de daño y el posible empujón podrá causar efectos extra a su rival, dependiendo del tamaño de los contrincantes y del número de críticos obtenidos.",
+    "Options": [
+      {
+        "OptionLabel": "0 Crits, el atacante es MUCHO MAYOR, el enemigo NO es Líder",
+        "Value": 0,
+        "RulebookText": "Enemigo DERRIBADO.",
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "1 ó 2 Crits, el atacante es MUCHO MAYOR, el enemigo SI es Líder",
+        "Value": 1,
+        "RulebookText": "Enemigo DERRIBADO.",
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "1 Crits, el atacante es MAYOR, el enemigo NO es Líder",
+        "Value": 2,
+        "RulebookText": "Enemigo DERRIBADO.",
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "2 Crits, el atacante es MAYOR",
+        "Value": 3,
+        "RulebookText": "Enemigo DERRIBADO.",
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "2 Crits, el atacante es IGUAL que el enemigo",
+        "Value": 4,
+        "RulebookText": "Enemigo DERRIBADO.",
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "2 Crits, el atacante es MENOR O MUCHO MENOR que el enemigo",
+        "Value": 5,
+        "RulebookText": "Enemigo ATURDIDO.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Resto de casos",
+        "Value": 6,
+        "RulebookText": "Sin efecto.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_60",
+    "Header": "Defensor Empuja! (CaC)",
+    "AnswerType": "Text",
+    "RulebookText": "Si un defensor que embraza un escudo gana la tirada enfrentada de Cuerpo a Cuerpo, podrá empujar a su contrincante adyacente (sin ocupar su casilla), siempre que este defensor sea de igual o superior tamaño que el rival. De no haber casillas libres, el rival permanecerá en el lugar (observa 'Empujar' en la página 36).",
+    "Options": [
+      {
+        "OptionText": "Defensor Empuja!",
+        "Value": 1,
+        "NextCodeNumber": "COMBAT_310"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_100",
+    "Header": "Modificadores al Daño",
+    "AnswerType": "Text",
+    "RulebookText": "Fuerza + Arma + Críticos. (Sólo Hechizos): Cobertura Ligera: -1 Dado; si Cobertura Pesada: -2 Dados. Mago Aprendiz: -1 Dado. Escudo: Un escudo no bloquea completamente los proyectiles mágicos ni ataques de Aliento o Aura, pero dará los mismos beneficios que una cobertura ligera (el portador recibe 1 dado menos de daño).",
+    "Options": [
+      {
+        "OptionText": "Pupa!",
+        "Value": 1,
+        "NextCodeNumber": "COMBAT_110"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_110",
+    "Header": "Daño",
+    "AnswerType": "Bool",
+    "RulebookText": "Cada dado de daño lanzado causará 1 herida al objetivo si iguala o supera el valor de Armadura de este. Los resultados de 1 en los dados de daño lanzados nunca causarán herida, independientemente de los modificadores aplicados. Daño mínimo: un personaje siempre lanzará 1 dado mínimo de daño. Si tuviera que tirar 0 dados, seguirá lanzando 1 dado, pero el rival tendrá aumentada su Armadura en +1. Daño o ataque flamígero/de fuego: son ataques producidos por armas, obstáculos o hechizos que incluyan literalmente el término 'fuego' o 'flamígero' en su nombre o en los efectos que causan. Algunas criaturas son vulnerables a este elemento. Por cada crítico (resultado de 6 en uno de los dados) conseguido en la tirada para impactar o lanzar un hechizo, aumentará en 1 la cantidad de dados de daño lanzados para herir. Se causará 1 punto de daño o herida cada vez que el resultado del dado iguale o supere el atributo. Modificadores adicionales: cobertura Ligera: -1 Dado; si Cobertura Pesada: -2 Dados.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 0,
+        "RulebookText": "Se causará 1 punto de daño.",
+        "NextCodeNumber": "COMBAT_300"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 1,
+        "RulebookText": "No causa daño.",
+        "NextCodeNumber": "COMBAT_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_200",
+    "Header": "Tirada de rotura de Escudo",
+    "AnswerType": "List",
+    "RulebookText": "Cuando un defensor use su escudo como cobertura ante un proyectil mágico (siendo él el objetivo directo), o bien consiga bloquear un impacto de un arma con capacidad para romper escudos, el portador del mismo deberá realizar una tirada de rotura para determinar si su escudo se rompe o aguanta el impacto. En estos casos, lanzará 1D6.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 0,
+        "RulebookText": "El escudo aguanta!",
+        "NextCodeNumber": "COMBAT_50"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 1,
+        "RulebookText": "El escudo se rompe.",
+        "NextCodeNumber": "COMBAT_50"
+      },
+      {
+        "OptionLabel": "Fracaso, y además el ataque rompía escudos",
+        "Value": 2,
+        "RulebookText": "El escudo se rompe, y el portador recibe +1 dado de Daño.",
+        "NextCodeNumber": "COMBAT_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_300",
+    "Header": "Eliminar enemigo",
+    "AnswerType": "Bool",
+    "RulebookText": "Cuando un personaje tenga al menos tantos puntos de heridas acumulados como su Vitalidad (es decir, cuando su Vitalidad quede reducida a 0 o por debajo de 0), quedará automáticamente Fuera de combate.",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 0,
+        "NextCodeNumber": "COMBAT_305"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "NextCodeNumber": "COMBAT_305"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "COMBAT_305",
+    "Header": "Eliminar Líder",
+    "AnswerType": "Bool",
+    "RulebookText": "Si un Líder queda Fuera de combate, todos los personajes de nivel Tropa situados en un radio de 6 casillas de él, deberán superar automáticamente una prueba de Valentía o serán retirados del juego al escapar despavoridos o caer rendidos",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 0,
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "NextCodeNumber": "COMBAT_310"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_310",
+    "Header": "Ganar la posición",
+    "AnswerType": "Text",
+    "RulebookText": "Cuando un atacante logre eliminar a un enemigo, derribarlo o empujarlo a otra casilla, podrá ocupar la casilla abandonada por el defensor (excepto si el atacante usa arma larga), sin considerarse un movimiento, y encarándose en la dirección que desee.",
+    "Options": [
+      {
+        "OptionText": "Ganar la posición!",
+        "Value": 1,
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "RANGEDCOMBAT_10",
+    "Header": "Hay LdV al objetivo?",
+    "AnswerType": "Bool",
+    "RulebookText": "Recuerda que los personajes eliminan LdV, pero no son cobertura.",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 0,
+        "NextCodeNumber": "RANGEDCOMBAT_15"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "RANGEDCOMBAT_15",
+    "Header": "COMBATE: MODIFICADORES",
+    "AnswerType": "Boollist",
+    "RulebookText": "Máximo +3, +5 con Armas y/o Objetos Mágicos o por efecto de hechizos",
+    "Options": [
+      {
+        "OptionLabel": "Cobertura",
+        "Value": "0-1",
+        "RulebookText": "Las coberturas existentes en la LdV del atacante (consulta la página 31) darán penalizadores al disparo. La cobertura ligera penaliza la prueba de Disparo con -1. La cobertura pesada penaliza con -2.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Distancia",
+        "Value": "0-1",
+        "RulebookText": "Los disparos y lanzamientos que se produzcan contra objetivos dentro de la distancia a bocajarro (hasta 3 casillas desde el tirador/lanzador), no tendrán penalización. A partir de ahí sí que se aplicarán. Cuando la distancia con el objetivo sea corta, entre 4 y 6 casillas, el penalizador al disparo/lanzamiento será de -1. Cuando la distancia sea media (desde la casilla 7 hasta la 9) el penalizador será de -2. Cuando la distancia sea larga (desde la casilla 10 hasta el alcance máximo del arma), la penalización a la tirada será de -3. La mayoría de los disparos y lanzamientos en zonas interiores se realizan a distancia corta. Cuando el objetivo se encuentre a más de la mitad del alcance máximo del arma (se exceptúan las armas arrojadizas), los resultados de crítico no generarán dados de daño extra.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Objetivo Pequeño",
+        "Value": "0-1",
+        "RulebookText": "Si el objetivo tiene tamaño Pequeño, quien dispara tendrá -1 a la prueba de Disparo.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Objetivo Grande o Enorme",
+        "Value": "0-1",
+        "RulebookText": "Si el objetivo es de tamaño Grande o Enorme, quien dispara tendrá +1 a la prueba de Disparo.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Objetivo Inmóvil",
+        "Value": "0-1",
+        "RulebookText": "Si el objetivo se encuentra en el estado Inmóvil ese turno, quien dispara tendrá +2 a Disparo.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Mover y Disparar",
+        "Value": "0-1",
+        "RulebookText": "Un personaje que efectúe un ataque a distancia con un arma de proyectiles tras haber movido, tendrá una penalización de -1 a la prueba de Disparo si mueve hasta la mitad de su Movimiento. Si mueve más, tendrá una penalización de -2. No se aplicará esta penalización para quien realice el ataque con un arma arrojadiza y solo se haya movido 1 o 2 casillas.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Objetivo Volando",
+        "Value": "0-1",
+        "RulebookText": "Si el objetivo es un personaje o criatura que permanece en vuelo ese turno, quien dispara tendrá -1 a su prueba de Disparo.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Objetivo Más Ágil",
+        "Value": "0-1",
+        "RulebookText": "Quien realiza el disparo o lanzamiento tendrá -1 a su prueba de Disparo si el objetivo tiene más Agilidad que él.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Ataques por la Espalda",
+        "Value": "0-1",
+        "RulebookText": "Si un personaje ataca desde la espalda* del objetivo (o este se encuentra derribado), obtendrá +1 a su prueba de Disparo y el defensor no podrá aplicar la parada de su escudo. *Todo su movimiento previo al ataque deberá efectuarse por la espalda del enemigo a quien pretende atacar, de manera que nunca entre en su LdV.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Terreno Difícil",
+        "Value": "0-1",
+        "RulebookText": "Si el lanzador está situado sobre terreno difícil, tendrá una penalización de -1 a la prueba de Disparo.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Disparo Precipitado",
+        "Value": "0-1",
+        "RulebookText": "Un personaje armado con Armas a Distancia podrá reaccionar con un disparo precipitado ante cualquier enemigo que se mueva con intención de atacarle cuerpo a cuerpo, trabarle o volar sobre su Zona de Influencia, siempre que este movimiento se inicie desde su LdV. Se aplicará una penalización adicional de -2 a Disparo. Será preciso que el enemigo haya comenzado su movimiento a partir de la tercera casilla de distancia. Se considera que este disparo se realiza cuando el enemigo se encuentra a 3 casillas de distancia del tirador. En este momento, si el tirador logra impactar y causar la pérdida de algún punto de Vitalidad al enemigo, este detendrá su avance. Si este enemigo es de tamaño Grande o Enorme, solo se detendrá si el impacto es con doble crítico (doble 6). No podrá realizarse este disparo si el arma se encuentra en posición de 'Recarga'. Un personaje no podrá realizar más de un disparo precipitado por turno.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Habilidades del Personaje",
+        "Value": "0-1",
+        "RulebookText": "Añade cualquier modificador proveniente de las Habilidades del Personaje.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Habilidades Inferidas en el Turno",
+        "Value": "0-1",
+        "RulebookText": "Añade cualquier modificador proveniente de HECHIZOS, ESTADOS, etc.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Habilidades del Contrario",
+        "Value": "0-1",
+        "RulebookText": "Ten en cuenta las habilidades del contrario que puedan afectar a la tirada o al resultado.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Habilidades del Contrario Inferidas en el Turno",
+        "Value": "0-1",
+        "RulebookText": "Añade cualquier modificador proveniente de HECHIZOS, ESTADOS, etc. que afecten al contrario.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Flechas Mágicas y Armas Arrojadizas",
+        "Value": "0-1",
+        "RulebookText": "Si son disparadas o arrojadas durante un turno de combate, no podrán volver a emplearse hasta que finalice dicho combate (salvo determinadas armas mágicas que regresan a manos del usuario).",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "El Objetivo tiene Escudo y declara 'ESCUDARSE'",
+        "Value": "0-1",
+        "RulebookText": "Un personaje podrá, en el momento en que un enemigo declare realizar un ataque contra él, declarar que se escuda. Ese turno podrá repetir todas las tiradas para intentar bloquear impactos con su escudo, pero durante su siguiente activación renunciará a efectuar cualquier ataque y no podrá correr.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "RANGEDCOMBAT_20",
+    "Header": "GANAR EL COMBATE E IMPACTAR",
+    "AnswerType": "List",
+    "RulebookText": "Para lograr impactar con un disparo o lanzamiento a distancia, será necesario superar una prueba de Disparo, aplicándose los modificadores oportunos. Es decir, un personaje conseguirá impactar a distancia cuando consiga un resultado de 10 o más, una vez añadido al resultado de 2D6 su característica de Disparo y los modificadores descritos en este capítulo.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito (Críticos)",
+        "Value": 0,
+        "RulebookText": "Impacta al enemigo. Los Críticos, salvo regla al contrario, se añadirán a la Tirada para Herir.",
+        "NextCodeNumber": "COMBAT_40"
+      },
+      {
+        "OptionLabel": "Éxito",
+        "Value": 1,
+        "RulebookText": "Impacta al enemigo.",
+        "NextCodeNumber": "COMBAT_40"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 2,
+        "RulebookText": "Fracaso.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Fracaso, aparece un solo resultado de 1 y el ataque iba dirigido a un objetivo adyacente a un aliado",
+        "Value": 3,
+        "RulebookText": "El disparo golpeará en el aliado (de haber varios adyacentes, será impactado uno de ellos al azar). En este caso, no podrán ser impactados los aliados adyacentes que tengan un tamaño menor que el objetivo.",
+        "NextCodeNumber": "RANGEDCOMBAT_30"
+      },
+      {
+        "OptionLabel": "Fracaso (Pifias)",
+        "Value": 4,
+        "RulebookText": "Un resultado de pifia al atacar a distancia podrá suponer la rotura del arma (consulta la sección 'Tirada de rotura' de la página 41). Además, impactará automáticamente en el aliado más cercano de cuantos estuvieran adyacentes a las casillas por las que pasaba la trayectoria del disparo (en escenarios sin cuadrículas, detallados más adelante en este reglamento, se entenderá que la línea de disparo tendrá una anchura de 1 pulgada y podrá afectar a todos los personajes cuyas peanas toquen dicha línea). En caso de duda entre varios o haber distintos personajes situados a la misma distancia de la trayectoria, se decidirá de forma aleatoria entre estos.",
+        "NextCodeNumber": "RANGEDCOMBAT_100"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "RANGEDCOMBAT_100",
+    "Header": "Pifia con Arma",
+    "AnswerType": "List",
+    "RulebookText": "Las armas pueden romperse cuando el atacante o el defensor comete una pifia con ella. Cuando esto suceda, quien obtuvo la pifia lanzará 1D6 y su arma se romperá, quedando inutilizada, si el resultado es igual o inferior al indicado según el tipo de arma. Las armas de asta o que tengan mangos de madera como las lanzas o hachas suelen tener más probabilidad de rotura que las espadas y armas similares.",
+    "Options": [
+      {
+        "OptionLabel": "El arma del Héroe se rompe",
+        "Value": 0,
+        "RulebookText": "El arma queda inutilizada y el personaje finaliza su turno de Activación DESARMADO.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "El Arma del Héroe NO se rompe",
+        "Value": 1,
+        "RulebookText": "El arma queda en el suelo y el personaje finaliza su turno de Activación DESARMADO.",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_10",
+    "Header": "El hechicero tiene al menos una mano libre",
+    "AnswerType": "Bool",
+    "RulebookText": "Un hechicero puede emplear una Acción en lanzar un hechizo siempre que tenga, al menos, una mano libre.",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "No puede lanzar el hechizo.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "Puede lanzar el hechizo.",
+        "NextCodeNumber": "SPELL_13"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_13",
+    "Header": "Hechizos Permanentes en juego",
+    "AnswerType": "Text",
+    "RulebookText": "No pueden mantenerse dos hechizos de efecto permanente a la vez. Si un hechicero lanza un segundo hechizo de efecto permanente, el primero desaparecerá. Un hechicero puede decidir voluntariamente durante su activación que los efectos de un hechizo permanente que haya lanzado dejen de tener efecto.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Siempre adelante!",
+        "NextCodeNumber": "SPELL_15"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_15",
+    "Header": "Tipo de Hechizo y designar objetivo",
+    "AnswerType": "Text",
+    "RulebookText": "pRoyectil mágico: hechizos que se lanzan sobre rivales a cierta distancia. Traza una línea recta como con un disparo. Los personajes no seleccionados como objetivos, pero afectados por encontrarse dentro del radio de alcance, sufrirán 2 dados menos de daño que el objetivo, salvo que la descripción del hechizo indique lo contrario. Los personajes beneficiados por cobertura ligera, recibirán 1 dado menos de daño de lo que indique el hechizo. Los beneficiados por cobertura pesada, recibirán 2 dados menos de daño. Dominio: son los hechizos destinados a dominar la voluntad de criaturas y enemigos, aturdirlos, inmovilizarlos o perjudicar sus movimientos y habilidades. Los hechizos de Dominio solo afectarán a criaturas de tamaño Grande o Enorme o de nivel Campeón si se obtiene un resultado de crítico al lanzarlos (esto no afecta a la invocación de criaturas). Dañino: hechizos que no son proyectiles mágicos pero son empleados para causar algún tipo de daño sobre los enemigos y reducir su Vitalidad, ya sea mediante impactos, enfermedades, asfixias... pRotección: útiles para proteger a aliados o al propio hechicero de cualquier tipo de ataque, o para obstruir el avance enemigo. Los hechizos de Protección se ciñen a las casillas que afecten en el turno en que se realiza el hechizo y no se moverán durante la duración del mismo. Cualquier personaje que abandone ese área, perderá los efectos asociados, incluido el lanzador del conjuro. potenciación: empleados para dar bonificadores o potenciar y dotar de habilidades y características a aliados o al propio hechicero. Los hechizos de Potenciación afectan a los personajes dentro del área de efecto en el momento del lanzamiento del hechizo, después dichos personajes podrán moverse con libertad y tendrán los bonos asociados mientras dure el conjuro. cuRación: empleados para sanar y eliminar efectos.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Siempre adelante!",
+        "NextCodeNumber": "SPELL_17"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_17",
+    "Header": "NIVELES DE HECHICERÍA",
+    "AnswerType": "Text",
+    "RulebookText": "Mientras un héroe hechicero sea Aprendiz, solo podrá realizar 2 lanzamientos de cada hechizo que conozca (en lugar de los 3 habituales), sus hechizos ofensivos causarán 1 dado menos de daño de lo habitual (esto incluye incluso el daño que puedan causar los elementales que invoquen), y se reducirá en -1 la duración de sus hechizos de efecto permanente. Cuando un héroe hechicero sea Archimago, podrá realizar hasta 4 lanzamientos de cada hechizo que conozca.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Siempre adelante!",
+        "NextCodeNumber": "SPELL_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_20",
+    "Header": "El hechizo ha sido lanzado demasiadas veces",
+    "AnswerType": "Bool",
+    "RulebookText": "Un hechicero solo podrá lanzar hasta 3 veces* un mismo hechizo durante una aventura, salvo que tome una Poción de Maná. Dichas pociones, además de recuperar puntos de Maná, permiten al hechicero retirar un marcador de Maná situado sobre la carta de un hechizo concreto que realizó. *Mientras un héroe hechicero sea Aprendiz (<PV15), solo podrá realizar 2 lanzamientos de cada hechizo que conozca (en lugar de los 3 habituales), sus hechizos ofensivos causarán 1 dado menos de daño de lo habitual (esto incluye incluso el daño que puedan causar los elementales que invoquen), y se reducirá en -1 la duración de sus hechizos de efecto permanente. Cuando un héroe hechicero sea Archimago (PV>=40), podrá realizar hasta 4 lanzamientos de cada hechizo que conozca.",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Puede lanzar el hechizo.",
+        "NextCodeNumber": "SPELL_22"
+      },
+      {
+        "OptionLabel": "Sí",
+        "Value": 1,
+        "RulebookText": "No puede lanzar el hechizo.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_22",
+    "Header": "El hechizo es de tipo Superior (2+ Maná)",
+    "AnswerType": "Bool",
+    "RulebookText": "Existen dos tipos de hechizos según el consumo de Maná: los básicos y los superiores. Los hechizos básicos consumen 1 punto de Maná por cada lanzamiento exitoso, mientras que los superiores consumen 2 o más puntos de Maná y no pueden combinarse con un movimiento en el mismo turno.",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 0,
+        "RulebookText": "Puede lanzar el hechizo SOLO si no se ha movido.",
+        "NextCodeNumber": "SPELL_25"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "RulebookText": "Puede lanzar el hechizo.",
+        "NextCodeNumber": "SPELL_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_25",
+    "Header": "Se ha movido el lanzador?",
+    "AnswerType": "Bool",
+    "RulebookText": "Existen dos tipos de hechizos según el consumo de Maná: los básicos y los superiores. Los hechizos básicos consumen 1 punto de Maná por cada lanzamiento exitoso, mientras que los superiores consumen 2 o más puntos de Maná y no pueden combinarse con un movimiento en el mismo turno.",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 0,
+        "RulebookText": "No puede lanzar el hechizo.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "RulebookText": "Puede lanzar el hechizo.",
+        "NextCodeNumber": "SPELL_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_30",
+    "Header": "Hay LdV al objetivo?",
+    "AnswerType": "Bool",
+    "RulebookText": "Para lanzar hechizos se requiere Línea de Visión con el objetivo. Solo en el caso de los proyectiles mágicos se aplicarán modificadores al daño recibido según la cobertura.",
+    "Options": [
+      {
+        "OptionLabel": "Sí",
+        "Value": 0,
+        "RulebookText": "Puede lanzar el hechizo.",
+        "NextCodeNumber": "SPELL_40"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "RulebookText": "No puede lanzar el hechizo.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_40",
+    "Header": "USO DE COMPONENTES Y PERGAMINOS",
+    "AnswerType": "Text",
+    "RulebookText": "Solo podrá usarse un único Pergamino de hechicería o un Componente para magia por turno.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Siempre adelante!",
+        "NextCodeNumber": "SPELL_42"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_42",
+    "Header": "MODIFICADORES",
+    "AnswerType": "Text",
+    "RulebookText": "Puede lanzarse un nuevo hechizo mientras permanece el efecto de otro, pero en este caso, el hechicero tendrá una penalización de -1 a su prueba de Inteligencia para lanzarlo.",
+    "Options": [
+      {
+        "OptionLabel": "1",
+        "Value": 1,
+        "RulebookText": "Siempre adelante!",
+        "NextCodeNumber": "SPELL_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_50",
+    "Header": "Prueba de Inteligencia",
+    "AnswerType": "List",
+    "RulebookText": "Para lanzar un hechizo es necesario superar una prueba de Inteligencia. Si tiene éxito, se resolverán los efectos del sortilegio, a la vez que el hechicero retirará los marcadores de Maná que haya consumido con el lanzamiento y colocará un marcador de Maná sobre la carta del hechizo empleado, para reflejar el número de veces que se ha lanzado este.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito con Doble Críticos",
+        "Value": 0,
+        "RulebookText": "Un resultado de doble crítico (doble 6) en la prueba de Inteligencia para lanzar un hechizo, anulará cualquier posibilidad de ser dispersado en el turno de su lanzamiento. Además, cada resultado de 6 se considerará crítico a efectos del daño extra causado (consulta el apartado 'Daño' de la página 41) en todos aquellos hechizos donde se lancen dados de daño para comprobar sus efectos. Se retiran los tokens de Maná que costó lanzar el hechizo.",
+        "NextCodeNumber": "SPELL_70"
+      },
+      {
+        "OptionLabel": "Éxito",
+        "Value": 1,
+        "RulebookText": "Cada resultado de 6 se considerará crítico a efectos del daño extra causado (consulta el apartado 'Daño' de la página 41) en todos aquellos hechizos donde se lancen dados de daño para comprobar sus efectos. Se retiran los tokens de Maná que costó lanzar el hechizo.",
+        "NextCodeNumber": "SPELL_60"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 2,
+        "RulebookText": "No se retiran los tokens de Maná que costó lanzar el hechizo.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Fracaso (Pifia)",
+        "Value": 3,
+        "RulebookText": "Un resultado de pifia (doble 1) en la prueba al intentar lanzar un hechizo, hará que en ningún caso dicho hechizo sea lanzado, consumiéndose igualmente los puntos de Maná (y los Componentes para magia o Pergaminos de hechicería empleados). Además, el hechicero quedará automáticamente Aturdido y lanzará 5D6. Por cada resultado que iguale o supere su característica de Inteligencia, perderá 1 punto de Vitalidad (se considera que el daño lo ha recibido de un hechizo, así que ignora habilidades como 'Invulnerable'). Una pifia al lanzar un hechizo supone el final de la activación del personaje.",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_60",
+    "Header": "Dispersión",
+    "AnswerType": "Bool",
+    "RulebookText": "En el momento en que un hechizo es lanzado con éxito, cualquier hechicero del bando contrario podrá declarar inmediatamente que intenta dispersarlo, antes de resolverse sus efectos. Dicha dispersión requerirá una prueba de Inteligencia por parte de quien lo intenta, debiendo superar el resultado total del lanzador del hechizo (por tanto, será realmente una tirada enfrentada de Inteligencia). Si lo logra, el hechizo no tendrá efecto pero consumirá igualmente los puntos de Maná del lanzador. No se podrá dispersar hechizos dentro de la Zona de Influencia de un enemigo y toda dispersión exitosa supondrá el gasto de 1 punto de Maná. No se podrá dispersar si no se posee Maná. Solo se podrá dispersar si quien lo intenta está a 8 casillas o menos del hechicero que lanza el hechizo o del objetivo del mismo.",
+    "Options": [
+      {
+        "OptionLabel": "Éxito",
+        "Value": 0,
+        "RulebookText": "El hechizo resulta dispersado. Consume 1 Punto de Maná.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Fracaso",
+        "Value": 1,
+        "RulebookText": "La dispersión no tiene efecto. Consume 1 Punto de Maná.",
+        "NextCodeNumber": "SPELL_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_70",
+    "Header": "Duración",
+    "AnswerType": "List",
+    "RulebookText": "Los hechizos, dependiendo de su duración, pueden ser de dos tipos: inmediatos o permanentes. Los de efecto inmediato se resuelven el turno en que se lanzan y tras este desaparecen sus efectos. Los de duración permanente mantienen sus efectos durante un determinado número de turnos.",
+    "Options": [
+      {
+        "OptionLabel": "Efecto Inmediato",
+        "Value": 0,
+        "RulebookText": "El hechizo se resuelve en el turno en que se lanza y luego desaparece.",
+        "NextCodeNumber": "COMBAT_100"
+      },
+      {
+        "OptionLabel": "Efecto Permanente",
+        "Value": 1,
+        "RulebookText": "Si el hechizo es de efecto permanente, este se mantendrá durante tantos turnos como indique el resultado más alto de los dos dados lanzados en la prueba de Inteligencia (puedes marcar los turnos restantes colocando dicho dado sobre la carta del hechizo). Transcurrido el último turno del bando del lanzador, finalizará el efecto.",
+        "NextCodeNumber": "COMBAT_100"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "END_5",
+    "Header": "PUNTOS DE EXPERIENCIA",
+    "AnswerType": "Text",
+    "RulebookText": "En cuanto los héroes logren una misión, anotarán en su carta o ficha de héroe los puntos de experiencia que han ganado durante la misma.\n\nSalvo que se indique una recompensa específica en la Hoja de aventura (la cual prevalecerá), las aventuras de tamaño estándar conferirán estos puntos de experiencia:\n\n+1 si el grupo ha logrado la misión en el primer intento.\n+1 si el grupo ha obtenido más puntos por Logros que el Jugador Oscuro.\n\nEl héroe que finalice la aventura Fuera de combate no ganará experiencia.\nRecuerda que los puntos de Logros solo dan experiencia si los héroes han logrado la misión.\n\nLos puntos de Experiencia se acumulan y cada jugador decidirá en qué momento los invierte para realizar mejoras en su personaje, descritas en el apartado siguiente. Estas mejoras podrán realizarse en cualquier momento entre aventuras. Es decir, cuando no se encuentren en el interior de ningún escenario.",
+    "Options": [
+      {
+        "OptionLabel": "El mayor logro es salir sin un rasguño...",
+        "Value": 1,
+        "NextCodeNumber": "END_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "END_7",
+    "Header": "PUNTOS DE EXPERIENCIA",
+    "AnswerType": "List",
+    "RulebookText": "Por cada 3 puntos de experiencia acumulados, un héroe podrá invertirlos en las siguientes mejoras:\n\n■ Aprender una nueva habilidad.\n■ Obtener punto de desarrollo para aumentar una característica.\n■ Aumentar sus puntos de Fortuna.\n■ Aprender un nuevo hechizo.",
+    "Options": [
+      {
+        "OptionLabel": "Aprendizaje de Habilidades",
+        "Value": 0,
+        "NextCodeNumber": "APRENDIZAJE_DE_HABILIDADES"
+      },
+      {
+        "OptionLabel": "Aumento de Característica",
+        "Value": 1,
+        "NextCodeNumber": "AUMENTAR_UNA_CARACTERISTICA"
+      },
+      {
+        "OptionLabel": "Aumento de Fortuna",
+        "Value": 2,
+        "NextCodeNumber": "AUMENTO_DE_FORTUNA"
+      },
+      {
+        "OptionLabel": "Aprendizaje de Hechizos",
+        "Value": 3,
+        "NextCodeNumber": "APRENDIZAJE_DE_HECHIZOS"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "END_10",
+    "Header": "Fin de la aventura",
+    "AnswerType": "Text",
+    "RulebookText": "Una aventura finalizará si:\n\n■ Todos los héroes han quedado Fuera de combate.\n■ Los héroes salen del escenario sin completar la misión.\n■ Los héroes salen del escenario tras completar la misión (en este caso, saldrán como se describe a continuación, o de forma inmediata si acuerdan no realizar más acciones exploratorias).\n\nEn cuanto un héroe pise una casilla de inicio o salida y declare que desea salir, se considerará fuera del escenario. Se entenderá que todos los héroes han salido del escenario cuando todos ellos hayan alcanzado alguna de aquellas casillas.\n\nFinalizada una aventura, los héroes y acompañantes no recuperan los puntos de Vitalidad.",
+    "Options": [
+      {
+        "OptionText": "Hemos salido ilesos... creo",
+        "Value": 0,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "Tenemos Heridos!",
+        "Value": 1,
+        "NextCodeNumber": "END_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "END_20",
+    "Header": "Personajes fuera de Combate",
+    "AnswerType": "Bool",
+    "RulebookText": "Si durante una aventura o en la resolución de un Evento de Viaje (ver los Eventos de Viaje en el capítulo “Campañas”) hay un héroe que termina Fuera de combate, el jugador que lo maneje lanzará 1D6 al finalizar la aventura o evento y observará el resultado (no pueden aplicarse puntos de Fortuna en las tiradas descritas en este capítulo). Si un héroe queda Fuera de combate debido a la resolución de un Evento de viaje (no Evento épico), considera que sus compañeros nunca abandonan el cuerpo del héroe caído.",
+    "Options": [
+      {
+        "OptionText": "Nadie se queda atrás!",
+        "Value": 0,
+        "NextCodeNumber": "END_30"
+      },
+      {
+        "OptionText": "Si quieres un amigo, cómprate un perro",
+        "Value": 1,
+        "NextCodeNumber": "END_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "END_30",
+    "Header": "Lesiones",
+    "AnswerType": "List",
+    "RulebookText": "Lanza 2D6 por cada personaje que padezca lesiones y consulta el resultado en la siguiente tabla (antes de resolverse la tirada, el grupo de héroes deberá decidir si resucita o no a su compañero, o paga su rescate o se dispone a liberarle. Es decir, el tipo de lesiones solo se sabrá tras tomarse la decisión del grupo y tener a dicho héroe de nuevo entre ellos):",
+    "Options": [
+      {
+        "OptionText": "2 Manco: el personaje no podrá usar equipo que requiera dos manos ni emplear arma y escudo a la vez. Además, verá reducida su característica de Cuerpo a Cuerpo, sus tiradas de lanzamiento de hechizos y Destreza en -1.",
+        "Value": 0,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "3 Articulaciones debilitadas: el personaje verá reducida su característica de Agilidad en –1.",
+        "Value": 1,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "4 Rodilla débil: el personaje verá reducida su característica de Movimiento en –1.",
+        "Value": 2,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "5 Músculos debilitados: El personaje verá reducida su característica de Fuerza en –1.",
+        "Value": 3,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "6-7 Capacidad mermada: el personaje perderá 1 punto de cualquiera de sus características, a su elección.",
+        "Value": 4,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "8 Amnesia: el personaje olvidará al azar una de sus habilidades adquiridas por profesión.",
+        "Value": 5,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "9 Nervios dañados: el personaje verá reducida su característica de Valentía en –1.",
+        "Value": 6,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "10 Tuerto: el personaje verá reducidas sus características de Disparo y Percepción en –1.",
+        "Value": 7,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "11 Tórax debilitado: el personaje verá reducida su característica de Vitalidad en –1.",
+        "Value": 8,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "12 Cerebro dañado: el personaje verá reducida su característica de Inteligencia en –1.",
+        "Value": 9,
+        "NextCodeNumber": "END_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "END_40",
+    "Header": "Revalorizar Personaje",
+    "AnswerType": "Text",
+    "RulebookText": "Inicialmente los Puntos de Valor de un héroe serán de 10. A medida que gane puntos de experiencia y los invierta en mejoras, sus características y habilidades aumentarán y con ellas su valoración. Los PV de un héroe equivaldrán a la suma de 10 más las mejoras o evoluciones invertidos en este. Cada mejora de un héroe aumentará su PV en 2, independientemente de los puntos de experiencia invertidos.",
+    "Options": [
+      {
+        "OptionText": "I've got the Power!",
+        "Value": 1,
+        "NextCodeNumber": "CAMPAIGN"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOAON_10",
+    "Header": "Turno del Jugador Oscuro",
+    "AnswerType": "Bool",
+    "RulebookText": "Ha sido descubierta la Sala Principal?",
+    "Options": [
+      {
+        "OptionText": "No",
+        "Value": 0,
+        "NextCodeNumber": "JOAON_60"
+      },
+      {
+        "OptionText": "Sí",
+        "Value": 1,
+        "NextCodeNumber": "JOAON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOAON_20",
+    "Header": "DESCARTES",
+    "AnswerType": "Text",
+    "RulebookText": "Si no puede activarse una carta de Jugador Oscuro al ser desvelada (generalmente debido a no haber suficientes puntos en el contador de Puntos de Reserva, o por ser incompatible su activación), será descartada, aumentando los puntos correspondientes en dicho contador.",
+    "Options": [
+      {
+        "OptionText": "Es mejor de robar que de pedir...",
+        "Value": 1,
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOAON_60",
+    "Header": "Se Requiere Tirada de Poder?",
+    "AnswerType": "Bool",
+    "RulebookText": "El JOA se encuentra en Turno de Combate, o los Héroes descubrieron la Sala Principal",
+    "Options": [
+      {
+        "OptionText": "No",
+        "Value": 0,
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionText": "Sí",
+        "Value": 1,
+        "NextCodeNumber": "JOAON_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOAON_70",
+    "Header": "Activación de Criaturas",
+    "AnswerType": "Text",
+    "RulebookText": "Durante el turno del JOA, el orden de activación de criaturas será el siguiente:\n1º Hechiceros y hechiceros guerreros (incluso Líderes).\n2º Criaturas que posean ataques a distancia (si no pueden efectuar su ataque ese turno, se activarán en último lugar).\n3º Líderes.\n4º Resto de criaturas.\nEn caso de igualdad en el orden de activación, actuarán preferentemente las que posean mayor PV. En caso de tener el mismo PV, actuarán primero las que tengan mayor Agilidad, activándose una a una",
+    "Options": [
+      {
+        "OptionText": "A por ellos!",
+        "Value": 0,
+        "NextCodeNumber": "JOAON_80"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOAON_80",
+    "Header": "SELECCIÓN DEL OBJETIVO",
+    "AnswerType": "Text",
+    "RulebookText": "Las criaturas y personajes del , atendiendo a su capacidad de movimiento o el alcance del arma o ataque, escogerán el objetivo de cada una de sus acciones (generalmente ataques)*, según este criterio:\n1º Enemigos que aún no fueron atacados ese mismo turno (por tanto, los ataques se distribuyen entre el grupo de héroes), excepto que en la carta de comportamiento especifique que ignora la distribución equitativa de ataques.\n2º Lo que indique la carta de comportamiento específico de la criatura o personaje.\n3º Enemigo escogido al azar.\n*Es decir, una criatura con varios ataques seguirá el mismo criterio, distribuyendo sus ataques contra diferentes enemigos si le es posible.\nCuando en la carta de comportamiento se indica que la criatura atacará al enemigo más fácil de impactar, se considerará el valor en Cuerpo a Cuerpo más bajo, o el valor de la característica a la que afecte el ataque concreto, la proximidad del objetivo, los efectos que padece, coberturas, habilidades que dificultan ser impactado, etc.).",
+    "Options": [
+      {
+        "OptionText": "No puedo atacar!",
+        "Value": 0,
+        "NextCodeNumber": "JOAON_90"
+      },
+      {
+        "OptionText": "A la carga!! (Ataque CaC)",
+        "Value": 0,
+        "NextCodeNumber": "CLOSECOMBAT_10"
+      },
+      {
+        "OptionText": "En el punto de mira... (Ataque a distancia)",
+        "Value": 0,
+        "NextCodeNumber": "RANGEDCOMBAT_10"
+      },
+      {
+        "OptionText": "Abracadabra...(Hechizo)",
+        "Value": 0,
+        "NextCodeNumber": "SPELL_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOAON_90",
+    "Header": "MOVIMIENTO",
+    "AnswerType": "Text",
+    "RulebookText": "Si una criatura no puede realizar un ataque, moverá hasta el enemigo más cercano (corriendo, si es preciso) para acercarse a él, o hasta tener LdV con alguno. Deberá tener una ruta de desplazamiento válida en caso de querer atacar a un enemigo. Este enemigo no se considerará el más cercano si el personaje debe realizar alguna prueba de Agilidad para lograr contactar con él (por ejemplo, si debiera sortear un foso para llegar hasta el enemigo).\nLos personajes y criaturas del siempre tratarán de trazar las rutas más adecuadas hacia sus objetivos, evitando obstaculizar al resto de personajes de su bando, siempre que sea posible.",
+    "Options": [
+      {
+        "OptionText": "Atacamos!",
+        "Value": 0,
+        "NextCodeNumber": "CLOSECOMBAT_10"
+      },
+      {
+        "OptionText": "Nos movemos",
+        "Value": 1,
+        "NextCodeNumber": "JOAON_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOAON_100",
+    "Header": "Pifia con Arma",
+    "AnswerType": "List",
+    "RulebookText": "Las armas pueden romperse cuando el atacante o el defensor comete una pifia con ella. Cuando esto suceda, quien obtuvo la pifia lanzará 1D6 y su arma se romperá, quedando inutilizada, si el resultado es igual o inferior al indicado según el tipo de arma. Las armas de asta o que tengan mangos de madera como las lanzas o hachas suelen tener más probabilidad de rotura que las espadas y armas similares",
+    "Options": [
+      {
+        "OptionText": "El Arma del Personaje del JOA se rompe",
+        "Value": 0,
+        "NextCodeNumber": "JOAON_70"
+      },
+      {
+        "OptionText": "El Arma del Personaje del JOA NO se rompe",
+        "Value": 1,
+        "NextCodeNumber": "JOAON_70"
+      }
+    ]
+  }
+]

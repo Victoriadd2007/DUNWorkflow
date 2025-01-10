@@ -1,0 +1,43 @@
+﻿@model DUNWorkflow.Models.CardData
+
+<div id="card-container">
+    @await Html.PartialAsync("_CardPartial", Model)
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Array para rastrear el historial de tarjetas
+    var cardHistory = [];
+
+    $(document).on("click", ".load-card", function (e) {
+        e.preventDefault();
+
+        // Obtener el siguiente código del atributo data
+        var nextCode = $(this).data("next-code");
+
+        // Guardar la tarjeta actual en el historial antes de cambiarla
+        var currentCard = $('#card-container').html();
+        cardHistory.push(currentCard);
+
+        // Realizar una solicitud AJAX
+        $.get('/Home/LoadCard', { codeNumber: nextCode }, function (response) {
+            // Actualizar el contenedor con la nueva tarjeta
+            $('#card-container').html(response);
+        }).fail(function () {
+            alert("No se pudo cargar la tarjeta.");
+        });
+    });
+
+    // Acción para el botón "Volver"
+    $(document).on("click", "#btn-volver", function (e) {
+        e.preventDefault();
+
+        if (cardHistory.length > 0) {
+            // Recuperar la última tarjeta del historial
+            var previousCard = cardHistory.pop();
+            $('#card-container').html(previousCard);
+        } else {
+            alert("No hay tarjetas previas.");
+        }
+    });
+</script>

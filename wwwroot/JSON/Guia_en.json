@@ -1,0 +1,3079 @@
+[
+  {
+    "CodeNumber": "CAMPAIGN_10",
+    "Header": "Are you playing Campaign or Adventure?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "Adventure",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "SETUP_10"
+      },
+      {
+        "OptionLabel": "Campaign",
+        "Value": 1,
+        "RulebookText": "Another regular week in Arasca...",
+        "NextCodeNumber": "CAMPAIGN_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_20",
+    "Header": "Increase the Campaign Turn",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "A campaign turn represents several days of real-time (a week). When playing in the world of Arasca, you must account for the campaign turns you play. A year will consist of 52 campaign turns, equivalent to weeks. The first 12 turns will form the winter season. Therefore, the climate cycle will follow the sequence 12/40/end of year/12/40. Heroes will choose the campaign turn (or week) of the year when starting a campaign. While winter is ongoing, all maritime areas adjacent to Glacier will be considered Glacier territory. Additionally, during winter, at the end of each campaign turn where heroes travel or remain in Glacier (even maritime areas turned into Glacier) or Mountainous territory (unless they stay in a Settlement), each hero will suffer 1 damage die against their Natural Armor due to the intense cold.",
+        "NextCodeNumber": "CAMPAIGN_25"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_25",
+    "Header": "Fatigue, Injuries?",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "During a campaign, injuries suffered by the heroes persist, and their Mana, Vitality, and Luck points do not recover until they visit specific locations (inns, healers...) or take healing potions or herbs. Remember that the Off Combat, Wounded, and Sick effects are not canceled after the adventure ends.",
+        "NextCodeNumber": "CAMPAIGN_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_30",
+    "Header": "Travel or stay in the territory?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "Travel",
+        "Value": 0,
+        "RulebookText": "You can choose to enter or leave a settlement (or stay in it), from the territory where the campaign turn begins or to the territory you are traveling to. Only one adventure can be done during a campaign turn.",
+        "NextCodeNumber": "CAMPAIGN_40"
+      },
+      {
+        "OptionLabel": "Stay in territory",
+        "Value": 1,
+        "RulebookText": "You can choose to enter or leave a settlement (or stay in it), from the territory where the campaign turn begins or to the territory you are traveling to. Only one adventure can be done during a campaign turn.",
+        "NextCodeNumber": "CAMPAIGN_43"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "CAMPAIGN_40",
+    "Header": "Travel. During a campaign turn, a group of heroes can move this distance:",
+    "AnswerType": "List",
+    "Options": [
+      {
+        "OptionLabel": "Move to an adjacent territory.",
+        "Value": 0,
+        "RulebookText": "A hero must spend two campaign turns to move to an adjacent territory if they break any of the equipment limitations stated on page 79.",
+        "NextCodeNumber": "CAMPAIGN_41"
+      },
+      {
+        "OptionLabel": "Move one extra territory if traveling through plains or a road, provided all heroes in the group are on mounts.",
+        "Value": 1,
+        "RulebookText": "A hero must spend two campaign turns to move to an adjacent territory if they break any of the equipment limitations stated on page 79.",
+        "NextCodeNumber": "CAMPAIGN_41"
+      },
+      {
+        "OptionLabel": "If using a boat, move to an adjacent maritime zone or up to two icons of distance in a navigable river.",
+        "Value": 2,
+        "RulebookText": "2 icons of distance from the original if traveling downstream towards the mouth. If traveling upstream (against the current), only one adjacent icon can be navigated per turn. A group of heroes can take a rowboat, a merchant ship, or a warship at a dock (see the Places and Services cards) to navigate navigable rivers or maritime territories. From that moment on, until they decide to leave the vessel, they will travel exclusively by the river or maritime zone. A group of heroes can disembark at a territory and enter it. However, if they move to a different territory than where they disembarked, they will lose the vessel unless they pay 1 coin for each campaign turn they've been outside that territory when returning. Navigation is possible as long as the vessel has Structure points, as events may damage or even sink it. A vessel will be considered sunk once it loses all its Structure points.",
+        "NextCodeNumber": "CAMPAIGN_42"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_41",
+    "Header": "Crossing a Bridge?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_60"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "If a river divides two territories during travel, you can enter the other shore's territory if there is a bridge connecting both shores. In this case, read the content of the 'Bridge' card from the Places and Services deck before crossing to the other side.",
+        "NextCodeNumber": "CAMPAIGN_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_42",
+    "Header": "Sinking?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No, we continue sailing!",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_60"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "If a vessel runs out of Structure points while traveling through a maritime zone, it will be considered sunk. As a result, animals without the 'Fly' ability will drown, and all characters will appear in the nearest territory to the maritime zone where the sinking occurred. Each hero will lose 2 random Equipment cards. If this happens in a maritime zone (not a river), all heroes and mercenaries will also suffer 2 dice of damage against their Natural Armor.",
+        "NextCodeNumber": "CAMPAIGN_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_43",
+    "Header": "Camping?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_60"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Place a campfire marker in the territory if you want to represent that they have camped. During the turn they camp, they cannot visit Places and Services or enter populations. In this case, all group members will recover 2 Vitality points and 1 Mana point for each campaign turn they stay. Additionally, a +1 modifier will be applied to each Travel Event roll when the heroes stay camped in a territory. NOTE: Keep in mind that a group of heroes camping in a territory with a different alignment than their own will have a total modifier of +2 to Travel Event rolls.",
+        "NextCodeNumber": "CAMPAIGN_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_60",
+    "Header": "Actions in a Campaign Turn",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Characters can consume items (potions, provisions) or cast spells (heals) during a campaign turn, before the travel event roll.",
+        "NextCodeNumber": "CAMPAIGN_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_70",
+    "Header": "Travel Events",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "A Travel Event roll must be made each time heroes enter or stay in a territory or population, each time they leave a population, or each time they reach an icon of a navigable river.",
+        "NextCodeNumber": "CAMPAIGN_80"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "CAMPAIGN_80",
+    "Header": "A Travel Event Occurs (1D6 equals or exceeds the result of the card, +1 Modifier if the population has a different Alignment)?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_95"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Draw a card at random from that type of territory or population, flip it over and read the contents. Fortune points cannot be used to change the Travel Event roll, but can be used to alter or avoid the outcome of an event.",
+        "NextCodeNumber": "CAMPAIGN_90"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_90",
+    "Header": "Does the Event cause an Epic Event?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_95"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "When heroes start an adventure, unless they choose otherwise, it will be assumed that the mount stays outside with the belongings designated by the heroes. During Epic Events, however, the hero will appear on their mount or adjacent to it, at their choice.",
+        "NextCodeNumber": "SETUP_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_95",
+    "Header": "Can we fulfill a Personal Event? (New Challenges)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_98"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Resolve",
+        "NextCodeNumber": "CAMPAIGN_97"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_97",
+    "Header": "Does the Personal Event require playing an Adventure?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_100"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "To arms!",
+        "NextCodeNumber": "SETUP_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_98",
+    "Header": "Have we reached the destination of a new adventure?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_100"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "To arms!",
+        "NextCodeNumber": "SETUP_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_100",
+    "Header": "Have we found Places and Services?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_130"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Each campaign turn in which the group of heroes enters or remains in a population, each hero can visit up to 3 Places and Services available in that population, after resolving the appropriate Travel Event roll. Each visit by each hero will be resolved before another hero’s visits are made. Fortune points cannot be used to alter results from these cards. Populations and Different Alignment: Any item or service acquisition will cost one extra coin than its original price.",
+        "NextCodeNumber": "CAMPAIGN_105"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_105",
+    "Header": "Crafting? (Requires Alchemist / Wizardry School, New Challenges)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_110"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Refer to New Challenges, Page 9",
+        "NextCodeNumber": "CAMPAIGN_110"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_110",
+    "Header": "Sell Equipment?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_120"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Heroes may sell any of their belongings in any population. All items (including magical ones) can be sold automatically for half the original price (rounded up).",
+        "NextCodeNumber": "CAMPAIGN_120"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_120",
+    "Header": "Acquire a Home?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_130"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Heroes may decide at any point in the campaign to acquire a home in a population within a territory where they stay. This home will be considered their place of residence. It will be a place where the resting cost is lower than inns, and they may store any items they wish to keep but do not want to carry during their travels. When they decide this, draw the Home card from the Places and Services deck. Keep it in mind whenever the heroes return to this place.",
+        "NextCodeNumber": "CAMPAIGN_130"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_130",
+    "Header": "Do the Heroes rest at an inn or equivalent, recovering Fortune?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_135"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "The Dark Player will roll 1D6 for every 10 HP of the hero group at that time. For every result of 6, they will place a Danger marker in the territory designated as the base at the start of the campaign (these new markers will only be placed and will not advance this turn).",
+        "NextCodeNumber": "CAMPAIGN_135"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_135",
+    "Header": "Consult the Bulletin Board? (Requires Tavern, New Challenges)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_140"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Page 3 New Challenges",
+        "NextCodeNumber": "CAMPAIGN_140"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_140",
+    "Header": "Are there more than 10 Danger Markers on the map?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "New markers can be placed.",
+        "NextCodeNumber": "CAMPAIGN_150"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "There cannot be more than 10 Danger markers on the map at once.",
+        "NextCodeNumber": "CAMPAIGN_150"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "CAMPAIGN_150",
+    "Header": "Move the Danger Markers",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "After the heroes decide to move or remain in a territory, making the appropriate travel event roll, the Dark Player must move all their Danger markers on the map, always moving them towards the heroes in whichever way they see fit, even through sea territories. The Danger markers do not take into account obstacles like rivers. Once a Danger marker coincides with the heroes in the same territory, a 'Campaign Danger' card must be drawn at random and the event described on it should be resolved.",
+        "NextCodeNumber": "CAMPAIGN_160"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CAMPAIGN_160",
+    "Header": "Did the Dark Player win the Heroes' Achievements earlier or win the game?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "CAMPAIGN_20"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Place an additional Danger Marker",
+        "NextCodeNumber": "CAMPAIGN_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_10",
+    "Header": "Choose the Adventure",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 0,
+        "RulebookText": "Players must choose whether to play an independent game (outside of a campaign) or start or continue an adventure belonging to a campaign or within a campaign map.",
+        "NextCodeNumber": "SETUP_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_20",
+    "Header": "Designate the Dark Player",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "It is essential to consult the Adventure Sheet beforehand.",
+        "NextCodeNumber": "SETUP_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_30",
+    "Header": "Markers",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Place the various circular markers of the game within reach of all players.",
+        "NextCodeNumber": "SETUP_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_40",
+    "Header": "Treasure Cards",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Shuffle the decks of Treasure, Magic Items, and Relics cards, placing them face down.",
+        "NextCodeNumber": "SETUP_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_50",
+    "Header": "Other Decks",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Place the following decks of cards (without shuffling them): Furniture, Special Items, Skills, and Equipment (which is divided into six different decks: Common Items, Special Items, Melee Weapons, Armor, Shields, and Ranged Weapons).",
+        "NextCodeNumber": "SETUP_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SETUP_60",
+    "Header": "Counters",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "",
+        "Value": 1,
+        "RulebookText": "Place the markers (one for tens and another for units) of the Dark Player and Heroes next to the Achievement counter. Leave the Achievement card next to it.",
+        "NextCodeNumber": "CHOOSEHEROES_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_10",
+    "Header": "Choose the hero you wish to control.",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "Predefined Hero",
+        "Value": 0,
+        "RulebookText": "Choose the card of the predefined hero you prefer (look for cards with the 'HE' code in their numbering). Some have their own background shown on the cards with the 'NA' code in their numbering). These heroes start with all the abilities corresponding to their race and profession, as well as those they have from their background.",
+        "NextCodeNumber": "CHOOSEHEROES_20"
+      },
+      {
+        "OptionLabel": "Custom Hero",
+        "Value": 1,
+        "RulebookText": "You can decide to create your own hero on a blank sheet using the character creation rules (described on page 76).",
+        "NextCodeNumber": "CHOOSEHEROES_15"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_15",
+    "Header": "Generate new hero?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No, I like mine",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "JOASETUP_10"
+      },
+      {
+        "OptionLabel": "Yes, change is good",
+        "Value": 1,
+        "RulebookText": "-",
+        "NextCodeNumber": "CHOOSEHEROES_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_20",
+    "Header": "Choose the abilities",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "If the hero is predefined, simply take the card for each ability they have initially. If you create the hero or if they can learn new abilities after gaining experience, you must choose them according to the limitations by profession.",
+        "NextCodeNumber": "CHOOSEHEROES_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_30",
+    "Header": "Choose the spells",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Sorcerer characters will choose the spells they start with. If this is not the first adventure, they will know the spells they had in the previous mission and those they have learned. Two heroes cannot know the same spell.",
+        "NextCodeNumber": "CHOOSEHEROES_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_40",
+    "Header": "Choose the equipment",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Each player will start with the equipment that their hero has predefined or the one they acquire during creation. Before each independent adventure (and in the cases described for campaigns), they will also have the opportunity to acquire new equipment with the money they have accumulated.",
+        "NextCodeNumber": "CHOOSEHEROES_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_50",
+    "Header": "Choose Mercenary or Animal",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Choose the Mercenary or Animal that will accompany each hero, if acquired (page 74).",
+        "NextCodeNumber": "CHOOSEHEROES_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_60",
+    "Header": "Take Markers",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Each player will take the markers that represent the Mana and Fortune points of their hero.",
+        "NextCodeNumber": "CHOOSEHEROES_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_70",
+    "Header": "Place Heroes",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Unless otherwise indicated, place the heroes outside the scenario. Each of them will begin their activation in the starting square indicated by the Dark Player.",
+        "NextCodeNumber": "CHOOSEHEROES_80"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CHOOSEHEROES_80",
+    "Header": "Evaluate the hero group",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "HP = Hero HP + Mercenary and Animal HP + Special Item HP + Magic Item and Relic HP.",
+        "NextCodeNumber": "JOASETUP_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_10",
+    "Header": "Read the Adventure Sheet",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "The Conductor Player will read the introduction to the adventure and its various sections, except those included in a red-shaded box and those marked with the symbol (JOA). These should only be read when the appropriate section or element is discovered, or when the described circumstances occur.",
+        "NextCodeNumber": "JOASETUP_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_20",
+    "Header": "Consult the Bestiary",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Consult the faction or the characters and creatures from the Bestiary that will be used during the adventure. Prepare the behavior cards for creatures.",
+        "NextCodeNumber": "JOASETUP_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_30",
+    "Header": "Reserve Points",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "PR = (Total PV of the hero group) + (2 x each Hero if it is the second attempt) - (PV Leader of the Scenario).",
+        "NextCodeNumber": "JOASETUP_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_40",
+    "Header": "Separate Cards",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Take the Dark Player cards and set aside the following Encounter cards: \"Reinforcements\", \"Thief\" and \"Ambush\".",
+        "NextCodeNumber": "JOASETUP_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_50",
+    "Header": "Construct Obstacle Deck (I): Is there any Scenario restriction?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "JOASETUP_60"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "First discard the cards that cannot be selected.",
+        "NextCodeNumber": "JOASETUP_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_60",
+    "Header": "Construct Obstacle Deck (II)",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Take as many random Obstacle cards as the number of heroes times 6. To this group of cards, add one of the Encounter cards \"Thief\" and \"Ambush\". Add a second \"Ambush\" card if there are more than 2 heroes in the group.",
+        "NextCodeNumber": "JOASETUP_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_70",
+    "Header": "Construct Power Deck (I): Is there any Scenario restriction?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "JOASETUP_80"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "First discard the cards that cannot be selected.",
+        "NextCodeNumber": "JOASETUP_80"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_80",
+    "Header": "Construct Power Deck (II)",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Take as many random Power cards as the number of heroes times 6. To this group of cards, add one of the Encounter cards \"Reinforcements\". Add a second \"Reinforcements\" card if there are more than 2 heroes in the group.",
+        "NextCodeNumber": "JOASETUP_90"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_90",
+    "Header": "Construct Encounter Deck (I): Is there any Scenario restriction?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "JOASETUP_100"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "First discard the cards that cannot be selected.",
+        "NextCodeNumber": "JOASETUP_100"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_100",
+    "Header": "Construct Encounter Deck (II)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Take as many random Encounter cards as the total PV of the hero group divided by 10 (rounding up).",
+        "NextCodeNumber": "JOASETUP_110"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "JOASETUP_110"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "JOASETUP_110",
+    "Header": "Shuffle Decks",
+    "AnswerType": "Text",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Shuffle the cards of these new decks and place them next to their corresponding Reserve Points counters. With these cards, form the final game decks while the other cards will not be used and can be removed from the table.",
+        "NextCodeNumber": "PREGAME_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "PREGAME_10",
+    "Header": "Use Weather? (New Challenges)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "PREGAME_20"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Roll on the Weather table from the New Challenges book.",
+        "NextCodeNumber": "PREGAME_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "PREGAME_20",
+    "Header": "Use Time of Day? (New Challenges)",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "1D6. 1 = Night, all OUTDOOR areas are considered DIM.",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_30",
+    "Header": "Activate Next Character",
+    "AnswerType": "List",
+    "Options": [
+      {
+        "OptionLabel": "There are characters left to activate",
+        "Value": 0,
+        "RulebookText": "Each character must go through the following phases during activation (in this order): 1.Recovery 2.Perform actions and movements",
+        "NextCodeNumber": "GAMEON_31"
+      },
+      {
+        "OptionLabel": "All characters have been activated",
+        "Value": 1,
+        "RulebookText": "It's the Dark Player's turn...",
+        "NextCodeNumber": "JOAON_10"
+      },
+      {
+        "OptionLabel": "All characters are out of combat",
+        "Value": 2,
+        "RulebookText": "Oh no...",
+        "NextCodeNumber": "END_5"
+      },
+      {
+        "OptionLabel": "Mission complete!",
+        "Value": 3,
+        "RulebookText": "Hurray!",
+        "NextCodeNumber": "END_5"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_31",
+    "Header": "Does the character have at least one wound?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "This character cannot be activated, it's out of combat",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_35"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_35",
+    "Header": "Status Check",
+    "AnswerType": "Boollist",
+    "Options": [
+      {
+        "OptionLabel": "KNOCKED DOWN",
+        "Value": 0,
+        "RulebookText": "The character has a –1 penalty to all of their attributes (except Natural Armor, Mana, and Vitality). The character will not block the LdV nor have a Zone of Influence. They cannot move, take actions, or push while in this state, but they can defend normally and disperse.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "STUNNED",
+        "Value": 1,
+        "RulebookText": "The character has a –1 penalty to all of their attributes (except Natural Armor, Mana, and Vitality) and cannot run.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "TERRIFIED",
+        "Value": 2,
+        "RulebookText": "Same effects as Stunned, but the character can run. They will fail any Courage tests against Terrifying enemies. If not stated otherwise, this will last until the beginning of their next activation.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "INJURED",
+        "Value": 3,
+        "RulebookText": "When a character has received so many wounds that only one more is needed to equal their Vitality (i.e., when they only have 1 point of Vitality left), they are considered Injured. Effects: Same as Stunned.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "ILL",
+        "Value": 4,
+        "RulebookText": "Effects: Same as Stunned. Duration: persists after the adventure. Generally, only potions, healing spells, or healers can remove its effects.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "POISONED",
+        "Value": 5,
+        "RulebookText": "Effects: Same as Stunned. Duration: lasts until the end of the adventure. Generally, only potions or healing spells can remove its effects.",
+        "NextCodeNumber": "GAMEON_40"
+      },
+      {
+        "OptionLabel": "IMMOBILE",
+        "Value": 6,
+        "RulebookText": "The character cannot activate this turn. They are automatically hit in close combat and are an easy target for ranged attacks. They cannot disperse. They have no Zone of Influence.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "DISARMED",
+        "Value": 7,
+        "RulebookText": "A disarmed character has -1 to their Close Combat, will roll as many damage dice as their Strength, and will increase the Armor of the target they attack by +1.",
+        "NextCodeNumber": "GAMEON_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_40",
+    "Header": "Recovery Phase I: Is the character Stunned?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "GAMEON_50"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "If the character is Stunned, they will roll 1D6. On a result of 4 or more, they will no longer be affected.",
+        "NextCodeNumber": "GAMEON_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_50",
+    "Header": "Recovery Phase II: Is the character Knocked Down?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "If the character is Knocked Down, they can automatically get up. If they have one or more adjacent enemies, they must pass an Agility test to get up. If they were Knocked Down in their previous activation, they will automatically pass the test. If they get up, they can act normally this turn but will be considered Stunned.",
+        "NextCodeNumber": "GAMEON_55"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_55",
+    "Header": "Check Scenario Effects",
+    "AnswerType": "Text",
+    "RulebookText": "Consider modifiers such as Shadow, etc., and Equipment. Review states, equipment weight, etc.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Always go ahead!",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_60",
+    "Header": "Perform Actions and Movements",
+    "AnswerType": "Text",
+    "RulebookText": "Each hero can perform one Action and one movement, in any order. Actions marked with * are Exploratory Actions. Additionally, they can perform a Quick Action at no cost. A second Quick Action can replace an Action.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Always go ahead!",
+        "NextCodeNumber": "GAMEON_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_70",
+    "Header": "Choose an Option",
+    "AnswerType": "List",
+    "Options": [
+      {
+        "OptionLabel": "Movement",
+        "Value": 0,
+        "RulebookText": "-",
+        "NextCodeNumber": "GAMEON_80"
+      },
+      {
+        "OptionLabel": "Action",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_100"
+      },
+      {
+        "OptionLabel": "Quick Action",
+        "Value": 2,
+        "RulebookText": "-",
+        "NextCodeNumber": "QUICKACTION_60"
+      },
+      {
+        "OptionLabel": "Do nothing",
+        "Value": 3,
+        "RulebookText": "-",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "GAMEON_80",
+    "Header": "Movement, Types",
+    "AnswerType": "List",
+    "RulebookText": "Characters can move as many squares as indicated in their Movement characteristic during this phase. They can move in any direction (horizontal, diagonal). However, diagonal movement is not allowed if the path is partially obstructed by a wall, obstacle corner, or staircase corner.",
+    "Options": [
+      {
+        "OptionLabel": "Facing",
+        "Value": 0,
+        "RulebookText": "A character can rotate and change their facing at any time during their activation. If they declare an offensive action, they must face the opponent they intend to attack, and this facing will remain if they end their activation adjacent to that opponent. Note that turning or changing facing alone is not considered movement.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Stairs",
+        "Value": 1,
+        "RulebookText": "If a character moves toward a square occupied by an ascending staircase (usually dungeon entry stairs are descending), they must spend one additional Movement point for each square they traverse this way. Each ascending square of a staircase counts as gaining 1 height over the previous square. A staircase can only be accessed from its designated entry points. The character will be positioned higher compared to other characters of the same size on a lower surface. This must be considered when checking Line of Sight (see page 31) and the potential modifier for close combat (see page 37).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Vertical Stairs",
+        "Value": 2,
+        "RulebookText": "A character can climb or descend a vertical staircase as if performing normal movement (without running), but the entire length of the staircase will be considered difficult terrain if they have any equipped hands.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Interact with Door",
+        "Value": 3,
+        "RulebookText": "Doors and access points are separators and do not occupy squares. To be adjacent to a door and interact with it, the miniature must be positioned in a square where one of its sides is delimited by the door (use the lintel and arch in the door and access illustrations as reference).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Move Through Occupied Squares",
+        "Value": 4,
+        "RulebookText": "A character or creature cannot pass through a square occupied by an enemy or an impassable obstacle. They can pass through an ally's square (provided the ally is not engaged in combat), but they must spend one additional Movement point for each square occupied by an ally. No character can end their movement on another.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Climb Furniture",
+        "Value": 5,
+        "RulebookText": "A character can move into a square occupied by furniture lower than them, but they will spend an additional Movement point to climb onto it. They will be positioned higher than other characters of the same size on a lower surface. This must be considered when checking Line of Sight (see page 31) and the potential modifier for close combat (see page 37).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Impassable Obstacle",
+        "Value": 6,
+        "RulebookText": "If most of a square is occupied by a wall, pillar, or another impassable element, consider the whole square impassable. No creature can pass through elements of their same height or higher unless they can climb over them.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Difficult Terrain",
+        "Value": 7,
+        "RulebookText": "If a character wants to move through a square of difficult terrain, they must spend one additional Movement point for each square they wish to move through. A character in difficult terrain suffers a -1 penalty to Close Combat, Shooting, spell casting, and spell dispersion.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Deep Water",
+        "Value": 8,
+        "RulebookText": "In deep water, combat can only occur with adjacent enemies, using daggers or natural weapons (claws, fangs, horns, tentacles), and all non-aquatic creatures suffer a -1 penalty to Close Combat. Shooting and spell casting are not allowed. While a character or creature is in deep water, they have light cover against attacks from outside the water. They will also ignore the Influence Zones of enemies outside the water, and vice versa.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Swim",
+        "Value": 9,
+        "RulebookText": "If a character wants to swim, they can move up to a number of squares equal to their Agility characteristic. They will suffer an additional -1 penalty if wearing heavy armor, plus the usual penalties. If their Agility is negative at the end of their activation, they will take 3 damage dice against their Natural Armor. Additionally, they will roll 2D6 at the start of their activation if they declare they want to swim. On a double 1, the character notices something brushing their leg under the water and will not move any squares, staying in the same position for the whole activation. On a double 6, they can move 1 extra square. When a character swims during a turn, all their movement within and outside the water will be performed with their Agility characteristic.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_100",
+    "Header": "Actions. Is there an enemy within 12 squares or less?",
+    "AnswerType": "Bool",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Exploration Turn",
+        "NextCodeNumber": "GAMEON_110"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Combat Turn, limited actions",
+        "NextCodeNumber": "GAMEON_120"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "GAMEON_110",
+    "Header": "Exploration Turn, Possible Actions",
+    "AnswerType": "List",
+    "RulebookText": "During the exploration turn, the heroes can perform various actions to interact with the scenario, uncover new areas, open doors, or perform other specific actions. Each action may require the use of resources, passing tests, or interacting with environmental elements.",
+    "Options": [
+      {
+        "OptionLabel": "Reveal Area",
+        "Value": 1,
+        "RulebookText": "If a hero is on an exploration arrow and declares they are revealing an area, the section that the arrow leads to will be displayed. This also includes the elements and creatures in that section. Once the section has been revealed, the arrow (and adjacent ones with the same orientation) will be removed from the board.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Open Unexplored Doors",
+        "Value": 2,
+        "RulebookText": "If a hero is adjacent to a door or access that has not been opened previously during the game, they can declare to open it. The section that the door leads to will be revealed. This includes the elements and creatures in that section. Once the section has been revealed, the door tile will be flipped to show its reverse, indicating it is open. If the door cannot be opened due to an obstacle (trap, locked door, puzzle, etc.), the action is NOT consumed.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Open Locked Door",
+        "Value": 3,
+        "RulebookText": "If when a hero declares opening a door or access, the Adventure Sheet or a Dark Player card indicates the door is locked, this or another hero adjacent to the door can dedicate an action to perform a Dexterity test to open it (meaning they will attempt to open it stealthily). The group only has one attempt to succeed.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Open Chest",
+        "Value": 4,
+        "RulebookText": "A hero adjacent to a chest can dedicate an action to perform a Dexterity test to open it and obtain the loot. The group only has one attempt to succeed. Success: the chest opens, and a card from the Treasure deck is drawn to indicate what is inside. The found items may be immediately distributed among the group of heroes. Failure: the chest will only open if broken.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Solve Puzzle",
+        "Value": 5,
+        "RulebookText": "If when a hero declares opening a door or chest and the Adventure Sheet or a Dark Player card indicates the item is protected by a puzzle, this or another hero adjacent to the item can dedicate an action to perform an Intelligence test to open it. The group only has one attempt to succeed.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Break Doors, Chests, or Other Objects",
+        "Value": 6,
+        "RulebookText": "A character or creature can declare they are using their action to hit a door, chest, or other adjacent object. Doors and chests can only be hit after attempting to open them without violence. No opposed roll is made for these objects as they are automatically hit. Only the damage dice should be rolled as usual. If the object is hit, place a Noise marker on the board next to the hit item. You should indicate with a die the number of turns the heroes have been hitting the object. In the next encounter with enemies, they will gain a +1 bonus to the Initiative roll for each turn the heroes have been hitting the object.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Run",
+        "Value": 7,
+        "RulebookText": "A character may choose to run to increase the number of squares they will move that turn. The player controlling the character must declare they are running before starting the movement. Then, they will roll 2D6 and move a number of squares equal to their Movement value plus the result of the roll, with the distance not exceeding twice their Movement value. If a double 1 is rolled when trying to run, the character will only move half their normal Movement that turn.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Highlighted Jump",
+        "Value": 8,
+        "RulebookText": "To jump over a pit or chasm (or even descend to a lower floor) up to 3 squares wide, a character adjacent to the obstacle can perform a highlighted jump forward, requiring an Agility test. The total number of squares that can be moved, including both movement and the jump, cannot exceed their Movement characteristic.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Climb Out of Pits",
+        "Value": 9,
+        "RulebookText": "If a character has fallen into a pit, they can climb out. They will need to pass an Agility test. Success: the character climbs out and ends their activation on a free square adjacent to the pit. Failure: the character finishes their activation and remains at the bottom of the pit.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Search for Secret Doors",
+        "Value": 10,
+        "RulebookText": "A hero can declare they are searching for secret doors in the section they are in. They will need to pass a Perception test. Success: if there is a hidden secret door in that section, it will be placed. This secret door will be treated like a normal door and can be opened as usual.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Search Room",
+        "Value": 11,
+        "RulebookText": "If a character is in a room that has not been previously examined for this purpose, they can declare they are searching the room for treasures. They will need to pass a Perception test. Success: they will find hidden items in a stash worth 1D3+1 coins. If a double 6 is rolled on the test, they will draw a card from the Treasure deck instead of coins.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+
+      {
+        "OptionLabel": "Register or Interact with Item",
+        "Value": 12,
+        "RulebookText": "A character may register or interact with an adjacent item (Furniture, Special Item) to resolve its effects. The content of the corresponding card for each item type will be read, and the effects will be resolved. Each item can only be registered once.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Put On or Remove Armor",
+        "Value": 13,
+        "RulebookText": "A character may put on or remove armor. This only refers to the armor covering the body, not items like shields or helmets.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Disarm Traps",
+        "Value": 14,
+        "RulebookText": "If a trap is latent (in a chest, door, or any other square), a hero adjacent to the element or square may deactivate it by succeeding a Dexterity check. Success: The trap is deactivated. Failure: The trap is triggered, and its effect will be read.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Register Corpses",
+        "Value": 15,
+        "RulebookText": "After a battle ends and always before a new section is revealed, a hero may dedicate their first action to registering the corpses of their enemies. Roll 1D6 for each eliminated enemy. A result of 1-3 yields a coin. A result of 4-5 yields a card from the Treasure deck. A result of 6 yields a special card from the Treasure deck.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Light Source",
+        "Value": 16,
+        "RulebookText": "By default, sections are sufficiently lit. However, Dark Player cards may affect visibility. A character may declare that they are lighting an object that serves as a light source (torch, lantern) to avoid the effects of the 'Twilight' and 'Total Darkness' cards. The light source can be marked with the appropriate marker. Unless indicated otherwise, the character must hold the light source (usually torches or lanterns) to illuminate the section. If the light source is placed on a square, its position must be marked.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Move Furniture",
+        "Value": 17,
+        "RulebookText": "A character may use an Action to move a piece of Furniture (with which they are in contact and as long as the piece can be moved) to an adjacent square. If the piece of furniture is of equal height to the character attempting to move it, they may move it by succeeding a Strength check. Furniture that is taller than the character cannot be moved. If a piece of Furniture blocks an access after being moved, it can be moved again or even broken in the same way as a door (Armor 5, Vitality 5).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Build Bridge",
+        "Value": 18,
+        "RulebookText": "A bridge can be built over a cliff. Two characters can declare during the same turn that they are building a bridge if they are adjacent to the cliff on opposite ends. One of them must immediately spend a Pick and Rope card (which cannot be reused). Bridges are considered difficult terrain. Each time a Large creature crosses a bridge, they will roll 1D6. A result of 1 means the bridge will collapse, and the creature will fall with it. Huge creatures cannot step on a bridge or they will collapse with it.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Persuade with Intelligence",
+        "Value": 19,
+        "RulebookText": "The card or narrative situation will allow the hero to make a contested Persuasion check with Intelligence against the target character. Both characters will roll 2D6 and add their Intelligence attributes. The Persuasion attempt will succeed if the hero's result exceeds the target's. Modifiers apply based on alignment and race. A hero can only attempt Persuasion once per NPC. Failure means a penalty for subsequent attempts by others.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Persuade with Fear",
+        "Value": 20,
+        "RulebookText": "The card or narrative situation will allow a Persuasion check with Strength against the target character. Both characters will roll 2D6, adding their Strength (for the hero) or Courage (for the target). The Persuasion attempt will succeed if the hero's result exceeds the target's. A modifier applies if the hero has the Terrifying skill. Only one Persuasion attempt per NPC per group of heroes.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Detect Magic and Potions",
+        "Value": 21,
+        "RulebookText": "If heroes find a Magical Item, Relic, or Potion, they typically won't know its type or effects unless one of them has the appropriate skill (and succeeds an Intelligence check) or pays an expert in a population after leaving the scenario. Until they identify the item, they can use it as if it were a non-magical counterpart. Once identified, Potions and Magical Items have specific effects that can be beneficial or harmful.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Melee Attack",
+        "Value": 22,
+        "RulebookText": "",
+        "NextCodeNumber": "CLOSECOMBAT_10"
+      },
+      {
+        "OptionLabel": "Ranged Attack",
+        "Value": 23,
+        "RulebookText": "",
+        "NextCodeNumber": "RANGEDCOMBAT_10"
+      },
+      {
+        "OptionLabel": "Cast Spells",
+        "Value": 24,
+        "RulebookText": "",
+        "NextCodeNumber": "SPELL_10"
+      },
+      {
+        "OptionLabel": "Search for Resources",
+        "Value": 25,
+        "RulebookText": "NEW CHALLENGES",
+        "NextCodeNumber": "ACTION_90"
+      },
+      {
+        "OptionLabel": "Transport Fallen Companions",
+        "Value": 26,
+        "RulebookText": "If a character ends the adventure in an Out-of-Combat state, their companions may carry their body (and all their belongings). A character (or mount) may transport an ally who has fallen out of combat. The carrying character must be adjacent to the fallen ally and spend an action to transport them, moving as many squares as the carrying character's Strength allows. If the ally is larger, two characters may join forces to transport the body. Transporting over obstacles requires Strength and Agility checks.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "Other Character Tests",
+        "Value": 27,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Continue",
+        "Value": 28,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "GAMEON_120",
+    "Header": "Combat Turn, Possible Actions",
+    "AnswerType": "List",
+    "RulebookText": "During the combat turn, heroes can perform various actions to interact with the scenario, uncover new areas, open doors, or perform other specific actions. Each action may require the use of resources, passing tests, or interacting with elements of the environment.",
+    "Options": [
+      {
+        "OptionLabel": "Reveal Area",
+        "Value": 1,
+        "RulebookText": "If a hero is on an exploration arrow and declares they are revealing the area, the section leading to that arrow will be shown, including any elements and creatures in that section. Once the section leading from the exploration arrow is revealed, the arrow (and adjacent arrows with the same orientation) will be removed from the board.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Open Unexplored Doors",
+        "Value": 2,
+        "RulebookText": "If a hero is adjacent to a door or access that has not been previously opened during the game, they can declare that they are opening it. The section leading from the door will be revealed, including any elements and creatures in that section. After revealing the section, the door tile will be flipped to show its reverse side, indicating it is open. If the door cannot be opened due to an obstacle (trap, locked door, puzzle, etc.), the action will not be consumed.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Run",
+        "Value": 7,
+        "RulebookText": "A character may choose to run to increase the number of spaces they will move during the turn. The player must declare they are running before starting the movement. Then they will roll 2D6 and move as many spaces as their Movement value plus the rolled result, without exceeding twice their Movement value. If a double 1 is rolled when attempting to run, the character will only move half their normal Movement for that turn.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Highlight Jump",
+        "Value": 8,
+        "RulebookText": "To jump over a pit or chasm (or even descend to a lower floor) up to 3 spaces wide, a character adjacent to the obstacle can perform a highlighted jump forward, requiring an Agility test. The total number of spaces moved, counting movement and jump, cannot exceed their Movement characteristic.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Climb Out of Pits",
+        "Value": 9,
+        "RulebookText": "If a character has fallen into a pit, they may climb out. They need to pass an Agility test. Success: the character climbs and ends their activation on a free space adjacent to the pit. Failure: the character ends their activation and remains at the bottom of the pit.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Put On or Take Off Armor",
+        "Value": 13,
+        "RulebookText": "A character may put on or take off armor. This only applies to body armor, not shields or helmets.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Light Source",
+        "Value": 16,
+        "RulebookText": "In general, sections are well-lit. However, there are Dark Player cards that can affect visibility. A character may declare that they are lighting an object that is a light source (torch, lantern) to avoid the effects of 'Twilight' and 'Total Darkness' cards. The light source can be indicated with the appropriate marker. Unless stated otherwise, the character must hold the light source (usually torches or lanterns) to illuminate the section. If placed on a space, the position must be marked with the same marker.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Move Furniture",
+        "Value": 17,
+        "RulebookText": "A character may use an action to move a piece of furniture (that they are in contact with and that can be moved) to an adjacent space. If the furniture is the same height as the character, they may move it by passing a Strength test. Furniture taller than the character cannot be moved. If moved furniture blocks an access, it can be moved again or even broken like a door (Armor 5, Vitality 5).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Build Walkway",
+        "Value": 18,
+        "RulebookText": "A walkway can be built over a chasm. Two characters can declare they are building a walkway during the same turn if they are adjacent to the chasm at opposite ends. One must immediately spend a Spike and Rope card (which cannot be reused). Walkways are considered difficult terrain. Every time a large creature crosses a walkway, they will roll 1D6. On a result of 1, the walkway will collapse and cannot be used again, and the creature will fall with it. Enormous creatures cannot walk on a walkway and will automatically collapse it.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Persuade by Intelligence",
+        "Value": 19,
+        "RulebookText": "The card or narrative situation will allow the hero to make an opposed Persuasion roll with Intelligence against the target character. Both characters roll 2D6 and add their Intelligence scores. The persuasion attempt will succeed if the result of the hero exceeds the target's. Modifiers may apply, such as -1 if persuading a character of the opposite alignment (good-evil), +1 if the hero is persuading a character of the same race. A hero can only attempt a Persuasion roll once per NPC. If they fail and another hero tries afterward, they will receive a -1 penalty for each previous attempt. A critical failure will cause all subsequent attempts against the same NPC to fail.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Persuade by Fear",
+        "Value": 20,
+        "RulebookText": "The card or narrative situation will allow a Persuasion roll with Strength against the target character. Both characters roll 2D6. The hero adds their Strength, while the target adds their Courage. The persuasion attempt will succeed if the hero's result exceeds the target's. Modifiers apply, such as +1 for those with the 'Terrifying' ability. A group of heroes may only attempt a Persuasion with Strength roll once per NPC.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Melee Attack",
+        "Value": 22,
+        "RulebookText": "",
+        "NextCodeNumber": "CLOSECOMBAT_10"
+      },
+      {
+        "OptionLabel": "Ranged Attack",
+        "Value": 23,
+        "RulebookText": "",
+        "NextCodeNumber": "RANGEDCOMBAT_10"
+      },
+      {
+        "OptionLabel": "Cast Spells",
+        "Value": 24,
+        "RulebookText": "",
+        "NextCodeNumber": "SPELL_10"
+      },
+      {
+        "OptionLabel": "Transport Companions",
+        "Value": 26,
+        "RulebookText": "If a character ends the adventure out of combat, companions may carry the body (and all their belongings). Note: During a Travel Event (not an Epic Event), companions can always carry the body. A character (even a mount) can transport a fallen ally. They must be adjacent to the fallen character and use an action to transport them, moving as many spaces as the Strength of the transporter. A character cannot transport an ally larger than themselves, but two characters can work together to do so. For jumps with the fallen companion, both a Strength and Agility test must be passed.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "Other Character Tests",
+        "Value": 27,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Continue",
+        "Value": 28,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "QUICKACTION_60",
+    "Header": "Exploration Turn, Possible Actions",
+    "AnswerType": "List",
+    "RulebookText": "During the exploration turn, heroes can perform various actions to interact with the scenario, uncover new areas, open doors, or perform other specific actions. Each action may require the use of resources, passing tests, or interacting with elements of the environment.",
+    "Options": [
+      {
+        "OptionLabel": "Give an item to an adjacent companion",
+        "Value": 0,
+        "RulebookText": "The same item cannot be used by two characters during the same turn.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Deposit or pick up something within reach",
+        "Value": 1,
+        "RulebookText": "In the space the character is moving through or in adjacent spaces.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Activate a lever, button, or similar",
+        "Value": 2,
+        "RulebookText": "If the character is adjacent to a lever, button, or similar object, they can activate it.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "ACTION_5",
+    "Header": "Reveal Zone",
+    "AnswerType": "Bool",
+    "RulebookText": "A DISCOVERY card will always be activated, paying its usual cost, if the revealed section is large (more than 40 tiles) but not the main section.",
+    "Options": [
+      {
+        "OptionLabel": "Let's go ahead!",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "ACTION_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_10",
+    "Header": "Obstacles and Traps",
+    "AnswerType": "Bool",
+    "RulebookText": "The Scenario Die will be rolled in these cases: 1) When a hero character declares one of the following actions: Reveal zone, Open unexplored door (this includes doors, hatches, grilles), Open chest, Search room, Search furniture (only in case of a mishap, as indicated by the furniture card). 2) When a character steps on the first tile outside a Safe Zone.",
+    "Options": [
+      {
+        "OptionLabel": "No Obstacle Result",
+        "Value": 0,
+        "RulebookText": "The zone is revealed.",
+        "NextCodeNumber": "ACTION_35"
+      },
+      {
+        "OptionLabel": "Obstacle Result",
+        "Value": 1,
+        "RulebookText": "A card from the Obstacle deck will be revealed. If it can be activated according to the conditions and requirements on the card, its cost points will be deducted from the Reserve Points budget and the card will be activated.",
+        "NextCodeNumber": "ACTION_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_20",
+    "Header": "Trap Reaction",
+    "AnswerType": "Bool",
+    "RulebookText": "Once a trap is triggered, the hero who caused it by an action or movement must pass a Perception test, matching or exceeding the value indicated on the card. If there's a Mishap, the Dark Player (JOA) receives 1 Reserve Point.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 0,
+        "RulebookText": "The trap has been discovered and remains latent in the door, chest, or tile where the action or movement was intended (leave the Dark Player card face up to remember it). The action the hero intended to perform will not be carried out (thus, it can be deactivated in the same turn). If the trap was triggered by stepping on a tile, the character takes a step back to the previous tile. If the trap was triggered for any other reason, the character can move to an adjacent free tile. In any case, the character cannot move for the rest of their activation. Both the hero who discovered the trap and any other character can use an action to deactivate it. If a double 6 was rolled during the Perception test to detect the trap, any hero in the group will get a +1 modifier to deactivate it.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 1,
+        "RulebookText": "The trap will activate, and its effect will be read. The action the hero intended to perform will not be carried out. The hero's activation ends.",
+        "NextCodeNumber": "ACTION_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_25",
+    "Header": "Deactivate Trap",
+    "AnswerType": "Bool",
+    "RulebookText": "Dexterity test, requiring the result indicated on the trap card. Modifiers to the test: +1 if a double 6 was rolled in the Perception test to detect the trap by any hero in the group. If there's a Mishap, the Dark Player (JOA) receives 1 Reserve Point.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 0,
+        "RulebookText": "Success: the trap is deactivated. Remove the card. The door or chest is not considered opened.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 1,
+        "RulebookText": "Failure: the trap activates and its effect is read. The door or chest is not considered opened.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_30",
+    "Header": "Fall?",
+    "AnswerType": "Bool",
+    "RulebookText": "",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_110"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "ACTION_32"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_32",
+    "Header": "Fall Effect",
+    "AnswerType": "Text",
+    "RulebookText": "In case of a fall from failing a jump or any other event, the character will fall into the pit tile where they were pushed or the closest tile to their jump target, and will suffer the effect of Stunned, taking 1 damage die against their Natural Armor for each point of height from which they fell (if height is not indicated, they take just 1 damage die). After resolving the damage, their activation ends. *For example, pits cause 4 damage dice due to falling from a height of 4. A character in a pit cannot be attacked in melee by enemies, nor can they attack in melee. They can only shoot and cast spells at adjacent enemies, considered as heavy cover. Adjacent enemies can shoot and cast spells against them without restrictions.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "Let's go ahead!"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_35",
+    "Header": "Main Room Revealed?",
+    "AnswerType": "Bool",
+    "RulebookText": "",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "ACTION_45"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "ACTION_40",
+    "Header": "Encounters",
+    "AnswerType": "Bool",
+    "RulebookText": "The Scenario Die will be rolled every time a character visualizes a new section (except in the first turn of the heroes). If a result of is rolled, a card from the Encounter deck will be revealed. The contents of the revealed card will be observed, and a 1D6 will be rolled. The result will be consulted on the Creature Generation Table* found in the corresponding faction sheet in the Bestiary book to determine the type and number of enemies to place. 1st: Reserve points will be reduced by the cost of the placed enemies. 2nd: The enemies will be placed in the new section. 3rd: Initiative will be rolled.",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "If no result was obtained after visualizing a new section, the roll should be repeated if the heroes accessed the section by breaking a door or if no enemies appeared in the last two revealed sections.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "A card from the Encounter deck will be revealed. The contents of the revealed card will be observed, and a 1D6 will be rolled. The result will be consulted on the Creature Generation Table* found in the corresponding faction sheet in the Bestiary book to determine the type and number of enemies to place. 1st: Reserve points will be reduced by the cost of the placed enemies. 2nd: The enemies will be placed in the new section. 3rd: Initiative will be rolled.",
+        "NextCodeNumber": "ACTION_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_45",
+    "Header": "Main Room",
+    "AnswerType": "Text",
+    "RulebookText": "A card from the Encounter deck will be revealed. The contents of the revealed card will be observed, and a 1D6 will be rolled. The result will be consulted on the Creature Generation Table* found in the corresponding faction sheet in the Bestiary book to determine the type and number of enemies to place. 1st: Reserve points will be reduced by the cost of the placed enemies. 2nd: The enemies will be placed in the new section. 3rd: Initiative will be rolled. If there are not enough Reserve Points to activate an Encounter card, refer to the previous result on the Creature Generation Table of the faction. If the minimum number of creatures indicated in the column cannot be placed, discard the card in the usual manner.",
+    "Options": [
+      {
+        "OptionLabel": "Full steam ahead!",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "COMBAT_5"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_50",
+    "Header": "Open Locked Door with Key",
+    "AnswerType": "Bool",
+    "RulebookText": "Success: the door will open.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 0,
+        "RulebookText": "The door will open.",
+        "NextCodeNumber": "ACTION_10"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 1,
+        "RulebookText": "The door can only be opened by breaking it. If there was a Fumble, the JOA gains 1 Reserve Point.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_60",
+    "Header": "Solve Puzzle",
+    "AnswerType": "Bool",
+    "RulebookText": "Success: the door or chest will open.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 0,
+        "RulebookText": "The door or chest will open.",
+        "NextCodeNumber": "ACTION_70"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 1,
+        "RulebookText": "The door can only be opened by breaking it. The chest cannot be opened or broken in any way during the current adventure. If there was a Fumble, the JOA gains 1 Reserve Point.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_70",
+    "Header": "Break Doors, Chests, or Other Objects",
+    "AnswerType": "Bool",
+    "RulebookText": "Does it break?",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Add Noise Marker. In the next Combat Turn, enemies gain +1 for each turn spent breaking.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "",
+        "NextCodeNumber": "ACTION_75"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_75",
+    "Header": "Break Doors, Chests, or Other Objects",
+    "AnswerType": "Bool",
+    "RulebookText": "Was it broken! Door or Chest?",
+    "Options": [
+      {
+        "OptionLabel": "Door",
+        "Value": 0,
+        "RulebookText": "Once a door is broken, the section it leads to will be revealed, as if it had been opened normally (in this case, visualizing the new section will not count as an exploration action). This also includes the elements and creatures in that section. However, the door cannot be closed again.",
+        "NextCodeNumber": "ACTION_10"
+      },
+      {
+        "OptionLabel": "Chest",
+        "Value": 1,
+        "RulebookText": "Once a chest is broken, a card from the Treasure deck will be drawn.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_80",
+    "Header": "Inspect or Interact with Element",
+    "AnswerType": "Bool",
+    "RulebookText": "Fumble?",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Nothing happens.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "A trap is triggered. The JOA gains 1 Reserve Point.",
+        "NextCodeNumber": "ACTION_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_90",
+    "Header": "Search for Resources",
+    "AnswerType": "Bool",
+    "RulebookText": "Perception roll",
+    "Options": [
+      {
+        "OptionLabel": "Failure (Fumble)",
+        "Value": 0,
+        "RulebookText": "A hidden animal bites your hand. You lose 1 Vitality. The JOA gains 1 Reserve Point.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 1,
+        "RulebookText": "You find nothing.",
+        "NextCodeNumber": "ACTION_10"
+      },
+      {
+        "OptionLabel": "Success",
+        "Value": 2,
+        "RulebookText": "You find 1 Resource. Draw a Resource Card that matches the Biom where you are.",
+        "NextCodeNumber": "GAMEON_55"
+      },
+      {
+        "OptionLabel": "Critical Success",
+        "Value": 3,
+        "RulebookText": "You find 2 Resources, regardless of the Biom where you are.",
+        "NextCodeNumber": "GAMEON_55"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_100",
+    "Header": "Run. Roll 2D6",
+    "AnswerType": "Bool",
+    "RulebookText": "Fumble?",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "You only move half your Movement. If at any point during your movement in the turn you decide to run, and you are required to make a Perception test, the character will have a -2 penalty to it (for example, to detect traps).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "You will move as many squares as your Movement value plus the result obtained, without exceeding twice your Movement value. If at any point during your movement in the turn you decide to run, and you are required to make a Perception test, the character will have a -2 penalty to it (for example, to detect traps). You cannot enter the ZI of any enemy while running.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_110",
+    "Header": "Highlighted Jump",
+    "AnswerType": "Bool",
+    "RulebookText": "Modifiers to the Agility test:\n-1: if jumping over an obstacle wider than one square.\n-1: if jumping while adjacent to an enemy.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 1,
+        "RulebookText": "The character will land on a free square adjacent to the pit or precipice. If no free squares are available due to being occupied by allies or enemies, the character can land in an occupied square, pushing the occupant backward and finishing the movement.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 0,
+        "RulebookText": "If the character cannot be helped, they will finish their activation, and you must refer to the Falls section on page 28.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_115",
+    "Header": "Highlighted Jump: Ally Help",
+    "AnswerType": "Bool",
+    "RulebookText": "If there is an ally (hero or mercenary) adjacent to the pit on the side the hero was attempting to climb, and the ally has a Rope, a Strength test is required (even if already activated during the turn). Modifiers to the Strength test:\n-1: if the person being helped is Large.\n-1: if the ally has an enemy adjacent.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 1,
+        "RulebookText": "The highlighted jump of the companion will succeed.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 0,
+        "RulebookText": "The character attempting the jump will finish their activation and you must consult the Falls section on page 28.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_120",
+    "Header": "Climbing Pits",
+    "AnswerType": "Bool",
+    "RulebookText": "Agility test. Modifiers to the Agility test:\n-1: if there is an enemy adjacent to the pit.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 1,
+        "RulebookText": "The character will climb and finish their activation on a free square adjacent to the pit. If no free squares are available due to being occupied by allies or enemies, the character can ascend to an occupied square, pushing the occupant backward and finishing the movement.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 0,
+        "RulebookText": "If the character cannot be helped, they will finish their activation and remain at the bottom of the pit.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_125",
+    "Header": "Climbing Pits: Ally Help",
+    "AnswerType": "Bool",
+    "RulebookText": "If there is an ally (hero or mercenary) adjacent to the pit on the side the hero was attempting to climb, and the ally has a Rope, they may make a Strength test immediately to assist (even if already activated during the turn). Modifiers: -1: if the person being helped is Large. -1: if the ally with the rope has an enemy adjacent.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 1,
+        "RulebookText": "The character will climb and finish their activation on a free square adjacent to the pit. If no free squares are available due to being occupied by allies or enemies, the character can ascend to an occupied square, pushing the occupant backward and finishing the movement.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 0,
+        "RulebookText": "If the character cannot be helped, they will finish their activation and remain at the bottom of the pit. A character in a pit cannot be attacked in melee by enemies, nor can they attack in melee. They can only shoot or cast spells at enemies adjacent to the pit, considering heavy cover. Enemies adjacent can shoot or cast spells at them without restrictions.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "ACTION_130",
+    "Header": "Search for Secret Doors",
+    "AnswerType": "Bool",
+    "RulebookText": "This action cannot be combined with a movement in the same turn. A hero may declare that they are searching for secret doors in the section they are in. They do not need to be adjacent to a wall or element. They must pass a Perception test.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 1,
+        "RulebookText": "If there is a hidden secret door in that section (indicated in the Adventure Sheet), it will be placed. This secret door will have the same consideration as a normal door, able to be opened in the usual manner (and obstacles may be applied to it by the Dark Player as with any other).",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 0,
+        "RulebookText": "Failure: no secret doors will be found. If there was a Critical Failure, the Dark Player gains 1 Reserve Point.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_5",
+    "Header": "Leader Preparation",
+    "AnswerType": "Text",
+    "RulebookText": "The Leader will be placed in the square indicated in the Adventure Sheet. If no location is defined on the map, the Leader will be placed in a row behind the rest of the creatures of their side. In this row, they will be placed at the farthest end from the hero that visualized the section (or where they have more advantage or protection against them).",
+    "Options": [
+      {
+        "OptionLabel": "Always forward!",
+        "Value": 1,
+        "RulebookText": "Continue with the next step.",
+        "NextCodeNumber": "COMBAT_6"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_6",
+    "Header": "Leader Upgrade",
+    "AnswerType": "Text",
+    "RulebookText": "When the heroes visualize the main room, after placing all creatures, reduce the Reserve Points counter to 10. Unspent points will be invested as follows: For every 2 unspent Reserve Points, the Leader will gain 1 extra Vitality Point. If the Leader has the 'Invulnerable' ability or an Armor value of 6, they will gain only 1 Vitality Point for every 3 unspent Reserve Points. The Leader receives 1 extra action at the start of their activation for every hero above 2 in the group (maximum of 2 extra actions per turn). For example, if the group consists of 4 heroes, the Leader will receive 2 extra actions per turn. If a creature has the 'Two Attacks' ability and gains 1 extra action, it will be able to make 3 attacks during its activation. *In adventures with no Reserve Points counter, the Leader will receive 1 Vitality Point for every 10 HP the hero group has when visualized. If the Leader has the 'Invulnerable' ability or an Armor value of 6, they will only gain 1 extra Vitality Point for every 20 HP the hero group has.",
+    "Options": [
+      {
+        "OptionLabel": "Always forward!",
+        "Value": 1,
+        "RulebookText": "Continue with the next step.",
+        "NextCodeNumber": "COMBAT_7"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_7",
+    "Header": "Extra Skills",
+    "AnswerType": "Text",
+    "RulebookText": "Once a Leader is placed, roll 1D6 for each hero in the game to determine the extra skills they possess. The creature's profile icon indicates which extra skills they may acquire at the indicated cost, increasing their HP. With each roll of 1, they gain 1 HP. With each roll of 2, they gain 2 HP. And so on. With a roll of 6, they gain 6 HP or more. These skills* must be paid with Reserve Points. The highest HP skills should be paid first, in the left-to-right order as indicated in the creature's profile. Skills that are not applicable for this combat (e.g., 'Quick Shot' for a Leader without ranged weapons) should be ignored. *If the creature already possesses any of the extra skills listed, ignore it for this roll.",
+    "Options": [
+      {
+        "OptionLabel": "Always forward!",
+        "Value": 1,
+        "RulebookText": "Continue with the next step.",
+        "NextCodeNumber": "COMBAT_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_20",
+    "Header": "Initiative Roll",
+    "AnswerType": "Bool",
+    "RulebookText": "2D6 + Perception of the hero closest to the enemies. Critical Failure? AGAINST 2D6 + Perception of the enemy closest to you. Tie? The one with the highest Intelligence wins.",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "Apply the surprised rule, unless one side is already in combat.",
+        "NextCodeNumber": "COMBAT_22"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "Surprised Roll!",
+        "NextCodeNumber": "COMBAT_25"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_22",
+    "Header": "Surprised! - Critical Failure",
+    "AnswerType": "Text",
+    "RulebookText": "If a side gets a critical failure result (double 1) on the Initiative roll, all of its characters within a 6-tile radius will suffer the 'Surprised!' rule automatically.",
+    "Options": [
+      {
+        "OptionLabel": "Go ahead!",
+        "Value": 1,
+        "RulebookText": "Continue to the next step.",
+        "NextCodeNumber": "COMBAT_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_25",
+    "Header": "Surprised!",
+    "AnswerType": "Bool",
+    "RulebookText": "As soon as an Initiative roll is made after both sides discover a new section, enemies within a 6-tile radius of the character or creature that wins the Initiative roll will be affected by the 'Surprised!' rule if the individual results of the two dice rolled by the winning side equal or exceed their Intelligence (except if any die result is a 1).",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 0,
+        "RulebookText": "The characters of the losing side affected by this rule may be moved by the winner (with the facing they desire) to an adjacent free tile with no obstacles or characters. Characters or creatures will never suffer this rule if it was necessary to break through a door to enter the section.",
+        "NextCodeNumber": "COMBAT_30"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "RulebookText": "Continue to the next step.",
+        "NextCodeNumber": "COMBAT_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_30",
+    "Header": "Initiative Roll - Result",
+    "AnswerType": "Text",
+    "RulebookText": "Hero's turn, Heroes discover a new section where enemies appear (activating the 'Wandering Creature', 'Special Creature', or 'Enemies' card).\n* Enemies appear during combat when a new section is revealed.",
+    "Options": [
+      {
+        "OptionLabel": "0",
+        "Value": 0,
+        "RulebookText": "Heroes finish their turn. Dark Player's turn begins.",
+        "NextCodeNumber": "JOAON_10"
+      },
+      {
+        "OptionLabel": "1",
+        "Value": 1,
+        "RulebookText": "Hero's turn, Heroes discover a new section where enemies appear (activating the 'Wandering Creature', 'Special Creature', or 'Enemies' card).\n* Enemies appear during combat when a new section is revealed. Heroes win.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "2",
+        "Value": 2,
+        "RulebookText": "Hero's turn, 'Ambush!' card is activated. Heroes win.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "3",
+        "Value": 3,
+        "RulebookText": "Hero's turn, 'Ambush!' card is activated. Dark Player wins.",
+        "NextCodeNumber": "JOAON_10"
+      },
+      {
+        "OptionLabel": "4",
+        "Value": 4,
+        "RulebookText": "Dark Player's turn. New enemies appear during combat when the 'Reinforcements' card is activated or a door is opened by a creature with the 'Sentinel' ability. Dark Player wins.",
+        "NextCodeNumber": "JOAON_70"
+      },
+      {
+        "OptionLabel": "5",
+        "Value": 5,
+        "RulebookText": "Dark Player's turn. New enemies appear during combat when the 'Reinforcements' card is activated or a door is opened by a creature with the 'Sentinel' ability. Heroes win.",
+        "NextCodeNumber": "JOAON_70"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "CLOSECOMBAT_10",
+    "Header": "COMBAT: MODIFIERS",
+    "AnswerType": "Boollist",
+    "RulebookText": "Maximum +3, +5 with Weapons and/or Magical Items or by the effect of spells.",
+    "Options": [
+      {
+        "OptionLabel": "Weapon Modifier",
+        "Value": 1,
+        "RulebookText": "General modifier applied to the melee attack roll."
+      },
+      {
+        "OptionLabel": "Cover",
+        "Value": 2,
+        "RulebookText": "If there is an obstacle in the trajectory of a melee attack, the attacker will apply a -1 penalty to their roll, regardless of whether it is light or heavy cover."
+      },
+      {
+        "OptionLabel": "Flying Target or Attacker",
+        "Value": 3,
+        "RulebookText": "If the target is flying, the attacker will suffer a -1 penalty to their melee attack roll. A character or creature that is flying must stop flying if they wish to make a melee attack on an enemy on the ground."
+      },
+      {
+        "OptionLabel": "Fighting from an Elevated Position",
+        "Value": 4,
+        "RulebookText": "If a fighter is in an elevated position (not flying) compared to a rival of the same size, they will gain +1 to their opposed melee attack roll against that rival."
+      },
+      {
+        "OptionLabel": "Attacking from Behind",
+        "Value": 5,
+        "RulebookText": "If a character attacks from behind* the target (or the target is knocked down), they will gain +1 to their melee attack roll and the defender will not be able to use their shield. *All movement before the attack must be done behind the enemy without entering their line of sight."
+      },
+      {
+        "OptionLabel": "Difficult Terrain",
+        "Value": 6,
+        "RulebookText": "A character in difficult terrain will suffer a -1 penalty to their melee attack roll."
+      },
+      {
+        "OptionLabel": "Immobile Target",
+        "Value": 7,
+        "RulebookText": "Attacks against immobile targets (doors, furniture, or characters affected by Immobilization) will not require an opposed roll and will automatically hit. If the target is a character, their Armor will be reduced by -1."
+      },
+      {
+        "OptionLabel": "Drawing Weapon",
+        "Value": 8,
+        "RulebookText": "If a character decides to perform a quick action to change weapons while within the influence zone of an enemy, they will suffer a -1 penalty to their opposed melee attack roll against that enemy."
+      },
+      {
+        "OptionLabel": "Polearms",
+        "Value": 9,
+        "RulebookText": "As described in the 'Equipment' chapter, with this type of weapon, the user can attack at 2 squares of distance (remember the line of sight rules on page 31). However, they suffer a -1 penalty when attacking adjacent enemies. They also gain the ability to push after winning an opposed melee roll as a defender, just as if they were using a shield."
+      },
+      {
+        "OptionLabel": "Unarmed",
+        "Value": 10,
+        "RulebookText": "An unarmed character will suffer a -1 to their melee attack roll, roll as many damage dice as their Strength, and increase the target's Armor by +1. A character armed with a ranged weapon is considered unarmed if they intend to attack or defend in melee with it, unless the weapon specifies otherwise."
+      },
+      {
+        "OptionLabel": "Character's Skills",
+        "Value": 11,
+        "RulebookText": "Add any modifier coming from the character's skills."
+      },
+      {
+        "OptionLabel": "Skills Inferred in the Turn",
+        "Value": 12,
+        "RulebookText": "Add any modifier coming from SPELLS, CONDITIONS, etc."
+      },
+      {
+        "OptionLabel": "Opponent's Skills",
+        "Value": 13,
+        "RulebookText": "Consider the opponent's skills that may affect the roll or the result."
+      },
+      {
+        "OptionLabel": "Opponent's Skills Inferred in the Turn",
+        "Value": 14,
+        "RulebookText": "Add any modifier from SPELLS, CONDITIONS, etc. affecting the opponent."
+      },
+      {
+        "OptionLabel": "The Target Has a Shield and Declares 'SHIELDING'",
+        "Value": 15,
+        "RulebookText": "A character can, when an enemy declares an attack against them, declare that they are shielding. During that turn, they may reroll all attempts to block impacts with their shield, but during their next activation, they will forgo any attacks and cannot run."
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "CLOSECOMBAT_20",
+    "Header": "WINNING THE COMBAT AND STRIKING",
+    "AnswerType": "List",
+    "RulebookText": "Opposed Close Combat Roll*: 2D6 + Attacker's Close Combat vs 2D6 + Defender's Close Combat",
+    "Options": [
+      {
+        "OptionLabel": "Success (Critical Hits)",
+        "Value": 1,
+        "RulebookText": "Hits the enemy. Critical hits, unless stated otherwise, will be added to the Wound Roll."
+      },
+      {
+        "OptionLabel": "Success",
+        "Value": 2,
+        "RulebookText": "Hits the enemy."
+      },
+      {
+        "OptionLabel": "Draw, Attacker Wins",
+        "Value": 3,
+        "RulebookText": "In the event of a tie in the opposed Close Combat rolls, the character with the higher Agility value wins. This rewards faster characters, who will have more ease avoiding hits or finding weak spots in the opponent. If Agility is tied, the character using a shield wins. If there's still a tie, the defender wins."
+      },
+      {
+        "OptionLabel": "Draw, Defender Wins",
+        "Value": 4,
+        "RulebookText": "In the event of a tie in the opposed Close Combat rolls, the character with the higher Agility value wins. This rewards faster characters, who will have more ease avoiding hits or finding weak spots in the opponent. If Agility is tied, the character using a shield wins. If there's still a tie, the defender wins.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Draw, Defender Wins and Has a Shield",
+        "Value": 5,
+        "RulebookText": "If a defender wielding a shield wins the opposed Close Combat roll, they can push their adjacent opponent (without occupying their space), as long as the defender is the same size or larger than the rival. If no free spaces are available, the rival stays in place.",
+        "NextCodeNumber": "COMBAT_60"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 6,
+        "RulebookText": ""
+      },
+      {
+        "OptionLabel": "Failure, Enemy Has a Shield",
+        "Value": 7,
+        "RulebookText": "If a defender wielding a shield wins the opposed Close Combat roll, they can push their adjacent opponent (without occupying their space), as long as the defender is the same size or larger than the rival. If no free spaces are available, the rival stays in place.",
+        "NextCodeNumber": "COMBAT_60"
+      },
+      {
+        "OptionLabel": "Failure, Enemy Gets Double Critical and Has a Shield",
+        "Value": 8,
+        "RulebookText": "Check if the character is STUNNED.",
+        "NextCodeNumber": "GAMEON_35"
+      },
+      {
+        "OptionLabel": "Failure (Fumbles)",
+        "Value": 9,
+        "RulebookText": "The weapon used falls immediately to the ground, in the space occupied by the enemy, and a break test must be made to determine if it breaks. If a defender wielding a shield wins the opposed Close Combat roll, they can push their adjacent opponent (without occupying their space), as long as the defender is the same size or larger than the rival. If no free spaces are available, the rival stays in place.",
+        "NextCodeNumber": "CLOSECOMBAT_100"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CLOSECOMBAT_30",
+    "Header": "PUSH",
+    "AnswerType": "Text",
+    "RulebookText": "If an attacker wins the opposed Close Combat roll against a rival of equal or smaller size, they can push them to an adjacent square backward (including diagonally) after resolving the damage roll. The pushed character maintains their facing. If no free spaces are available due to other characters, the defender stays in place. If they cannot be pushed due to an impassable obstacle or furniture (wall, bookshelf, column), they will receive 1 extra damage die from the same attack.",
+    "Options": [
+      {
+        "OptionText": "PUSH!",
+        "Value": 1,
+        "NextCodeNumber": "COMBAT_40"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "CLOSECOMBAT_100",
+    "Header": "Weapon Fumble",
+    "AnswerType": "List",
+    "RulebookText": "Weapons can break when the attacker or defender fumbles with them. When this happens, the player who fumbled will roll 1D6, and their weapon will break if the result is equal to or less than the break threshold for that weapon. Polearms or weapons with wooden handles like spears or axes tend to have a higher chance of breaking than swords or similar weapons.",
+    "Options": [
+      {
+        "OptionLabel": "The Hero's Weapon Breaks",
+        "Value": 0,
+        "RulebookText": "The weapon becomes unusable, and the character ends their activation turn UNARMED.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "The Hero's Weapon Does Not Break",
+        "Value": 1,
+        "RulebookText": "The weapon falls to the ground, and the character ends their activation turn UNARMED.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "The JOA Character's Weapon Breaks",
+        "Value": 2,
+        "RulebookText": "The weapon becomes unusable, and the character ends their activation turn UNARMED.",
+        "NextCodeNumber": "JOAON_70"
+      },
+      {
+        "OptionLabel": "The JOA Character's Weapon Does Not Break",
+        "Value": 3,
+        "RulebookText": "The weapon falls to the ground, and the character ends their activation turn UNARMED.",
+        "NextCodeNumber": "JOAON_70"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "COMBAT_40",
+    "Header": "The enemy has been hit, but THEY HAVE a shield and are NOT attacked from behind",
+    "AnswerType": "List",
+    "RulebookText": "A defender wielding a shield can block an impact from any incoming attack (melee or ranged). To do so, they must roll 1D6 and achieve a result equal to or greater than their blocking ability. An attacker’s critical hit will reduce the shield’s blocking roll. For example, a shield that blocks normal impacts with a result of 5 or higher will only block a critical impact with a result of 6. If the impact was a double critical, it is unstoppable (regardless of the type of shield).",
+    "Options": [
+      {
+        "OptionLabel": "Success (Criticals)",
+        "Value": 0,
+        "RulebookText": "The impact will not cause damage. However, the shield block does not negate the knockdown effect produced by the impact. Most shields cause stun to the opponent if the defender rolls a double critical while defending in melee.",
+        "NextCodeNumber": "COMBAT_50"
+      },
+      {
+        "OptionLabel": "Success",
+        "Value": 1,
+        "RulebookText": "The impact will not cause damage. However, the shield block does not negate the knockdown effect produced by the impact.",
+        "NextCodeNumber": "COMBAT_50"
+      },
+      {
+        "OptionLabel": "Success, but the attack BREAKS SHIELDS",
+        "Value": 2,
+        "RulebookText": "The bearer must perform a breaking roll to determine if their shield breaks or withstands the impact.",
+        "NextCodeNumber": "COMBAT_200"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 3,
+        "RulebookText": "The defender will take damage from the attack.",
+        "NextCodeNumber": "COMBAT_100"
+      },
+      {
+        "OptionLabel": "Failure (Fumbles)",
+        "Value": 4,
+        "RulebookText": "A defender using a shield who fumbles while defending will lose the shield just as if it were a weapon (so they lose the shield, not the weapon), performing the necessary breaking roll.",
+        "NextCodeNumber": "COMBAT_200"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_50",
+    "Header": "Resolve Effect (Melee)",
+    "AnswerType": "List",
+    "RulebookText": "If an attacker scores a hit on their target (with a melee attack, ranged shot, or magical projectile), in addition to the damage dice and potential knockback, they can cause additional effects to the opponent, depending on the size of the combatants and the number of critical hits obtained.",
+    "Options": [
+      {
+        "OptionLabel": "0 Crits, the attacker is MUCH LARGER, the enemy is NOT a Leader",
+        "Value": 0,
+        "RulebookText": "Enemy KNOCKED DOWN.",
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "1 or 2 Crits, the attacker is MUCH LARGER, the enemy IS a Leader",
+        "Value": 1,
+        "RulebookText": "Enemy KNOCKED DOWN.",
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "1 Crit, the attacker is LARGER, the enemy is NOT a Leader",
+        "Value": 2,
+        "RulebookText": "Enemy KNOCKED DOWN.",
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "2 Crits, the attacker is LARGER",
+        "Value": 3,
+        "RulebookText": "Enemy KNOCKED DOWN.",
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "2 Crits, the attacker is EQUAL to the enemy",
+        "Value": 4,
+        "RulebookText": "Enemy KNOCKED DOWN.",
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "2 Crits, the attacker is SMALLER or MUCH SMALLER than the enemy",
+        "Value": 5,
+        "RulebookText": "Enemy STUNNED.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Other cases",
+        "Value": 6,
+        "RulebookText": "No effect.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_60",
+    "Header": "Defender Pushes! (Melee)",
+    "AnswerType": "Text",
+    "RulebookText": "If a defender wielding a shield wins the opposed melee roll, they may push their adjacent opponent (without occupying their space), provided that the defender is of equal or greater size than the opponent. If there are no free spaces, the opponent remains in place (see 'Push' on page 36).",
+    "Options": [
+      {
+        "OptionText": "Defender Pushes!",
+        "Value": 1,
+        "NextCodeNumber": "COMBAT_310"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_100",
+    "Header": "Damage Modifiers",
+    "AnswerType": "Text",
+    "RulebookText": "Strength + Weapon + Criticals. (Only Spells): Light Cover: -1 Die; if Heavy Cover: -2 Dice. Apprentice Mage: -1 Die. Shield: A shield does not completely block magical projectiles or Breath or Aura attacks, but will provide the same benefits as light cover (the bearer receives 1 fewer damage die).",
+    "Options": [
+      {
+        "OptionText": "Ouch!",
+        "Value": 1,
+        "NextCodeNumber": "COMBAT_110"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_110",
+    "Header": "Damage",
+    "AnswerType": "Bool",
+    "RulebookText": "Each damage die rolled will cause 1 wound to the target if it equals or exceeds their Armor value. A roll of 1 on the damage dice will never cause a wound, regardless of modifiers applied. Minimum damage: a character will always roll at least 1 damage die. If they would roll 0 dice, they will still roll 1 die, but the opponent's Armor will be increased by +1. Fire or flame damage: attacks from weapons, obstacles, or spells that explicitly include the term 'fire' or 'flame' in their name or effects. Some creatures are vulnerable to this element. For each critical (6 on one of the dice) achieved during the hit or spell casting roll, the number of damage dice rolled will increase by 1 to wound. 1 point of damage or wound will be caused each time the die result equals or exceeds the attribute. Additional modifiers: Light cover: -1 Die; if Heavy cover: -2 Dice.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 0,
+        "RulebookText": "1 point of damage will be caused.",
+        "NextCodeNumber": "COMBAT_300"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 1,
+        "RulebookText": "No damage caused.",
+        "NextCodeNumber": "COMBAT_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_200",
+    "Header": "Shield Break Roll",
+    "AnswerType": "List",
+    "RulebookText": "When a defender uses their shield as cover against a magical projectile (being the direct target), or manages to block an impact from a weapon with the ability to break shields, the shield bearer must perform a break roll to determine if their shield breaks or withstands the impact. In these cases, they will roll 1D6.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 0,
+        "RulebookText": "The shield holds!",
+        "NextCodeNumber": "COMBAT_50"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 1,
+        "RulebookText": "The shield breaks.",
+        "NextCodeNumber": "COMBAT_50"
+      },
+      {
+        "OptionLabel": "Failure, and the attack was shield-breaking",
+        "Value": 2,
+        "RulebookText": "The shield breaks, and the bearer takes +1 damage die.",
+        "NextCodeNumber": "COMBAT_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_300",
+    "Header": "Eliminate Enemy",
+    "AnswerType": "Bool",
+    "RulebookText": "When a character has accumulated as many wound points as their Vitality (i.e., when their Vitality is reduced to 0 or below), they are automatically Out of Combat.",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 0,
+        "NextCodeNumber": "COMBAT_305"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "NextCodeNumber": "COMBAT_305"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_305",
+    "Header": "Eliminate Leader",
+    "AnswerType": "Bool",
+    "RulebookText": "If a Leader is Out of Combat, all Troop-level characters within a 6-tile radius of them must automatically pass a Courage test or be removed from the game by fleeing or surrendering.",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 0,
+        "NextCodeNumber": "COMBAT_310"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "NextCodeNumber": "COMBAT_310"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "COMBAT_310",
+    "Header": "Gain Position",
+    "AnswerType": "Text",
+    "RulebookText": "When an attacker eliminates an enemy, knocks them down, or pushes them to another tile, they may occupy the tile vacated by the defender (except if the attacker uses a long weapon), without counting as movement, and face in any direction they choose.",
+    "Options": [
+      {
+        "OptionText": "Gain the position!",
+        "Value": 1,
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "RANGEDCOMBAT_10",
+    "Header": "Is there LoS to the target?",
+    "AnswerType": "Bool",
+    "RulebookText": "Remember that characters block LoS, but are not cover.",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 0,
+        "NextCodeNumber": "RANGEDCOMBAT_15"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+
+  {
+    "CodeNumber": "RANGEDCOMBAT_15",
+    "Header": "COMBAT: MODIFIERS",
+    "AnswerType": "Boollist",
+    "RulebookText": "Maximum +3, +5 with Weapons and/or Magical Items or due to spell effects",
+    "Options": [
+      {
+        "OptionLabel": "Cover",
+        "Value": "0-1",
+        "RulebookText": "The covers in the attacker's Line of Sight (see page 31) will impose penalties to the shot. Light cover gives a -1 penalty to the Shooting roll. Heavy cover imposes a -2 penalty.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Distance",
+        "Value": "0-1",
+        "RulebookText": "Shots and throws within point-blank range (up to 3 squares from the shooter/thrower) have no penalty. Beyond that, penalties will apply. At close range (4 to 6 squares), the penalty is -1. At medium range (7 to 9 squares), the penalty is -2. At long range (10 squares to the weapon's maximum range), the penalty is -3. Most shots in indoor areas are at close range. When the target is more than halfway to the weapon's maximum range (except for thrown weapons), critical hits won't generate extra damage dice.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Small Target",
+        "Value": "0-1",
+        "RulebookText": "If the target is Small, the shooter suffers a -1 penalty to the Shooting roll.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Large or Huge Target",
+        "Value": "0-1",
+        "RulebookText": "If the target is Large or Huge, the shooter gains +1 to the Shooting roll.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Immobile Target",
+        "Value": "0-1",
+        "RulebookText": "If the target is Immobile that turn, the shooter gains +2 to the Shooting roll.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Move and Shoot",
+        "Value": "0-1",
+        "RulebookText": "A character making a ranged attack with a projectile weapon after moving will suffer a -1 penalty to the Shooting roll if they move up to half of their Movement. If they move more, the penalty increases to -2. This penalty doesn't apply to thrown weapons if the character moves 1 or 2 squares.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Flying Target",
+        "Value": "0-1",
+        "RulebookText": "If the target is flying that turn, the shooter suffers a -1 penalty to the Shooting roll.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "More Agile Target",
+        "Value": "0-1",
+        "RulebookText": "The shooter suffers a -1 penalty to the Shooting roll if the target has more Agility than they do.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Attacks from Behind",
+        "Value": "0-1",
+        "RulebookText": "If a character attacks from behind the target (or if the target is knocked down), they gain +1 to the Shooting roll, and the defender cannot use their shield to parry. *All of the movement leading up to the attack must be from behind the enemy without entering their Line of Sight.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Difficult Terrain",
+        "Value": "0-1",
+        "RulebookText": "If the shooter is on difficult terrain, they suffer a -1 penalty to the Shooting roll.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Hasty Shot",
+        "Value": "0-1",
+        "RulebookText": "A character with a ranged weapon can react with a hasty shot against any enemy moving towards them with the intent to attack, grapple, or fly over their Zone of Influence, as long as the movement starts within their Line of Sight. An additional -2 penalty applies to the Shooting roll. The shot is made when the enemy is 3 squares away from the shooter. If the shooter hits and causes any Vitality loss, the enemy will stop their movement. If the enemy is Large or Huge, the shot must be a critical hit (double 6) to stop their movement. This shot cannot be made if the weapon is in 'Reload' position. A character may only make one hasty shot per turn.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Character Skills",
+        "Value": "0-1",
+        "RulebookText": "Adds any modifiers from the Character's Skills.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Skills Inferred During the Turn",
+        "Value": "0-1",
+        "RulebookText": "Adds any modifiers from SPELLS, CONDITIONS, etc.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Opponent's Skills",
+        "Value": "0-1",
+        "RulebookText": "Consider any skills of the opponent that could affect the roll or result.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Opponent's Skills Inferred During the Turn",
+        "Value": "0-1",
+        "RulebookText": "Adds any modifiers from SPELLS, CONDITIONS, etc. affecting the opponent.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Magic Arrows and Thrown Weapons",
+        "Value": "0-1",
+        "RulebookText": "If used during a combat turn, they cannot be reused until the end of that combat (except for certain magical weapons that return to the user's hands).",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      },
+      {
+        "OptionLabel": "Target Has Shield and Declares 'SHIELD'",
+        "Value": "0-1",
+        "RulebookText": "A character may declare that they will use their shield to block an attack from an enemy. This turn, they may reroll all shield-blocking attempts, but during their next activation, they must forgo any attacks and cannot run.",
+        "NextCodeNumber": "RANGEDCOMBAT_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "RANGEDCOMBAT_20",
+    "Header": "HIT AND IMPACT",
+    "AnswerType": "List",
+    "RulebookText": "To hit with a ranged shot or throw, a Shooting roll must be passed, taking into account the relevant modifiers. A character hits when the result of 2D6, plus their Shooting stat and the modifiers described here, totals 10 or more.",
+    "Options": [
+      {
+        "OptionLabel": "Success (Criticals)",
+        "Value": 0,
+        "RulebookText": "Hits the enemy. Criticals, unless stated otherwise, are added to the Wound roll.",
+        "NextCodeNumber": "COMBAT_40"
+      },
+      {
+        "OptionLabel": "Success",
+        "Value": 1,
+        "RulebookText": "Hits the enemy.",
+        "NextCodeNumber": "COMBAT_40"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 2,
+        "RulebookText": "Failure.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Failure, a result of 1 appears and the attack was aimed at a target adjacent to an ally",
+        "Value": 3,
+        "RulebookText": "The shot hits the ally (if multiple adjacent allies, one is hit randomly). Targets smaller than the original target can't be hit.",
+        "NextCodeNumber": "RANGEDCOMBAT_30"
+      },
+      {
+        "OptionLabel": "Failure (Fumbles)",
+        "Value": 4,
+        "RulebookText": "A fumble may cause the weapon to break (refer to the 'Breakage Roll' section on page 41). Additionally, it will automatically hit the nearest ally adjacent to the trajectory of the shot. If in doubt, random selection applies.",
+        "NextCodeNumber": "RANGEDCOMBAT_100"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "RANGEDCOMBAT_100",
+    "Header": "Fumble with Weapon",
+    "AnswerType": "List",
+    "RulebookText": "Weapons can break when the attacker or defender fumbles with them. When this happens, the one who fumbled will roll 1D6, and their weapon will break, becoming unusable if the result is equal to or lower than the value indicated for the weapon type. Polearms or weapons with wooden handles like spears or axes are more likely to break than swords and similar weapons.",
+    "Options": [
+      {
+        "OptionLabel": "The Hero's weapon breaks",
+        "Value": 0,
+        "RulebookText": "The weapon becomes unusable, and the character ends their Activation turn UNARMED.",
+        "NextCodeNumber": "GAMEON_30"
+      },
+      {
+        "OptionLabel": "The Hero's weapon does NOT break",
+        "Value": 1,
+        "RulebookText": "The weapon falls to the ground, and the character ends their Activation turn UNARMED.",
+        "NextCodeNumber": "GAMEON_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_10",
+    "Header": "The Wizard has at least one free hand",
+    "AnswerType": "Bool",
+    "RulebookText": "A wizard can use an Action to cast a spell as long as they have at least one free hand.",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "They cannot cast the spell.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "They can cast the spell.",
+        "NextCodeNumber": "SPELL_13"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_13",
+    "Header": "Permanent Spells in play",
+    "AnswerType": "Text",
+    "RulebookText": "Two permanent effect spells cannot be maintained at the same time. If a wizard casts a second permanent effect spell, the first one will disappear. A wizard can voluntarily decide during their activation that the effects of a permanent spell they cast stop taking effect.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Always forward!",
+        "NextCodeNumber": "SPELL_15"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_15",
+    "Header": "Spell Type and target designation",
+    "AnswerType": "Text",
+    "RulebookText": "Magical projectile: spells cast over enemies at a certain distance. It traces a straight line like a shot. Characters not selected as targets but affected by being within range will suffer 2 fewer dice of damage than the target unless the spell description states otherwise. Characters benefiting from light cover will receive 1 less die of damage than indicated by the spell. Those benefiting from heavy cover will receive 2 fewer dice of damage. Domination: spells intended to control the will of creatures and enemies, stunning them, immobilizing them, or hindering their movements and abilities. Domination spells will only affect creatures of Large or Huge size or Champion-level creatures if a critical result is achieved when casting them (this does not affect creature summoning). Damaging: spells that are not magical projectiles but are used to cause some type of damage to enemies and reduce their Vitality, whether through impacts, diseases, suffocations... Protection: used to protect allies or the caster from any type of attack or to block the enemy's progress. Protection spells affect only the squares targeted during the turn the spell is cast and do not move during its duration. Any character leaving that area will lose the associated effects, including the caster. Enhancement: used to give bonuses or enhance and grant abilities and characteristics to allies or the caster. Enhancement spells affect characters within the area of effect when the spell is cast, and those characters can move freely while they have the associated bonuses for the duration of the spell. Healing: used to heal and remove effects.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Always forward!",
+        "NextCodeNumber": "SPELL_17"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_17",
+    "Header": "WIZARDRY LEVELS",
+    "AnswerType": "Text",
+    "RulebookText": "While a wizard hero is an Apprentice, they can only perform 2 casts of each spell they know (instead of the usual 3). Their offensive spells will cause 1 less die of damage than usual (this includes damage dealt by summoned elementals), and the duration of their permanent effect spells will be reduced by -1. When a wizard hero becomes an Archmage, they can perform up to 4 casts of each spell they know.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Always forward!",
+        "NextCodeNumber": "SPELL_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_20",
+    "Header": "The spell has been cast too many times",
+    "AnswerType": "Bool",
+    "RulebookText": "A wizard can only cast the same spell up to 3 times during an adventure unless they take a Mana Potion. These potions, in addition to recovering Mana points, allow the wizard to remove a Mana marker from a specific spell card they cast. *While a wizard hero is an Apprentice (<PV15), they can only perform 2 casts of each spell they know (instead of the usual 3), their offensive spells will cause 1 less die of damage than usual (this includes damage dealt by summoned elementals), and the duration of their permanent effect spells will be reduced by -1. When a wizard hero becomes an Archmage (PV>=40), they can perform up to 4 casts of each spell they know.",
+    "Options": [
+      {
+        "OptionLabel": "No",
+        "Value": 0,
+        "RulebookText": "They can cast the spell.",
+        "NextCodeNumber": "SPELL_22"
+      },
+      {
+        "OptionLabel": "Yes",
+        "Value": 1,
+        "RulebookText": "They cannot cast the spell.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_22",
+    "Header": "The spell is of Superior type (2+ Mana)",
+    "AnswerType": "Bool",
+    "RulebookText": "There are two types of spells based on Mana consumption: basic and superior. Basic spells consume 1 Mana point for each successful cast, while superior spells consume 2 or more Mana points and cannot be combined with movement in the same turn.",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 0,
+        "RulebookText": "Can cast the spell ONLY if they have not moved.",
+        "NextCodeNumber": "SPELL_25"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "RulebookText": "Can cast the spell.",
+        "NextCodeNumber": "SPELL_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_25",
+    "Header": "Has the caster moved?",
+    "AnswerType": "Bool",
+    "RulebookText": "There are two types of spells based on Mana consumption: basic and superior. Basic spells consume 1 Mana point for each successful cast, while superior spells consume 2 or more Mana points and cannot be combined with movement in the same turn.",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 0,
+        "RulebookText": "Cannot cast the spell.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "RulebookText": "Can cast the spell.",
+        "NextCodeNumber": "SPELL_30"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_30",
+    "Header": "Is there Line of Sight to the target?",
+    "AnswerType": "Bool",
+    "RulebookText": "To cast spells, Line of Sight to the target is required. Only for magical projectiles will modifiers to the received damage apply based on cover.",
+    "Options": [
+      {
+        "OptionLabel": "Yes",
+        "Value": 0,
+        "RulebookText": "Can cast the spell.",
+        "NextCodeNumber": "SPELL_40"
+      },
+      {
+        "OptionLabel": "No",
+        "Value": 1,
+        "RulebookText": "Cannot cast the spell.",
+        "NextCodeNumber": "GAMEON_60"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_40",
+    "Header": "USE OF COMPONENTS AND SCROLLS",
+    "AnswerType": "Text",
+    "RulebookText": "Only one Magic Scroll or one Component can be used per turn.",
+    "Options": [
+      {
+        "OptionLabel": "-",
+        "Value": 1,
+        "RulebookText": "Always forward!",
+        "NextCodeNumber": "SPELL_42"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_42",
+    "Header": "MODIFIERS",
+    "AnswerType": "Text",
+    "RulebookText": "A new spell can be cast while the effect of another remains, but in this case, the wizard will suffer a -1 penalty to their Intelligence check to cast it.",
+    "Options": [
+      {
+        "OptionLabel": "1",
+        "Value": 1,
+        "RulebookText": "Always forward!",
+        "NextCodeNumber": "SPELL_50"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_60",
+    "Header": "Dispersion",
+    "AnswerType": "Bool",
+    "RulebookText": "When a spell is successfully cast, any wizard from the opposing side may immediately declare they attempt to dispel it before its effects resolve. The dispel will require an Intelligence test from the one attempting it, needing to surpass the total result of the spellcaster (thus, it will be a contested Intelligence roll). If successful, the spell will have no effect but will still consume the spellcaster's Mana points. Spells cannot be dispelled within an enemy's Zone of Influence, and every successful dispel will cost 1 Mana point. Dispel cannot be attempted without Mana. Dispel may only occur if the attempt is within 8 squares or less of the spellcaster or the target.",
+    "Options": [
+      {
+        "OptionLabel": "Success",
+        "Value": 0,
+        "RulebookText": "The spell is dispelled. Consume 1 Mana point.",
+        "NextCodeNumber": "GAMEON_60"
+      },
+      {
+        "OptionLabel": "Failure",
+        "Value": 1,
+        "RulebookText": "The dispel has no effect. Consume 1 Mana point.",
+        "NextCodeNumber": "SPELL_70"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "SPELL_70",
+    "Header": "Duration",
+    "AnswerType": "List",
+    "RulebookText": "Spells, depending on their duration, can be of two types: immediate or permanent. Immediate effect spells resolve in the turn they are cast, and their effects disappear afterward. Permanent duration spells maintain their effects for a specific number of turns.",
+    "Options": [
+      {
+        "OptionLabel": "Immediate Effect",
+        "Value": 0,
+        "RulebookText": "The spell resolves in the turn it is cast and then disappears.",
+        "NextCodeNumber": "COMBAT_100"
+      },
+      {
+        "OptionLabel": "Permanent Effect",
+        "Value": 1,
+        "RulebookText": "If the spell is permanent, it will last for as many turns as the highest result of the two dice rolled in the Intelligence test (you can mark remaining turns by placing that die on the spell card). After the last turn of the caster's side, the effect ends.",
+        "NextCodeNumber": "COMBAT_100"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "END_5",
+    "Header": "EXPERIENCE POINTS",
+    "AnswerType": "Text",
+    "RulebookText": "When heroes complete a mission, they will record the experience points earned on their hero card or sheet.\n\nUnless a specific reward is indicated on the Adventure Sheet (which will take precedence), standard-sized adventures will confer the following experience points:\n\n+1 if the group completed the mission on the first attempt.\n+1 if the group earned more Achievement points than the Dark Player.\n\nThe hero who ends the adventure Out of Combat will not gain experience.\nRemember that Achievement points only grant experience if the heroes completed the mission.\n\nExperience points accumulate and each player decides when to invest them to improve their character, as described in the next section. These improvements can be made at any time between adventures, i.e., when not in a scenario.",
+    "Options": [
+      {
+        "OptionLabel": "The greatest achievement is leaving unscathed...",
+        "Value": 1,
+        "NextCodeNumber": "END_10"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "END_7",
+    "Header": "EXPERIENCE POINTS",
+    "AnswerType": "List",
+    "RulebookText": "For every 3 accumulated experience points, a hero may invest them in the following improvements:\n\n■ Learn a new skill.\n■ Gain a development point to increase a characteristic.\n■ Increase their Fortune points.\n■ Learn a new spell.",
+    "Options": [
+      {
+        "OptionLabel": "Learning Skills",
+        "Value": 0,
+        "NextCodeNumber": "LEARNING_SKILLS"
+      },
+      {
+        "OptionLabel": "Increase Characteristic",
+        "Value": 1,
+        "NextCodeNumber": "INCREASE_CHARACTERISTIC"
+      },
+      {
+        "OptionLabel": "Increase Fortune",
+        "Value": 2,
+        "NextCodeNumber": "INCREASE_FORTUNE"
+      },
+      {
+        "OptionLabel": "Learn Spells",
+        "Value": 3,
+        "NextCodeNumber": "LEARNING_SPELLS"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "END_10",
+    "Header": "End of Adventure",
+    "AnswerType": "Text",
+    "RulebookText": "An adventure ends if:\n\n■ All heroes are Out of Combat.\n■ Heroes leave the scenario without completing the mission.\n■ Heroes leave the scenario after completing the mission (in this case, they will exit as described below, or immediately if they agree not to perform any further exploratory actions).\n\nOnce a hero steps on a starting or exit square and declares they wish to leave, they will be considered out of the scenario. All heroes are considered out of the scenario when they have reached one of these squares.\n\nAfter an adventure ends, heroes and companions do not recover Vitality points.",
+    "Options": [
+      {
+        "OptionText": "We’ve made it out unscathed... I think",
+        "Value": 0,
+        "NextCodeNumber": "END_40"
+      },
+      {
+        "OptionText": "We have Injured!",
+        "Value": 1,
+        "NextCodeNumber": "END_20"
+      }
+    ]
+  },
+  {
+    "CodeNumber": "END_20",
+    "Header": "Out of Combat Characters",
+    "AnswerType": "Bool",
+    "RulebookText": "If during an adventure or when resolving a Travel Event (see Travel Events in the 'Campaigns' chapter) a hero ends Up Out of Combat, the player controlling them will roll 1D6 at the end of the adventure or event and check the result (Fortune points cannot be applied to the rolls described in this chapter). If a hero is Out of Combat due to a Travel Event resolution (not an Epic Event), consider that their companions never leave the fallen hero’s body.",
+    "Options": [
+      {
+        "OptionText": "Nobody gets left behind!",
+        "Value": 0,
+        "NextCodeNumber": "END_30"
+      },
+      {
+        "OptionText": "If you want a friend, buy a dog",
+        "Value": 1,
+        "NextCodeNumber": "END_40"
+      }
+    ]
+  },
+    {
+      "CodeNumber": "END_30",
+      "Header": "Injuries",
+      "AnswerType": "List",
+      "RulebookText": "Roll 2D6 for each character suffering injuries and consult the result in the following table (before resolving the roll, the group of heroes must decide whether to resurrect their companion, pay the ransom, or set out to rescue them. That is, the type of injuries will only be known after the group's decision and after having the hero back with them):",
+      "Options": [
+        {
+          "OptionText": "2 One-handed: the character cannot use equipment that requires two hands, nor use a weapon and shield simultaneously. Additionally, their Melee characteristic, spellcasting rolls, and Dexterity will be reduced by -1.",
+          "Value": 0,
+          "NextCodeNumber": "END_40"
+        },
+        {
+          "OptionText": "3 Weakened joints: the character's Agility characteristic will be reduced by -1.",
+          "Value": 1,
+          "NextCodeNumber": "END_40"
+        },
+        {
+          "OptionText": "4 Weak knee: the character's Movement characteristic will be reduced by -1.",
+          "Value": 2,
+          "NextCodeNumber": "END_40"
+        },
+        {
+          "OptionText": "5 Weakened muscles: the character's Strength characteristic will be reduced by -1.",
+          "Value": 3,
+          "NextCodeNumber": "END_40"
+        },
+        {
+          "OptionText": "6-7 Reduced capacity: the character will lose 1 point from any of their characteristics, at their choice.",
+          "Value": 4,
+          "NextCodeNumber": "END_40"
+        },
+        {
+          "OptionText": "8 Amnesia: the character will forget one of their acquired profession skills randomly.",
+          "Value": 5,
+          "NextCodeNumber": "END_40"
+        },
+        {
+          "OptionText": "9 Damaged nerves: the character's Courage characteristic will be reduced by -1.",
+          "Value": 6,
+          "NextCodeNumber": "END_40"
+        },
+        {
+          "OptionText": "10 One-eyed: the character's Shooting and Perception characteristics will be reduced by -1.",
+          "Value": 7,
+          "NextCodeNumber": "END_40"
+        },
+        {
+          "OptionText": "11 Weakened chest: the character's Vitality characteristic will be reduced by -1.",
+          "Value": 8,
+          "NextCodeNumber": "END_40"
+        },
+        {
+          "OptionText": "12 Damaged brain: the character's Intelligence characteristic will be reduced by -1.",
+          "Value": 9,
+          "NextCodeNumber": "END_40"
+        }
+      ]
+    },
+    {
+      "CodeNumber": "END_40",
+      "Header": "Revaluate Character",
+      "AnswerType": "Text",
+      "RulebookText": "Initially, a hero's Value Points (VP) will be 10. As they gain experience points and invest them in improvements, their characteristics and abilities will increase, along with their value. A hero's VP will be the sum of 10 plus the improvements or evolutions invested in them. Each improvement of a hero will increase their VP by 2, regardless of the experience points invested.",
+      "Options": [
+        {
+          "OptionText": "I've got the Power!",
+          "Value": 1,
+          "NextCodeNumber": "CAMPAIGN"
+        }
+      ]
+    },
+    {
+      "CodeNumber": "JOAON_10",
+      "Header": "Dark Player's Turn",
+      "AnswerType": "Bool",
+      "RulebookText": "Has the Main Room been discovered?",
+      "Options": [
+        {
+          "OptionText": "No",
+          "Value": 0,
+          "NextCodeNumber": "JOAON_60"
+        },
+        {
+          "OptionText": "Yes",
+          "Value": 1,
+          "NextCodeNumber": "JOAON_60"
+        }
+      ]
+    },
+    {
+      "CodeNumber": "JOAON_20",
+      "Header": "DISCARDS",
+      "AnswerType": "Text",
+      "RulebookText": "If a Dark Player's card cannot be activated when revealed (usually due to insufficient points in the Reserve Points counter, or because its activation is incompatible), it will be discarded, increasing the corresponding points in that counter.",
+      "Options": [
+        {
+          "OptionText": "It's better to steal than to ask...",
+          "Value": 1,
+          "NextCodeNumber": "GAMEON_60"
+        }
+      ]
+    },
+    {
+      "CodeNumber": "JOAON_60",
+      "Header": "Is Power Roll Required?",
+      "AnswerType": "Bool",
+      "RulebookText": "Is the JOA in Combat Turn, or have the Heroes discovered the Main Room?",
+      "Options": [
+        {
+          "OptionText": "No",
+          "Value": 0,
+          "NextCodeNumber": "GAMEON_60"
+        },
+        {
+          "OptionText": "Yes",
+          "Value": 1,
+          "NextCodeNumber": "JOAON_70"
+        }
+      ]
+    },
+    {
+      "CodeNumber": "JOAON_70",
+      "Header": "Creature Activation",
+      "AnswerType": "Text",
+      "RulebookText": "During the JOA's turn, the order of creature activation will be as follows:\n1st Sorcerers and warrior sorcerers (even Leaders).\n2nd Creatures with ranged attacks (if they cannot perform their attack that turn, they will activate last).\n3rd Leaders.\n4th Rest of creatures.\nIn case of a tie in the activation order, those with higher VP will act first. If the VP is the same, the ones with higher Agility will act first, activating one at a time.",
+      "Options": [
+        {
+          "OptionText": "Charge them!",
+          "Value": 0,
+          "NextCodeNumber": "JOAON_80"
+        }
+      ]
+    },
+    {
+      "CodeNumber": "JOAON_80",
+      "Header": "TARGET SELECTION",
+      "AnswerType": "Text",
+      "RulebookText": "Creatures and characters will select the target of each of their actions (generally attacks), based on the following criteria:\n1st Enemies that haven't been attacked yet in this turn (therefore, attacks are distributed among the hero group), unless the behavior card specifies that the attack distribution is ignored.\n2nd What the specific behavior card of the creature or character indicates.\n3rd A randomly chosen enemy.\n*That is, a creature with several attacks will follow the same criterion, distributing their attacks among different enemies if possible.\nWhen the behavior card states that the creature will attack the easiest enemy to hit, the lowest Melee value will be considered, or the characteristic value affected by the specific attack, the target's proximity, any effects they are suffering, cover, abilities that make them harder to hit, etc.",
+      "Options": [
+        {
+          "OptionText": "I can't attack!",
+          "Value": 0,
+          "NextCodeNumber": "JOAON_90"
+        },
+        {
+          "OptionText": "Charge!! (Melee Attack)",
+          "Value": 0,
+          "NextCodeNumber": "CLOSECOMBAT_10"
+        },
+        {
+          "OptionText": "In the crosshairs... (Ranged Attack)",
+          "Value": 0,
+          "NextCodeNumber": "RANGEDCOMBAT_10"
+        },
+        {
+          "OptionText": "Abracadabra...(Spell)",
+          "Value": 0,
+          "NextCodeNumber": "SPELL_10"
+        }
+      ]
+    },
+    {
+      "CodeNumber": "JOAON_90",
+      "Header": "MOVEMENT",
+      "AnswerType": "Text",
+      "RulebookText": "If a creature cannot perform an attack, it will move towards the closest enemy (running if necessary) to get closer to it, or until it has Line of Sight with one. It must have a valid route of movement if it intends to attack an enemy. This enemy will not be considered the closest if the character must perform an Agility test to reach it (for example, if it needs to cross a pit to reach the enemy).\nCharacters and creatures will always try to plot the best routes towards their targets, avoiding blocking other friendly characters if possible.",
+      "Options": [
+        {
+          "OptionText": "We attack!",
+          "Value": 0,
+          "NextCodeNumber": "CLOSECOMBAT_10"
+        },
+        {
+          "OptionText": "We move",
+          "Value": 1,
+          "NextCodeNumber": "JOAON_70"
+        }
+      ]
+    },
+    {
+      "CodeNumber": "JOAON_100",
+      "Header": "Weapon Fumble",
+      "AnswerType": "List",
+      "RulebookText": "Weapons can break when the attacker or defender fumbles with it. When this happens, the player who fumbled will roll 1D6, and their weapon will break, becoming unusable, if the result is equal to or less than the value indicated for the type of weapon. Polearms or weapons with wooden handles, such as spears or axes, tend to break more easily than swords and similar weapons.",
+      "Options": [
+        {
+          "OptionText": "The JOA's Character's Weapon Breaks",
+          "Value": 0,
+          "NextCodeNumber": "JOAON_70"
+        },
+        {
+          "OptionText": "The JOA's Character's Weapon Does Not Break",
+          "Value": 1,
+          "NextCodeNumber": "JOAON_70"
+        }
+      ]
+    }
+  ]
+
