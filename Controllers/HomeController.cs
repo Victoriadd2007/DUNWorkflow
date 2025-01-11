@@ -28,6 +28,22 @@ namespace DUNWorkflow.Controllers
             var cardDataArray = JsonConvert.DeserializeObject<CardData[]>(jsonData);
             ViewBag.CardList = cardDataArray; // Lista completa
             var firstCard = cardDataArray.FirstOrDefault();
+
+            //visitas
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "visitcount.txt");
+
+            // Leer el número de visitas
+            int count = 0;
+            if (System.IO.File.Exists(filePath))
+            {
+                count = int.Parse(System.IO.File.ReadAllText(filePath));
+            }
+
+            // Incrementar y guardar
+            count++;
+            System.IO.File.WriteAllText(filePath, count.ToString());
+
+
             return View(firstCard);
         }
 
@@ -53,6 +69,7 @@ namespace DUNWorkflow.Controllers
             {
                 return NotFound(); // Manejo de error si no se encuentra el código
             }
+
 
             // Pasar el modelo a la vista parcial
             return PartialView("_CardPartial", cardData);

@@ -122,7 +122,7 @@
         "OptionLabel": "Sí",
         "Value": 1,
         "RulebookText": "Si durante un viaje una embarcación se queda sin puntos de Estructura mientras esta transcurre por una zona marítima, se considerará hundida. A consecuencia de esto, los animales que carezcan de la habilidad 'Volar' se ahogarán, y todos los personajes aparecerán en el territorio más cercano a la zona marítima donde transitaban al suceder el hundimiento. Cada héroe perderá 2 cartas de su Equipo al azar. Si sucede en zona marítima (no fluvial), además todos los héroes y mercenarios sufrirán 2 dados de daño contra su Armadura Natural.",
-        "NextCodeNumber": "CAMPAIGN_50"
+        "NextCodeNumber": "CAMPAIGN_60"
       }
     ]
   },
@@ -2037,77 +2037,92 @@
       {
         "OptionLabel": "Modificador de Arma",
         "Value": 1,
-        "RulebookText": "Modificador general aplicado a la tirada de Cuerpo a Cuerpo."
+        "RulebookText": "Modificador general aplicado a la tirada de Cuerpo a Cuerpo.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Cobertura",
         "Value": 2,
-        "RulebookText": "Si en la trayectoria de un ataque cuerpo a cuerpo hay un obstáculo, el atacante aplicará un penalizador de -1 a su tirada, independientemente de que sea una cobertura ligera o pesada."
+        "RulebookText": "Si en la trayectoria de un ataque cuerpo a cuerpo hay un obstáculo, el atacante aplicará un penalizador de -1 a su tirada, independientemente de que sea una cobertura ligera o pesada.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Objetivo o Atacante Volando",
         "Value": 3,
-        "RulebookText": "Si el objetivo está volando, el atacante tendrá una penalización de -1 a su tirada de Cuerpo a Cuerpo. Un personaje o criatura que vuela deberá dejar de volar si desea atacar cuerpo a cuerpo a un enemigo que está en el suelo."
+        "RulebookText": "Si el objetivo está volando, el atacante tendrá una penalización de -1 a su tirada de Cuerpo a Cuerpo. Un personaje o criatura que vuela deberá dejar de volar si desea atacar cuerpo a cuerpo a un enemigo que está en el suelo.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Combatir desde Posición Elevada",
         "Value": 4,
-        "RulebookText": "Si un combatiente se encuentra en una posición elevada (no volando) respecto a un rival de su mismo tamaño, obtendrá +1 a su tirada enfrentada de Cuerpo a Cuerpo contra ese rival."
+        "RulebookText": "Si un combatiente se encuentra en una posición elevada (no volando) respecto a un rival de su mismo tamaño, obtendrá +1 a su tirada enfrentada de Cuerpo a Cuerpo contra ese rival.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Ataques por la Espalda",
         "Value": 5,
-        "RulebookText": "Si un personaje ataca desde la espalda* del objetivo (o este se encuentra derribado), obtendrá +1 a su tirada de Cuerpo a Cuerpo y el defensor no podrá emplear su escudo. *Todo su movimiento previo al ataque deberá efectuarse por la espalda del enemigo a quien pretende atacar, de manera que nunca entre en su LdV."
+        "RulebookText": "Si un personaje ataca desde la espalda* del objetivo (o este se encuentra derribado), obtendrá +1 a su tirada de Cuerpo a Cuerpo y el defensor no podrá emplear su escudo. *Todo su movimiento previo al ataque deberá efectuarse por la espalda del enemigo a quien pretende atacar, de manera que nunca entre en su LdV.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Terreno Difícil",
         "Value": 6,
-        "RulebookText": "Un personaje situado en terreno difícil tiene una penalización de -1 a su tirada de Cuerpo a Cuerpo."
+        "RulebookText": "Un personaje situado en terreno difícil tiene una penalización de -1 a su tirada de Cuerpo a Cuerpo.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Objetivo Inmóvil",
         "Value": 7,
-        "RulebookText": "Los ataques contra objetivos inmóviles (puertas, mobiliario o personajes afectados por Inmovilidad) no requerirán tirada enfrentada e impactarán automáticamente. Si el objetivo es un personaje, este verá reducida su Armadura en -1."
+        "RulebookText": "Los ataques contra objetivos inmóviles (puertas, mobiliario o personajes afectados por Inmovilidad) no requerirán tirada enfrentada e impactarán automáticamente. Si el objetivo es un personaje, este verá reducida su Armadura en -1.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Desenvainar",
         "Value": 8,
-        "RulebookText": "Si un personaje decide realizar una Acción rápida de cambio de arma encontrándose en la Zona de Influencia de un rival, tendrá un penalizador de -1 a la tirada enfrentada de Cuerpo a Cuerpo contra dicho rival."
+        "RulebookText": "Si un personaje decide realizar una Acción rápida de cambio de arma encontrándose en la Zona de Influencia de un rival, tendrá un penalizador de -1 a la tirada enfrentada de Cuerpo a Cuerpo contra dicho rival.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Armas Largas",
         "Value": 9,
-        "RulebookText": "Como se describe en el capítulo de \"Equipo\", con este tipo de armas el usuario puede atacar a 2 casillas de distancia (recuerda las reglas de LdV de la página 31). Sin embargo, tiene una penalización de -1 al atacar a enemigos adyacentes. También obtiene la capacidad para empujar tras ganar una tirada de Cuerpo a Cuerpo como defensor, igual que si emplease un escudo."
+        "RulebookText": "Como se describe en el capítulo de \"Equipo\", con este tipo de armas el usuario puede atacar a 2 casillas de distancia (recuerda las reglas de LdV de la página 31). Sin embargo, tiene una penalización de -1 al atacar a enemigos adyacentes. También obtiene la capacidad para empujar tras ganar una tirada de Cuerpo a Cuerpo como defensor, igual que si emplease un escudo.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Desarmado",
         "Value": 10,
-        "RulebookText": "Un personaje desarmado tendrá -1 a su Cuerpo a Cuerpo, lanzará tantos dados de daño como sea su Fuerza y aumentará la Armadura del objetivo al que ataque en +1. Un personaje armado con un arma de proyectiles se considerará desarmado si pretende atacar o defender cuerpo a cuerpo con ella, excepto que el arma indique lo contrario."
+        "RulebookText": "Un personaje desarmado tendrá -1 a su Cuerpo a Cuerpo, lanzará tantos dados de daño como sea su Fuerza y aumentará la Armadura del objetivo al que ataque en +1. Un personaje armado con un arma de proyectiles se considerará desarmado si pretende atacar o defender cuerpo a cuerpo con ella, excepto que el arma indique lo contrario.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Habilidades del Personaje",
         "Value": 11,
-        "RulebookText": "Añade cualquier modificador proveniente de las Habilidades del Personaje."
+        "RulebookText": "Añade cualquier modificador proveniente de las Habilidades del Personaje.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Habilidades Inferidas en el Turno",
         "Value": 12,
-        "RulebookText": "Añade cualquier modificador proveniente de HECHIZOS, ESTADOS, etc."
+        "RulebookText": "Añade cualquier modificador proveniente de HECHIZOS, ESTADOS, etc.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Habilidades del Contrario",
         "Value": 13,
-        "RulebookText": "Ten en cuenta las habilidades del contrario que puedan afectar a la tirada o al resultado."
+        "RulebookText": "Ten en cuenta las habilidades del contrario que puedan afectar a la tirada o al resultado.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Habilidades del Contrario Inferidas en el Turno",
         "Value": 14,
-        "RulebookText": "Añade cualquier modificador proveniente de HECHIZOS, ESTADOS, etc. que afecten al contrario."
+        "RulebookText": "Añade cualquier modificador proveniente de HECHIZOS, ESTADOS, etc. que afecten al contrario.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "El Objetivo tiene Escudo y declara 'ESCUDARSE'",
         "Value": 15,
-        "RulebookText": "Un personaje podrá, en el momento en que un enemigo declare realizar un ataque contra él, declarar que se escuda. Ese turno podrá repetir todas las tiradas para intentar bloquear impactos con su escudo, pero durante su siguiente activación renunciará a efectuar cualquier ataque y no podrá correr."
+        "RulebookText": "Un personaje podrá, en el momento en que un enemigo declare realizar un ataque contra él, declarar que se escuda. Ese turno podrá repetir todas las tiradas para intentar bloquear impactos con su escudo, pero durante su siguiente activación renunciará a efectuar cualquier ataque y no podrá correr.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       }
     ]
   },

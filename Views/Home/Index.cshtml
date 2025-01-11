@@ -47,6 +47,10 @@
         $(document).on('click', '.sidebar-item', function () {
             var nextCode = $(this).data('code');
 
+            // Guardar la tarjeta actual en el historial
+            var currentCard = $('#card-container').html();
+            cardHistory.push(currentCard);
+
             // Realizar una solicitud AJAX para cargar la tarjeta
             $.get('/Home/LoadCard', { codeNumber: nextCode }, function (response) {
                 $('#card-container').html(response);
@@ -55,23 +59,39 @@
             });
         });
 
-        $(document).on("click", ".load-card", function (e) {
+        // Cargar una tarjeta desde un enlace dentro de la tarjeta
+        $(document).on('click', '.load-card', function (e) {
             e.preventDefault();
 
-            // Obtener el siguiente código del atributo data
-            var nextCode = $(this).data("next-code");
+            var nextCode = $(this).data('next-code');
 
-            // Guardar la tarjeta actual en el historial antes de cambiarla
+            // Guardar la tarjeta actual en el historial
             var currentCard = $('#card-container').html();
             cardHistory.push(currentCard);
 
-            // Realizar una solicitud AJAX
+            // Realizar una solicitud AJAX para cargar la tarjeta
             $.get('/Home/LoadCard', { codeNumber: nextCode }, function (response) {
-                // Actualizar el contenedor con la nueva tarjeta
                 $('#card-container').html(response);
             }).fail(function () {
-                alert("No se pudo cargar la tarjeta.");
+                alert("Error loading card");
             });
-    });
+        });
+
+        // Volver a la carta anterior
+        $(document).on('click', '#btn-volver', function (e) {
+            e.preventDefault();
+
+            // Comprobar si hay cartas en el historial
+            if (cardHistory.length > 0) {
+                // Recuperar la última tarjeta del historial
+                var previousCard = cardHistory.pop();
+
+                // Mostrar la tarjeta anterior en el contenedor
+                $('#card-container').html(previousCard);
+            } else {
+               // alert("No hay cartas anteriores para mostrar.");
+            }
+        });
     });
 </script>
+

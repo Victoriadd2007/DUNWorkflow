@@ -123,7 +123,7 @@
         "OptionLabel": "Yes",
         "Value": 1,
         "RulebookText": "If a vessel runs out of Structure points while traveling through a maritime zone, it will be considered sunk. As a result, animals without the 'Fly' ability will drown, and all characters will appear in the nearest territory to the maritime zone where the sinking occurred. Each hero will lose 2 random Equipment cards. If this happens in a maritime zone (not a river), all heroes and mercenaries will also suffer 2 dice of damage against their Natural Armor.",
-        "NextCodeNumber": "CAMPAIGN_50"
+        "NextCodeNumber": "CAMPAIGN_60"
       }
     ]
   },
@@ -358,7 +358,7 @@
       {
         "OptionLabel": "Yes",
         "Value": 1,
-        "RulebookText": "The Dark Player will roll 1D6 for every 10 HP of the hero group at that time. For every result of 6, they will place a Danger marker in the territory designated as the base at the start of the campaign (these new markers will only be placed and will not advance this turn).",
+        "RulebookText": "The Dark Player will roll 1D6 for every 10 VP of the hero group at that time. For every result of 6, they will place a Danger marker in the territory designated as the base at the start of the campaign (these new markers will only be placed and will not advance this turn).",
         "NextCodeNumber": "CAMPAIGN_135"
       }
     ]
@@ -636,7 +636,7 @@
       {
         "OptionLabel": "Yes",
         "Value": 1,
-        "RulebookText": "HP = Hero HP + Mercenary and Animal HP + Special Item HP + Magic Item and Relic HP.",
+        "RulebookText": "VP = Hero VP + Mercenary and Animal VP + Special Item VP + Magic Item and Relic VP.",
         "NextCodeNumber": "JOASETUP_10"
       }
     ]
@@ -1884,7 +1884,7 @@
     "CodeNumber": "COMBAT_6",
     "Header": "Leader Upgrade",
     "AnswerType": "Text",
-    "RulebookText": "When the heroes visualize the main room, after placing all creatures, reduce the Reserve Points counter to 10. Unspent points will be invested as follows: For every 2 unspent Reserve Points, the Leader will gain 1 extra Vitality Point. If the Leader has the 'Invulnerable' ability or an Armor value of 6, they will gain only 1 Vitality Point for every 3 unspent Reserve Points. The Leader receives 1 extra action at the start of their activation for every hero above 2 in the group (maximum of 2 extra actions per turn). For example, if the group consists of 4 heroes, the Leader will receive 2 extra actions per turn. If a creature has the 'Two Attacks' ability and gains 1 extra action, it will be able to make 3 attacks during its activation. *In adventures with no Reserve Points counter, the Leader will receive 1 Vitality Point for every 10 HP the hero group has when visualized. If the Leader has the 'Invulnerable' ability or an Armor value of 6, they will only gain 1 extra Vitality Point for every 20 HP the hero group has.",
+    "RulebookText": "When the heroes visualize the main room, after placing all creatures, reduce the Reserve Points counter to 10. Unspent points will be invested as follows: For every 2 unspent Reserve Points, the Leader will gain 1 extra Vitality Point. If the Leader has the 'Invulnerable' ability or an Armor value of 6, they will gain only 1 Vitality Point for every 3 unspent Reserve Points. The Leader receives 1 extra action at the start of their activation for every hero above 2 in the group (maximum of 2 extra actions per turn). For example, if the group consists of 4 heroes, the Leader will receive 2 extra actions per turn. If a creature has the 'Two Attacks' ability and gains 1 extra action, it will be able to make 3 attacks during its activation. *In adventures with no Reserve Points counter, the Leader will receive 1 Vitality Point for every 10 VP the hero group has when visualized. If the Leader has the 'Invulnerable' ability or an Armor value of 6, they will only gain 1 extra Vitality Point for every 20 VP the hero group has.",
     "Options": [
       {
         "OptionLabel": "Always forward!",
@@ -1898,7 +1898,7 @@
     "CodeNumber": "COMBAT_7",
     "Header": "Extra Skills",
     "AnswerType": "Text",
-    "RulebookText": "Once a Leader is placed, roll 1D6 for each hero in the game to determine the extra skills they possess. The creature's profile icon indicates which extra skills they may acquire at the indicated cost, increasing their HP. With each roll of 1, they gain 1 HP. With each roll of 2, they gain 2 HP. And so on. With a roll of 6, they gain 6 HP or more. These skills* must be paid with Reserve Points. The highest HP skills should be paid first, in the left-to-right order as indicated in the creature's profile. Skills that are not applicable for this combat (e.g., 'Quick Shot' for a Leader without ranged weapons) should be ignored. *If the creature already possesses any of the extra skills listed, ignore it for this roll.",
+    "RulebookText": "Once a Leader is placed, roll 1D6 for each hero in the game to determine the extra skills they possess. The creature's profile icon indicates which extra skills they may acquire at the indicated cost, increasing their VP. With each roll of 1, they gain a 1 VP skill. With each roll of 2, they gain a 2 VP skill. And so on. With a roll of 6, they gain a 6 VP skill or more. These skills* must be paid with Reserve Points. The highest VP skills should be paid first, in the left-to-right order as indicated in the creature's profile. Skills that are not applicable for this combat (e.g., 'Quick Shot' for a Leader without ranged weapons) should be ignored. *If the creature already possesses any of the extra skills listed, ignore it for this roll.",
     "Options": [
       {
         "OptionLabel": "Always forward!",
@@ -2016,77 +2016,92 @@
       {
         "OptionLabel": "Weapon Modifier",
         "Value": 1,
-        "RulebookText": "General modifier applied to the melee attack roll."
+        "RulebookText": "General modifier applied to the melee attack roll.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Cover",
         "Value": 2,
-        "RulebookText": "If there is an obstacle in the trajectory of a melee attack, the attacker will apply a -1 penalty to their roll, regardless of whether it is light or heavy cover."
+        "RulebookText": "If there is an obstacle in the trajectory of a melee attack, the attacker will apply a -1 penalty to their roll, regardless of whether it is light or heavy cover.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Flying Target or Attacker",
         "Value": 3,
-        "RulebookText": "If the target is flying, the attacker will suffer a -1 penalty to their melee attack roll. A character or creature that is flying must stop flying if they wish to make a melee attack on an enemy on the ground."
+        "RulebookText": "If the target is flying, the attacker will suffer a -1 penalty to their melee attack roll. A character or creature that is flying must stop flying if they wish to make a melee attack on an enemy on the ground.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Fighting from an Elevated Position",
         "Value": 4,
-        "RulebookText": "If a fighter is in an elevated position (not flying) compared to a rival of the same size, they will gain +1 to their opposed melee attack roll against that rival."
+        "RulebookText": "If a fighter is in an elevated position (not flying) compared to a rival of the same size, they will gain +1 to their opposed melee attack roll against that rival.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Attacking from Behind",
         "Value": 5,
-        "RulebookText": "If a character attacks from behind* the target (or the target is knocked down), they will gain +1 to their melee attack roll and the defender will not be able to use their shield. *All movement before the attack must be done behind the enemy without entering their line of sight."
+        "RulebookText": "If a character attacks from behind* the target (or the target is knocked down), they will gain +1 to their melee attack roll and the defender will not be able to use their shield. *All movement before the attack must be done behind the enemy without entering their line of sight.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Difficult Terrain",
         "Value": 6,
-        "RulebookText": "A character in difficult terrain will suffer a -1 penalty to their melee attack roll."
+        "RulebookText": "A character in difficult terrain will suffer a -1 penalty to their melee attack roll.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Immobile Target",
         "Value": 7,
-        "RulebookText": "Attacks against immobile targets (doors, furniture, or characters affected by Immobilization) will not require an opposed roll and will automatically hit. If the target is a character, their Armor will be reduced by -1."
+        "RulebookText": "Attacks against immobile targets (doors, furniture, or characters affected by Immobilization) will not require an opposed roll and will automatically hit. If the target is a character, their Armor will be reduced by -1.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Drawing Weapon",
         "Value": 8,
-        "RulebookText": "If a character decides to perform a quick action to change weapons while within the influence zone of an enemy, they will suffer a -1 penalty to their opposed melee attack roll against that enemy."
+        "RulebookText": "If a character decides to perform a quick action to change weapons while within the influence zone of an enemy, they will suffer a -1 penalty to their opposed melee attack roll against that enemy.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Polearms",
         "Value": 9,
-        "RulebookText": "As described in the 'Equipment' chapter, with this type of weapon, the user can attack at 2 squares of distance (remember the line of sight rules on page 31). However, they suffer a -1 penalty when attacking adjacent enemies. They also gain the ability to push after winning an opposed melee roll as a defender, just as if they were using a shield."
+        "RulebookText": "As described in the 'Equipment' chapter, with this type of weapon, the user can attack at 2 squares of distance (remember the line of sight rules on page 31). However, they suffer a -1 penalty when attacking adjacent enemies. They also gain the ability to push after winning an opposed melee roll as a defender, just as if they were using a shield.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Unarmed",
         "Value": 10,
-        "RulebookText": "An unarmed character will suffer a -1 to their melee attack roll, roll as many damage dice as their Strength, and increase the target's Armor by +1. A character armed with a ranged weapon is considered unarmed if they intend to attack or defend in melee with it, unless the weapon specifies otherwise."
+        "RulebookText": "An unarmed character will suffer a -1 to their melee attack roll, roll as many damage dice as their Strength, and increase the target's Armor by +1. A character armed with a ranged weapon is considered unarmed if they intend to attack or defend in melee with it, unless the weapon specifies otherwise.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Character's Skills",
         "Value": 11,
-        "RulebookText": "Add any modifier coming from the character's skills."
+        "RulebookText": "Add any modifier coming from the character's skills.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Skills Inferred in the Turn",
         "Value": 12,
-        "RulebookText": "Add any modifier coming from SPELLS, CONDITIONS, etc."
+        "RulebookText": "Add any modifier coming from SPELLS, CONDITIONS, etc.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Opponent's Skills",
         "Value": 13,
-        "RulebookText": "Consider the opponent's skills that may affect the roll or the result."
+        "RulebookText": "Consider the opponent's skills that may affect the roll or the result.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "Opponent's Skills Inferred in the Turn",
         "Value": 14,
-        "RulebookText": "Add any modifier from SPELLS, CONDITIONS, etc. affecting the opponent."
+        "RulebookText": "Add any modifier from SPELLS, CONDITIONS, etc. affecting the opponent.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       },
       {
         "OptionLabel": "The Target Has a Shield and Declares 'SHIELDING'",
         "Value": 15,
-        "RulebookText": "A character can, when an enemy declares an attack against them, declare that they are shielding. During that turn, they may reroll all attempts to block impacts with their shield, but during their next activation, they will forgo any attacks and cannot run."
+        "RulebookText": "A character can, when an enemy declares an attack against them, declare that they are shielding. During that turn, they may reroll all attempts to block impacts with their shield, but during their next activation, they will forgo any attacks and cannot run.",
+        "NextCodeNumber": "CLOSECOMBAT_20"
       }
     ]
   },
