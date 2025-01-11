@@ -3,17 +3,17 @@
 <div class="main-container">
     <div class="sidebar">
         <input type="text" id="search-bar" placeholder="Search..." class="form-control mb-3" />
-        <ul id="card-list">
+        <div id="card-list">
             @if (ViewBag.CardList != null)
             {
                 foreach (var card in (CardData[])ViewBag.CardList)
                 {
-                    <li class="sidebar-item" data-code="@card.CodeNumber" data-header="@card.Header" data-text="@card.RulebookText">
+                    <div class="sidebar-item" data-code="@card.CodeNumber" data-header="@card.Header" data-text="@card.RulebookText">
                         <strong>@card.CodeNumber:</strong> @card.Header
-                    </li>
+                    </div>
                 }
             }
-        </ul>
+        </div>
     </div>
 
     <div id="card-container">

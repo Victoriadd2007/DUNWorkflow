@@ -2,7 +2,7 @@
 
 <div class="card">
     <div class="card-header">
-        <h3>@Model.CodeNumber</h3>
+        <span>@Model.CodeNumber</span>
         <h3>@Model.Header</h3>
         <span>@Model.RulebookText</span>
     </div>
@@ -19,7 +19,7 @@
                         }
                         @option.RulebookText       
                         <span>@option.OptionText</span>
-                        <a href="#" class="load-card" data-next-code="@option.NextCodeNumber">
+                        <a href="#" class="pill-link load-card" data-next-code="@option.NextCodeNumber">
                             @option.NextCodeNumber
                         </a>
                     </li>
@@ -32,7 +32,7 @@
         }
     </div>
     <div class="card-footer">
-        <a href="#" id="btn-volver" class="material-icons">arrow_back</a>
+        <a href="#" id="btn-volver" class="material-icons pill-link">arrow_back</a>
     </div>
 
 </div>

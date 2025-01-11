@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -13,12 +13,14 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    background-color: #333;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #333;
 }
 
 .main-container {
@@ -27,11 +29,20 @@ body {
 
 .sidebar {
     width: 300px;
-    height:600px;
+    height: 600px;
     padding: 10px;
-    border-right: 1px solid #ddd;
-    background-color: #f8f8f8;
-    overflow-y: auto;
+    background-color: #333;
+    border: 1px solid #ffcc00;
+    color: #ffcc00;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sidebar-item:hover {
+    background-color: #444; /* Cambia el fondo al hacer hover */
+    color: black; /* Cambia el color del texto al hacer hover */
+
 }
 
 #search-bar {
@@ -60,3 +71,39 @@ body {
     flex: 1;
     padding: 20px;
 }
+
+.card {
+    flex: 1;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #ffcc00;
+    color: #ffcc00;
+    border-radius: 10px;
+}
+
+.card-header {
+    flex: 1;
+    padding: 20px;
+}
+.card-body{
+    flex: 1;
+    padding: 20px;
+}
+
+.pill-link {
+    display: inline-block; /* Hace que sea tratada como bloque para ajustar padding */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo y izquierda/derecha) */
+    background-color: #007bff; /* Color de fondo (puedes cambiarlo) */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 50px; /* Hace que los bordes sean redondeados */
+    font-size: 12px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Alinea el texto */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+    .pill-link:hover {
+        background-color: white; /* Color de fondo al pasar el mouse */
+        color: black; /* Color del texto */
+    }
