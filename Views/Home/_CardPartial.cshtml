@@ -4,6 +4,7 @@
     <div class="card-header">
         <h3>@Model.CodeNumber</h3>
         <h3>@Model.Header</h3>
+        <span>@Model.RulebookText</span>
     </div>
     <div class="card-body">
         @if (Model.Options != null && Model.Options.Any())
@@ -12,7 +13,12 @@
                 @foreach (var option in Model.Options)
                 {
                     <li>
-                        <strong>@option.OptionLabel:</strong> @option.RulebookText
+                        @if (!string.IsNullOrEmpty(option.OptionLabel))
+                        {
+                            <strong>@option.OptionLabel:</strong>
+                        }
+                        @option.RulebookText       
+                        <span>@option.OptionText</span>
                         <a href="#" class="load-card" data-next-code="@option.NextCodeNumber">
                             @option.NextCodeNumber
                         </a>

@@ -26,7 +26,7 @@ namespace DUNWorkflow.Controllers
             string jsonFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "json", jsonFileName);
             string jsonData = System.IO.File.ReadAllText(jsonFilePath);
             var cardDataArray = JsonConvert.DeserializeObject<CardData[]>(jsonData);
-
+            ViewBag.CardList = cardDataArray; // Lista completa
             var firstCard = cardDataArray.FirstOrDefault();
             return View(firstCard);
         }

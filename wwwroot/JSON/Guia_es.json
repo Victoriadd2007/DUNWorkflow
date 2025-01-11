@@ -2996,7 +2996,7 @@
       {
         "OptionText": "I've got the Power!",
         "Value": 1,
-        "NextCodeNumber": "CAMPAIGN"
+        "NextCodeNumber": "CAMPAIGN_20"
       }
     ]
   },

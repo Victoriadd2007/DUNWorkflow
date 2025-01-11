@@ -1,7 +1,24 @@
 ﻿@model DUNWorkflow.Models.CardData
 
-<div id="card-container">
-    @await Html.PartialAsync("_CardPartial", Model)
+<div class="main-container">
+    <div class="sidebar">
+        <input type="text" id="search-bar" placeholder="Search..." class="form-control mb-3" />
+        <ul id="card-list">
+            @if (ViewBag.CardList != null)
+            {
+                foreach (var card in (CardData[])ViewBag.CardList)
+                {
+                    <li class="sidebar-item" data-code="@card.CodeNumber" data-header="@card.Header" data-text="@card.RulebookText">
+                        <strong>@card.CodeNumber:</strong> @card.Header
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+
+    <div id="card-container">
+        @await Html.PartialAsync("_CardPartial", Model)
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -9,35 +26,52 @@
     // Array para rastrear el historial de tarjetas
     var cardHistory = [];
 
-    $(document).on("click", ".load-card", function (e) {
-        e.preventDefault();
+    $(document).ready(function () {
+        // Filtrar la lista según el texto ingresado
+        $('#search-bar').on('input', function () {
+            var query = $(this).val().toLowerCase();
+            $('#card-list .sidebar-item').each(function () {
+                var code = $(this).data('code').toString().toLowerCase();
+                var header = $(this).data('header').toLowerCase();
+                var rulebook = $(this).data('text').toLowerCase();
 
-        // Obtener el siguiente código del atributo data
-        var nextCode = $(this).data("next-code");
-
-        // Guardar la tarjeta actual en el historial antes de cambiarla
-        var currentCard = $('#card-container').html();
-        cardHistory.push(currentCard);
-
-        // Realizar una solicitud AJAX
-        $.get('/Home/LoadCard', { codeNumber: nextCode }, function (response) {
-            // Actualizar el contenedor con la nueva tarjeta
-            $('#card-container').html(response);
-        }).fail(function () {
-            alert("No se pudo cargar la tarjeta.");
+                if (code.includes(query) || header.includes(query) || rulebook.includes(query)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
         });
+
+        // Cargar una tarjeta desde el sidebar
+        $(document).on('click', '.sidebar-item', function () {
+            var nextCode = $(this).data('code');
+
+            // Realizar una solicitud AJAX para cargar la tarjeta
+            $.get('/Home/LoadCard', { codeNumber: nextCode }, function (response) {
+                $('#card-container').html(response);
+            }).fail(function () {
+                alert("No se pudo cargar la tarjeta.");
+            });
+        });
+
+        $(document).on("click", ".load-card", function (e) {
+            e.preventDefault();
+
+            // Obtener el siguiente código del atributo data
+            var nextCode = $(this).data("next-code");
+
+            // Guardar la tarjeta actual en el historial antes de cambiarla
+            var currentCard = $('#card-container').html();
+            cardHistory.push(currentCard);
+
+            // Realizar una solicitud AJAX
+            $.get('/Home/LoadCard', { codeNumber: nextCode }, function (response) {
+                // Actualizar el contenedor con la nueva tarjeta
+                $('#card-container').html(response);
+            }).fail(function () {
+                alert("No se pudo cargar la tarjeta.");
+            });
     });
-
-    // Acción para el botón "Volver"
-    $(document).on("click", "#btn-volver", function (e) {
-        e.preventDefault();
-
-        if (cardHistory.length > 0) {
-            // Recuperar la última tarjeta del historial
-            var previousCard = cardHistory.pop();
-            $('#card-container').html(previousCard);
-        } else {
-            alert("No hay tarjetas previas.");
-        }
     });
 </script>
