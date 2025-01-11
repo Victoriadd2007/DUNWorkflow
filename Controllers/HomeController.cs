@@ -14,13 +14,13 @@ namespace DUNWorkflow.Controllers
         {
             _webHostEnvironment = webHostEnvironment;
         }
-
         public IActionResult Index()
         {
-            var currentCulture = CultureInfo.CurrentUICulture.Name; // "es", "en", etc.
-            //string jsonFileName = currentCulture.StartsWith("es") ? "Guia_es.json" : currentCulture.StartsWith("de") ? "Guia_de.json" : "Guia_en.json";
-            string jsonFileName = currentCulture.StartsWith("es") ? "Guia_es.json" : "Guia_en.json";
+            // Leer el idioma desde las cookies
+            var lang = Request.Cookies["LanguagePreference"] ?? "en"; // Por defecto, inglés
 
+            // Seleccionar el archivo JSON según el idioma
+            string jsonFileName = lang == "es" ? "Guia_es.json" : "Guia_en.json";
 
             // Cargar el archivo JSON y mostrar la primera tarjeta
             string jsonFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "json", jsonFileName);
@@ -29,30 +29,44 @@ namespace DUNWorkflow.Controllers
             ViewBag.CardList = cardDataArray; // Lista completa
             var firstCard = cardDataArray.FirstOrDefault();
 
-            //visitas
+            // Contador de visitas
             string filePath = Path.Combine(Directory.GetCurrentDirectory(), "visitcount.txt");
-
-            // Leer el número de visitas
             int count = 0;
             if (System.IO.File.Exists(filePath))
             {
                 count = int.Parse(System.IO.File.ReadAllText(filePath));
             }
-
-            // Incrementar y guardar
             count++;
             System.IO.File.WriteAllText(filePath, count.ToString());
 
-
             return View(firstCard);
+        }
+
+
+        [HttpPost]
+        public IActionResult ChangeLanguage(string lang)
+        {
+            if (!string.IsNullOrEmpty(lang))
+            {
+                // Configurar la cookie de idioma
+                Response.Cookies.Append(
+                    "LanguagePreference",
+                    lang,
+                    new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+                );
+            }
+
+            return Ok();
         }
 
         [HttpGet]
         public IActionResult LoadCard(string codeNumber)
         {
             // Ruta al archivo JSON
-            var currentCulture = CultureInfo.CurrentUICulture.Name; // "es", "en", etc.
-            string jsonFileName = currentCulture.StartsWith("es") ? "Guia_es.json" : "Guia_en.json";
+            var lang = Request.Cookies["LanguagePreference"] ?? "en"; // Por defecto, inglés
+
+            // Seleccionar el archivo JSON según el idioma
+            string jsonFileName = lang == "es" ? "Guia_es.json" : "Guia_en.json";
             string jsonFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "json", jsonFileName);
 
 

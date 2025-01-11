@@ -1,7 +1,16 @@
 ﻿@model DUNWorkflow.Models.CardData
 
 <div class="main-container">
+   
     <div class="sidebar">
+        <div class="language-switcher mb-3">
+            <button id="btn-es" class="btn btn-light">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Español" width="32" height="20" /> Español
+            </button>
+            <button id="btn-en" class="btn btn-light">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English" width="32" height="20" /> English
+            </button>
+        </div>
         <input type="text" id="search-bar" placeholder="Search..." class="form-control mb-3" />
         <div id="card-list">
             @if (ViewBag.CardList != null)
@@ -27,6 +36,14 @@
     var cardHistory = [];
 
     $(document).ready(function () {
+        // Cambiar el idioma y recargar la página
+        $('#btn-es').on('click', function () {
+            changeLanguage('es');
+        });
+
+        $('#btn-en').on('click', function () {
+            changeLanguage('en');
+        });
         // Filtrar la lista según el texto ingresado
         $('#search-bar').on('input', function () {
             var query = $(this).val().toLowerCase();
@@ -93,5 +110,14 @@
             }
         });
     });
+
+    function changeLanguage(language) {
+        $.post('/Home/ChangeLanguage', { lang: language }, function () {
+            // Recargar la página después de cambiar el idioma
+            location.reload();
+        }).fail(function () {
+            alert("Error al cambiar el idioma.");
+        });
+    }
 </script>
 
