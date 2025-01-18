@@ -1,0 +1,61 @@
+[
+
+  {
+    "CardType": "Event",
+    "Name": "Buen Capitán",
+    "CardCode": "EV030/110",
+    "CardImage": "buen_capitan.png",
+    "EventType": "Seas"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Coloso del Océano",
+    "CardCode": "EV029/110",
+    "CardImage": "coloso_del_oceano.png",
+    "EventType": "Seas"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Enfermedad",
+    "CardCode": "EV032/110",
+    "CardImage": "sea_enfermedad.png",
+    "EventType": "Seas"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Es una Aleta!",
+    "CardCode": "EV031/110",
+    "CardImage": "es_una_aleta.png",
+    "EventType": "Seas"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Fuertes Corrientes",
+    "CardCode": "EV033/110",
+    "CardImage": "fuertes_corrientes.png",
+    "EventType": "Seas"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Piratas",
+    "CardCode": "EV034/110",
+    "CardImage": "piratas.png",
+    "EventType": "Seas"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Tempestad",
+    "CardCode": "EV035/110",
+    "CardImage": "tempestad.png",
+    "EventType": "Seas"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Viento a Favor",
+    "CardCode": "EV036/110",
+    "CardImage": "viento_a_favor.png",
+    "EventType": "Seas"
+  }
+
+
+]

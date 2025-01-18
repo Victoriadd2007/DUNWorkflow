@@ -1,0 +1,101 @@
+[
+
+  {
+    "CardType": "Event",
+    "Name": "Agradecimientos",
+    "CardCode": "EV095/110",
+    "CardImage": "agradecimientos.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Equipo Dañado",
+    "CardCode": "EV096/110",
+    "CardImage": "village_equipo_daniado.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Fidelidad Animal",
+    "CardCode": "EV102/110",
+    "CardImage": "fidelidad_animal.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Incursión",
+    "CardCode": "EV097/110",
+    "CardImage": "incursion.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Infracción",
+    "CardCode": "EV098/110",
+    "CardImage": "village_infraccion.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Juglar",
+    "CardCode": "EV099/110",
+    "CardImage": "village_juglar.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "La Invitación",
+    "CardCode": "EV100/110",
+    "CardImage": "la_invitacion.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Setas del Frenesí",
+    "CardCode": "EV101/110",
+    "CardImage": "setas_del_frenesi.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Aventurero Errante",
+    "CardCode": "EV120/133",
+    "CardImage": "aventurero_errante.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Ejecución",
+    "CardCode": "EV118/133",
+    "CardImage": "ejecucion.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Festividad",
+    "CardCode": "EV119/133",
+    "CardImage": "festividad.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Habitantes Desconfiados",
+    "CardCode": "EV115/133",
+    "CardImage": "village_habitantes_desconfiados.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Maldecir al Forastero",
+    "CardCode": "EV116/133",
+    "CardImage": "maldecir_forastero.png",
+    "EventType": "Village"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Manos a la Obra!",
+    "CardCode": "EV117/133",
+    "CardImage": "manos_obra.png",
+    "EventType": "Village"
+  }
+]

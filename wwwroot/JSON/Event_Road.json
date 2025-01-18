@@ -1,0 +1,80 @@
+[
+ 
+  {
+    "CardType": "Event",
+    "Name": "Rumores",
+    "CardCode": "EV081/110",
+    "CardImage": "road_rumores.png",
+    "EventType": "Road"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Asalto de Bandidos",
+    "CardCode": "EV072/110",
+    "CardImage": "asalto_de_bandidos.png",
+    "EventType": "Road"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Bifurcación",
+    "CardCode": "EV082/110",
+    "CardImage": "bifurcacion.png",
+    "EventType": "Road"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Campamento",
+    "CardCode": "EV073/110",
+    "CardImage": "road_campamento.png",
+    "EventType": "Road"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Carro Volcado",
+    "CardCode": "EV074/110",
+    "CardImage": "carro_volcado.png",
+    "EventType": "Road"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Espías Enemigos",
+    "CardCode": "EV075/110",
+    "CardImage": "espias_enemigos.png",
+    "EventType": "Road"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Evento de Territorio",
+    "CardCode": "EV076/110",
+    "CardImage": "evento_de_territorio.png",
+    "EventType": "Road"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Mercado",
+    "CardCode": "EV077/110",
+    "CardImage": "road_mercado.png",
+    "EventType": "Road"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Posada",
+    "CardCode": "EV078/110",
+    "CardImage": "road_posada.png",
+    "EventType": "Road"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Puente",
+    "CardCode": "EV079/110",
+    "CardImage": "road_puente.png",
+    "EventType": "Road"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Relámpago",
+    "CardCode": "EV080/110",
+    "CardImage": "relampago.png",
+    "EventType": "Road"
+  }
+]

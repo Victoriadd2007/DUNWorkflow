@@ -1,0 +1,65 @@
+[
+
+  {
+    "regionCode": "t24",
+    "info": "Test t24",
+    "elements": [
+      {
+        "type": "Llanura"
+      },
+      {
+        "type": "Ciudad",
+        "placesservices": [
+          "Alquimista",
+          "Posada",
+          "Establos",
+          "Herrería",
+          "Mercado",
+          "Banco",
+          "Escuela de lucha"
+        ]
+      },
+      {
+        "type": "Camino"
+      }
+    ]
+  },
+  {
+    "regionCode": "t26",
+    "info": "Test t26",
+    "elements": [
+      {
+        "type": "Llanura"
+      },
+      {
+        "type": "Ciudad",
+        "placesservices": [
+          "Taberna",
+          "Sanador",
+          "Posada",
+          "Establos",
+          "Mercado",
+          "Prestamista",
+          "Banco",
+          "Estancias del Gobernador"
+        ]
+      },
+      {
+        "type": "Camino"
+      }
+    ]
+  },
+  {
+    "regionCode": "t28",
+    "info": "Test t28",
+    "elements": [
+      {
+        "type": "Llanura"
+      },
+      {
+        "type": "Camino"
+      }
+    ]
+
+  }
+]

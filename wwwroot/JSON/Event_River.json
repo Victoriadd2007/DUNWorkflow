@@ -1,0 +1,46 @@
+[
+
+  {
+    "CardType": "Event",
+    "Name": "Agua Contaminada",
+    "CardCode": "EV066/110",
+    "CardImage": "agua_contaminada.png",
+    "EventType": "River"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Embarcadero",
+    "CardCode": "EV067/110",
+    "CardImage": "embarcadero.png",
+    "EventType": "River"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Enemigos",
+    "CardCode": "EV068/110",
+    "CardImage": "enemigos.png",
+    "EventType": "River"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Informante",
+    "CardCode": "EV069/110",
+    "CardImage": "informante.png",
+    "EventType": "River"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Más Caudal",
+    "CardCode": "EV070/110",
+    "CardImage": "mas_caudal.png",
+    "EventType": "River"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Monstruo Fluvial",
+    "CardCode": "EV071/110",
+    "CardImage": "monstruo.png",
+    "EventType": "River"
+  }
+
+]

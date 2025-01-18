@@ -1,0 +1,107 @@
+[
+  {
+    "CardType": "Event",
+    "Name": "Asesino",
+    "CardCode": "CM01/10",
+    "CardImage": "asesino.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Cazarrecompenzas",
+    "CardCode": "CM02/10",
+    "CardImage": "cazarrecompenzas.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Espía",
+    "CardCode": "CM04/10",
+    "CardImage": "espia.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Hechicero Errante",
+    "CardCode": "CM06/10",
+    "CardImage": "hechicero_errante.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Ladrón",
+    "CardCode": "CM03/10",
+    "CardImage": "ladron.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Maldición",
+    "CardCode": "CM05/10",
+    "CardImage": "maldicion.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Marcador Vacío",
+    "CardCode": "CM07/10",
+    "CardImage": "marcador_vacio_1.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Marcador Vacío",
+    "CardCode": "CM07/10",
+    "CardImage": "marcador_vacio_2.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Marcador Vacío",
+    "CardCode": "CM07/10",
+    "CardImage": "marcador_vacio_3.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Marcador Vacío",
+    "CardCode": "CM07/10",
+    "CardImage": "marcador_vacio_4.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Marcador Vacío",
+    "CardCode": "CM07/10",
+    "CardImage": "marcador_vacio_4.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Agua Envenenada",
+    "CardCode": "CM11/15",
+    "CardImage": "agua_envenada.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Evento de Viaje",
+    "CardCode": "CM15/15",
+    "CardImage": "evento_de_viaje.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Un Rayo Extraño",
+    "CardCode": "CM12/15",
+    "CardImage": "un_rayo_extranio.png",
+    "EventType": "Danger"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Una Trampa",
+    "CardCode": "CM14/15",
+    "CardImage": "una_trampa.png",
+    "EventType": "Danger"
+  }
+]

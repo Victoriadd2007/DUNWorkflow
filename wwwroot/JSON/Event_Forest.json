@@ -1,0 +1,65 @@
+[
+  {
+    "CardType": "Event",
+    "Name": "La maldición de las Brujas",
+    "CardCode": "EV024/110",
+    "CardImage": "la_maldicion_de_las_brujas.png",
+    "EventType": "Forest"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Lobos",
+    "CardCode": "EV025/110",
+    "CardImage": "lobos.png",
+    "EventType": "Forest"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Perdidos",
+    "CardCode": "EV026/110",
+    "CardImage": "perdidos.png",
+    "EventType": "Forest"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Persona Extraviada",
+    "CardCode": "EV027/110",
+    "CardImage": "persona_extraviada.png",
+    "EventType": "Forest"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Telarañas",
+    "CardCode": "EV028/110",
+    "CardImage": "telaranias.png",
+    "EventType": "Forest"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Árboles Sagrados",
+    "CardCode": "EV019/110",
+    "CardImage": "arboles_sagrados.png",
+    "EventType": "Forest"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Ayuda",
+    "CardCode": "EV020/110",
+    "CardImage": "ayuda.png",
+    "EventType": "Forest"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Depredador al Acecho",
+    "CardCode": "EV021/110",
+    "CardImage": "depredador_al_acecho.png",
+    "EventType": "Forest"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Encuentro con Gran Criatura",
+    "CardCode": "EV022/110",
+    "CardImage": "encuentro_con_gran_criatura.png",
+    "EventType": "Forest"
+  }
+]

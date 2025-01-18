@@ -1,0 +1,45 @@
+[
+
+  {
+    "CardType": "Event",
+    "Name": "Carromato",
+    "CardCode": "EV055/110",
+    "CardImage": "carromato.png",
+    "EventType": "Marsh"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Depredadores Acuáticos",
+    "CardCode": "EV049/110",
+    "CardImage": "depredadores_acuaticos.png",
+    "EventType": "Marsh"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Fuegos Fatuos",
+    "CardCode": "EV054/110",
+    "CardImage": "fuegos_fatuos.png",
+    "EventType": "Marsh"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Moradores del Pantano",
+    "CardCode": "EV050/110",
+    "CardImage": "moradores.png",
+    "EventType": "Marsh"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Muertos Vivientes",
+    "CardCode": "EV051/110",
+    "CardImage": "muertos_vivientes.png",
+    "EventType": "Marsh"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Nubes de Insectos",
+    "CardCode": "EV053/110",
+    "CardImage": "nubes_de_insectos.png",
+    "EventType": "Marsh"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "CardType": "Event",
+    "Name": "Ataque De Escorpión",
+    "CardCode": "EV014/110",
+    "CardImage": "ataque_de_escorpion.png",
+    "EventType": "Desert"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Gusano de Arena",
+    "CardCode": "EV015/110",
+    "CardImage": "gusano_de_arena.png",
+    "EventType": "Desert"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Hambre",
+    "CardCode": "EV016/110",
+    "CardImage": "desert_hambre.png",
+    "EventType": "Desert"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Nubes Negras",
+    "CardCode": "EV017/110",
+    "CardImage": "desert_nubes_negras.png",
+    "EventType": "Desert"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Oasis",
+    "CardCode": "EV018/110",
+    "CardImage": "oasis.png",
+    "EventType": "Desert"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Arenas Movedizas",
+    "CardCode": "EV013/110",
+    "CardImage": "arenas_movedizas.png",
+    "EventType": "Desert"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Serpiente Venenosa",
+    "CardCode": "EV132/133",
+    "CardImage": "serpiente_venenosa.png",
+    "EventType": "Desert"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Tormenta de Arena",
+    "CardCode": "EV133/133",
+    "CardImage": "tormenta_de_arena.png",
+    "EventType": "Desert"
+  },
+  {
+    "CardType": "Event",
+    "Name": "Tormenta de Arena",
+    "CardCode": "EV133/133",
+    "CardImage": "tormenta_de_arena.png",
+    "EventType": "Desert"
+  }
+
+]
