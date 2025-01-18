@@ -66,7 +66,7 @@
     </div>
 
     <script>
-        const svg = document.getElementById('mysvg');
+        const svgsvg = document.getElementById('mysvg');
         const overlay = document.getElementById('overlay');
 
         let clickTimeout; // Variable para almacenar el temporizador
@@ -196,7 +196,6 @@
         // Función para añadir drag and drop a un marcador
         function addDragAndDrop(element) {
             let isDragging = false;
-            let initialOffsetX, initialOffsetY;
 
             element.addEventListener('mousedown', function(event) {
                 isDragging = true;
@@ -223,14 +222,62 @@
                 }
             });
 
-            element.addEventListener('mouseup', function() {
+            element.addEventListener('mouseup', function(event) {
                 isDragging = false;
+
+                initialX = event.clientX;
+                initialY = event.clientY;
+
+               const svgElement = document.getElementById('arascaMap'); // Cambia 'arascaMap' por el ID de tu elemento SVG
+
+               const region = getRegionAtMarker(svgElement, initialX, initialY);
+
+               console.log("arrived at region ", region);
             });
 
             element.addEventListener('mouseleave', function() {
                 isDragging = false;
             });
         }
+
+        function getSVGCoordinates(svgElement, clientX, clientY) {
+            const point = svgElement.createSVGPoint();
+            point.x = clientX;
+            point.y = clientY;
+
+            // Transformar las coordenadas al sistema del SVG
+            const svgCoords = point.matrixTransform(svgElement.getScreenCTM().inverse());
+            return { x: svgCoords.x, y: svgCoords.y };
+        }
+
+        function getRegionAtMarker(svg, clientX, clientY) {
+            const paths = svg.querySelectorAll('path'); // Obtener todas las rutas del SVG
+            let regionFound = null;
+
+            // Crear un canvas temporal para usar isPointInPath
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+
+            paths.forEach(path => {
+                const regionCode = path.getAttribute('id'); // Suponiendo que el id identifica la región
+
+                // Convertir el atributo 'd' a un Path2D
+                const path2D = new Path2D(path.getAttribute('d'));
+
+                // Convertir las coordenadas globales a las coordenadas del SVG
+                const { x: svgX, y: svgY } = getSVGCoordinates(svg, clientX, clientY);
+
+                // Verificar si el punto está dentro de la ruta
+                if (ctx.isPointInPath(path2D, svgX, svgY)) {
+                    regionFound = regionCode;
+                }
+            });
+
+            return regionFound;
+        }
+
+
+
 
     </script>
 
