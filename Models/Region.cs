@@ -9,11 +9,16 @@ namespace DUNWorkflow.Models
         public string? regionCode { get; set; }
         public string? info { get; set; }
         public List<Element>? Elements { get; set; }  // Lista de elementos dentro de la región
+        public List<Border>? Borders { get; set; }  // Lista de regiones limítrofes
         public List<string>? placesservices { get; set; }
     }
 
     public class Element
     {
         public string? type { get; set; } 
+    }
+    public class Border
+    {
+        public string? regionCode { get; set; }
     }
 }

@@ -1,65 +1,105 @@
 [
-
   {
-    "regionCode": "t24",
-    "info": "Test t24",
+    "regionCode": "1m1",
+    "info": "Test 1m1",
     "elements": [
       {
-        "type": "Llanura"
-      },
+        "type": "Mar/Río"
+      }
+    ],
+    "borders": [
+      { "regionCode": "1m2" },
+      { "regionCode": "1m10" },
+      { "regionCode": "1m11" }
+    ]
+  },
+  {
+    "regionCode": "1m2",
+    "info": "Test 1m2",
+    "elements": [
       {
-        "type": "Ciudad",
+        "type": "Mar/Río"
+      }
+    ],
+    "borders": [
+      { "regionCode": "1m1" },
+      { "regionCode": "1m10" },
+      { "regionCode": "1m9" },
+      { "regionCode": "1m3" }
+    ]
+  },
+  {
+    "regionCode": "1m3",
+    "info": "Test 1m3",
+    "elements": [
+      {
+        "type": "Mar/Río"
+      }
+    ],
+    "borders": [
+      { "regionCode": "1m2" },
+      { "regionCode": "1m4" },
+      { "regionCode": "1m8" },
+      { "regionCode": "1m9" },
+      { "regionCode": "1m3" },
+      { "regionCode": "t9" }
+    ]
+  },
+  {
+    "regionCode": "1m4",
+    "info": "Test 1m4",
+    "elements": [
+      {
+        "type": "Mar/Río"
+      }
+    ],
+    "borders": [
+      { "regionCode": "1m3" },
+      { "regionCode": "1m5" },
+      { "regionCode": "1m7" },
+      { "regionCode": "t2" },
+      { "regionCode": "t10" }
+    ]
+  },
+  {
+    "regionCode": "1m5",
+    "info": "Test 1m5",
+    "elements": [
+      {
+        "type": "Mar/Río"
+      }
+    ],
+    "borders": [
+      { "regionCode": "t1" },
+      { "regionCode": "t2" },
+      { "regionCode": "1m4" },
+      { "regionCode": "1m6" }
+    ]
+  },
+  {
+    "regionCode": "t1",
+    "info": "Test t1",
+    "elements": [
+      {
+        "type": "Castillo",
+        "alignment": "Mal",
         "placesservices": [
           "Alquimista",
           "Posada",
-          "Establos",
+          "Criadero y centro de adiestramiento",
           "Herrería",
-          "Mercado",
-          "Banco",
-          "Escuela de lucha"
+          "Oráculo",
+          "Escuela de Lucha",
+          "Lugar sagrado",
+          "Puerto"
         ]
       },
       {
-        "type": "Camino"
+        "type": "Glaciar"
       }
-    ]
-  },
-  {
-    "regionCode": "t26",
-    "info": "Test t26",
-    "elements": [
-      {
-        "type": "Llanura"
-      },
-      {
-        "type": "Ciudad",
-        "placesservices": [
-          "Taberna",
-          "Sanador",
-          "Posada",
-          "Establos",
-          "Mercado",
-          "Prestamista",
-          "Banco",
-          "Estancias del Gobernador"
-        ]
-      },
-      {
-        "type": "Camino"
-      }
-    ]
-  },
-  {
-    "regionCode": "t28",
-    "info": "Test t28",
-    "elements": [
-      {
-        "type": "Llanura"
-      },
-      {
-        "type": "Camino"
-      }
-    ]
+    ],
+    "borders": [
 
+    ]
   }
 ]
