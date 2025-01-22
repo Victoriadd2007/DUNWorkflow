@@ -60,10 +60,39 @@
         // Obtener los datos de regiones desde el ViewBag
         var regions = @Html.Raw(ViewBag.RegionsJson);
 
+        /*document.getElementById('searchInput').addEventListener('input', function () {
+            const searchTerm = this.value.trim().toLowerCase();
+            const svg = document.getElementById('arascaMap');
+
+            if (searchTerm === "") return; // Evitar búsqueda vacía
+
+            const element = svg.querySelector(`#${CSS.escape(searchTerm)}`);
+            if (element) {
+                const bbox = element.getBBox();  // Obtener la caja delimitadora del elemento
+
+                // Centrar la vista en el elemento encontrado
+                const svgViewBox = svg.viewBox.baseVal;
+                svgViewBox.x = bbox.x - (svgViewBox.width / 2) + (bbox.width / 2);
+                svgViewBox.y = bbox.y - (svgViewBox.height / 2) + (bbox.height / 2);
+
+                // Resaltar el elemento temporalmente
+                element.style.stroke = 'red';
+                element.style.strokeWidth = '3';
+
+                setTimeout(() => {
+                    element.style.stroke = '';
+                    element.style.strokeWidth = '';
+                }, 2000);
+            } else {
+                console.warn('Elemento no encontrado:', searchTerm);
+            }
+        });*/
+
         // Función para mostrar la información de la región y cargar los elementos
         function showRegionInfo(regionCode, event) {
+            //alert(`Has clicado en la región: ${regionCode}`);
+            event.stopPropagation(); // Evitar propagación del evento
             clickCount++;
-
             if (clickCount === 1) { //click simple
                 clickTimeout = setTimeout(function() {
                 // Buscar la región por código
@@ -72,7 +101,7 @@
                 });
 
                 // Si se encuentra la región
-                if (region) {
+                /*if (region) {
                     // Mostrar los elementos de la región
                     var elementList = region.elements.map(e => e.type).join(", ");
                     //alert("Region: " + region.regionCode + "\n" + "Elementos: " + elementList);
@@ -92,8 +121,9 @@
                     // Mostrar el modal
                     document.getElementById("elementModal").style.display = "block";
                 } else {
-                    alert("No se encontró la región");
+                    //alert("No se encontró la región");
                 }
+                */
                     clickCount = 0; // Resetear contador después de un clic simple
                 }, 300); // Tiempo en milisegundos para detectar el doble clic (ajustable)
             } else if (clickCount === 2) {
@@ -154,8 +184,8 @@
             const image = document.createElementNS('http://www.w3.org/2000/svg', 'image');
             //image.id = 'heromarker';
             image.setAttribute('href', `/images/${markerImage}.png`);
-            image.setAttribute('width', '100');
-            image.setAttribute('height', '100');
+            image.setAttribute('width', '75');
+            image.setAttribute('height', '75');;
 
             image.setAttribute('x', offsetX - 50); // Ajuste para centrar la imagen
             image.setAttribute('y', offsetY - 50); // Ajuste para centrar la imagen
@@ -278,8 +308,26 @@ async function loadSVG() {
         layers.forEach(layer => {
             const layerId = layer.getAttribute('id');
 
-            // Excluir las capas "Map" y "Regiones"
-            if (layerId === "Map" || layerId === "Regiones") {
+                       // Evitar checkbox para capas Map y Regiones
+            if (layerId === 'Map' || layerId === 'Regiones') {
+                if (layerId === 'Regiones') {
+                    // Agregar evento onclick a todos los <path> dentro de 'Regiones'
+                    const paths = layer.querySelectorAll('path');
+                    paths.forEach(path => {
+                        // Usar template literals correctamente
+                        path.setAttribute('onclick', `showRegionInfo('${path.id}', event)`);
+
+                        // Efecto hover
+                        path.addEventListener('mouseover', function () {
+                            this.style.fill = 'yellow'; // Cambiar color al pasar el ratón
+                            this.style.opacity = 0.25; // Cambiar opacidad
+                        });
+                        path.addEventListener('mouseout', function () {
+                            this.style.fill = ''; // Restaurar el color de relleno
+                            this.style.opacity = 0; // Restaurar la opacidad
+                        });
+                    });
+                }
                 return;
             }
 
