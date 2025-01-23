@@ -188,7 +188,7 @@ select {
 
 #controls {
     position: fixed; /* Hace que el elemento permanezca flotante */
-    top: 10px; /* Espaciado desde la parte superior */
+    top: 100px; /* Espaciado desde la parte superior */
     left: 10px; /* Espaciado desde la izquierda */
     background: rgba(0, 0, 0, 0.8); /* Fondo negro con transparencia */
     padding: 15px; /* Espaciado interno */
