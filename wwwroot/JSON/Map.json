@@ -3,7 +3,7 @@
     "regionCode": "2t94",
     "biomes": [
       {
-        "type": "",
+        "type": "Glacier",
         "placesServices": []
       }
     ]
@@ -12,7 +12,7 @@
     "regionCode": "2t93",
     "biomes": [
       {
-        "type": "",
+        "type": "Glacier",
         "placesServices": []
       }
     ]
@@ -21,7 +21,7 @@
     "regionCode": "2t92",
     "biomes": [
       {
-        "type": "",
+        "type": "Glacier",
         "placesServices": []
       }
     ]
@@ -30,7 +30,7 @@
     "regionCode": "2t91",
     "biomes": [
       {
-        "type": "",
+        "type": "Glacier",
         "placesServices": []
       }
     ]
@@ -39,7 +39,7 @@
     "regionCode": "2t90",
     "biomes": [
       {
-        "type": "",
+        "type": "Glacier",
         "placesServices": []
       }
     ]
@@ -48,7 +48,7 @@
     "regionCode": "2t89",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -56,6 +56,14 @@
   {
     "regionCode": "2t88",
     "biomes": [
+      {
+        "type": "Viillage",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Posada",
+          "Puerto"
+        ]
+      },
       {
         "type": "",
         "placesServices": []
@@ -66,8 +74,8 @@
     "regionCode": "2t87",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Forest",
+        "placesServices": ["Herbolario"]
       }
     ]
   },
@@ -75,7 +83,7 @@
     "regionCode": "2t86",
     "biomes": [
       {
-        "type": "",
+        "type": "Marsh",
         "placesServices": []
       }
     ]
@@ -84,7 +92,16 @@
     "regionCode": "2t85",
     "biomes": [
       {
-        "type": "",
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Oráculo",
+          "Herrería",
+          "Alquimista"
+        ]
+      },
+      {
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -93,7 +110,7 @@
     "regionCode": "2t84",
     "biomes": [
       {
-        "type": "",
+        "type": "Marsh",
         "placesServices": []
       }
     ]
@@ -102,7 +119,7 @@
     "regionCode": "2t83",
     "biomes": [
       {
-        "type": "",
+        "type": "Marsh",
         "placesServices": []
       }
     ]
@@ -111,7 +128,7 @@
     "regionCode": "2t82",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -120,7 +137,15 @@
     "regionCode": "2t81",
     "biomes": [
       {
-        "type": "",
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Posada", 
+          "Alquimista"
+        ]
+      },
+      {
+        "type": "Forest",
         "placesServices": []
       }
     ]
@@ -129,7 +154,7 @@
     "regionCode": "2t80",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -138,7 +163,7 @@
     "regionCode": "2t79",
     "biomes": [
       {
-        "type": "",
+        "type": "Mountain",
         "placesServices": []
       }
     ]
@@ -147,7 +172,7 @@
     "regionCode": "2t78",
     "biomes": [
       {
-        "type": "",
+        "type": "Volcano",
         "placesServices": []
       }
     ]
@@ -156,8 +181,8 @@
     "regionCode": "2t77",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Mountain",
+        "placesServices": ["Lugar sagrado"]
       }
     ]
   },
@@ -165,7 +190,18 @@
     "regionCode": "2t76",
     "biomes": [
       {
-        "type": "",
+        "type": "Village",
+        "alignment": "Evil",
+        "placesServices": [
+          "Posada",
+          "Herbolario",
+          "Puerto",
+          "Mercado",
+          "Criadero y centro de adiestramiento"
+        ]
+      },
+      {
+        "type": "Mountain",
         "placesServices": []
       }
     ]
@@ -174,7 +210,7 @@
     "regionCode": "2t75",
     "biomes": [
       {
-        "type": "",
+        "type": "Mountain",
         "placesServices": []
       }
     ]
@@ -183,7 +219,15 @@
     "regionCode": "2t74",
     "biomes": [
       {
-        "type": "",
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Escuela de lucha",
+          "Herrería"
+        ]
+      },
+      {
+        "type": "Mountain",
         "placesServices": []
       }
     ]
@@ -192,7 +236,24 @@
     "regionCode": "2t73",
     "biomes": [
       {
-        "type": "",
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Criadero y centro de adiestramiento",
+          "Herrería",
+          "Alquimista",
+          "Escuela de lucha",
+          "Posada",
+          "Banco",
+          "Oráculo",
+          "Estancias del Gobernador",
+          "Escuela de hechicería",
+          "Herbolario",
+          "Sanador"
+        ]
+      },
+      {
+        "type": "Volcano",
         "placesServices": []
       }
     ]
@@ -201,7 +262,7 @@
     "regionCode": "2t72",
     "biomes": [
       {
-        "type": "",
+        "type": "Volcano",
         "placesServices": []
       }
     ]
@@ -210,7 +271,7 @@
     "regionCode": "2t71",
     "biomes": [
       {
-        "type": "",
+        "type": "Desert",
         "placesServices": []
       }
     ]
@@ -219,8 +280,8 @@
     "regionCode": "2t70",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Mountain",
+        "placesServices": ["Templo"]
       }
     ]
   },
@@ -228,7 +289,18 @@
     "regionCode": "2t69",
     "biomes": [
       {
-        "type": "",
+        "type": "Village",
+        "alignment": "Evil",
+        "placesServices": [
+          "Posada",
+          "Herrería",
+          "Establos",
+          "Taberna",
+          "Prestamista"
+        ]
+      },
+      {
+        "type": "Mountain",
         "placesServices": []
       }
     ]
@@ -237,7 +309,11 @@
     "regionCode": "2t68",
     "biomes": [
       {
-        "type": "",
+        "type": "Volcano",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
         "placesServices": []
       }
     ]
@@ -246,7 +322,7 @@
     "regionCode": "2t67",
     "biomes": [
       {
-        "type": "",
+        "type": "Volcano",
         "placesServices": []
       }
     ]
@@ -255,7 +331,7 @@
     "regionCode": "2t66",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -264,8 +340,12 @@
     "regionCode": "2t65",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Marsh",
+        "placesServices": [ "Puente" ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [ "Puente" ]
       }
     ]
   },
@@ -273,8 +353,12 @@
     "regionCode": "2t64",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Marsh",
+        "placesServices": ["Puente", "Puerto"]
+      },
+      {
+        "type": "Road",
+        "placesServices": [ "Puente" ]
       }
     ]
   },
@@ -282,8 +366,8 @@
     "regionCode": "2t63",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "forest",
+        "placesServices": ["Lugar sagrado"]
       }
     ]
   },
@@ -291,7 +375,22 @@
     "regionCode": "2t62",
     "biomes": [
       {
-        "type": "",
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Criadero y centro de adiestramiento",
+          "Establos",
+          "Escuela de lucha",
+          "Herrería",
+          "Posada"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
         "placesServices": []
       }
     ]
@@ -300,7 +399,29 @@
     "regionCode": "2t61",
     "biomes": [
       {
-        "type": "",
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Templo",
+          "Taberna",
+          "Oráculo",
+          "Escuela de lucha",
+          "Alquimista",
+          "Herbolario",
+          "Herrería",
+          "Estancias del Gobernador",
+          "Establos",
+          "Mercado",
+          "Escuela de hechicería",
+          "Sanador"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      },
+      {
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -309,7 +430,15 @@
     "regionCode": "2t60",
     "biomes": [
       {
-        "type": "",
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Escuela de lucha",
+          "Establos"
+        ]
+      },
+      {
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -318,8 +447,8 @@
     "regionCode": "2t59",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Plains",
+        "placesServices": ["Establos"]
       }
     ]
   },
@@ -327,7 +456,7 @@
     "regionCode": "2t58",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -336,7 +465,7 @@
     "regionCode": "2t57",
     "biomes": [
       {
-        "type": "",
+        "type": "Forest",
         "placesServices": []
       }
     ]
@@ -345,8 +474,8 @@
     "regionCode": "2t56",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Plains",
+        "placesServices": ["Puerto"]
       }
     ]
   },
@@ -354,8 +483,15 @@
     "regionCode": "2t55",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Herbolario"
+        ]
+      },
+      {
+        "type": "Mountain",
+        "placesServices": ["Lugar sagrado"]
       }
     ]
   },
@@ -363,7 +499,7 @@
     "regionCode": "2t54",
     "biomes": [
       {
-        "type": "",
+        "type": "Mountain",
         "placesServices": []
       }
     ]
@@ -372,7 +508,7 @@
     "regionCode": "2t53",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -381,8 +517,8 @@
     "regionCode": "2t52",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Plains",
+        "placesServices": ["Puerto"]
       }
     ]
   },
@@ -390,8 +526,8 @@
     "regionCode": "2t51",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Plains",
+        "placesServices": ["Lugar sagrado"]
       }
     ]
   },
@@ -399,7 +535,7 @@
     "regionCode": "2t50",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -408,8 +544,8 @@
     "regionCode": "2t49",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Plains",
+        "placesServices": ["Escuela de lucha", "Establos", "Herrería"]
       }
     ]
   },
@@ -417,7 +553,7 @@
     "regionCode": "2t48",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -426,7 +562,17 @@
     "regionCode": "2t47",
     "biomes": [
       {
-        "type": "",
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Herbolario",
+          "Establos",
+          "Escuela de lucha",
+          "Posada"
+        ]
+      },
+      {
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -435,7 +581,7 @@
     "regionCode": "2t46",
     "biomes": [
       {
-        "type": "",
+        "type": "Forest",
         "placesServices": []
       }
     ]
@@ -444,7 +590,7 @@
     "regionCode": "2t45",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -453,7 +599,16 @@
     "regionCode": "2t44",
     "biomes": [
       {
-        "type": "",
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Establos",
+          "Escuela de lucha", 
+          "Posada"
+        ]
+      },
+      {
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -462,7 +617,7 @@
     "regionCode": "2t43",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -471,7 +626,7 @@
     "regionCode": "2t42",
     "biomes": [
       {
-        "type": "",
+        "type": "Marsh",
         "placesServices": []
       }
     ]
@@ -480,7 +635,7 @@
     "regionCode": "2t41",
     "biomes": [
       {
-        "type": "",
+        "type": "Marsh",
         "placesServices": []
       }
     ]
@@ -489,8 +644,8 @@
     "regionCode": "2t40",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Plains",
+        "placesServices": ["Establos"]
       }
     ]
   },
@@ -498,7 +653,7 @@
     "regionCode": "2t39",
     "biomes": [
       {
-        "type": "",
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -507,7 +662,7 @@
     "regionCode": "2t38",
     "biomes": [
       {
-        "type": "",
+        "type": "Forest",
         "placesServices": []
       }
     ]
@@ -516,8 +671,8 @@
     "regionCode": "2t37",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Mountain",
+        "placesServices": ["Lugar sagrado"]
       }
     ]
   },
@@ -525,7 +680,7 @@
     "regionCode": "2t36",
     "biomes": [
       {
-        "type": "",
+        "type": "Mountain",
         "placesServices": []
       }
     ]
@@ -534,7 +689,23 @@
     "regionCode": "2t35",
     "biomes": [
       {
-        "type": "",
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Sanador",
+          "Herrería",
+          "Biblioteca",
+          "Alquimista",
+          "Posada",
+          "Banco",
+          "Oráculo",
+          "Estancias del Gobernador",
+          "Escuela de hechicería",
+          "Herolario"
+        ]
+      },
+      {
+        "type": "Mountain",
         "placesServices": []
       }
     ]
@@ -543,8 +714,8 @@
     "regionCode": "2t34",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Mountain",
+        "placesServices": [ "Lugar sagrado" ]
       }
     ]
   },
@@ -552,8 +723,12 @@
     "regionCode": "2t33",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "Road",
+        "placesServices": [ "Puente" ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": [ "Puente" ]
       }
     ]
   },
@@ -561,7 +736,21 @@
     "regionCode": "2t32",
     "biomes": [
       {
-        "type": "",
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Herbolario",
+          "Mercado",
+          "Posada",
+          "Puerto"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
         "placesServices": []
       }
     ]
@@ -570,7 +759,11 @@
     "regionCode": "2t31",
     "biomes": [
       {
-        "type": "",
+        "type": "Road",
+        "placesServices": []
+      },
+      {
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -579,7 +772,22 @@
     "regionCode": "2t30",
     "biomes": [
       {
-        "type": "",
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Herbolario",
+          "Establos",
+          "Escuela de lucha",
+          "Posada",
+          "Taberna"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      },
+      {
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -588,7 +796,15 @@
     "regionCode": "2t29",
     "biomes": [
       {
-        "type": "",
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Posada",
+          "Mercado"
+        ]
+      },
+      {
+        "type": "Plains",
         "placesServices": []
       }
     ]
@@ -597,7 +813,11 @@
     "regionCode": "2t28",
     "biomes": [
       {
-        "type": "",
+        "type": "Mountain",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
         "placesServices": []
       }
     ]
@@ -606,7 +826,19 @@
     "regionCode": "2t27",
     "biomes": [
       {
-        "type": "",
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Posada",
+          "Puerto"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
         "placesServices": []
       }
     ]
@@ -615,8 +847,30 @@
     "regionCode": "2t26",
     "biomes": [
       {
-        "type": "",
-        "placesServices": []
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Taberna",
+          "Sanador",
+          "Posada",
+          "Establos",
+          "Mercado",
+          "Prestamista",
+          "Banco",
+          "Estancias del Gobernador"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": [
+          "Puente"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [
+          "Puente"
+        ]
       }
     ]
   },
@@ -629,7 +883,9 @@
       },
       {
         "type": "Forest",
-        "placesServices": ["Puerto"]
+        "placesServices": [
+          "Puerto"
+        ]
       }
     ]
   },
@@ -679,7 +935,6 @@
       }
     ]
   },
-  },
   {
     "regionCode": "2t22",
     "biomes": [
@@ -724,11 +979,17 @@
       },
       {
         "type": "Plains",
-        "placesServices": [ "Oráculo", "Templo", "Puente" ]
+        "placesServices": [
+          "Oráculo",
+          "Templo",
+          "Puente"
+        ]
       },
       {
         "type": "Road",
-        "placesServices": [ "Puente" ]
+        "placesServices": [
+          "Puente"
+        ]
       }
     ]
   },
@@ -737,11 +998,15 @@
     "biomes": [
       {
         "type": "Plains",
-        "placesServices": [ "Campamento" ]
+        "placesServices": [
+          "Campamento"
+        ]
       },
       {
         "type": "Road",
-        "placesServices": [ "Posada" ]
+        "placesServices": [
+          "Posada"
+        ]
       }
     ]
   },
@@ -780,7 +1045,9 @@
     "biomes": [
       {
         "type": "Mountain",
-        "placesServices": [ "LLugar sagrado" ]
+        "placesServices": [
+          "LLugar sagrado"
+        ]
       }
     ]
   },
@@ -871,7 +1138,9 @@
       },
       {
         "type": "Mountain",
-        "placesServices": [ "Lugar sagrado" ]
+        "placesServices": [
+          "Lugar sagrado"
+        ]
       }
     ]
   },
@@ -958,11 +1227,15 @@
     "biomes": [
       {
         "type": "Glacier",
-        "placesServices": [ "Puerto" ]
+        "placesServices": [
+          "Puerto"
+        ]
       },
       {
         "type": "Road",
-        "placesServices": [ "Puerto" ]
+        "placesServices": [
+          "Puerto"
+        ]
       }
     ]
   },
@@ -1302,7 +1575,9 @@
       },
       {
         "type": "Marsh",
-        "placesServices": [ "Puerto" ]
+        "placesServices": [
+          "Puerto"
+        ]
       }
     ]
   },
@@ -1323,7 +1598,9 @@
       },
       {
         "type": "Mountain",
-        "placesServices": [ "Lugar sagrado" ]
+        "placesServices": [
+          "Lugar sagrado"
+        ]
       }
     ]
   },
@@ -1332,7 +1609,9 @@
     "biomes": [
       {
         "type": "Volcano",
-        "placesServices": [ "Lugar sagrado" ]
+        "placesServices": [
+          "Lugar sagrado"
+        ]
       }
     ]
   },
@@ -1352,7 +1631,9 @@
       },
       {
         "type": "Mountain",
-        "placesServices": [ "Puerto" ]
+        "placesServices": [
+          "Puerto"
+        ]
       }
     ]
   },
@@ -1372,7 +1653,9 @@
       },
       {
         "type": "Volcano",
-        "placesServices": [ "Lugar sagrado" ]
+        "placesServices": [
+          "Lugar sagrado"
+        ]
       }
     ]
   },
@@ -1381,7 +1664,9 @@
     "biomes": [
       {
         "type": "Volcano",
-        "placesServices": [ "Puerto" ]
+        "placesServices": [
+          "Puerto"
+        ]
       }
     ]
   },
@@ -1390,7 +1675,9 @@
     "biomes": [
       {
         "type": "Volcano",
-        "placesServices": [ "Criadero y centro de adiestramiento" ]
+        "placesServices": [
+          "Criadero y centro de adiestramiento"
+        ]
       }
     ]
   },
@@ -1399,7 +1686,9 @@
     "biomes": [
       {
         "type": "Volcano",
-        "placesServices": [ "Oráculo" ]
+        "placesServices": [
+          "Oráculo"
+        ]
       }
     ]
   },
