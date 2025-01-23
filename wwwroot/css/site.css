@@ -209,3 +209,47 @@ select {
         margin-bottom: 10px; /* Espaciado entre las opciones */
     }
 
+.region {
+    fill: rgba(0, 255, 0, 0.5);
+    stroke: #000;
+    cursor: pointer;
+}
+
+#infoBox {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.cardContainer {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}

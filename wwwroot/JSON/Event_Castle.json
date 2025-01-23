@@ -1,88 +1,70 @@
 [
- 
   {
     "CardType": "Event",
-    "Name": "Diezmo",
-    "CardCode": "EV103/110",
-    "CardImage": "diezmo.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Enfermedad",
-    "CardCode": "EV104/110",
-    "CardImage": "castle_enfermedad.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Equipo Dañado",
-    "CardCode": "EV105/110",
-    "CardImage": "castle_equipo_daniado.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Fama",
-    "CardCode": "EV106/110",
-    "CardImage": "castle_fama.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Guardia Herido",
-    "CardCode": "EV108/110",
-    "CardImage": "guardia_herido.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Hijo Bastardo",
-    "CardCode": "EV110/110",
-    "CardImage": "hijo_bastardo.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Incendio de Caballerizas",
-    "CardCode": "EV109/110",
-    "CardImage": "incendio_de_caballerizas.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Infracción",
-    "CardCode": "EV107/110",
-    "CardImage": "castle_infraccion.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Aprovisionados o Envenenados",
-    "CardCode": "EV112/133",
-    "CardImage": "aprovisionados_o_envenenados.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Forzudo",
-    "CardCode": "EV113/133",
-    "CardImage": "forzudo.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Mercenario Errante",
-    "CardCode": "EV114/133",
-    "CardImage": "mercenario_errante.png",
-    "EventType": "Castle"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Soldados Alerta",
-    "CardCode": "EV111/133",
-    "CardImage": "soldados_alerta.png",
-    "EventType": "Castle"
-  }
+    "EventType": "Castle",
+    "MinimumRoll": 4,
+    "Cards": [
+      {
+        "Name": "Diezmo",
+        "CardCode": "EV103/110",
+        "CardImage": "diezmo.png"
+      },
+      {
+        "Name": "Enfermedad",
+        "CardCode": "EV104/110",
+        "CardImage": "castle_enfermedad.png"
+      },
+      {
+        "Name": "Equipo Dañado",
+        "CardCode": "EV105/110",
+        "CardImage": "castle_equipo_daniado.png"
+      },
+      {
+        "Name": "Fama",
+        "CardCode": "EV106/110",
+        "CardImage": "castle_fama.png"
+      },
+      {
+        "Name": "Guardia Herido",
+        "CardCode": "EV108/110",
+        "CardImage": "guardia_herido.png"
+      },
+      {
+        "Name": "Hijo Bastardo",
+        "CardCode": "EV110/110",
+        "CardImage": "hijo_bastardo.png"
+      },
+      {
+        "Name": "Incendio de Caballerizas",
+        "CardCode": "EV109/110",
+        "CardImage": "incendio_de_caballerizas.png"
+      },
+      {
+        "Name": "Infracción",
+        "CardCode": "EV107/110",
+        "CardImage": "castle_infraccion.png"
+      },
+      {
+        "Name": "Aprovisionados o Envenenados",
+        "CardCode": "EV112/133",
+        "CardImage": "aprovisionados_o_envenenados.png"
+      },
+      {
+        "Name": "Forzudo",
+        "CardCode": "EV113/133",
+        "CardImage": "forzudo.png"
+      },
+      {
+        "Name": "Mercenario Errante",
+        "CardCode": "EV114/133",
+        "CardImage": "mercenario_errante.png"
+      },
+      {
+        "Name": "Soldados Alerta",
+        "CardCode": "EV111/133",
+        "CardImage": "soldados_alerta.png"
+      }
 
+    ]
+  }
 ]

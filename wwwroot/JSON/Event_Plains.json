@@ -1,88 +1,70 @@
 [
- 
   {
     "CardType": "Event",
-    "Name": "Aldea Calcinada",
-    "CardCode": "EV001/110",
-    "CardImage": "aldea_calcinada.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Antiguo Cementerio",
-    "CardCode": "EV002/110",
-    "CardImage": "antiguo_cementerio.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Cuervo",
-    "CardCode": "EV003/110",
-    "CardImage": "cuervo.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Diluvio",
-    "CardCode": "EV011/110",
-    "CardImage": "diluvio.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Emboscada",
-    "CardCode": "EV004/110",
-    "CardImage": "emboscada.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Granja",
-    "CardCode": "EV005/110",
-    "CardImage": "granja.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Molino de Agua",
-    "CardCode": "EV006/110",
-    "CardImage": "molino_de_agua.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Molino de Viento",
-    "CardCode": "EV012/110",
-    "CardImage": "molino_de_viento.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Piedras Sagradas",
-    "CardCode": "EV008/110",
-    "CardImage": "piedras_sagradas.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Nubes Negras",
-    "CardCode": "EV007/110",
-    "CardImage": "plains_nubes_negras.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Refugiados",
-    "CardCode": "EV009/110",
-    "CardImage": "refugiados.png",
-    "EventType": "Plains"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Rumores",
-    "CardCode": "EV010/110",
-    "CardImage": "plains_rumores.png",
-    "EventType": "Plains"
+    "EventType": "Plains",
+    "MinimumRoll": 5,
+    "Cards": [
+      {
+        "Name": "Aldea Calcinada",
+        "CardCode": "EV001/110",
+        "CardImage": "aldea_calcinada.png"
+      },
+      {
+        "Name": "Antiguo Cementerio",
+        "CardCode": "EV002/110",
+        "CardImage": "antiguo_cementerio.png"
+      },
+      {
+        "Name": "Cuervo",
+        "CardCode": "EV003/110",
+        "CardImage": "cuervo.png"
+      },
+      {
+        "Name": "Diluvio",
+        "CardCode": "EV011/110",
+        "CardImage": "diluvio.png"
+      },
+      {
+        "Name": "Emboscada",
+        "CardCode": "EV004/110",
+        "CardImage": "emboscada.png"
+      },
+      {
+        "Name": "Granja",
+        "CardCode": "EV005/110",
+        "CardImage": "granja.png"
+      },
+      {
+        "Name": "Molino de Agua",
+        "CardCode": "EV006/110",
+        "CardImage": "molino_de_agua.png"
+      },
+      {
+        "Name": "Molino de Viento",
+        "CardCode": "EV012/110",
+        "CardImage": "molino_de_viento.png"
+      },
+      {
+        "Name": "Piedras Sagradas",
+        "CardCode": "EV008/110",
+        "CardImage": "piedras_sagradas.png"
+      },
+      {
+        "Name": "Nubes Negras",
+        "CardCode": "EV007/110",
+        "CardImage": "plains_nubes_negras.png"
+      },
+      {
+        "Name": "Refugiados",
+        "CardCode": "EV009/110",
+        "CardImage": "refugiados.png"
+      },
+      {
+        "Name": "Rumores",
+        "CardCode": "EV010/110",
+        "CardImage": "plains_rumores.png"
+      }
+    ]
   }
 
 ]

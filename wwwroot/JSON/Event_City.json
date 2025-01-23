@@ -1,136 +1,104 @@
 [
   {
     "CardType": "Event",
-    "Name": "Equipo Dañado",
-    "CardCode": "EV086/110",
-    "CardImage": "city_equipo_daniado.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Fama",
-    "CardCode": "EV087/110",
-    "CardImage": "city_fama.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Infracción",
-    "CardCode": "EV088/110",
-    "CardImage": "city_infraccion.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Juglar",
-    "CardCode": "EV089/110",
-    "CardImage": "city_juglar.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "La Ciudad Es Sitiada",
-    "CardCode": "EV092/110",
-    "CardImage": "la_ciudad_es_sitiada.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Ladronzuelos",
-    "CardCode": "EV094/110",
-    "CardImage": "ladronzuelos.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Rescatad A Mi Hijo",
-    "CardCode": "EV090/110",
-    "CardImage": "rescatad_a_mi_hijo.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Robo",
-    "CardCode": "EV091/110",
-    "CardImage": "robo.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Tendero Misterioso",
-    "CardCode": "EV093/110",
-    "CardImage": "tendero_misterioso.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Alquimista Amigo",
-    "CardCode": "EV083/110",
-    "CardImage": "alquimista_amigo.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Enfermedad",
-    "CardCode": "EV085/110",
-    "CardImage": "city_enfermedad.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Chivato",
-    "CardCode": "EV124/133",
-    "CardImage": "chivato.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Habitantes Desconfiados",
-    "CardCode": "EV121/133",
-    "CardImage": "city_habitantes_desconfiados.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Hechicero Azul",
-    "CardCode": "EV127/133",
-    "CardImage": "hechicero_azul.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Mercader Desconfiado",
-    "CardCode": "EV126/133",
-    "CardImage": "mercader_desconfiado.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Noble",
-    "CardCode": "EV128/133",
-    "CardImage": "noble.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Pícaros",
-    "CardCode": "EV122/133",
-    "CardImage": "picaros.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Sacerdote Os Pide Ayuda",
-    "CardCode": "EV125/133",
-    "CardImage": "sacerdote_ayuda.png",
-    "EventType": "City"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Trilero",
-    "CardCode": "EV123/133",
-    "CardImage": "trilero.png",
-    "EventType": "City"
+    "EventType": "City",
+    "MinimumRoll": 3,
+    "Cards": [
+      {
+        "Name": "Equipo Dañado",
+        "CardCode": "EV086/110",
+        "CardImage": "city_equipo_daniado.png"
+      },
+      {
+        "Name": "Fama",
+        "CardCode": "EV087/110",
+        "CardImage": "city_fama.png"
+      },
+      {
+        "Name": "Infracción",
+        "CardCode": "EV088/110",
+        "CardImage": "city_infraccion.png"
+      },
+      {
+        "Name": "Juglar",
+        "CardCode": "EV089/110",
+        "CardImage": "city_juglar.png"
+      },
+      {
+        "Name": "La Ciudad Es Sitiada",
+        "CardCode": "EV092/110",
+        "CardImage": "la_ciudad_es_sitiada.png"
+      },
+      {
+        "Name": "Ladronzuelos",
+        "CardCode": "EV094/110",
+        "CardImage": "ladronzuelos.png"
+      },
+      {
+        "Name": "Rescatad A Mi Hijo",
+        "CardCode": "EV090/110",
+        "CardImage": "rescatad_a_mi_hijo.png"
+      },
+      {
+        "Name": "Robo",
+        "CardCode": "EV091/110",
+        "CardImage": "robo.png"
+      },
+      {
+        "Name": "Tendero Misterioso",
+        "CardCode": "EV093/110",
+        "CardImage": "tendero_misterioso.png"
+      },
+      {
+        "Name": "Alquimista Amigo",
+        "CardCode": "EV083/110",
+        "CardImage": "alquimista_amigo.png"
+      },
+      {
+        "Name": "Enfermedad",
+        "CardCode": "EV085/110",
+        "CardImage": "city_enfermedad.png"
+      },
+      {
+        "Name": "Chivato",
+        "CardCode": "EV124/133",
+        "CardImage": "chivato.png"
+      },
+      {
+        "Name": "Habitantes Desconfiados",
+        "CardCode": "EV121/133",
+        "CardImage": "city_habitantes_desconfiados.png"
+      },
+      {
+        "Name": "Hechicero Azul",
+        "CardCode": "EV127/133",
+        "CardImage": "hechicero_azul.png"
+      },
+      {
+        "Name": "Mercader Desconfiado",
+        "CardCode": "EV126/133",
+        "CardImage": "mercader_desconfiado.png"
+      },
+      {
+        "Name": "Noble",
+        "CardCode": "EV128/133",
+        "CardImage": "noble.png"
+      },
+      {
+        "Name": "Pícaros",
+        "CardCode": "EV122/133",
+        "CardImage": "picaros.png"
+      },
+      {
+        "Name": "Sacerdote Os Pide Ayuda",
+        "CardCode": "EV125/133",
+        "CardImage": "sacerdote_ayuda.png"
+      },
+      {
+        "Name": "Trilero",
+        "CardCode": "EV123/133",
+        "CardImage": "trilero.png"
+      }
+    ]
   }
-
 ]

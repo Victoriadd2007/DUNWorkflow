@@ -6,19 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa Interactivo</title>
-    <style>
-        .region {
-            fill: rgba(0, 255, 0, 0.5);
-            stroke: #000;
-            cursor: pointer;
-        }
-
-        #infoBox {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-    </style>
 </head>
 <body>
     <div id="controls"></div>
@@ -48,351 +35,447 @@
             <button id="cancelButton" onclick="closeModal('elementModal')">Cancelar</button>
         </div>
     </div>
-
-    <script>
-        const svgsvg = document.getElementById('mysvg');
-        const overlay = document.getElementById('overlay');
-
-        let clickTimeout; // Variable para almacenar el temporizador
-        let clickCount = 0; // Contador de clics
-        let offsetX = 0;
-        let offsetY = 0;
-        // Obtener los datos de regiones desde el ViewBag
-        var regions = @Html.Raw(ViewBag.RegionsJson);
-
-        /*document.getElementById('searchInput').addEventListener('input', function () {
-            const searchTerm = this.value.trim().toLowerCase();
-            const svg = document.getElementById('arascaMap');
-
-            if (searchTerm === "") return; // Evitar búsqueda vacía
-
-            const element = svg.querySelector(`#${CSS.escape(searchTerm)}`);
-            if (element) {
-                const bbox = element.getBBox();  // Obtener la caja delimitadora del elemento
-
-                // Centrar la vista en el elemento encontrado
-                const svgViewBox = svg.viewBox.baseVal;
-                svgViewBox.x = bbox.x - (svgViewBox.width / 2) + (bbox.width / 2);
-                svgViewBox.y = bbox.y - (svgViewBox.height / 2) + (bbox.height / 2);
-
-                // Resaltar el elemento temporalmente
-                element.style.stroke = 'red';
-                element.style.strokeWidth = '3';
-
-                setTimeout(() => {
-                    element.style.stroke = '';
-                    element.style.strokeWidth = '';
-                }, 2000);
-            } else {
-                console.warn('Elemento no encontrado:', searchTerm);
-            }
-        });*/
-
-        // Función para mostrar la información de la región y cargar los elementos
-        function showRegionInfo(regionCode, event) {
-            //alert(`Has clicado en la región: ${regionCode}`);
-            event.stopPropagation(); // Evitar propagación del evento
-            clickCount++;
-            if (clickCount === 1) { //click simple
-                clickTimeout = setTimeout(function() {
-                // Buscar la región por código
-                var region = regions.find(function(r) {
-                    return r.regionCode === regionCode;
-                });
-
-                // Si se encuentra la región
-                /*if (region) {
-                    // Mostrar los elementos de la región
-                    var elementList = region.elements.map(e => e.type).join(", ");
-                    //alert("Region: " + region.regionCode + "\n" + "Elementos: " + elementList);
-
-                    // Limpiar el select antes de agregar nuevas opciones
-                    var select = document.getElementById("elementTypeSelect");
-                    select.innerHTML = '';  // Eliminar cualquier opción existente
-
-                    // Rellenar el select con los elementos de la región
-                    region.elements.forEach(function(element) {
-                        var option = document.createElement("option");
-                        option.value = element.type;
-                        option.textContent = element.type;
-                        select.appendChild(option);
-                    });
-
-                    // Mostrar el modal
-                    document.getElementById("elementModal").style.display = "block";
-                } else {
-                    //alert("No se encontró la región");
-                }
-                */
-                    clickCount = 0; // Resetear contador después de un clic simple
-                }, 300); // Tiempo en milisegundos para detectar el doble clic (ajustable)
-            } else if (clickCount === 2) {
-                // Si hay un segundo clic, es un clic doble
-                offsetX = event.offsetX;
-                offsetY = event.offsetY;
-
-                document.getElementById("markerModal").style.display = "block";
-                clearTimeout(clickTimeout); // Detener el temporizador del clic simple
-                clickCount = 0; // Resetear contador después de un clic doble
-            }
-
-            
-        }
-
-        // Función para aceptar la selección
-        function acceptSelection(modal, select) {
-           
-            elementType = document.getElementById(select).value;
-            //alert("Elemento seleccionado: " + elementType);
-
-            // Aquí puedes agregar más lógica para mostrar más detalles o realizar una acción adicional.
-            if (modal === 'markerModal') {
-              
-            switch (elementType) {
-                case 'Heroes':
-                    addMarker('ico_mk_h');
-                    break;
-                case 'Danger':
-                     addMarker('ico_mk_jo');
-                    break;
-                case 'Custom':
-                     addMarker('ico_mk_p');
-                    break;
-                case 'Home':
-                    addMarker('ico_mk_ho');
-                    break;
-            }
-        }
-
-            closeModal(modal);
-        }
-
-        // Función para cerrar el modal
-        function closeModal(modal) {
-            document.getElementById(modal).style.display = "none";
-        }
-
-            // Función para agregar el marcador en el punto donde se hizo el clic
-        function addMarker(markerImage) {
-
-            // Crear el <g> para el marcador
-            const markerGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-            markerGroup.id = 'overlay';
-            markerGroup.setAttribute('draggable', 'true');
-
-            // Crear la imagen para el marcador
-            const image = document.createElementNS('http://www.w3.org/2000/svg', 'image');
-            //image.id = 'heromarker';
-            image.setAttribute('href', `/images/${markerImage}.png`);
-            image.setAttribute('width', '75');
-            image.setAttribute('height', '75');;
-
-            image.setAttribute('x', offsetX - 50); // Ajuste para centrar la imagen
-            image.setAttribute('y', offsetY - 50); // Ajuste para centrar la imagen
-
-            markerGroup.appendChild(image);
-
-            // Añadir el marcador al SVG
-            document.getElementById('arascaMap').appendChild(markerGroup);
-
-            // Hacer que el marcador sea arrastrable
-            addDragAndDrop(image);
-
-            // Agregar el evento de doble clic a la imagen para borrar
-            image.addEventListener('dblclick', function() {
-                const confirmDelete = confirm("¿Estás seguro de que deseas borrar este marcador?");
-                if (confirmDelete) {
-                    markerGroup.remove(); // Eliminar el marcador
-                }
-            });
-        }
-
-        // Función para añadir drag and drop a un marcador
-        function addDragAndDrop(element) {
-            let isDragging = false;
-
-            element.addEventListener('mousedown', function(event) {
-                isDragging = true;
-                initialX = event.clientX; // Coordenadas absolutas en el viewport
-                initialY = event.clientY; // Coordenadas absolutas en el viewport
-            });
-
-            element.addEventListener('mousemove', function(event) {
-                if (isDragging) {
-                    // Calcular el desplazamiento desde el punto de inicio
-                    const dx = event.clientX - initialX;
-                    const dy = event.clientY - initialY;
-
-                    // Actualizar las coordenadas de la imagen en el SVG
-                    const newX = parseFloat(element.getAttribute('x')) + dx;
-                    const newY = parseFloat(element.getAttribute('y')) + dy;
-
-                    element.setAttribute('x', newX);
-                    element.setAttribute('y', newY);
-
-                    // Actualizar la posición inicial para el próximo movimiento
-                    initialX = event.clientX;
-                    initialY = event.clientY;
-                }
-            });
-
-            element.addEventListener('mouseup', function(event) {
-                isDragging = false;
-
-                initialX = event.clientX;
-                initialY = event.clientY;
-
-               const svgElement = document.getElementById('arascaMap'); // Cambia 'arascaMap' por el ID de tu elemento SVG
-
-               const region = getRegionAtMarker(svgElement, initialX, initialY);
-
-               console.log("arrived at region ", region);
-            });
-
-            element.addEventListener('mouseleave', function() {
-                isDragging = false;
-            });
-        }
-
-        function getSVGCoordinates(svgElement, clientX, clientY) {
-            const point = svgElement.createSVGPoint();
-            point.x = clientX;
-            point.y = clientY;
-
-            // Transformar las coordenadas al sistema del SVG
-            const svgCoords = point.matrixTransform(svgElement.getScreenCTM().inverse());
-            return { x: svgCoords.x, y: svgCoords.y };
-        }
-
-        function getRegionAtMarker(svg, clientX, clientY) {
-            const paths = svg.querySelectorAll('path'); // Obtener todas las rutas del SVG
-            let regionFound = null;
-
-            // Crear un canvas temporal para usar isPointInPath
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-
-            paths.forEach(path => {
-                const regionCode = path.getAttribute('id'); // Suponiendo que el id identifica la región
-
-                // Convertir el atributo 'd' a un Path2D
-                const path2D = new Path2D(path.getAttribute('d'));
-
-                // Convertir las coordenadas globales a las coordenadas del SVG
-                const { x: svgX, y: svgY } = getSVGCoordinates(svg, clientX, clientY);
-
-                // Verificar si el punto está dentro de la ruta
-                if (ctx.isPointInPath(path2D, svgX, svgY)) {
-                    regionFound = regionCode;
-                }
-            });
-
-            return regionFound;
-        }
-
-async function loadSVG() {
-    try {
-        const response = await fetch('/images/arasca_100.svg');
-        const svgText = await response.text();
-
-        const parser = new DOMParser();
-        const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
-
-        const svgElement = svgDoc.querySelector('svg');
-        svgElement.id = "arascaMap";
-        document.getElementById('svgContainer').appendChild(svgElement);
-
-        // Obtener todas las capas <g> con atributo inkscape:groupmode="layer"
-        const layers = svgElement.querySelectorAll('g[id]');
-
-        layers.forEach(layer => {
-            const layerId = layer.getAttribute('id');
-
-                       // Evitar checkbox para capas Map y Regiones
-            if (layerId === 'Map' || layerId === 'Regiones') {
-                if (layerId === 'Regiones') {
-                    // Agregar evento onclick a todos los <path> dentro de 'Regiones'
-                    const paths = layer.querySelectorAll('path');
-                    paths.forEach(path => {
-                        // Usar template literals correctamente
-                        path.setAttribute('onclick', `showRegionInfo('${path.id}', event)`);
-
-                        // Efecto hover
-                        path.addEventListener('mouseover', function () {
-                            this.style.fill = 'yellow'; // Cambiar color al pasar el ratón
-                            this.style.opacity = 0.25; // Cambiar opacidad
-                        });
-                        path.addEventListener('mouseout', function () {
-                            this.style.fill = ''; // Restaurar el color de relleno
-                            this.style.opacity = 0; // Restaurar la opacidad
-                        });
-                    });
-                }
-                return;
-            }
-
-            // Crear checkbox para controlar visibilidad de la capa
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.checked = true;
-            checkbox.id = layerId;
-            checkbox.addEventListener('change', function () {
-                layer.style.display = this.checked ? 'inline' : 'none';
-            });
-
-            const label = document.createElement('label');
-            const labelText = layer.getAttribute('inkscape:label') || layerId;
-            label.textContent = labelText;
-            label.htmlFor = layerId;
-
-            // Añadir checkbox y etiqueta al contenedor
-            const controls = document.getElementById('controls');
-            controls.appendChild(checkbox);
-            controls.appendChild(label);
-            controls.appendChild(document.createElement('br'));
-        });
-
-        // Agregar etiquetas de texto para cada elemento <ellipse>
-        layers.forEach(layer => {
-            const elements = layer.querySelectorAll('ellipse');
-            elements.forEach(element => {
-                const elementId = element.getAttribute('id');
-                const cx = parseFloat(element.getAttribute('cx'));
-                const cy = parseFloat(element.getAttribute('cy'));
-                let labelText = element.getAttribute('inkscape:label') || elementId;
-
-                // Eliminar la primera letra y cualquier cosa después del guion '-'
-                labelText = labelText.substring(1).split('-')[0];
-
-                // Crear un grupo <g> para agrupar fondo y texto
-                const textGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
-
-               // Crear elemento de texto blanco en negrita
-                const textElement = document.createElementNS("http://www.w3.org/2000/svg", "text");
-                textElement.setAttribute('x', cx);
-                textElement.setAttribute('y', cy);
-                textElement.setAttribute('fill', 'white');
-                textElement.setAttribute('font-size', '18');
-                textElement.setAttribute('font-family', 'Arial, sans-serif');
-                textElement.setAttribute('font-weight', 'bold'); // Texto en negrita
-                textElement.textContent = labelText;
-
-                // Agregar fondo y texto al grupo
-                textGroup.appendChild(textElement);
-
-                // Agregar el grupo al SVG
-                layer.appendChild(textGroup);
-            });
-        });
-
-    } catch (error) {
-        console.error('Error al cargar el SVG:', error);
-    }
-}
-
-loadSVG();
-
-    </script>
-
+	<div id="eventModal" class="modal">
+		<div class="modal-content" style="width:600px; height: 650px">
+			<div id="modifiers">
+				<label><input type="checkbox" id="checkbox1"> Alineamiento diferente (+1)</label><br>
+				<label><input type="checkbox" id="checkbox2"> Acampados (+1)</label><br>
+				<label><input type="checkbox" id="checkbox3"> Otros modificadores (+1)</label><br>
+			</div>
+			<button id="diceThrow" onclick="throwDice()">Tirar Dado</button>
+			<span id="diceThrowResult"></span>
+
+			<div class="flip-card">
+				<div class="flip-card-inner" id="flipCardInner">
+					<div class="flip-card-front">
+						<img id="eventCard" class="cardContainer">
+					</div>
+					<div class="flip-card-back">
+						<img id="eventCardResult" class="cardContainer">
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<button id="acceptButton" onclick="acceptSelection('eventModal', 'eventModalSelect')">Aceptar</button>
+			<button id="cancelButton" onclick="closeModal('eventModal')">Cancelar</button>
+		</div>
+	</div>
+
+<script>
+	const svgsvg = document.getElementById('mysvg');
+	const overlay = document.getElementById('overlay');
+
+	let clickTimeout; // Variable para almacenar el temporizador
+	let clickCount = 0; // Contador de clics
+	let offsetX = 0;
+	let offsetY = 0;
+	// Obtener los datos de regiones desde el ViewBag
+	var regions = @Html.Raw(ViewBag.RegionsJson);
+
+	let minimumRoll = 0; // Variable global para almacenar el valor mínimo del dado
+
+	let imgSource;
+
+	/*document.getElementById('searchInput').addEventListener('input', function () {
+		const searchTerm = this.value.trim().toLowerCase();
+		const svg = document.getElementById('arascaMap');
+
+		if (searchTerm === "") return; // Evitar búsqueda vacía
+
+		const element = svg.querySelector(`#${CSS.escape(searchTerm)}`);
+		if (element) {
+			const bbox = element.getBBox();  // Obtener la caja delimitadora del elemento
+
+			// Centrar la vista en el elemento encontrado
+			const svgViewBox = svg.viewBox.baseVal;
+			svgViewBox.x = bbox.x - (svgViewBox.width / 2) + (bbox.width / 2);
+			svgViewBox.y = bbox.y - (svgViewBox.height / 2) + (bbox.height / 2);
+
+			// Resaltar el elemento temporalmente
+			element.style.stroke = 'red';
+			element.style.strokeWidth = '3';
+
+			setTimeout(() => {
+				element.style.stroke = '';
+				element.style.strokeWidth = '';
+			}, 2000);
+		} else {
+			console.warn('Elemento no encontrado:', searchTerm);
+		}
+	});*/
+
+	// Función para mostrar la información de la región y cargar los elementos
+	function showRegionInfo(regionCode, event) {
+		//alert(`Has clicado en la región: ${regionCode}`);
+		event.stopPropagation(); // Evitar propagación del evento
+		clickCount++;
+		if (clickCount === 1) { //click simple
+			clickTimeout = setTimeout(function() {
+				// Buscar la región por código
+				var region = regions.find(function(r) {
+					return r.regionCode === regionCode;
+				});
+
+				// Si se encuentra la región
+				if (region) {
+					// Limpiar el select antes de agregar nuevas opciones
+					var select = document.getElementById("elementTypeSelect");
+					select.innerHTML = '';  // Eliminar cualquier opción existente
+
+					// Rellenar el select con los elementos de la región
+					region.biomes.forEach(function(element) {
+						var option = document.createElement("option");
+						option.value = element.type;
+						option.textContent = element.type;
+						select.appendChild(option);
+					});
+
+					// Mostrar el modal
+					document.getElementById("elementModal").style.display = "block";
+				} else {
+					alert("No se encontró la región");
+				}
+
+				clickCount = 0; // Resetear contador después de un clic simple
+			}, 300); // Tiempo en milisegundos para detectar el doble clic (ajustable)
+		} else if (clickCount === 2) {
+			// Si hay un segundo clic, es un clic doble
+			offsetX = event.offsetX;
+			offsetY = event.offsetY;
+
+			document.getElementById("markerModal").style.display = "block";
+			clearTimeout(clickTimeout); // Detener el temporizador del clic simple
+			clickCount = 0; // Resetear contador después de un clic doble
+		}
+
+
+	}
+
+	// Función para aceptar la selección
+	async function acceptSelection(modal, select) {
+
+		const selectElement = document.getElementById(select);
+		elementType = selectElement.value || null;
+		//alert("Elemento seleccionado: " + elementType);
+
+		// Aquí puedes agregar más lógica para mostrar más detalles o realizar una acción adicional.
+		if (modal === 'markerModal') {
+
+			switch (elementType) {
+				case 'Heroes':
+				addMarker('ico_mk_h');
+				break;
+				case 'Danger':
+				addMarker('ico_mk_jo');
+				break;
+				case 'Custom':
+				addMarker('ico_mk_p');
+				break;
+				case 'Home':
+				addMarker('ico_mk_ho');
+				break;
+			}
+		}else if (modal === 'elementModal') {
+			//tienes que abrir otro con la carta de eventos
+			imgSource = elementType;
+			await showCard();
+			document.getElementById(modal).style.display = "none";
+			document.getElementById("eventModal").style.display = "block";
+
+		}
+
+		closeModal(modal);
+	}
+
+	async function showCard() {
+		// Obtener la imagen de la carta
+		const image = document.getElementById('eventCard');
+		const imagePath = `/images/backimages/event_${imgSource}_back.png`;
+		image.setAttribute('src', imagePath);
+
+		try {
+			// Obtener el JSON con las cartas
+			const response = await fetch(`/json/event_${imgSource}.json`);
+			if (!response.ok) {
+				throw new Error(`Error al cargar el JSON: ${response.statusText}`);
+			}
+
+			const cardEventDeck = await response.json(); // Convertir la respuesta a JSON
+
+			// Obtener el valor de MinimumRoll desde el JSON
+			minimumRoll = cardEventDeck[0].MinimumRoll;
+
+			// Seleccionar una carta aleatoria del array "Cards"
+			const randomIndex = Math.floor(Math.random() * cardEventDeck[0].Cards.length);
+			const randomCardImage = cardEventDeck[0].Cards[randomIndex].CardImage;
+
+			// Mostrar la imagen seleccionada aleatoriamente
+			const imageResult = document.getElementById('eventCardResult');
+			imageResult.setAttribute('src', `/images/Events/${imgSource}/${randomCardImage}`);
+
+		} catch (error) {
+			console.error('Error al obtener las cartas:', error);
+		}
+	}
+
+	function throwDice() {
+		const diceResultElement = document.getElementById("diceThrowResult");
+
+		// Simulación de animación de dados con números aleatorios antes del resultado final
+		let rollAnimation = setInterval(() => {
+			diceResultElement.innerText = `Resultado: ${Math.floor(Math.random() * 6) + 1}`;
+		}, 100);
+
+		// Simular el lanzamiento del dado con un pequeño retraso
+		setTimeout(() => {
+			clearInterval(rollAnimation); // Detener la animación
+			let diceRoll = Math.floor(Math.random() * 6) + 1;
+
+			// Sumar +1 por cada checkbox marcado
+			const modifiers = document.querySelectorAll('#modifiers input[type="checkbox"]:checked');
+			diceRoll += modifiers.length;
+
+			diceResultElement.innerText = `Resultado: ${diceRoll}`;
+
+			// Comprobar si el resultado es mayor que el valor mínimo cargado del JSON
+			if (diceRoll >= minimumRoll) {
+				document.getElementById("flipCardInner").style.transform = "rotateY(180deg)";
+			} else {
+				//alert("Tirada insuficiente, vuelve a intentarlo.");
+			}
+
+			// Si el resultado final es 1, mostrar alerta especial
+			if (diceRoll === 1) {
+				alert("¡Aventuras Independientes desbloqueadas! Consulta el mapa.");
+			}
+		}, 2000);
+	}
+
+	// Función para cerrar el modal
+	function closeModal(modal) {
+		document.getElementById(modal).style.display = "none";
+	}
+
+	// Función para agregar el marcador en el punto donde se hizo el clic
+	function addMarker(markerImage) {
+
+		// Crear el <g> para el marcador
+		const markerGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+		markerGroup.id = 'overlay';
+		markerGroup.setAttribute('draggable', 'true');
+
+		// Crear la imagen para el marcador
+		const image = document.createElementNS('http://www.w3.org/2000/svg', 'image');
+		//image.id = 'heromarker';
+		image.setAttribute('src', `/images/${markerImage}.png`);
+		image.setAttribute('width', '75');
+		image.setAttribute('height', '75');;
+
+		image.setAttribute('x', offsetX - 50); // Ajuste para centrar la imagen
+		image.setAttribute('y', offsetY - 50); // Ajuste para centrar la imagen
+
+		markerGroup.appendChild(image);
+
+		// Añadir el marcador al SVG
+		document.getElementById('arascaMap').appendChild(markerGroup);
+
+		// Hacer que el marcador sea arrastrable
+		addDragAndDrop(image);
+
+		// Agregar el evento de doble clic a la imagen para borrar
+		image.addEventListener('dblclick', function() {
+			const confirmDelete = confirm("¿Estás seguro de que deseas borrar este marcador?");
+			if (confirmDelete) {
+				markerGroup.remove(); // Eliminar el marcador
+			}
+		});
+	}
+
+	// Función para añadir drag and drop a un marcador
+	function addDragAndDrop(element) {
+		let isDragging = false;
+
+		element.addEventListener('mousedown', function(event) {
+			isDragging = true;
+			initialX = event.clientX; // Coordenadas absolutas en el viewport
+			initialY = event.clientY; // Coordenadas absolutas en el viewport
+		});
+
+		element.addEventListener('mousemove', function(event) {
+			if (isDragging) {
+				// Calcular el desplazamiento desde el punto de inicio
+				const dx = event.clientX - initialX;
+				const dy = event.clientY - initialY;
+
+				// Actualizar las coordenadas de la imagen en el SVG
+				const newX = parseFloat(element.getAttribute('x')) + dx;
+				const newY = parseFloat(element.getAttribute('y')) + dy;
+
+				element.setAttribute('x', newX);
+				element.setAttribute('y', newY);
+
+				// Actualizar la posición inicial para el próximo movimiento
+				initialX = event.clientX;
+				initialY = event.clientY;
+			}
+		});
+
+		element.addEventListener('mouseup', function(event) {
+			isDragging = false;
+
+			initialX = event.clientX;
+			initialY = event.clientY;
+
+			const svgElement = document.getElementById('arascaMap'); // Cambia 'arascaMap' por el ID de tu elemento SVG
+
+			const region = getRegionAtMarker(svgElement, initialX, initialY);
+
+			console.log("arrived at region ", region);
+		});
+
+		element.addEventListener('mouseleave', function() {
+			isDragging = false;
+		});
+	}
+
+	function getSVGCoordinates(svgElement, clientX, clientY) {
+		const point = svgElement.createSVGPoint();
+		point.x = clientX;
+		point.y = clientY;
+
+		// Transformar las coordenadas al sistema del SVG
+		const svgCoords = point.matrixTransform(svgElement.getScreenCTM().inverse());
+		return { x: svgCoords.x, y: svgCoords.y };
+	}
+
+	function getRegionAtMarker(svg, clientX, clientY) {
+		const paths = svg.querySelectorAll('path'); // Obtener todas las rutas del SVG
+		let regionFound = null;
+
+		// Crear un canvas temporal para usar isPointInPath
+		const canvas = document.createElement('canvas');
+		const ctx = canvas.getContext('2d');
+
+		paths.forEach(path => {
+			const regionCode = path.getAttribute('id'); // Suponiendo que el id identifica la región
+
+			// Convertir el atributo 'd' a un Path2D
+			const path2D = new Path2D(path.getAttribute('d'));
+
+			// Convertir las coordenadas globales a las coordenadas del SVG
+			const { x: svgX, y: svgY } = getSVGCoordinates(svg, clientX, clientY);
+
+			// Verificar si el punto está dentro de la ruta
+			if (ctx.isPointInPath(path2D, svgX, svgY)) {
+				regionFound = regionCode;
+			}
+		});
+
+		return regionFound;
+	}
+
+	async function loadSVG() {
+		try {
+			const response = await fetch('/images/arasca_100.svg');
+			const svgText = await response.text();
+
+			const parser = new DOMParser();
+			const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
+
+			const svgElement = svgDoc.querySelector('svg');
+			svgElement.id = "arascaMap";
+			document.getElementById('svgContainer').appendChild(svgElement);
+
+			// Obtener todas las capas <g> con atributo inkscape:groupmode="layer"
+			const layers = svgElement.querySelectorAll('g[id]');
+
+			layers.forEach(layer => {
+				const layerId = layer.getAttribute('id');
+
+				// Evitar checkbox para capas Map y Regiones
+				if (layerId === 'Map' || layerId === 'Regiones') {
+					if (layerId === 'Regiones') {
+						// Agregar evento onclick a todos los <path> dentro de 'Regiones'
+						const paths = layer.querySelectorAll('path');
+						paths.forEach(path => {
+							// Usar template literals correctamente
+							path.setAttribute('onclick', `showRegionInfo('${path.id}', event)`);
+
+							// Efecto hover
+							path.addEventListener('mouseover', function () {
+								this.style.fill = 'yellow'; // Cambiar color al pasar el ratón
+								this.style.opacity = 0.25; // Cambiar opacidad
+							});
+							path.addEventListener('mouseout', function () {
+								this.style.fill = ''; // Restaurar el color de relleno
+								this.style.opacity = 0; // Restaurar la opacidad
+							});
+						});
+					}
+					return;
+				}
+
+				// Crear checkbox para controlar visibilidad de la capa
+				const checkbox = document.createElement('input');
+				checkbox.type = 'checkbox';
+				checkbox.checked = true;
+				checkbox.id = layerId;
+				checkbox.addEventListener('change', function () {
+					layer.style.display = this.checked ? 'inline' : 'none';
+				});
+
+				const label = document.createElement('label');
+				const labelText = layer.getAttribute('inkscape:label') || layerId;
+				label.textContent = labelText;
+				label.htmlFor = layerId;
+
+				// Añadir checkbox y etiqueta al contenedor
+				const controls = document.getElementById('controls');
+				controls.appendChild(checkbox);
+				controls.appendChild(label);
+				controls.appendChild(document.createElement('br'));
+			});
+
+			// Agregar etiquetas de texto para cada elemento <ellipse>
+			layers.forEach(layer => {
+				const elements = layer.querySelectorAll('ellipse');
+				elements.forEach(element => {
+					const elementId = element.getAttribute('id');
+					const cx = parseFloat(element.getAttribute('cx'));
+					const cy = parseFloat(element.getAttribute('cy'));
+					let labelText = element.getAttribute('inkscape:label') || elementId;
+
+					// Eliminar la primera letra y cualquier cosa después del guion '-'
+					labelText = labelText.substring(1).split('-')[0];
+
+					// Crear un grupo <g> para agrupar fondo y texto
+					const textGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+
+					// Crear elemento de texto blanco en negrita
+					const textElement = document.createElementNS("http://www.w3.org/2000/svg", "text");
+					textElement.setAttribute('x', cx);
+					textElement.setAttribute('y', cy);
+					textElement.setAttribute('fill', 'white');
+					textElement.setAttribute('font-size', '18');
+					textElement.setAttribute('font-family', 'Arial, sans-serif');
+					textElement.setAttribute('font-weight', 'bold'); // Texto en negrita
+					textElement.textContent = labelText;
+
+					// Agregar fondo y texto al grupo
+					textGroup.appendChild(textElement);
+
+					// Agregar el grupo al SVG
+					layer.appendChild(textGroup);
+				});
+			});
+
+		} catch (error) {
+			console.error('Error al cargar el SVG:', error);
+		}
+	}
+
+	loadSVG();
+
+	</script>
 </body>
 </html>

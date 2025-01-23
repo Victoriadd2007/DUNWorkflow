@@ -1,46 +1,40 @@
 [
+  {
+    "CardType": "Event",
+    "EventType": "Volcano",
+    "MinimumRoll": 5,
+    "Cards": [
+      {
+        "Name": "Ataque en Terreno Baldío",
+        "CardCode": "EV043/110",
+        "CardImage": "ataque_en_terreno_baldio.png"
+      },
+      {
+        "Name": "Desprendimiento!",
+        "CardCode": "EV045/110",
+        "CardImage": "volcano_desprendimiento.png"
+      },
+      {
+        "Name": "Gas Tóxico",
+        "CardCode": "EV048/110",
+        "CardImage": "gas_toxico.png"
+      },
+      {
+        "Name": "Hambre",
+        "CardCode": "EV044/110",
+        "CardImage": "volcano_hambre.png"
+      },
+      {
+        "Name": "Nubes Negras",
+        "CardCode": "EV047/110",
+        "CardImage": "volcano_nubes_negras.png"
+      },
+      {
+        "Name": "Vapores Volcánicos",
+        "CardCode": "EV046/110",
+        "CardImage": "vapores_volcanicos.png"
+      }
 
-  {
-    "CardType": "Event",
-    "Name": "Ataque en Terreno Baldío",
-    "CardCode": "EV043/110",
-    "CardImage": "ataque_en_terreno_baldio.png",
-    "EventType": "Volcano"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Desprendimiento!",
-    "CardCode": "EV045/110",
-    "CardImage": "volcano_desprendimiento.png",
-    "EventType": "Volcano"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Gas Tóxico",
-    "CardCode": "EV048/110",
-    "CardImage": "gas_toxico.png",
-    "EventType": "Volcano"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Hambre",
-    "CardCode": "EV044/110",
-    "CardImage": "volcano_hambre.png",
-    "EventType": "Volcano"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Nubes Negras",
-    "CardCode": "EV047/110",
-    "CardImage": "volcano_nubes_negras.png",
-    "EventType": "Volcano"
-  },
-  {
-    "CardType": "Event",
-    "Name": "Vapores Volcánicos",
-    "CardCode": "EV046/110",
-    "CardImage": "vapores_volcanicos.png",
-    "EventType": "Volcano"
+    ]
   }
-
 ]
