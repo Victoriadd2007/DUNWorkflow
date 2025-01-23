@@ -1,105 +1,2870 @@
 [
   {
-    "regionCode": "1m1",
-    "info": "Test 1m1",
-    "elements": [
+    "regionCode": "2t94",
+    "biomes": [
       {
-        "type": "Mar/Río"
+        "type": "",
+        "placesServices": []
       }
-    ],
-    "borders": [
-      { "regionCode": "1m2" },
-      { "regionCode": "1m10" },
-      { "regionCode": "1m11" }
     ]
   },
   {
-    "regionCode": "1m2",
-    "info": "Test 1m2",
-    "elements": [
+    "regionCode": "2t93",
+    "biomes": [
       {
-        "type": "Mar/Río"
+        "type": "",
+        "placesServices": []
       }
-    ],
-    "borders": [
-      { "regionCode": "1m1" },
-      { "regionCode": "1m10" },
-      { "regionCode": "1m9" },
-      { "regionCode": "1m3" }
     ]
   },
   {
-    "regionCode": "1m3",
-    "info": "Test 1m3",
-    "elements": [
+    "regionCode": "2t92",
+    "biomes": [
       {
-        "type": "Mar/Río"
+        "type": "",
+        "placesServices": []
       }
-    ],
-    "borders": [
-      { "regionCode": "1m2" },
-      { "regionCode": "1m4" },
-      { "regionCode": "1m8" },
-      { "regionCode": "1m9" },
-      { "regionCode": "1m3" },
-      { "regionCode": "t9" }
     ]
   },
   {
-    "regionCode": "1m4",
-    "info": "Test 1m4",
-    "elements": [
+    "regionCode": "2t91",
+    "biomes": [
       {
-        "type": "Mar/Río"
+        "type": "",
+        "placesServices": []
       }
-    ],
-    "borders": [
-      { "regionCode": "1m3" },
-      { "regionCode": "1m5" },
-      { "regionCode": "1m7" },
-      { "regionCode": "t2" },
-      { "regionCode": "t10" }
     ]
   },
   {
-    "regionCode": "1m5",
-    "info": "Test 1m5",
-    "elements": [
+    "regionCode": "2t90",
+    "biomes": [
       {
-        "type": "Mar/Río"
+        "type": "",
+        "placesServices": []
       }
-    ],
-    "borders": [
-      { "regionCode": "t1" },
-      { "regionCode": "t2" },
-      { "regionCode": "1m4" },
-      { "regionCode": "1m6" }
     ]
   },
   {
-    "regionCode": "t1",
-    "info": "Test t1",
-    "elements": [
+    "regionCode": "2t89",
+    "biomes": [
       {
-        "type": "Castillo",
-        "alignment": "Mal",
-        "placesservices": [
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t88",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t87",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t86",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t85",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t84",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t83",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t82",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t81",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t80",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t79",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t78",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t77",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t76",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t75",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t74",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t73",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t72",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t71",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t70",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t69",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t68",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t67",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t66",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t65",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t64",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t63",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t62",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t61",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t60",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t59",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t58",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t57",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t56",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t55",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t54",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t53",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t52",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t51",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t50",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t49",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t48",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t47",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t46",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t45",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t44",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t43",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t42",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t41",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t40",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t39",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t38",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t37",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t36",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t35",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t34",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t33",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t32",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t31",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t30",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t29",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t28",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t27",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t26",
+    "biomes": [
+      {
+        "type": "",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t25",
+    "biomes": [
+      {
+        "type": "Road",
+        "placesServices": []
+      },
+      {
+        "type": "Forest",
+        "placesServices": ["Puerto"]
+      }
+    ]
+  },
+  {
+    "regionCode": "2t24",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
           "Alquimista",
           "Posada",
+          "Establos",
+          "Herrería",
+          "Banco",
+          "Escuela de lucha"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t23",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Good",
+        "placesServices": [
+          "Mercado",
+          "Banco",
+          "Posada",
+          "Sanador",
+          "Herbolario",
+          "Taberna"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  },
+  {
+    "regionCode": "2t22",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Establos",
+          "Taberna"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t21",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Herrería",
+          "Taberna",
+          "Alquimista",
+          "Escuela de lucha",
+          "Posada",
+          "Prestamista",
+          "Banco",
+          "Estancias del Gobernador",
+          "Escuela de hechicería",
+          "Mercado",
+          "Sanador",
+          "Puente"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": [ "Oráculo", "Templo", "Puente" ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [ "Puente" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2t20",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": [ "Campamento" ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [ "Posada" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2t19",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Evil",
+        "placesServices": [
+          "Posada",
+          "Taberna",
+          "Mercado",
+          "Sanador",
+          "Herbolario",
+          "Criadero y centro de adiestramiento"
+        ]
+      },
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t18",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t17",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": [ "LLugar sagrado" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2t16",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Herrería",
+          "Centro de lucha",
+          "Posada",
+          "Taberna",
+          "Establos"
+        ]
+      },
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t15",
+    "biomes": [
+      {
+        "type": "City",
+        "alignment": "Evil",
+        "placesServices": [
+          "Posada",
+          "Alquimista",
+          "Herbolario",
+          "Mercado",
+          "Taberna"
+        ]
+      },
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t14",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t13",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t12",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t11",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Herrería",
+          "Herbolario",
+          "Centro de cría y adiestramiento",
+          "Centro de lucha",
+          "Posada"
+        ]
+      },
+      {
+        "type": "Mountain",
+        "placesServices": [ "Lugar sagrado" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2t10",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t9",
+    "biomes": [
+      {
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Posada",
+          "Alquimista",
+          "Estancias del Gobernador",
+          "Biblioteca",
+          "Herbolario",
+          "Sanador",
+          "Herrería"
+        ]
+      },
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t8",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Criadero y centro de adiestramiento",
+          "Posada",
+          "Establos",
+          "Mercado",
+          "Puerto"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t7",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t6",
+    "biomes": [
+      {
+        "type": "Glacier",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t5",
+    "biomes": [
+      {
+        "type": "Glacier",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t4",
+    "biomes": [
+      {
+        "type": "Glacier",
+        "placesServices": [ "Puerto" ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [ "Puerto" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2t3",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Puerto",
+          "Posada"
+        ]
+      },
+      {
+        "type": "Glacier",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t2",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2t1",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r11",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r10",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r9",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r8",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r7",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r6",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r5",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r4",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r3",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r2",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2r1",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m20",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m19",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m18",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m17",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m16",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m15",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m14",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m13",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m12",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m11",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m10",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m9",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m8",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m7",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m6",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m5",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m4",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m3",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m2",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2m1",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2i13",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2i12",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Alquimista",
+          "Escuela de hechicería"
+        ]
+      },
+      {
+        "type": "Marsh",
+        "placesServices": [ "Puerto" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2i11",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Biblioteca",
+          "Escuela de hechicería",
+          "Puerto",
+          "Alquimista",
+          "Oráculo",
+          "Sanador"
+        ]
+      },
+      {
+        "type": "Mountain",
+        "placesServices": [ "Lugar sagrado" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2i10",
+    "biomes": [
+      {
+        "type": "Volcano",
+        "placesServices": [ "Lugar sagrado" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2i9",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Criadero y centro de adiestramiento",
+          "Taberna",
+          "Posada",
+          "Escuela de lucha",
+          "Herrería"
+        ]
+      },
+      {
+        "type": "Mountain",
+        "placesServices": [ "Puerto" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2i8",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Evil",
+        "placesServices": [
+          "Posada",
+          "Herbolario",
+          "Oráculo",
+          "Mercado",
+          "Sanador"
+        ]
+      },
+      {
+        "type": "Volcano",
+        "placesServices": [ "Lugar sagrado" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2i7",
+    "biomes": [
+      {
+        "type": "Volcano",
+        "placesServices": [ "Puerto" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2i6",
+    "biomes": [
+      {
+        "type": "Volcano",
+        "placesServices": [ "Criadero y centro de adiestramiento" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2i5",
+    "biomes": [
+      {
+        "type": "Volcano",
+        "placesServices": [ "Oráculo" ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2i4",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Puerto",
+          "Posadaa",
+          "Escuela de lucha"
+        ]
+      },
+      {
+        "type": "Glacier",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2i3",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Escuela de lucha",
+          "Herbolario",
           "Criadero y centro de adiestramiento",
           "Herrería",
+          "Posada",
+          "Estancias del Goobernador"
+        ]
+      },
+      {
+        "type": "Volcano",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "2i2",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": [
+          "Lugar sagrado",
           "Oráculo",
-          "Escuela de Lucha",
+          "Puerto"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "2i1",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Escuela de lucha",
+          "Herbolario"
+        ]
+      },
+      {
+        "type": "Volcano",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t62",
+    "biomes": [
+      {
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Mercado",
+          "Puerto",
+          "Posada",
+          "Sanador",
+          "Prestamista",
+          "Taberna",
+          "Alquimista"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t61",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t60",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Escuela de lucha",
+          "Herrería",
+          "Posada",
+          "Biblioteca"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [
+          "Puente"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": [
+          "Puente"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t59",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t58",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t57",
+    "biomes": [
+      {
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Mercado",
+          "Puerto",
+          "Posada",
+          "Sanador",
+          "Prestamista",
+          "Taberna",
+          "Alquimista"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t56",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t55",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t54",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Mercado",
+          "Puerto",
+          "Posada",
+          "Templo",
+          "Herbolario",
+          "Taberna"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t53",
+    "biomes": [
+      {
+        "type": "Road",
+        "placesServices": []
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t52",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Escuela de lucha",
+          "Herrería",
+          "Posada",
+          "Establos"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": [
+          "Puente"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [
+          "Puente"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t51",
+    "biomes": [
+      {
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Herrería",
+          "Biblioteca",
+          "Alquimista",
+          "Templo",
+          "Posada",
+          "Banco",
+          "Prestamista",
+          "Estancias del Gobernador",
+          "Escuela de hechicería",
+          "Mercado",
+          "Sanador"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [
+          "Puente"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": [
+          "Puente",
+          "Puerto"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t50",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Templo",
+          "Posada",
+          "Establos"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [
+          "Puente"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": [
+          "Puente"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t49",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t48",
+    "biomes": [
+      {
+        "type": "Marsh",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t47",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Taberna",
+          "Posada",
+          "Herbolario"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [
+          "Puente"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": [
+          "Puente"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t46",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t45",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Taberna",
+          "Posada",
+          "Mercado"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      },
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t44",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Taberna",
+          "Posada",
+          "Mercado"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t43",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t42",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Posada",
+          "Herrería"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      },
+      {
+        "type": "Mountain",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t41",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t40",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Posada",
+          "Establos",
+          "Herrería",
+          "Sanador"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": [
+          "Puente"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [
+          "Puente"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t39",
+    "biomes": [
+      {
+        "type": "Marsh",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t38",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Templo",
+          "Mercado",
+          "Posada",
+          "Puerto"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t37",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Establos",
+          "Herrería",
+          "Posada"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t36",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t35",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": [
+          "Puente"
+        ]
+      },
+      {
+        "type": "Road",
+        "placesServices": [
+          "Puente"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t34",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": [
+          "Puente"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t33",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Puerto",
+          "Sanador",
+          "Escuela de hechicería",
+          "Oráculo",
+          "Alquimista"
+        ]
+      },
+      {
+        "type": "Marsh",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t32",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t31",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Herrería",
+          "Posada",
+          "Establos",
+          "Taberna"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t30",
+    "biomes": [
+      {
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Herrería",
+          "Alquimista",
+          "Mercado",
+          "Posada",
+          "Banco",
+          "Estancias del Gobernador",
+          "Sanador"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t29",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t28",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t27",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t26",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t25",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t24",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t23",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Herbolario",
+          "Posada",
+          "Establos",
+          "Herrería",
+          "Biblioteca",
+          "Escuela de lucha"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t22",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t21",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t20",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": [
+          "Campamento"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t19",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t18",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t17",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": [
+          "Campamento"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t16",
+    "biomes": [
+      {
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Templo",
+          "Taberna",
+          "Alquimista",
+          "Escuela de lucha",
+          "Posada",
+          "Sanador",
+          "Herrería",
+          "Estancias del Gobernador",
+          "Establos",
+          "Mercado"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t15",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Herrería",
+          "Herbolario",
+          "Establos",
+          "Escuela de lucha",
+          "Posada"
+        ]
+      },
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Road",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t14",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t13",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Herrería",
+          "Herbolario",
+          "Criadero y centro de adiestramiento",
+          "Escuela de lucha",
+          "Posada"
+        ]
+      },
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t12",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t11",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t10",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t9",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Evil",
+        "placesServices": [
+          "Herrería",
+          "Escuela de lucha",
+          "Posada"
+        ]
+      },
+      {
+        "type": "Glacier",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t8",
+    "biomes": [
+      {
+        "type": "Glacier",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t7",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t6",
+    "biomes": [
+      {
+        "type": "Village",
+        "alignment": "Evil",
+        "placesServices": [
+          "Herbolario",
+          "Oráculo",
+          "Mercado",
+          "Sanador",
+          "Posada"
+        ]
+      },
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t5",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t4",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1t3",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": [
+          "Oráculo"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1t2",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Alquimista",
+          "Criadero y centro de adiestramiento",
+          "Herrería",
+          "Escuela de lucha",
+          "Posada",
+          "Oráculo",
           "Lugar sagrado",
           "Puerto"
         ]
       },
       {
-        "type": "Glaciar"
+        "type": "Glacier"
       }
-    ],
-    "borders": [
-
+    ]
+  },
+  {
+    "regionCode": "1t1",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Alquimista",
+          "Criadero y centro de adiestramiento",
+          "Herrería",
+          "Escuela de lucha",
+          "Posada",
+          "Oráculo",
+          "Lugar sagrado",
+          "Puerto"
+        ]
+      },
+      {
+        "type": "Glacier"
+      }
+    ]
+  },
+  {
+    "regionCode": "1r10",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1r9",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1r8",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1r7",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1r6",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1r5",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1r4",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1r3",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1r2",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1r1",
+    "biomes": [
+      {
+        "type": "River",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m21",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m20",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m19",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m18",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m17",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m16",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m15",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m14",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m13",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m12",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m11",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m10",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m9",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m8",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m7",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m6",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m5",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m4",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m3",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m2",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1m1",
+    "biomes": [
+      {
+        "type": "Sea",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1i10",
+    "biomes": [
+      {
+        "type": "Castle",
+        "alignment": "Evil",
+        "placesServices": [
+          "Alquimista",
+          "Criadero y centro de adiestramiento",
+          "Herrería",
+          "Escuela de lucha",
+          "Posada",
+          "Oráculo",
+          "Lugar sagrado",
+          "Puerto"
+        ]
+      },
+      {
+        "type": "Glacier"
+      }
+    ]
+  },
+  {
+    "regionCode": "1i9",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1i8",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1i7",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      },
+      {
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Mercado",
+          "Herrería",
+          "Taberna",
+          "Herbolario",
+          "Escuela de lucha",
+          "Posada",
+          "Templo",
+          "Oráculo",
+          "Estancias del Gobernador",
+          "Puerto"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1i6",
+    "biomes": [
+      {
+        "type": "Plains",
+        "placesServices": []
+      },
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Posada",
+          "Mercado",
+          "Puerto"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1i5",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": []
+      },
+      {
+        "type": "City",
+        "alignment": "Good",
+        "placesServices": [
+          "Herrería",
+          "Escuela de Hechicería",
+          "Alquimista",
+          "Lugar sagrado",
+          "Posada",
+          "Templo",
+          "Oráculo",
+          "Estancias del Gobernador",
+          "Biblioteca",
+          "Mercado",
+          "Sanador"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1i4",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1i3",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": []
+      },
+      {
+        "type": "Village",
+        "alignment": "Neutral",
+        "placesServices": [
+          "Herbolario",
+          "Criadero y centro de adiestramiento",
+          "Posada",
+          "Puerto"
+        ]
+      }
+    ]
+  },
+  {
+    "regionCode": "1i2",
+    "biomes": [
+      {
+        "type": "Mountain",
+        "placesServices": []
+      }
+    ]
+  },
+  {
+    "regionCode": "1i1",
+    "biomes": [
+      {
+        "type": "Forest",
+        "placesServices": []
+      }
     ]
   }
 ]

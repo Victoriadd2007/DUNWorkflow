@@ -178,6 +178,14 @@ body {
         display: block;
     }
 
+select {
+    text-align: center; /* Centra el texto en navegadores antiguos */
+    text-align-last: center; /* Centra la opción seleccionada (Chrome, Edge) */
+    padding: 5px;
+    font-size: 16px;
+    appearance: none; /* Elimina el estilo nativo (opcional) */
+}
+
 #controls {
     position: fixed; /* Hace que el elemento permanezca flotante */
     top: 10px; /* Espaciado desde la parte superior */

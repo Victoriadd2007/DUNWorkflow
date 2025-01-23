@@ -23,7 +23,6 @@
 <body>
     <div id="controls"></div>
     <div id="svgContainer"></div>
-
     <div id="markerModal" class="modal">
         <div class="modal-content">
             <h4>Seleccionar un tipo de marcador</h4>
@@ -33,6 +32,7 @@
                 <option value="Custom">Personalizado</option>
                 <option value="Home">Hogar</option>
             </select>
+            <br />
             <button id="acceptButton" onclick="acceptSelection('markerModal', 'markerTypeSelect')">Aceptar</button>
             <button id="cancelButton" onclick="closeModal('markerModal')">Cancelar</button>
         </div>
