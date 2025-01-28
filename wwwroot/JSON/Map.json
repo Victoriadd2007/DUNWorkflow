@@ -97,7 +97,8 @@
         "placesServices": [
           "Oráculo",
           "Herrería",
-          "Alquimista"
+          "Alquimista",
+          "Guardias"
         ]
       },
       {
@@ -140,8 +141,9 @@
         "type": "Castle",
         "alignment": "Evil",
         "placesServices": [
-          "Posada", 
-          "Alquimista"
+          "Posada",
+          "Alquimista",
+          "Guardias"
         ]
       },
       {
@@ -197,7 +199,8 @@
           "Herbolario",
           "Puerto",
           "Mercado",
-          "Criadero y centro de adiestramiento"
+          "Criadero y centro de adiestramiento",
+          "Guardias"
         ]
       },
       {
@@ -249,7 +252,8 @@
           "Estancias del Gobernador",
           "Escuela de hechicería",
           "Herbolario",
-          "Sanador"
+          "Sanador",
+          "Guardias"
         ]
       },
       {
@@ -296,7 +300,8 @@
           "Herrería",
           "Establos",
           "Taberna",
-          "Prestamista"
+          "Prestamista",
+          "Guardias"
         ]
       },
       {
@@ -382,7 +387,8 @@
           "Establos",
           "Escuela de lucha",
           "Herrería",
-          "Posada"
+          "Posada",
+          "Guardias"
         ]
       },
       {
@@ -413,7 +419,8 @@
           "Establos",
           "Mercado",
           "Escuela de hechicería",
-          "Sanador"
+          "Sanador",
+          "Guardias"
         ]
       },
       {
@@ -434,7 +441,8 @@
         "alignment": "Neutral",
         "placesServices": [
           "Escuela de lucha",
-          "Establos"
+          "Establos",
+          "Guardias"
         ]
       },
       {
@@ -486,7 +494,8 @@
         "type": "Village",
         "alignment": "Neutral",
         "placesServices": [
-          "Herbolario"
+          "Herbolario",
+          "Guardias"
         ]
       },
       {
@@ -568,7 +577,8 @@
           "Herbolario",
           "Establos",
           "Escuela de lucha",
-          "Posada"
+          "Posada",
+          "Guardias"
         ]
       },
       {
@@ -603,8 +613,9 @@
         "alignment": "Neutral",
         "placesServices": [
           "Establos",
-          "Escuela de lucha", 
-          "Posada"
+          "Escuela de lucha",
+          "Posada",
+          "Guardias"
         ]
       },
       {
@@ -701,7 +712,8 @@
           "Oráculo",
           "Estancias del Gobernador",
           "Escuela de hechicería",
-          "Herolario"
+          "Herolario",
+          "Guardias"
         ]
       },
       {
@@ -742,7 +754,8 @@
           "Herbolario",
           "Mercado",
           "Posada",
-          "Puerto"
+          "Puerto",
+          "Guardias"
         ]
       },
       {
@@ -779,7 +792,8 @@
           "Establos",
           "Escuela de lucha",
           "Posada",
-          "Taberna"
+          "Taberna",
+          "Guardias"
         ]
       },
       {
@@ -800,7 +814,8 @@
         "alignment": "Neutral",
         "placesServices": [
           "Posada",
-          "Mercado"
+          "Mercado",
+          "Guardias"
         ]
       },
       {
@@ -830,7 +845,8 @@
         "alignment": "Neutral",
         "placesServices": [
           "Posada",
-          "Puerto"
+          "Puerto",
+          "Guardias"
         ]
       },
       {
@@ -857,7 +873,8 @@
           "Mercado",
           "Prestamista",
           "Banco",
-          "Estancias del Gobernador"
+          "Estancias del Gobernador",
+          "Guardias"
         ]
       },
       {
@@ -901,7 +918,8 @@
           "Establos",
           "Herrería",
           "Banco",
-          "Escuela de lucha"
+          "Escuela de lucha",
+          "Guardias"
         ]
       },
       {
@@ -922,7 +940,8 @@
           "Posada",
           "Sanador",
           "Herbolario",
-          "Taberna"
+          "Taberna",
+          "Guardias"
         ]
       },
       {
@@ -943,7 +962,8 @@
         "alignment": "Neutral",
         "placesServices": [
           "Establos",
-          "Taberna"
+          "Taberna",
+          "Guardias"
         ]
       },
       {
@@ -960,8 +980,8 @@
     "regionCode": "2t21",
     "biomes": [
       {
-        "type": "Village",
-        "alignment": "Neutral",
+        "type": "City",
+        "alignment": "Good",
         "placesServices": [
           "Herrería",
           "Taberna",
@@ -974,7 +994,8 @@
           "Escuela de hechicería",
           "Mercado",
           "Sanador",
-          "Puente"
+          "Puente",
+          "Guardias"
         ]
       },
       {
@@ -1022,7 +1043,8 @@
           "Mercado",
           "Sanador",
           "Herbolario",
-          "Criadero y centro de adiestramiento"
+          "Criadero y centro de adiestramiento",
+          "Guardias"
         ]
       },
       {
@@ -1062,7 +1084,8 @@
           "Centro de lucha",
           "Posada",
           "Taberna",
-          "Establos"
+          "Establos",
+          "Guardias"
         ]
       },
       {
@@ -1082,7 +1105,8 @@
           "Alquimista",
           "Herbolario",
           "Mercado",
-          "Taberna"
+          "Taberna",
+          "Guardias"
         ]
       },
       {
@@ -1133,7 +1157,8 @@
           "Herbolario",
           "Centro de cría y adiestramiento",
           "Centro de lucha",
-          "Posada"
+          "Posada",
+          "Guardias"
         ]
       },
       {
@@ -1166,7 +1191,8 @@
           "Biblioteca",
           "Herbolario",
           "Sanador",
-          "Herrería"
+          "Herrería",
+          "Guardias"
         ]
       },
       {
@@ -1186,7 +1212,8 @@
           "Posada",
           "Establos",
           "Mercado",
-          "Puerto"
+          "Puerto",
+          "Guardias"
         ]
       },
       {
@@ -1247,7 +1274,8 @@
         "alignment": "Neutral",
         "placesServices": [
           "Puerto",
-          "Posada"
+          "Posada",
+          "Guardias"
         ]
       },
       {
@@ -1570,7 +1598,8 @@
         "alignment": "Evil",
         "placesServices": [
           "Alquimista",
-          "Escuela de hechicería"
+          "Escuela de hechicería",
+          "Guardias"
         ]
       },
       {
@@ -1593,7 +1622,8 @@
           "Puerto",
           "Alquimista",
           "Oráculo",
-          "Sanador"
+          "Sanador",
+          "Guardias"
         ]
       },
       {
@@ -1626,7 +1656,8 @@
           "Taberna",
           "Posada",
           "Escuela de lucha",
-          "Herrería"
+          "Herrería",
+          "Guardias"
         ]
       },
       {
@@ -1648,7 +1679,8 @@
           "Herbolario",
           "Oráculo",
           "Mercado",
-          "Sanador"
+          "Sanador",
+          "Guardias"
         ]
       },
       {
@@ -1701,7 +1733,8 @@
         "placesServices": [
           "Puerto",
           "Posadaa",
-          "Escuela de lucha"
+          "Escuela de lucha",
+          "Guardias"
         ]
       },
       {
@@ -1722,7 +1755,8 @@
           "Criadero y centro de adiestramiento",
           "Herrería",
           "Posada",
-          "Estancias del Goobernador"
+          "Estancias del Goobernador",
+          "Guardias"
         ]
       },
       {
@@ -1752,7 +1786,8 @@
         "alignment": "Evil",
         "placesServices": [
           "Escuela de lucha",
-          "Herbolario"
+          "Herbolario",
+          "Guardias"
         ]
       },
       {
@@ -1774,7 +1809,8 @@
           "Sanador",
           "Prestamista",
           "Taberna",
-          "Alquimista"
+          "Alquimista",
+          "Guardias"
         ]
       },
       {
@@ -1806,7 +1842,8 @@
           "Escuela de lucha",
           "Herrería",
           "Posada",
-          "Biblioteca"
+          "Biblioteca",
+          "Guardias"
         ]
       },
       {
@@ -1854,7 +1891,8 @@
           "Sanador",
           "Prestamista",
           "Taberna",
-          "Alquimista"
+          "Alquimista",
+          "Guardias"
         ]
       },
       {
@@ -1901,7 +1939,8 @@
           "Posada",
           "Templo",
           "Herbolario",
-          "Taberna"
+          "Taberna",
+          "Guardias"
         ]
       },
       {
@@ -1937,7 +1976,8 @@
           "Escuela de lucha",
           "Herrería",
           "Posada",
-          "Establos"
+          "Establos",
+          "Guardias"
         ]
       },
       {
@@ -1971,7 +2011,8 @@
           "Estancias del Gobernador",
           "Escuela de hechicería",
           "Mercado",
-          "Sanador"
+          "Sanador",
+          "Guardias"
         ]
       },
       {
@@ -1998,7 +2039,8 @@
         "placesServices": [
           "Templo",
           "Posada",
-          "Establos"
+          "Establos",
+          "Guardias"
         ]
       },
       {
@@ -2042,7 +2084,8 @@
         "placesServices": [
           "Taberna",
           "Posada",
-          "Herbolario"
+          "Herbolario",
+          "Guardias"
         ]
       },
       {
@@ -2077,7 +2120,8 @@
         "placesServices": [
           "Taberna",
           "Posada",
-          "Mercado"
+          "Mercado",
+          "Guardias"
         ]
       },
       {
@@ -2099,7 +2143,8 @@
         "placesServices": [
           "Taberna",
           "Posada",
-          "Mercado"
+          "Mercado",
+          "Guardias"
         ]
       },
       {
@@ -2129,7 +2174,8 @@
         "alignment": "Neutral",
         "placesServices": [
           "Posada",
-          "Herrería"
+          "Herrería",
+          "Guardias"
         ]
       },
       {
@@ -2161,7 +2207,8 @@
           "Posada",
           "Establos",
           "Herrería",
-          "Sanador"
+          "Sanador",
+          "Guardias"
         ]
       },
       {
@@ -2197,7 +2244,8 @@
           "Templo",
           "Mercado",
           "Posada",
-          "Puerto"
+          "Puerto",
+          "Guardias"
         ]
       },
       {
@@ -2219,7 +2267,8 @@
         "placesServices": [
           "Establos",
           "Herrería",
-          "Posada"
+          "Posada",
+          "Guardias"
         ]
       },
       {
@@ -2280,7 +2329,8 @@
           "Sanador",
           "Escuela de hechicería",
           "Oráculo",
-          "Alquimista"
+          "Alquimista",
+          "Guardias"
         ]
       },
       {
@@ -2308,7 +2358,8 @@
           "Herrería",
           "Posada",
           "Establos",
-          "Taberna"
+          "Taberna",
+          "Guardias"
         ]
       },
       {
@@ -2334,7 +2385,8 @@
           "Posada",
           "Banco",
           "Estancias del Gobernador",
-          "Sanador"
+          "Sanador",
+          "Guardias"
         ]
       },
       {
@@ -2417,7 +2469,8 @@
           "Establos",
           "Herrería",
           "Biblioteca",
-          "Escuela de lucha"
+          "Escuela de lucha",
+          "Guardias"
         ]
       },
       {
@@ -2500,7 +2553,8 @@
           "Herrería",
           "Estancias del Gobernador",
           "Establos",
-          "Mercado"
+          "Mercado",
+          "Guardias"
         ]
       },
       {
@@ -2524,7 +2578,8 @@
           "Herbolario",
           "Establos",
           "Escuela de lucha",
-          "Posada"
+          "Posada",
+          "Guardias"
         ]
       },
       {
@@ -2557,7 +2612,8 @@
           "Herbolario",
           "Criadero y centro de adiestramiento",
           "Escuela de lucha",
-          "Posada"
+          "Posada",
+          "Guardias"
         ]
       },
       {
@@ -2602,7 +2658,8 @@
         "placesServices": [
           "Herrería",
           "Escuela de lucha",
-          "Posada"
+          "Posada",
+          "Guardias"
         ]
       },
       {
@@ -2640,7 +2697,8 @@
           "Oráculo",
           "Mercado",
           "Sanador",
-          "Posada"
+          "Posada",
+          "Guardias"
         ]
       },
       {
@@ -2692,7 +2750,8 @@
           "Posada",
           "Oráculo",
           "Lugar sagrado",
-          "Puerto"
+          "Puerto",
+          "Guardias"
         ]
       },
       {
@@ -2714,7 +2773,8 @@
           "Posada",
           "Oráculo",
           "Lugar sagrado",
-          "Puerto"
+          "Puerto",
+          "Guardias"
         ]
       },
       {
@@ -3015,7 +3075,8 @@
           "Posada",
           "Oráculo",
           "Lugar sagrado",
-          "Puerto"
+          "Puerto",
+          "Guardias"
         ]
       },
       {
@@ -3061,7 +3122,8 @@
           "Templo",
           "Oráculo",
           "Estancias del Gobernador",
-          "Puerto"
+          "Puerto",
+          "Guardias"
         ]
       }
     ]
@@ -3079,7 +3141,8 @@
         "placesServices": [
           "Posada",
           "Mercado",
-          "Puerto"
+          "Puerto",
+          "Guardias"
         ]
       }
     ]
@@ -3105,7 +3168,8 @@
           "Estancias del Gobernador",
           "Biblioteca",
           "Mercado",
-          "Sanador"
+          "Sanador",
+          "Guardias"
         ]
       }
     ]
@@ -3133,7 +3197,8 @@
           "Herbolario",
           "Criadero y centro de adiestramiento",
           "Posada",
-          "Puerto"
+          "Puerto",
+          "Guardias"
         ]
       }
     ]

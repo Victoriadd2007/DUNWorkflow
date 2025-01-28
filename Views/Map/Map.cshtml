@@ -60,7 +60,17 @@
 			<button id="cancelButton" onclick="closeModal('eventModal')">Cancelar</button>
 		</div>
 	</div>
-
+	<div id="servicesModal" class="modalServices">
+		<div class="modalServices-content">
+			<h4>Lugares y Servicios</h4>
+			<div id="servicesGrid" class="servicesGrid">
+				<!-- Las cartas se cargarán aquí dinámicamente -->
+			</div>
+			<br><br>
+			<button id="acceptButton" onclick="acceptSelection('servicesModal', 'elementTypeSelect')">Aceptar</button>
+			<button id="cancelButton" onclick="closeModal('servicesModal')">Cancelar</button>
+		</div>
+	</div>
 <script>
 	const svgsvg = document.getElementById('mysvg');
 	const overlay = document.getElementById('overlay');
@@ -71,7 +81,7 @@
 	let offsetY = 0;
 	// Obtener los datos de regiones desde el ViewBag
 	var regions = @Html.Raw(ViewBag.RegionsJson);
-
+	var selectedRegionCode; 
 	let minimumRoll = 0; // Variable global para almacenar el valor mínimo del dado
 
 	let imgSource;
@@ -113,6 +123,7 @@
 			clickTimeout = setTimeout(function() {
 				// Buscar la región por código
 				var region = regions.find(function(r) {
+					selectedRegionCode = regionCode;
 					return r.regionCode === regionCode;
 				});
 
@@ -155,7 +166,7 @@
 	async function acceptSelection(modal, select) {
 
 		const selectElement = document.getElementById(select);
-		elementType = selectElement.value || null;
+		elementType = selectElement != null ? selectElement.value : null;
 		//alert("Elemento seleccionado: " + elementType);
 
 		// Aquí puedes agregar más lógica para mostrar más detalles o realizar una acción adicional.
@@ -182,10 +193,62 @@
 			document.getElementById(modal).style.display = "none";
 			document.getElementById("eventModal").style.display = "block";
 
+		}else if (modal === 'eventModal') {
+			//tienes que abrir otro con la carta de lugares y servicios previo prompt.
+					var region = regions.find(function(r) {
+							return r.regionCode === selectedRegionCode;
+					});
+					var biome = region.biomes.find(function (b) {
+						return b.type === imgSource;
+					});
+
+					if (biome && biome.placesServices && biome.placesServices.length > 0){
+												showServicesForBiome(biome.type);
+					}
+
 		}
 
 		closeModal(modal);
 	}
+
+			async function showServicesForBiome(biomeType) {
+			const region = regions.find(function (r) {
+				return r.regionCode === selectedRegionCode;
+			});
+
+			// Buscar el biome específico por tipo
+			const biome = region ? region.biomes.find(b => b.type === biomeType) : null;
+			console.log(biome);  // Verifica si el bioma se está encontrando correctamente
+
+			const response = await fetch('/json/PlaceServices.json');
+			const servicesData = await response.json();  // Convierte la respuesta en JSON
+
+			const servicesGrid = document.getElementById('servicesGrid');
+			servicesGrid.innerHTML = ''; // Limpiar contenido previo
+
+			if (biome && biome.placesServices && biome.placesServices.length > 0) {
+				biome.placesServices.forEach(service => {
+					const serviceData = servicesData.find(data => data.Name === service);  // Buscar servicio
+					if (serviceData) {
+						const cardDiv = document.createElement('div');
+							cardDiv.classList.add('cardContainer'); 
+
+						cardDiv.innerHTML = `
+							<img src="/images/PlacesServices/${serviceData.CardImage}" alt="${serviceData.Name}" class="servicesCard">`
+
+						// Añadir la carta al grid
+							servicesGrid.appendChild(cardDiv);
+					}
+				});
+			} else {
+					servicesGrid.innerHTML = '<p>No se encontraron servicios.</p>';
+			}
+
+			// Mostrar el modal con los servicios
+			document.getElementById("servicesModal").style.display = "block";  // Aseguramos que se muestra correctamente
+		}
+
+
 
 	async function showCard() {
 		// Obtener la imagen de la carta
@@ -219,37 +282,48 @@
 	}
 
 	function throwDice() {
-		const diceResultElement = document.getElementById("diceThrowResult");
+			const diceResultElement = document.getElementById("diceThrowResult");
 
-		// Simulación de animación de dados con números aleatorios antes del resultado final
-		let rollAnimation = setInterval(() => {
-			diceResultElement.innerText = `Resultado: ${Math.floor(Math.random() * 6) + 1}`;
-		}, 100);
+			// Restablecer la carta a su estado inicial (imagen trasera)
+			const flipCardInner = document.getElementById("flipCardInner");
+			flipCardInner.style.transform = "rotateY(0deg)"; // Volver a la parte trasera de la carta
+			const eventCard = document.getElementById("eventCard");
+			eventCard.setAttribute('src', `/images/backimages/event_${imgSource}_back.png`);
 
-		// Simular el lanzamiento del dado con un pequeño retraso
-		setTimeout(() => {
-			clearInterval(rollAnimation); // Detener la animación
-			let diceRoll = Math.floor(Math.random() * 6) + 1;
+			// Simulación de animación de dados con números aleatorios antes del resultado final
+			let rollAnimation = setInterval(() => {
+				diceResultElement.innerText = `Resultado: ${Math.floor(Math.random() * 6) + 1}`;
+			}, 100);
 
-			// Sumar +1 por cada checkbox marcado
-			const modifiers = document.querySelectorAll('#modifiers input[type="checkbox"]:checked');
-			diceRoll += modifiers.length;
+			// Simular el lanzamiento del dado con un pequeño retraso
+			setTimeout(async () => {
+				clearInterval(rollAnimation); // Detener la animación
+				let diceRoll = Math.floor(Math.random() * 6) + 1;
 
-			diceResultElement.innerText = `Resultado: ${diceRoll}`;
+				// Sumar +1 por cada checkbox marcado
+				const modifiers = document.querySelectorAll('#modifiers input[type="checkbox"]:checked');
+				diceRoll += modifiers.length;
 
-			// Comprobar si el resultado es mayor que el valor mínimo cargado del JSON
-			if (diceRoll >= minimumRoll) {
-				document.getElementById("flipCardInner").style.transform = "rotateY(180deg)";
-			} else {
-				//alert("Tirada insuficiente, vuelve a intentarlo.");
-			}
+				diceResultElement.innerText = `Resultado: ${diceRoll}`;
 
-			// Si el resultado final es 1, mostrar alerta especial
-			if (diceRoll === 1) {
-				alert("¡Aventuras Independientes desbloqueadas! Consulta el mapa.");
-			}
-		}, 2000);
-	}
+				// Comprobar si el resultado es mayor que el valor mínimo cargado del JSON
+				if (diceRoll >= minimumRoll) {
+					showCard();
+					// Voltear la carta para mostrar el frente
+					setTimeout(() => {
+						flipCardInner.style.transform = "rotateY(180deg)";
+					}, 500); // Un ligero retraso para que se vea el efecto de volver a la posición inicial
+				} else {
+					console.log("Tirada insuficiente, no se voltea la carta.");
+				}
+
+				// Si el resultado final es 1, mostrar alerta especial
+				if (diceRoll === 1) {
+					alert("¡Aventuras Independientes desbloqueadas! Consulta el mapa.");
+				}
+			}, 2000);
+		}
+
 
 	// Función para cerrar el modal
 	function closeModal(modal) {

@@ -1,0 +1,118 @@
+[
+  {
+    "Name": "Alquimista",
+    "CardCode": "PL01/24",
+    "CardImage": "alquimista.png"
+  },
+  {
+    "Name": "Biblioteca",
+    "CardCode": "PL02/24",
+    "CardImage": "biblioteca.png"
+  },
+  {
+    "Name": "Campamento",
+    "CardCode": "PL03/24",
+    "CardImage": "campamento.png"
+  },
+  {
+    "Name": "Criadero y Centro de Adiestramiento",
+    "CardCode": "PL04/24",
+    "CardImage": "criadero_y_centro_de_adiestramiento.png"
+  },
+  {
+    "Name": "Embarcadero / Muelle",
+    "CardCode": "PL05/24",
+    "CardImage": "embarcadero_muelle.png"
+  },
+  {
+    "Name": "Escuela de Hechicería",
+    "CardCode": "PL06/24",
+    "CardImage": "escuela_de_hechiceria.png"
+  },
+  {
+    "Name": "Escuela de Lucha",
+    "CardCode": "PL07/24",
+    "CardImage": "escuela_de_lucha.png"
+  },
+  {
+    "Name": "Establos",
+    "CardCode": "PL08/24",
+    "CardImage": "establos.png"
+  },
+  {
+    "Name": "Estancia del Rey o Gobernador",
+    "CardCode": "PL09/24",
+    "CardImage": "estancia_del_rey_o_gobernador.png"
+  },
+  {
+    "Name": "Guardias",
+    "CardCode": "PL10/24",
+    "CardImage": "guardias.png"
+  },
+  {
+    "Name": "Herbolario",
+    "CardCode": "PL11/24",
+    "CardImage": "herbolario.png"
+  },
+  {
+    "Name": "Herrería / Armería",
+    "CardCode": "PL12/24",
+    "CardImage": "herreria_armeria.png"
+  },
+  {
+    "Name": "Hogar",
+    "CardCode": "PL24/24",
+    "CardImage": "hogar.png"
+  },
+  {
+    "Name": "Lugar Sagrado",
+    "CardCode": "PL13/24",
+    "CardImage": "lugar_sagrado.png"
+  },
+  {
+    "Name": "Oráculo",
+    "CardCode": "PL15/24",
+    "CardImage": "oraculo.png"
+  },
+  {
+    "Name": "Posada",
+    "CardCode": "PL16/24",
+    "CardImage": "posada.png"
+  },
+  {
+    "Name": "Prestamista",
+    "CardCode": "PL17/24",
+    "CardImage": "prestamista.png"
+  },
+  {
+    "Name": "Prisión",
+    "CardCode": "PL18/24",
+    "CardImage": "prision.png"
+  },
+  {
+    "Name": "Puente",
+    "CardCode": "PL19/24",
+    "CardImage": "puente.png"
+  },
+  {
+    "Name": "Sanador",
+    "CardCode": "PL20/24",
+    "CardImage": "sanador.png"
+  },
+  {
+    "Name": "Taberna",
+    "CardCode": "PL21/24",
+    "CardImage": "taberna.png"
+  },
+  {
+    "Name": "Templo",
+    "CardCode": "PL22/24",
+    "CardImage": "templo.png"
+  },
+  {
+    "Name": "Tesorero",
+    "CardCode": "PL23/24",
+    "CardImage": "tesorero.png"
+  }
+
+]
