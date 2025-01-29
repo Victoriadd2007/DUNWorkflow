@@ -1,150 +1,150 @@
 [
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Amuleto del Destino",
     "CardCode": "RE12/25",
     "CardImage": "amuleto_destino_250.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Anillo de Avatarin",
     "CardCode": "RE17/25",
     "CardImage": "anillo_avatarin_255.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Anillo Demoníaco",
     "CardCode": "RE22/25",
     "CardImage": "anillo_demoniaco_260.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Anillo de Invisibilidad",
     "CardCode": "RE16/25",
     "CardImage": "anillo_invisibilidad_254.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Arco Largo de la Fatalidad",
     "CardCode": "RE23/25",
     "CardImage": "arco_largo_fatalidad_261.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Armadura del Atardecer",
     "CardCode": "RE01/25",
     "CardImage": "armadura_atardecer_239.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Armadura Demoníaca",
     "CardCode": "RE08/25",
     "CardImage": "armadura_demoniaca_246.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Armadura de Dragón",
     "CardCode": "RE07/25",
     "CardImage": "armadura_dragon_245.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Armadura del Sol",
     "CardCode": "RE21/25",
     "CardImage": "armadura_sol_259.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Bastón de la Sabiduria",
     "CardCode": "RE11/25",
     "CardImage": "baston_sabiduria_249.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Escudo Diamantino",
     "CardCode": "RE06/25",
     "CardImage": "escudo_diamantino_244.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Espada Ancha Matademonios",
     "CardCode": "RE14/25",
     "CardImage": "espada_ancha_matademonios_252.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Espada Ancha Matadragones",
     "CardCode": "RE02/25",
     "CardImage": "espada_ancha_matadragones_240.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Espada Ancha Rúnica",
     "CardCode": "RE03/25",
     "CardImage": "espada_ancha_runica_241.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Espada Ìgnea Bonzorg",
     "CardCode": "RE24/25",
     "CardImage": "espada_ignea_bonzorg_262.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Gema Explosiva",
     "CardCode": "RE10/25",
     "CardImage": "gema_explosiva_248.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Gran Martillo Forjafosos",
     "CardCode": "RE04/25",
     "CardImage": "gran_martillo_forjafosos_242.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Grimorio Ancestral",
     "CardCode": "RE13/25",
     "CardImage": "grimorio_ancestral_251.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Hacha Batalla Devora Armaduras",
     "CardCode": "RE18/25",
     "CardImage": "hacha_batalla_devora_armaduras_256.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Hacha Batalla Tanelly",
     "CardCode": "RE25/25",
     "CardImage": "hacha_batalla_tanelly_263.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Lanza de Dioses",
     "CardCode": "RE05/25",
     "CardImage": "lanza_dioses_243.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Libro de los Elementos",
     "CardCode": "RE19/25",
     "CardImage": "libro_elementos_257.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Máscara del Submundo",
     "CardCode": "RE20/25",
     "CardImage": "mascara_submundo_258.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Sangre de Unicornio",
     "CardCode": "RE15/25",
     "CardImage": "sangre_unicornio_253.webp"
   },
   {
-    "CardType": "Relic",
+    "CardType": "Item_Relic",
     "Name": "Yelmo Desviaflechas",
     "CardCode": "RE09/25",
     "CardImage": "yelmo_desviaflechas_247.webp"

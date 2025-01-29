@@ -1,6 +1,6 @@
 [
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "Name": "Armadura Completa",
     "CardCode": "AR15/18",
     "CardImage": "armadura_completa_124.webp",
@@ -18,7 +18,7 @@
 
   },
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "Name": "Armadura de Cuero",
     "CardCode": "AR02/18",
     "CardImage": "armadura_cuero_85.webp",
@@ -30,7 +30,7 @@
   },
 
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "Name": "Armadura Élfica",
     "CardCode": "AR08/18",
     "CardImage": "armadura_elfica_84.webp",
@@ -44,7 +44,7 @@
     "RareItemValue": 9
   },
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "CardCode": "AR09/18",
     "Name": "Armadura de Escamas",
     "CardImage": "armadura_escamas_80.webp",
@@ -59,7 +59,7 @@
     "ArmorClass": "Pesada"
   },
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "Name": "Armadura de Larnil",
     "CardCode": "AR18/18",
     "CardImage": "armadura_larnil_127.webp",
@@ -76,7 +76,7 @@
     "RareItemValue": 10
   },
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "Name": "Armadura Superior",
     "CardCode": "AR16/18",
     "CardImage": "armadura_superior_125.webp",
@@ -93,7 +93,7 @@
     "RareItemValue": 9
   },
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "Name": "Armadura Tachonada",
     "CardCode": "AR06/18",
     "CardImage": "armadura_tachonada_122.webp",
@@ -106,7 +106,7 @@
     "ArmorClass": "Ligera"
   },
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "Name": "Coraza",
     "CardCode": "AR13/18",
     "CardImage": "coraza_123.webp",
@@ -121,7 +121,7 @@
     "ArmorClass": "Pesada"
   },
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "Name": "Cota de Malla",
     "CardCode": "AR11/18",
     "CardImage": "cota_malla_83.webp",
@@ -136,7 +136,7 @@
     "ArmorClass": "Pesada"
   },
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "Name": "Lorica Segmentata",
     "CardCode": "AR17/18",
     "CardImage": "lorica_segmentata_126.webp",
@@ -151,7 +151,7 @@
     "ArmorClass": "Pesada"
   },
   {
-    "CardType": "Armor",
+    "CardType": "Item_Armor",
     "CardCode": "AR12/18",
     "Name": "Yoroi",
     "CardImage": "yoroi_82.webp",

@@ -14,7 +14,7 @@
         @foreach (var item in ViewBag.MenuItems)
         {
             var hasSubItems = item.SubItems.Count > 0;
-            var itemType = hasSubItems ? "" : item.Name.Replace(" ", "_"); // Evita null en data-type
+            var itemType = hasSubItems ? "" : item.Type; // Evita null en data-type
 
             <div class="sidebar-item" data-type="@itemType">
                 @item.Name

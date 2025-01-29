@@ -1,36 +1,36 @@
 [
   {
-    "CardType": "Shield",
+    "CardType": "Item_Shield",
     "Name": "Escudo",
     "CardCode": "SH04/10",
     "CardImage": "escudo_86.webp"
   },
   {
-    "CardType": "Shield",
+    "CardType": "Item_Shield",
     "Name": "Escudo Élfico",
     "CardCode": "SH07/10",
     "CardImage": "escudo_elfico_129.webp"
   },
   {
-    "CardType": "Shield",
+    "CardType": "Item_Shield",
     "Name": "Escudo Enano",
     "CardCode": "SH08/10",
     "CardImage": "escudo_enano_130.webp"
   },
   {
-    "CardType": "Shield",
+    "CardType": "Item_Shield",
     "Name": "Escudo Tosco",
     "CardCode": "SH01/10",
     "CardImage": "escudo_tosco_128.webp"
   },
   {
-    "CardType": "Shield",
+    "CardType": "Item_Shield",
     "Name": "Gran Escudo",
     "CardCode": "SH09/10",
     "CardImage": "gran_escudo_87.webp"
   },
   {
-    "CardType": "Shield",
+    "CardType": "Item_Shield",
     "Name": "Rodela",
     "CardCode": "SH05/10",
     "CardImage": "rodela_88.webp"

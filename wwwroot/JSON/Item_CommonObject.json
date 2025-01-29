@@ -1,156 +1,156 @@
 [
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Antidoto",
     "CardCode": "CO32/50",
     "CardImage": "antidoto_152.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Antorcha",
     "CardCode": "CO02/50",
     "CardImage": "antorcha_101.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Bandolera Especial",
     "CardCode": "CO60/65",
     "CardImage": "bandolera_especial_278.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Brebaje Curativo",
     "CardCode": "CO55/65",
     "CardImage": "brebaje_curativo_279.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Campana",
     "CardCode": "CO63/65",
     "CardImage": "campana_280.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Cerveza Suprema",
     "CardCode": "CO11/50",
     "CardImage": "cerveza_suprema_102.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Cuerda",
     "CardCode": "CO06/50",
     "CardImage": "cuerda_103.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Flechas Incendiarias",
     "CardCode": "CO30/50",
     "CardImage": "flechas_incendiarias_151.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Gancho",
     "CardCode": "CO61/65",
     "CardImage": "gancho_281.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Ganzúas",
     "CardCode": "CO14/50",
     "CardImage": "ganzuas_104.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Hidromiel Vigorosa",
     "CardCode": "CO35/50",
     "CardImage": "hidromiel_vigorosa_153.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Hierbas Curativas",
     "CardCode": "CO17/50",
     "CardImage": "hierbas_curativas_106.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Insecto Chillón",
     "CardCode": "CO41/50",
     "CardImage": "insecto_chillon_156.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Instrumento Musical",
     "CardCode": "CO09/50",
     "CardImage": "instrumento_musical_150.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Linterna",
     "CardCode": "CO38/50",
     "CardImage": "linterna_154.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Llave Maestra",
     "CardCode": "CO51/65",
     "CardImage": "llave_maestra_282.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Matarratas",
     "CardCode": "CO20/50",
     "CardImage": "matarratas_108.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Pájaro Chillón",
     "CardCode": "CO39/50",
     "CardImage": "pajaro_chillon_155.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Paquete de Provisiones",
     "CardCode": "CO26/50",
     "CardImage": "paquete_provisiones_110.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Pico",
     "CardCode": "CO64/65",
     "CardImage": "pico_283.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Pinturas de Camuflaje",
     "CardCode": "CO58/65",
     "CardImage": "pinturas_camuflaje_284.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Piquetas",
     "CardCode": "CO23/50",
     "CardImage": "piquetas_111.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Raíz de Mandrágora",
     "CardCode": "CO50/50",
     "CardImage": "raiz_mandragora_159.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Ristra de Ajos y Crucifijo",
     "CardCode": "CO47/50",
     "CardImage": "ristra_ajos_crucifijo_158.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Setas del Frenesí",
     "CardCode": "CO44/50",
     "CardImage": "setas_frenesi_157.webp"
   },
   {
-    "CardType": "CommonObject",
+    "CardType": "Item_CommonObject",
     "Name": "Trébol de la Suerte",
     "CardCode": "CO53/50",
     "CardImage": "trebol_suerte_285.webp"

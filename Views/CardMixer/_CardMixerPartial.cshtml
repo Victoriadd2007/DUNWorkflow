@@ -20,10 +20,21 @@
             }
         }
     </div>
-    <div class="flip-card">
+    <div style="vertical-align:central; text-align:center">
+        @if (Model != null)
+        {
+            <button id="random-card-button" class="btn btn-primary mb-3">Extraer carta aleatoria</button>
+        }
         <div class="flip-card-inner" id="flipCardInner">
-            <div class="flip-card-front">
-                <img id="cardContainer" src="" alt="Card Image" class="cardContainer" style="display: none;" />
+            <div class="flip-card">
+                <div class="flip-card-inner" id="flipCardInner">
+                    <div class="flip-card-front">
+                        <img id="backCard" class="cardContainer" />
+                    </div>
+                    <div class="flip-card-back">
+                        <img id="frontCard" class="cardContainer" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -34,12 +45,48 @@
     $(document).ready(function () {
         // Convierte el modelo en un array de objetos JavaScript
         var cards = @Html.Raw(Json.Serialize(Model));
-        console.log(cards); // Verifica que 'cards' tiene los datos correctamente
-
+        
         if (!cards || cards.length === 0) {
-            console.error('No se encontraron datos de cartas.');
             return; // Termina si no hay datos
         }
+
+         // Cambiar la imagen de la carta trasera
+            const backCardImage = document.getElementById("backCard");
+            const firstCard = cards[0].cardType;
+            var backCardImagePath = `/images/backimages/${firstCard}_back.webp`; // Asegúrate que la ruta sea correcta
+            backCardImage.setAttribute('src', backCardImagePath);
+
+
+        // Evento para seleccionar una carta aleatoria
+           $('#random-card-button').on('click', function () {
+        try {
+            // Seleccionar una carta aleatoria del array "Cards"
+            const randomIndex = Math.floor(Math.random() * cards.length);
+            const randomCard = cards[randomIndex]; // Obtenemos la carta completa
+            const randomCardImage = randomCard.cardImage;
+            const extractedType = randomCard.cardType.split('_')[0];
+            const imgSubfolder = randomCard.cardType.split('_')[1];
+
+            backCardImage.setAttribute('src', backCardImagePath);
+
+            // Mostrar la imagen seleccionada aleatoriamente en la parte frontal de la carta
+            const frontCardImage = document.getElementById("frontCard");
+            frontCardImage.setAttribute('src', `/images/${extractedType}Cards/${imgSubfolder}/${randomCardImage}`);
+            frontCardImage.style.display = 'none'; // Asegura que la imagen de la parte frontal no esté visible todavía
+
+            // Voltear la carta para mostrar la parte trasera primero
+            const flipCardInner = document.getElementById("flipCardInner");
+            flipCardInner.style.transform = "rotateY(0deg)"; // Giramos la carta hacia la parte trasera (asegurándonos que esté de vuelta al inicio)
+
+            // Un pequeño retraso para luego mostrar la parte frontal
+            setTimeout(() => {
+                frontCardImage.style.display = 'block'; // Ahora mostramos la imagen de la parte frontal
+                flipCardInner.style.transform = "rotateY(180deg)"; // Volteamos la carta hacia la parte frontal
+            }, 500); // Un pequeño retraso para ver el efecto
+        } catch (error) {
+            console.error('Error al obtener las cartas:', error);
+        }
+    });
 
         // Filtrar los elementos según lo que escriba el usuario en el search bar
         $('#search-bar').on('keyup', function () {
@@ -55,18 +102,36 @@
         });
 
         // Al hacer clic en el nombre de la carta, mostrar la imagen correspondiente
-         $(document).on('click', '.subsidebar-item', function () {
+            // Al hacer clic en el nombre de la carta, mostrar la imagen correspondiente
+        $(document).on('click', '.subsidebar-item', function () {
             var cardName = $(this).data('card-name'); // Accede al 'data-card-name' de la carta
             var selectedCard = cards.find(card => card.name === cardName); // Buscar la carta correspondiente en el array de JavaScript
 
             if (selectedCard && selectedCard.cardImage) {
                 // Asegúrate de que el nombre de la imagen sea correcto
-                let imgSubfolder = selectedCard.cardType; // Si tienes alguna subcarpeta dentro de la carpeta de imágenes
+                const extractedType = selectedCard.cardType.split('_')[0];
+                const imgSubfolder = selectedCard.cardType.split('_')[1];
+                const frontCardImage = document.getElementById("frontCard");
 
-                $('#cardContainer').attr('src', `/images/ItemCards/${imgSubfolder}/${selectedCard.cardImage}`).show(); // Muestra la imagen correspondiente
-            } else {
-                console.error('No se encontró la imagen para la carta: ' + cardName);
+                frontCardImage.setAttribute('src', `/images/${extractedType}Cards/${imgSubfolder}/${selectedCard.cardImage}`);
+                frontCardImage.style.display = 'none'; // Asegura que la imagen de la parte frontal no esté visible todavía
+
+                // Cambiar la imagen trasera si es necesario
+                const backCardImage = document.getElementById("backCard");
+                backCardImage.setAttribute('src', `/images/backimages/${selectedCard.cardType}_back.webp`);
+
+                // Voltear la carta para mostrar la parte trasera primero
+                const flipCardInner = document.getElementById("flipCardInner");
+                flipCardInner.style.transform = "rotateY(0deg)"; // Giramos la carta hacia la parte trasera (asegurándonos que esté de vuelta al inicio)
+
+                // Un pequeño retraso para luego mostrar la parte frontal
+                setTimeout(() => {
+                    frontCardImage.style.display = 'block'; // Ahora mostramos la imagen de la parte frontal
+                    flipCardInner.style.transform = "rotateY(180deg)"; // Volteamos la carta hacia la parte frontal
+                }, 500); // Un pequeño retraso para ver el efecto
             }
         });
     });
+
+
 </script>

@@ -1,96 +1,96 @@
 [
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Arcabuz",
     "CardCode": "RW02/30",
     "CardImage": "arcabuz_64.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Arco Compuesto",
     "CardCode": "RW04/30",
     "CardImage": "arco_compuesto_65.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Arco Corto",
     "CardCode": "RW05/30",
     "CardImage": "arco_corto_66.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Arco Élfico",
     "CardCode": "RW09/30",
     "CardImage": "arco_elfico_67.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Arco Largo",
     "CardCode": "RW11/30",
     "CardImage": "arco_largo_68.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Ballesta",
     "CardCode": "RW12/30",
     "CardImage": "ballesta_69.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Ballesta de Repetición",
     "CardCode": "RW14/30",
     "CardImage": "ballesta_repeticion_70.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Cerbatana",
     "CardCode": "RW15/30",
     "CardImage": "cerbatana_71.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Honda",
     "CardCode": "RW17/30",
     "CardImage": "honda_72.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Honda con Proyectiles de Plomo",
     "CardCode": "RW18/30",
     "CardImage": "honda_proyectiles_plomo_146.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Jabalina",
     "CardCode": "RW20/30",
     "CardImage": "jabalina_73.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Jabalina Pesada",
     "CardCode": "RW26/30",
     "CardImage": "jabalina_pesada_147.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Pistola",
     "CardCode": "RW22/30",
     "CardImage": "pistola_76.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Pistola Ballesta",
     "CardCode": "RW27/30",
     "CardImage": "pistola_ballesta_148.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Red",
     "CardCode": "RW24/30",
     "CardImage": "red_78.webp"
   },
   {
-    "CardType": "RangedWeapon",
+    "CardType": "Item_RangedWeapon",
     "Name": "Shuriken",
     "CardCode": "RW28/30",
     "CardImage": "shuriken_149.webp"

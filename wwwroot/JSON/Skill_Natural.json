@@ -1,146 +1,146 @@
 [
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Aliento (3)",
     "CardCode": "NA31/32",
     "CardImage": "aliento_148.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Barrido",
     "CardCode": "NA1/30",
     "CardImage": "barrido_98.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Brutal",
     "CardCode": "NA2/30",
     "CardImage": "brutal_99.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Drenaje",
     "CardCode": "NA6/30",
     "CardImage": "drenaje_107.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Embestida",
     "CardCode": "NA8/30",
     "CardImage": "embestida_108.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Estúpido",
     "CardCode": "NA9/30",
     "CardImage": "estupido_110.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Ignora Terreno Difícil",
     "CardCode": "NA10/30",
     "CardImage": "ignora_terreno_dificil_116.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Inframundo",
     "CardCode": "NA12/30",
     "CardImage": "inframundo_115.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Invulnerable",
     "CardCode": "NA14/30",
     "CardImage": "invulnerable_117.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Licantropía",
     "CardCode": "NA15/40",
     "CardImage": "licantropia_119.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Manos Torpes",
     "CardCode": "NA16/30",
     "CardImage": "manos_torpes_120.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Perdido en la Oscuridad",
     "CardCode": "NA19/30",
     "CardImage": "perdido_en_la_oscuridad_126.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Regeneración",
     "CardCode": "NA20/30",
     "CardImage": "regeneracion_130.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Sentido Agudizado",
     "CardCode": "NA21/30",
     "CardImage": "sentido_agudizado_132.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Tamaño Grande",
     "CardCode": "NA25/30",
     "CardImage": "tamano_grande_134.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Tamaño Pequeño",
     "CardCode": "NA26/30",
     "CardImage": "tamano_pequeno_135.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Temible",
     "CardCode": "NA3/30",
     "CardImage": "temible_101.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Veneno",
     "CardCode": "NA5/30",
     "CardImage": "veneno_138.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Volar (x)",
     "CardCode": "NA28/30",
     "CardImage": "volar_140.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Vómito Corrupto",
     "CardCode": "NA29/30",
     "CardImage": "vomito_corrupto_141.webp",
     "SkillType": "Natural"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Natural",
     "Name": "Vulnerable",
     "CardCode": "NA30/30",
     "CardImage": "vulnerable_142.webp",

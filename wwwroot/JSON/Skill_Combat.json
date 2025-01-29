@@ -1,328 +1,328 @@
 [
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Acción de oportunidad",
     "CardCode": "CM44/50",
     "CardImage": "accion_oportunidad_150.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Aguante",
     "CardCode": "CM01/40",
     "CardImage": "aguante_1.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Anticipación",
     "CardCode": "CM02/40",
     "CardImage": "anticipacion_2.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Apresar",
     "CardCode": "CM41/50",
     "CardImage": "apresar_151.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Arquero Experto",
     "CardCode": "CM03/50",
     "CardImage": "arquero_experto_3.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Artes Marciales",
     "CardCode": "CM04/50",
     "CardImage": "artes_marciales_4.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Ataques Rápidos",
     "CardCode": "CM05/40",
     "CardImage": "ataques_rapidos_5.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Berserker",
     "CardCode": "CM06/40",
     "CardImage": "berserker_6.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Bloquear",
     "CardCode": "CM07/40",
     "CardImage": "bloquear_7.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Bloquear con Dos Hachas",
     "CardCode": "CM49/50",
     "CardImage": "bloquear_dos_hachas_152.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Cabezazo",
     "CardCode": "CM43/50",
     "CardImage": "cabezazo_153.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Carga Imparable",
     "CardCode": "CM08/40",
     "CardImage": "carga_imparable_146.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Combatiente_Astuto",
     "CardCode": "CM09/40",
     "CardImage": "combatiente_astuto_9.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Combatir con Dos Armas",
     "CardCode": "CM10/40",
     "CardImage": "combatir_dos_armas_10.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Concentración",
     "CardCode": "CM11/40",
     "CardImage": "concentracion_11.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Cruel",
     "CardCode": "CM12/40",
     "CardImage": "cruel_12.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Curtido",
     "CardCode": "CM13/40",
     "CardImage": "curtido_13.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Danza de Combate",
     "CardCode": "CM14/40",
     "CardImage": "danza_combate_14.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Desenvainado Rápido",
     "CardCode": "CM15/40",
     "CardImage": "desenvainado_rapido_147.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Destreza con las Hachas",
     "CardCode": "CM47/50",
     "CardImage": "destreza_hachas_154.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Disparo Certero",
     "CardCode": "CM17/40",
     "CardImage": "disparo_certero_17.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Disparo Letal",
     "CardCode": "CM18/40",
     "CardImage": "disparo_letal_18.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Disparo a Zonas Vitales",
     "CardCode": "CM16/40",
     "CardImage": "disparo_zonas_vitales_16.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Duelista",
     "CardCode": "CM50/50",
     "CardImage": "duelista_155.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Élite",
     "CardCode": "CM19/40",
     "CardImage": "elite_19.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Embestir con Escudo",
     "CardCode": "CM20/40",
     "CardImage": "embestir_escudo_20.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Escolta",
     "CardCode": "CM21/40",
     "CardImage": "escolta_21.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Forzudo",
     "CardCode": "CM22/40",
     "CardImage": "forzudo_22.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Golpe Brutal",
     "CardCode": "CM23/40",
     "CardImage": "golpe_brutal_23.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Golpe Letal",
     "CardCode": "CM24/40",
     "CardImage": "golpe_letal_24.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Golpe Poderoso",
     "CardCode": "CM25/40",
     "CardImage": "golpe_poderoso_25.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Golpes Enérgicos",
     "CardCode": "CM26/40",
     "CardImage": "golpes_energicos_26.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "La Muerte Girante",
     "CardCode": "CM27/40",
     "CardImage": "la_muerte_girante_27.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Lanzador Experto",
     "CardCode": "CM28/40",
     "CardImage": "lanzador_experto_28.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Maestro en Combate",
     "CardCode": "CM29/40",
     "CardImage": "maestro_combate_29.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Maestro Espadachín",
     "CardCode": "CM30/40",
     "CardImage": "maestro_espadachin_30.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Matagigantes",
     "CardCode": "CM31/40",
     "CardImage": "matagigantes_31.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Odio (Espefificar)",
     "CardCode": "CM32/40",
     "CardImage": "odio_32.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Odio al Submundo",
     "CardCode": "CM33/40",
     "CardImage": "odio_submundo_33.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Pelea Sucia",
     "CardCode": "CM34/40",
     "CardImage": "pelea_sucia_34.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Recarga Rápida",
     "CardCode": "CM35/40",
     "CardImage": "recarga_rapida_35.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Reposicionarse",
     "CardCode": "CM46/50",
     "CardImage": "reposicionarse_158.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Resistente",
     "CardCode": "CM36/40",
     "CardImage": "resistente_36.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Rugido Atronador",
     "CardCode": "CM37/40",
     "CardImage": "rugido_atronador_37.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Sobrellevar Armadura",
     "CardCode": "CM38/40",
     "CardImage": "sobrellevar_armadura_38.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Tirador Experto",
     "CardCode": "CM39/40",
     "CardImage": "tirador_experto_39.webp",
     "SkillType": "Combat"
   },
   {
-    "CardType": "Skill",
+    "CardType": "Skill_Combat",
     "Name": "Tiro Rápido",
     "CardCode": "CM40/40",
     "CardImage": "tiro_rapido_40.webp",

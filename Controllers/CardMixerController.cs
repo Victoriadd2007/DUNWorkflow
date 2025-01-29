@@ -1,5 +1,3 @@
-using System.Diagnostics;
-using System.Globalization;
 using DUNWorkflow.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -27,16 +25,15 @@ namespace DUNWorkflow.Controllers
                                                                       new { Name =  "Escudos",                          Type = "Item_Shield"},
                                                                     } 
                 },
-                new { Name = "Objetos Comunes", Type = "Item_CommonObjects", SubItems = new List<dynamic>() },
-                new { Name = "Objetos Especiales",  Type = "Item_SpecialObjects", SubItems = new List<dynamic>() },
+                new { Name = "Objetos Comunes", Type = "Item_CommonObject", SubItems = new List<dynamic>() },
+                new { Name = "Objetos Especiales",  Type = "Item_SpecialObject", SubItems = new List<dynamic>() },
                 new { Name = "Habilidades", SubItems = new List<dynamic> { 
                                                                            new { Name =  "Académicas",       Type = "Skill_Academic"},
                                                                            new { Name =  "Naturales",        Type = "Skill_Natural"},
                                                                            new { Name =  "Combate",          Type = "Skill_Combat"},
                                                                            new { Name =  "Exploración",      Type = "Skill_Exploration"},
                                                                     }
-                },
-                new { Name = "Eventos", Type = "Item_Events", SubItems = new List<dynamic>() }
+                }
             };
 
 
