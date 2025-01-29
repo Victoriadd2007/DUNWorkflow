@@ -68,17 +68,37 @@
 			</div>
 			<br><br>
 			<button id="acceptButton" onclick="acceptSelection('servicesModal', 'elementTypeSelect')">Aceptar</button>
-			<button id="cancelButton" onclick="closeModal('servicesModal')">Cancelar</button>
+		</div>
+	</div>
+	<div id="dangerModal" class="modal">
+		<div class="modal-content" style="width:600px; height: 650px">
+			<div class="flip-card">
+				<div class="flip-card-inner" id="flipCardInnerDanger">
+					<div class="flip-card-front">
+						<img id="dangerCard" class="cardContainer">
+					</div>
+					<div class="flip-card-back">
+						<img id="dangerCardResult" class="cardContainer">
+					</div>
+				</div>
+			</div>
+			<button id="acceptButton" onclick="acceptSelection('dangerModal', 'dangerModalSelect')">Aceptar</button>
 		</div>
 	</div>
 <script>
 	const svgsvg = document.getElementById('mysvg');
 	const overlay = document.getElementById('overlay');
+	let svgArascaMap  = document.getElementById('arascaMap');
+	let paths = [];
 
 	let clickTimeout; // Variable para almacenar el temporizador
 	let clickCount = 0; // Contador de clics
 	let offsetX = 0;
 	let offsetY = 0;
+
+	const markerWidth = 75;
+	const markerHeight = 75;
+
 	// Obtener los datos de regiones desde el ViewBag
 	var regions = @Html.Raw(ViewBag.RegionsJson);
 	var selectedRegionCode; 
@@ -86,33 +106,9 @@
 
 	let imgSource;
 
-	/*document.getElementById('searchInput').addEventListener('input', function () {
-		const searchTerm = this.value.trim().toLowerCase();
-		const svg = document.getElementById('arascaMap');
+	const heroMarkerRegions = new Map(); // Clave: ID del marcador, Valor: Región actual
+	const dangerMarkerRegions = new Map(); // Clave: ID del marcador, Valor: Región actual
 
-		if (searchTerm === "") return; // Evitar búsqueda vacía
-
-		const element = svg.querySelector(`#${CSS.escape(searchTerm)}`);
-		if (element) {
-			const bbox = element.getBBox();  // Obtener la caja delimitadora del elemento
-
-			// Centrar la vista en el elemento encontrado
-			const svgViewBox = svg.viewBox.baseVal;
-			svgViewBox.x = bbox.x - (svgViewBox.width / 2) + (bbox.width / 2);
-			svgViewBox.y = bbox.y - (svgViewBox.height / 2) + (bbox.height / 2);
-
-			// Resaltar el elemento temporalmente
-			element.style.stroke = 'red';
-			element.style.strokeWidth = '3';
-
-			setTimeout(() => {
-				element.style.stroke = '';
-				element.style.strokeWidth = '';
-			}, 2000);
-		} else {
-			console.warn('Elemento no encontrado:', searchTerm);
-		}
-	});*/
 
 	// Función para mostrar la información de la región y cargar los elementos
 	function showRegionInfo(regionCode, event) {
@@ -174,22 +170,22 @@
 
 			switch (elementType) {
 				case 'Heroes':
-				addMarker('ico_mk_h');
+				addMarker('hero', 'ico_mk_h');
 				break;
 				case 'Danger':
-				addMarker('ico_mk_jo');
+					addMarker('danger', 'ico_mk_jo');
 				break;
 				case 'Custom':
-				addMarker('ico_mk_p');
+					addMarker('custom', 'ico_mk_p');
 				break;
 				case 'Home':
-				addMarker('ico_mk_ho');
+				addMarker('home', 'ico_mk_ho');
 				break;
 			}
 		}else if (modal === 'elementModal') {
 			//tienes que abrir otro con la carta de eventos
 			imgSource = elementType;
-			await showCard();
+			await showCard('event');
 			document.getElementById(modal).style.display = "none";
 			document.getElementById("eventModal").style.display = "block";
 
@@ -206,12 +202,12 @@
 												showServicesForBiome(biome.type);
 					}
 
-		}
+			}
 
 		closeModal(modal);
 	}
 
-			async function showServicesForBiome(biomeType) {
+	async function showServicesForBiome(biomeType) {
 			const region = regions.find(function (r) {
 				return r.regionCode === selectedRegionCode;
 			});
@@ -250,9 +246,9 @@
 
 
 
-	async function showCard() {
+	async function showCard(eventCardOrDangerCard) {
 		// Obtener la imagen de la carta
-		const image = document.getElementById('eventCard');
+		const image = document.getElementById(`${eventCardOrDangerCard}Card`);
 		const imagePath = `/images/backimages/event_${imgSource}_back.png`;
 		image.setAttribute('src', imagePath);
 
@@ -273,7 +269,8 @@
 			const randomCardImage = cardEventDeck[0].Cards[randomIndex].CardImage;
 
 			// Mostrar la imagen seleccionada aleatoriamente
-			const imageResult = document.getElementById('eventCardResult');
+			const imageResult =  document.getElementById(`${eventCardOrDangerCard}CardResult`);
+
 			imageResult.setAttribute('src', `/images/Events/${imgSource}/${randomCardImage}`);
 
 		} catch (error) {
@@ -308,7 +305,7 @@
 
 				// Comprobar si el resultado es mayor que el valor mínimo cargado del JSON
 				if (diceRoll >= minimumRoll) {
-					showCard();
+					showCard('event');
 					// Voltear la carta para mostrar el frente
 					setTimeout(() => {
 						flipCardInner.style.transform = "rotateY(180deg)";
@@ -332,22 +329,35 @@
 	}
 
 	// Función para agregar el marcador en el punto donde se hizo el clic
-	function addMarker(markerImage) {
-
+	function addMarker(name, markerImage) {
+		if(name === 'danger'){
+			const currentCount = dangerMarkerRegions.get(name) || 0;
+			if (currentCount >= 10) {
+				alert(`No se pueden crear más de 10 marcadores con el nombre '${name}'.`);
+				return; // Salir de la función si se excede el límite
+			}
+		}
+			
 		// Crear el <g> para el marcador
 		const markerGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-		markerGroup.id = 'overlay';
+		const markerId = `marker-${name}-${Date.now()}`;
+		markerGroup.id = markerId;
 		markerGroup.setAttribute('draggable', 'true');
 
 		// Crear la imagen para el marcador
 		const image = document.createElementNS('http://www.w3.org/2000/svg', 'image');
 		//image.id = 'heromarker';
-		image.setAttribute('src', `/images/${markerImage}.png`);
-		image.setAttribute('width', '75');
-		image.setAttribute('height', '75');;
+		image.setAttribute('href', `/images/${markerImage}.png`);
+		image.setAttribute('width', `${markerWidth}`);
+		image.setAttribute('height', `${markerHeight}`);
+		//markerGroup.setAttribute('width', `${markerWidth}`);
+		//markerGroup.setAttribute('height', `${markerHeight}`);
 
-		image.setAttribute('x', offsetX - 50); // Ajuste para centrar la imagen
-		image.setAttribute('y', offsetY - 50); // Ajuste para centrar la imagen
+		const centerBaseX = offsetX - markerWidth / 2;
+		const centerBaseY = offsetY - markerHeight;
+
+		image.setAttribute('x', centerBaseX); // Ajuste para centrar la imagen
+		image.setAttribute('y', centerBaseY); // Ajuste para centrar la imagen
 
 		markerGroup.appendChild(image);
 
@@ -355,7 +365,7 @@
 		document.getElementById('arascaMap').appendChild(markerGroup);
 
 		// Hacer que el marcador sea arrastrable
-		addDragAndDrop(image);
+		addDragAndDrop(image, markerId);
 
 		// Agregar el evento de doble clic a la imagen para borrar
 		image.addEventListener('dblclick', function() {
@@ -364,16 +374,22 @@
 				markerGroup.remove(); // Eliminar el marcador
 			}
 		});
+
+		var screenPoint = getMarkerScreenpoint(markerId);
+		findMarkersInTheSameRegion(screenPoint.x, screenPoint.y, markerId);
+		console.log("marker created ");
+
 	}
 
 	// Función para añadir drag and drop a un marcador
-	function addDragAndDrop(element) {
+		function addDragAndDrop(element, markerId) {
 		let isDragging = false;
 
 		element.addEventListener('mousedown', function(event) {
 			isDragging = true;
 			initialX = event.clientX; // Coordenadas absolutas en el viewport
 			initialY = event.clientY; // Coordenadas absolutas en el viewport
+
 		});
 
 		element.addEventListener('mousemove', function(event) {
@@ -392,20 +408,23 @@
 				// Actualizar la posición inicial para el próximo movimiento
 				initialX = event.clientX;
 				initialY = event.clientY;
+
 			}
 		});
 
 		element.addEventListener('mouseup', function(event) {
 			isDragging = false;
 
-			initialX = event.clientX;
-			initialY = event.clientY;
+			var screenPoint = getMarkerScreenpoint(markerId);
 
-			const svgElement = document.getElementById('arascaMap'); // Cambia 'arascaMap' por el ID de tu elemento SVG
+			// Buscar la región en esas coordenadas
+			const regionId = getRegionAtMarker(screenPoint.x, screenPoint.y);
 
-			const region = getRegionAtMarker(svgElement, initialX, initialY);
-
-			console.log("arrived at region ", region);
+			if (regionId) {
+				findMarkersInTheSameRegion(screenPoint.x, screenPoint.y, markerId);
+			} else {
+				console.log("No se encontró una región en esa ubicación.");
+			}
 		});
 
 		element.addEventListener('mouseleave', function() {
@@ -413,18 +432,96 @@
 		});
 	}
 
-	function getSVGCoordinates(svgElement, clientX, clientY) {
-		const point = svgElement.createSVGPoint();
-		point.x = clientX;
-		point.y = clientY;
+	function getMarkerScreenpoint(markerId){
+			const markerGroup = document.getElementById(markerId); // Obtener el marcador
+				if (!markerGroup) return;
+
+				// Obtener la posición del marcador dentro del SVG
+				const bbox = markerGroup.getBBox(); // Obtiene el área ocupada por el marcador
+				const matrix = markerGroup.getScreenCTM(); // Obtiene la transformación al viewport
+
+				// Centro de la base del marcador (parte inferior central)
+				const markerBaseX = bbox.x + bbox.width / 2;
+				const markerBaseY = bbox.y + bbox.height;
+
+				// Convertir a coordenadas de pantalla
+				const point = svgArascaMap.createSVGPoint();
+				point.x = markerBaseX;
+				point.y = markerBaseY;
+
+				return point.matrixTransform(matrix);
+	}
+
+	async function findMarkersInTheSameRegion(initialX, initialY, markerId){
+
+				const region = getRegionAtMarker(initialX, initialY);
+
+				if (region === null) {
+					alert("Marcador situado en región desconocida");
+				} else {
+					// Guardar el marcador en la colección correspondiente
+					if (markerId.includes('hero')) {
+						heroMarkerRegions.set(markerId, region);
+					} else if (markerId.includes('danger')) {
+						dangerMarkerRegions.set(markerId, region);
+					}
+
+					// Buscar marcadores en la misma región
+					const markersInSameRegion = [];
+
+					dangerMarkerRegions.forEach((existingRegion, existingMarkerId) => {
+						if (existingRegion === region) {
+							markersInSameRegion.push({ id: existingMarkerId, type: 'danger' });
+						}
+					});
+					heroMarkerRegions.forEach((existingRegion, existingMarkerId) => {
+						if (existingRegion === region) {
+							markersInSameRegion.push({ id: existingMarkerId, type: 'hero' });
+						}
+					});
+
+					// Filtrar héroes y peligros en la misma región
+					const heroMarkers = markersInSameRegion.filter(marker => marker.type === 'hero').map(marker => marker.id);
+					const dangerMarkers = markersInSameRegion.filter(marker => marker.type === 'danger').map(marker => marker.id);
+
+					// Si hay al menos un héroe y un peligro en la región, mostrar alerta con los nombres
+					if (heroMarkers.length > 0 && dangerMarkers.length > 0) {
+						const flipCardInner = document.getElementById("flipCardInnerDanger");
+						flipCardInner.style.transform = "rotateY(0deg)"; // Volver a la parte trasera de la carta
+						//console.log(`⚠️ Alerta: En la región '${region}' hay al menos un marcador de héroe y un marcador de peligro.`);
+						//console.log(`🦸‍♂️ Héroes en la región: ${heroMarkers.join(', ')}`);
+						//console.log(`⚠️ Peligros en la región: ${dangerMarkers.join(', ')}`);
+						//Modal Peligro!
+						imgSource = 'danger';
+						await showCard('danger');
+						document.getElementById("dangerModal").style.display = "block";
+						setTimeout(async () => {
+								await showCard('danger');
+									// Voltear la carta para mostrar el frente
+									setTimeout(() => {
+										flipCardInner.style.transform = "rotateY(180deg)";
+									}, 500); // Un ligero retras
+						}, 1000);
+					} else {
+						console.log(`Marcador '${markerId}' situado en la región '${region}'`);
+					}
+				}
+	}
+
+	function getSVGCoordinates(coordX, coordY) {
+		const point = svgArascaMap.createSVGPoint();
+			point.x = coordX;
+			point.y = coordY;
 
 		// Transformar las coordenadas al sistema del SVG
-		const svgCoords = point.matrixTransform(svgElement.getScreenCTM().inverse());
+		const svgCoords = point.matrixTransform(svgArascaMap.getScreenCTM().inverse());
 		return { x: svgCoords.x, y: svgCoords.y };
 	}
 
-	function getRegionAtMarker(svg, clientX, clientY) {
-		const paths = svg.querySelectorAll('path'); // Obtener todas las rutas del SVG
+	function getRegionAtMarker(clientX, clientY) {
+		// Convertir coordenadas de pantalla a SVG
+		const { x: svgX, y: svgY } = getSVGCoordinates(clientX, clientY);
+
 		let regionFound = null;
 
 		// Crear un canvas temporal para usar isPointInPath
@@ -437,10 +534,7 @@
 			// Convertir el atributo 'd' a un Path2D
 			const path2D = new Path2D(path.getAttribute('d'));
 
-			// Convertir las coordenadas globales a las coordenadas del SVG
-			const { x: svgX, y: svgY } = getSVGCoordinates(svg, clientX, clientY);
-
-			// Verificar si el punto está dentro de la ruta
+				// Verificar si el punto está dentro de la ruta
 			if (ctx.isPointInPath(path2D, svgX, svgY)) {
 				regionFound = regionCode;
 			}
@@ -457,12 +551,12 @@
 			const parser = new DOMParser();
 			const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
 
-			const svgElement = svgDoc.querySelector('svg');
-			svgElement.id = "arascaMap";
-			document.getElementById('svgContainer').appendChild(svgElement);
+			svgArascaMap = svgDoc.querySelector('svg');
+			svgArascaMap.id = "arascaMap";
+			document.getElementById('svgContainer').appendChild(svgArascaMap);
 
 			// Obtener todas las capas <g> con atributo inkscape:groupmode="layer"
-			const layers = svgElement.querySelectorAll('g[id]');
+			const layers = svgArascaMap.querySelectorAll('g[id]');
 
 			layers.forEach(layer => {
 				const layerId = layer.getAttribute('id');
@@ -471,7 +565,7 @@
 				if (layerId === 'Map' || layerId === 'Regiones') {
 					if (layerId === 'Regiones') {
 						// Agregar evento onclick a todos los <path> dentro de 'Regiones'
-						const paths = layer.querySelectorAll('path');
+						paths = layer.querySelectorAll('path');
 						paths.forEach(path => {
 							// Usar template literals correctamente
 							path.setAttribute('onclick', `showRegionInfo('${path.id}', event)`);
