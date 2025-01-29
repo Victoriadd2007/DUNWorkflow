@@ -249,7 +249,7 @@
 	async function showCard(eventCardOrDangerCard) {
 		// Obtener la imagen de la carta
 		const image = document.getElementById(`${eventCardOrDangerCard}Card`);
-		const imagePath = `/images/backimages/event_${imgSource}_back.png`;
+		const imagePath = `/images/backimages/event_${imgSource}_back.webp`;
 		image.setAttribute('src', imagePath);
 
 		try {
@@ -285,7 +285,7 @@
 			const flipCardInner = document.getElementById("flipCardInner");
 			flipCardInner.style.transform = "rotateY(0deg)"; // Volver a la parte trasera de la carta
 			const eventCard = document.getElementById("eventCard");
-			eventCard.setAttribute('src', `/images/backimages/event_${imgSource}_back.png`);
+				eventCard.setAttribute('src', `/images/backimages/event_${imgSource}_back.webp`);
 
 			// Simulación de animación de dados con números aleatorios antes del resultado final
 			let rollAnimation = setInterval(() => {
@@ -347,7 +347,7 @@
 		// Crear la imagen para el marcador
 		const image = document.createElementNS('http://www.w3.org/2000/svg', 'image');
 		//image.id = 'heromarker';
-		image.setAttribute('href', `/images/${markerImage}.png`);
+		image.setAttribute('href', `/images/${markerImage}.webp`);
 		image.setAttribute('width', `${markerWidth}`);
 		image.setAttribute('height', `${markerHeight}`);
 		//markerGroup.setAttribute('width', `${markerWidth}`);

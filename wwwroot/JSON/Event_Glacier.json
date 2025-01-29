@@ -7,32 +7,32 @@
       {
         "Name": "Campamento de Viajeros",
         "CardCode": "EV037/110",
-        "CardImage": "campamento_de_viajeros.png"
+        "CardImage": "campamento_de_viajeros.webp"
       },
       {
         "Name": "Cuidado, Se Cae!",
         "CardCode": "EV038/110",
-        "CardImage": "cuidado_se_cae.png"
+        "CardImage": "cuidado_se_cae.webp"
       },
       {
         "Name": "El Hielo Se Agrieta",
         "CardCode": "EV039/110",
-        "CardImage": "el_hielo_se_agrieta.png"
+        "CardImage": "el_hielo_se_agrieta.webp"
       },
       {
         "Name": "Frío Intenso",
         "CardCode": "EV040/110",
-        "CardImage": "frio_intenso.png"
+        "CardImage": "frio_intenso.webp"
       },
       {
         "Name": "Hay Algo Ahí Afuera",
         "CardCode": "EV041/110",
-        "CardImage": "hay_algo_ahi_afuera.png"
+        "CardImage": "hay_algo_ahi_afuera.webp"
       },
       {
         "Name": "Tormenta Helada",
         "CardCode": "EV042/110",
-        "CardImage": "tormenta_helada.png"
+        "CardImage": "tormenta_helada.webp"
       }
 
     ]

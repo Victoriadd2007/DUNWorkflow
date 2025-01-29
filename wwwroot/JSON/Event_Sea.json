@@ -7,42 +7,42 @@
       {
         "Name": "Buen Capitán",
         "CardCode": "EV030/110",
-        "CardImage": "buen_capitan.png"
+        "CardImage": "buen_capitan.webp"
       },
       {
         "Name": "Coloso del Océano",
         "CardCode": "EV029/110",
-        "CardImage": "coloso_del_oceano.png"
+        "CardImage": "coloso_del_oceano.webp"
       },
       {
         "Name": "Enfermedad",
         "CardCode": "EV032/110",
-        "CardImage": "sea_enfermedad.png"
+        "CardImage": "sea_enfermedad.webp"
       },
       {
         "Name": "Es una Aleta!",
         "CardCode": "EV031/110",
-        "CardImage": "es_una_aleta.png"
+        "CardImage": "es_una_aleta.webp"
       },
       {
         "Name": "Fuertes Corrientes",
         "CardCode": "EV033/110",
-        "CardImage": "fuertes_corrientes.png"
+        "CardImage": "fuertes_corrientes.webp"
       },
       {
         "Name": "Piratas",
         "CardCode": "EV034/110",
-        "CardImage": "piratas.png"
+        "CardImage": "piratas.webp"
       },
       {
         "Name": "Tempestad",
         "CardCode": "EV035/110",
-        "CardImage": "tempestad.png"
+        "CardImage": "tempestad.webp"
       },
       {
         "Name": "Viento a Favor",
         "CardCode": "EV036/110",
-        "CardImage": "viento_a_favor.png"
+        "CardImage": "viento_a_favor.webp"
       }
     ]
   }

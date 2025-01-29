@@ -7,57 +7,57 @@
       {
         "Name": "Rumores",
         "CardCode": "EV081/110",
-        "CardImage": "road_rumores.png"
+        "CardImage": "road_rumores.webp"
       },
       {
         "Name": "Asalto de Bandidos",
         "CardCode": "EV072/110",
-        "CardImage": "asalto_de_bandidos.png"
+        "CardImage": "asalto_de_bandidos.webp"
       },
       {
         "Name": "Bifurcación",
         "CardCode": "EV082/110",
-        "CardImage": "bifurcacion.png"
+        "CardImage": "bifurcacion.webp"
       },
       {
         "Name": "Campamento",
         "CardCode": "EV073/110",
-        "CardImage": "road_campamento.png"
+        "CardImage": "road_campamento.webp"
       },
       {
         "Name": "Carro Volcado",
         "CardCode": "EV074/110",
-        "CardImage": "carro_volcado.png"
+        "CardImage": "carro_volcado.webp"
       },
       {
         "Name": "Espías Enemigos",
         "CardCode": "EV075/110",
-        "CardImage": "espias_enemigos.png"
+        "CardImage": "espias_enemigos.webp"
       },
       {
         "Name": "Evento de Territorio",
         "CardCode": "EV076/110",
-        "CardImage": "evento_de_territorio.png"
+        "CardImage": "evento_de_territorio.webp"
       },
       {
         "Name": "Mercado",
         "CardCode": "EV077/110",
-        "CardImage": "road_mercado.png"
+        "CardImage": "road_mercado.webp"
       },
       {
         "Name": "Posada",
         "CardCode": "EV078/110",
-        "CardImage": "road_posada.png"
+        "CardImage": "road_posada.webp"
       },
       {
         "Name": "Puente",
         "CardCode": "EV079/110",
-        "CardImage": "road_puente.png"
+        "CardImage": "road_puente.webp"
       },
       {
         "Name": "Relámpago",
         "CardCode": "EV080/110",
-        "CardImage": "relampago.png"
+        "CardImage": "relampago.webp"
       }
     ]
   }

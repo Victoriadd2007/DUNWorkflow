@@ -3,223 +3,223 @@
     "CardType": "SpecialObject",
     "Name": "Agua Bendita",
     "CardCode": "SO01/32",
-    "CardImage": "agua_bendita_112.jpg"
+    "CardImage": "agua_bendita_112.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Bilis de Dragón",
     "CardCode": "SO32/32",
-    "CardImage": "bilis_dragon_160.jpg"
+    "CardImage": "bilis_dragon_160.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Componentes para Magia",
     "CardCode": "SO03/32",
-    "CardImage": "componentes_magia_113.jpg"
+    "CardImage": "componentes_magia_113.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Estandarte",
     "CardCode": "SO58/70",
-    "CardImage": "estandarte_291.jpg"
+    "CardImage": "estandarte_291.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Frasco de Luz Solar",
     "CardCode": "SO40/70",
-    "CardImage": "frasco_luz_solar_296.jpg"
+    "CardImage": "frasco_luz_solar_296.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Fuego Griego",
     "CardCode": "SO15/32",
-    "CardImage": "fuego_griego_114.jpg"
+    "CardImage": "fuego_griego_114.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Lubricante Especial",
     "CardCode": "SO69/70",
-    "CardImage": "lubricante_especial_295.jpg"
+    "CardImage": "lubricante_especial_295.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Oscuridad Embotellada",
     "CardCode": "SO38/70",
-    "CardImage": "oscuridad_embotellada_299.jpg"
+    "CardImage": "oscuridad_embotellada_299.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pergamino: Agua de Vida",
     "CardCode": "SO61/70",
-    "CardImage": "pergamino_agua_vida_286.jpg"
+    "CardImage": "pergamino_agua_vida_286.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pergamino: Bola de Fuego",
     "CardCode": "SO63/70",
-    "CardImage": "pergamino_bola_fuego_330.jpg"
+    "CardImage": "pergamino_bola_fuego_330.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pergamino: Escudo de Viento",
     "CardCode": "SO62/70",
-    "CardImage": "pergamino_escudo_viento_329.jpg"
+    "CardImage": "pergamino_escudo_viento_329.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pergamino de Hechicería",
     "CardCode": "SO26/32",
-    "CardImage": "pergamino_hechiceria_115.jpg"
+    "CardImage": "pergamino_hechiceria_115.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pergamino: Hechizo Básico",
     "CardCode": "SO64/70",
-    "CardImage": "pergamino_hechizo_basico_294.jpg"
+    "CardImage": "pergamino_hechizo_basico_294.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Piedra Lunar",
     "CardCode": "SO59/70",
-    "CardImage": "piedra_lunar_300.jpg"
+    "CardImage": "piedra_lunar_300.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pieza de Repuesto",
     "CardCode": "SO56/70",
-    "CardImage": "pieza_repuesto_301.jpg"
+    "CardImage": "pieza_repuesto_301.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pócima de Curación",
     "CardCode": "SO06/32",
-    "CardImage": "pocima_curacion_116.jpg"
+    "CardImage": "pocima_curacion_116.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pócima de Destreza",
     "CardCode": "SO12/32",
-    "CardImage": "pocima_destreza_117.jpg"
+    "CardImage": "pocima_destreza_117.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pócima de Fuerza",
     "CardCode": "SO17/32",
-    "CardImage": "pocima_fuerza_118.jpg"
+    "CardImage": "pocima_fuerza_118.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pócima de Héroes",
     "CardCode": "SO20/32",
-    "CardImage": "pocima_heroes_119.jpg"
+    "CardImage": "pocima_heroes_119.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pócima de Maná",
     "CardCode": "SO23/32",
-    "CardImage": "pocima_mana_120.jpg"
+    "CardImage": "pocima_mana_120.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pócima sin Identificar",
     "CardCode": "SO00/70",
-    "CardImage": "pocima_sin_identificar_332.jpg"
+    "CardImage": "pocima_sin_identificar_332.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Pócima de Veneno",
     "CardCode": "SO29/32",
-    "CardImage": "pocima_veneno_121.jpg"
+    "CardImage": "pocima_veneno_121.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción de Agua de Lynn",
     "CardCode": "SO37/70",
-    "CardImage": "pocion_agua_lynn_297.jpg"
+    "CardImage": "pocion_agua_lynn_297.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción de Bebedizo Verde",
     "CardCode": "SO54/70",
-    "CardImage": "pocion_bebedizo_verde_287.jpg"
+    "CardImage": "pocion_bebedizo_verde_287.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción Brebaje del Gypcian",
     "CardCode": "SO39/70",
-    "CardImage": "pocion_brebaje_gypcian_293.jpg"
+    "CardImage": "pocion_brebaje_gypcian_293.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción de Cocodrilo",
     "CardCode": "SO53/70",
-    "CardImage": "pocion_cocodrilo_289.jpg"
+    "CardImage": "pocion_cocodrilo_289.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción de Elixir de Vida",
     "CardCode": "SO41/70",
-    "CardImage": "pocion_elixir_vida_290.jpg"
+    "CardImage": "pocion_elixir_vida_290.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción de Furia",
     "CardCode": "SO49/70",
-    "CardImage": "pocion_furia_292.jpg"
+    "CardImage": "pocion_furia_292.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción del Oráculo",
     "CardCode": "SO35/70",
-    "CardImage": "pocion_oraculo_298.jpg"
+    "CardImage": "pocion_oraculo_298.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción de Sangre de Camaleón",
     "CardCode": "SO52/70",
-    "CardImage": "pocion_sangre_camaleon_288.jpg"
+    "CardImage": "pocion_sangre_camaleon_288.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción de Sangre de Sapo",
     "CardCode": "SO44/70",
-    "CardImage": "pocion_sangre_sapo_305.jpg"
+    "CardImage": "pocion_sangre_sapo_305.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción de Teleportación",
     "CardCode": "SO43/70",
-    "CardImage": "pocion_teleportacion_306.jpg"
+    "CardImage": "pocion_teleportacion_306.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción de Velocidad",
     "CardCode": "SO46/70",
-    "CardImage": "pocion_velocidad_307.jpg"
+    "CardImage": "pocion_velocidad_307.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Poción Vigorizante",
     "CardCode": "SO56/70",
-    "CardImage": "pocion_vigorizante_308.jpg"
+    "CardImage": "pocion_vigorizante_308.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Rama Maligna",
     "CardCode": "SO45/70",
-    "CardImage": "rama_maligna_302.jpg"
+    "CardImage": "rama_maligna_302.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Runa Antimagia",
     "CardCode": "SO33/70",
-    "CardImage": "runa_antimagia_303.jpg"
+    "CardImage": "runa_antimagia_303.webp"
   },
   {
     "CardType": "SpecialObject",
     "Name": "Runas Explosivas",
     "CardCode": "SO34/70",
-    "CardImage": "runas_explosivas_304.jpg"
+    "CardImage": "runas_explosivas_304.webp"
   }
 
 ]

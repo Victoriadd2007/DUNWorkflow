@@ -7,32 +7,32 @@
       {
         "Name": "Carromato",
         "CardCode": "EV055/110",
-        "CardImage": "carromato.png"
+        "CardImage": "carromato.webp"
       },
       {
         "Name": "Depredadores Acuáticos",
         "CardCode": "EV049/110",
-        "CardImage": "depredadores_acuaticos.png"
+        "CardImage": "depredadores_acuaticos.webp"
       },
       {
         "Name": "Fuegos Fatuos",
         "CardCode": "EV054/110",
-        "CardImage": "fuegos_fatuos.png"
+        "CardImage": "fuegos_fatuos.webp"
       },
       {
         "Name": "Moradores del Pantano",
         "CardCode": "EV050/110",
-        "CardImage": "moradores.png"
+        "CardImage": "moradores.webp"
       },
       {
         "Name": "Muertos Vivientes",
         "CardCode": "EV051/110",
-        "CardImage": "muertos_vivientes.png"
+        "CardImage": "muertos_vivientes.webp"
       },
       {
         "Name": "Nubes de Insectos",
         "CardCode": "EV053/110",
-        "CardImage": "nubes_de_insectos.png"
+        "CardImage": "nubes_de_insectos.webp"
       }
     ]
   }

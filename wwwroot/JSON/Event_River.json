@@ -7,32 +7,32 @@
       {
         "Name": "Agua Contaminada",
         "CardCode": "EV066/110",
-        "CardImage": "agua_contaminada.png"
+        "CardImage": "agua_contaminada.webp"
       },
       {
         "Name": "Embarcadero",
         "CardCode": "EV067/110",
-        "CardImage": "embarcadero.png"
+        "CardImage": "embarcadero.webp"
       },
       {
         "Name": "Enemigos",
         "CardCode": "EV068/110",
-        "CardImage": "enemigos.png"
+        "CardImage": "enemigos.webp"
       },
       {
         "Name": "Informante",
         "CardCode": "EV069/110",
-        "CardImage": "informante.png"
+        "CardImage": "informante.webp"
       },
       {
         "Name": "Más Caudal",
         "CardCode": "EV070/110",
-        "CardImage": "mas_caudal.png"
+        "CardImage": "mas_caudal.webp"
       },
       {
         "Name": "Monstruo Fluvial",
         "CardCode": "EV071/110",
-        "CardImage": "monstruo.png"
+        "CardImage": "monstruo.webp"
       }
 
     ]

@@ -3,213 +3,213 @@
     "CardType": "Skill",
     "Name": "Acróbata",
     "CardCode": "EX01/25",
-    "CardImage": "acrobata_66.jpg",
+    "CardImage": "acrobata_66.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Afortunado",
     "CardCode": "EX02/25",
-    "CardImage": "afortunado_82.jpg",
+    "CardImage": "afortunado_82.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Artificiero",
     "CardCode": "EX03/25",
-    "CardImage": "artificiero_67.jpg",
+    "CardImage": "artificiero_67.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Batidor",
     "CardCode": "EX04/25",
-    "CardImage": "batidor_68.jpg",
+    "CardImage": "batidor_68.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Cazador",
     "CardCode": "EX05/25",
-    "CardImage": "cazador_69.jpg",
+    "CardImage": "cazador_69.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Cerrajería",
     "CardCode": "EX06/25",
-    "CardImage": "cerrajeria_70.jpg",
+    "CardImage": "cerrajeria_70.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Colocar Trampas",
     "CardCode": "EX28/35",
-    "CardImage": "colocar_trampas_175.jpg"
+    "CardImage": "colocar_trampas_175.webp"
   },
   {
     "CardType": "Skill",
     "Name": "Emboscar",
     "CardCode": "EX07/25",
-    "CardImage": "emboscar_71.jpg",
+    "CardImage": "emboscar_71.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "En Pie de un Salto",
     "CardCode": "EX08/25",
-    "CardImage": "en_pie_salto_72.jpg",
+    "CardImage": "en_pie_salto_72.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Escalada",
     "CardCode": "EX09/25",
-    "CardImage": "escalada_73.jpg",
+    "CardImage": "escalada_73.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Escapista",
     "CardCode": "EX27/35",
-    "CardImage": "escapista_176.jpg",
+    "CardImage": "escapista_176.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Esconderse",
     "CardCode": "EX10/25",
-    "CardImage": "esconderse_74.jpg",
+    "CardImage": "esconderse_74.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Escurridizo",
     "CardCode": "EX11/25",
-    "CardImage": "escurridizo_75.jpg",
+    "CardImage": "escurridizo_75.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Fintar",
     "CardCode": "EX30/35",
-    "CardImage": "fintar_177.jpg",
+    "CardImage": "fintar_177.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Gran Explorador",
     "CardCode": "EX12/25",
-    "CardImage": "gran_explorador_77.jpg",
+    "CardImage": "gran_explorador_77.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Inspeccionar Terreno",
     "CardCode": "EX32/35",
-    "CardImage": "inspeccionar_terreno_178.jpg",
+    "CardImage": "inspeccionar_terreno_178.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Intercambiar Posición",
     "CardCode": "EX/29",
-    "CardImage": "intercambiar_posicion_179.jpg",
+    "CardImage": "intercambiar_posicion_179.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Jinete Experto",
     "CardCode": "EX13/25",
-    "CardImage": "jinete_experto_78.jpg",
+    "CardImage": "jinete_experto_78.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Lince",
     "CardCode": "EX14/25",
-    "CardImage": "lince_84.jpg"
+    "CardImage": "lince_84.webp"
   },
   {
     "CardType": "Skill",
     "Name": "Manipular Trampas",
     "CardCode": "EX15/25",
-    "CardImage": "manipular_trampas_79.jpg",
+    "CardImage": "manipular_trampas_79.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Manos Hábiles",
     "CardCode": "EX16/25",
-    "CardImage": "manos_habiles_80.jpg",
+    "CardImage": "manos_habiles_80.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Moverse Deprisa",
     "CardCode": "EX35/35",
-    "CardImage": "moverse_deprisa_181.jpg",
+    "CardImage": "moverse_deprisa_181.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Rastrear",
     "CardCode": "EX17/25",
-    "CardImage": "rastrear_81.jpg",
+    "CardImage": "rastrear_81.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Reflejos Felinos",
     "CardCode": "EX18/25",
-    "CardImage": "reflejos_felinos_76.jpg",
+    "CardImage": "reflejos_felinos_76.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Robar",
     "CardCode": "EX19/25",
-    "CardImage": "robar_83.jpg",
+    "CardImage": "robar_83.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Salto Volador",
     "CardCode": "EX20/25",
-    "CardImage": "salto_volador_85.jpg",
+    "CardImage": "salto_volador_85.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Sigilo",
     "CardCode": "EX21/25",
-    "CardImage": "sigilo_86.jpg"
+    "CardImage": "sigilo_86.webp"
   },
   {
     "CardType": "Skill",
     "Name": "Supervivencia",
     "CardCode": "EX22/25",
-    "CardImage": "supervivencia_87.jpg"
+    "CardImage": "supervivencia_87.webp"
   },
   {
     "CardType": "Skill",
     "Name": "Trampero",
     "CardCode": "EX23/25",
-    "CardImage": "trampero_88.jpg",
+    "CardImage": "trampero_88.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Veloz",
     "CardCode": "EX24/25",
-    "CardImage": "veloz_89.jpg",
+    "CardImage": "veloz_89.webp",
     "SkillType": "Exploration"
   },
   {
     "CardType": "Skill",
     "Name": "Vista de Águila",
     "CardCode": "EX25/25",
-    "CardImage": "vista_aguila_90.jpg",
+    "CardImage": "vista_aguila_90.webp",
     "SkillType": "Exploration"
   }
 ]

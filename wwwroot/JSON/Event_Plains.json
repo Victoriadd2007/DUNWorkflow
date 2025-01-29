@@ -7,62 +7,62 @@
       {
         "Name": "Aldea Calcinada",
         "CardCode": "EV001/110",
-        "CardImage": "aldea_calcinada.png"
+        "CardImage": "aldea_calcinada.webp"
       },
       {
         "Name": "Antiguo Cementerio",
         "CardCode": "EV002/110",
-        "CardImage": "antiguo_cementerio.png"
+        "CardImage": "antiguo_cementerio.webp"
       },
       {
         "Name": "Cuervo",
         "CardCode": "EV003/110",
-        "CardImage": "cuervo.png"
+        "CardImage": "cuervo.webp"
       },
       {
         "Name": "Diluvio",
         "CardCode": "EV011/110",
-        "CardImage": "diluvio.png"
+        "CardImage": "diluvio.webp"
       },
       {
         "Name": "Emboscada",
         "CardCode": "EV004/110",
-        "CardImage": "emboscada.png"
+        "CardImage": "emboscada.webp"
       },
       {
         "Name": "Granja",
         "CardCode": "EV005/110",
-        "CardImage": "granja.png"
+        "CardImage": "granja.webp"
       },
       {
         "Name": "Molino de Agua",
         "CardCode": "EV006/110",
-        "CardImage": "molino_de_agua.png"
+        "CardImage": "molino_de_agua.webp"
       },
       {
         "Name": "Molino de Viento",
         "CardCode": "EV012/110",
-        "CardImage": "molino_de_viento.png"
+        "CardImage": "molino_de_viento.webp"
       },
       {
         "Name": "Piedras Sagradas",
         "CardCode": "EV008/110",
-        "CardImage": "piedras_sagradas.png"
+        "CardImage": "piedras_sagradas.webp"
       },
       {
         "Name": "Nubes Negras",
         "CardCode": "EV007/110",
-        "CardImage": "plains_nubes_negras.png"
+        "CardImage": "plains_nubes_negras.webp"
       },
       {
         "Name": "Refugiados",
         "CardCode": "EV009/110",
-        "CardImage": "refugiados.png"
+        "CardImage": "refugiados.webp"
       },
       {
         "Name": "Rumores",
         "CardCode": "EV010/110",
-        "CardImage": "plains_rumores.png"
+        "CardImage": "plains_rumores.webp"
       }
     ]
   }

@@ -7,62 +7,62 @@
       {
         "Name": "Diezmo",
         "CardCode": "EV103/110",
-        "CardImage": "diezmo.png"
+        "CardImage": "diezmo.webp"
       },
       {
         "Name": "Enfermedad",
         "CardCode": "EV104/110",
-        "CardImage": "castle_enfermedad.png"
+        "CardImage": "castle_enfermedad.webp"
       },
       {
         "Name": "Equipo Dañado",
         "CardCode": "EV105/110",
-        "CardImage": "castle_equipo_daniado.png"
+        "CardImage": "castle_equipo_daniado.webp"
       },
       {
         "Name": "Fama",
         "CardCode": "EV106/110",
-        "CardImage": "castle_fama.png"
+        "CardImage": "castle_fama.webp"
       },
       {
         "Name": "Guardia Herido",
         "CardCode": "EV108/110",
-        "CardImage": "guardia_herido.png"
+        "CardImage": "guardia_herido.webp"
       },
       {
         "Name": "Hijo Bastardo",
         "CardCode": "EV110/110",
-        "CardImage": "hijo_bastardo.png"
+        "CardImage": "hijo_bastardo.webp"
       },
       {
         "Name": "Incendio de Caballerizas",
         "CardCode": "EV109/110",
-        "CardImage": "incendio_de_caballerizas.png"
+        "CardImage": "incendio_de_caballerizas.webp"
       },
       {
         "Name": "Infracción",
         "CardCode": "EV107/110",
-        "CardImage": "castle_infraccion.png"
+        "CardImage": "castle_infraccion.webp"
       },
       {
         "Name": "Aprovisionados o Envenenados",
         "CardCode": "EV112/133",
-        "CardImage": "aprovisionados_o_envenenados.png"
+        "CardImage": "aprovisionados_o_envenenados.webp"
       },
       {
         "Name": "Forzudo",
         "CardCode": "EV113/133",
-        "CardImage": "forzudo.png"
+        "CardImage": "forzudo.webp"
       },
       {
         "Name": "Mercenario Errante",
         "CardCode": "EV114/133",
-        "CardImage": "mercenario_errante.png"
+        "CardImage": "mercenario_errante.webp"
       },
       {
         "Name": "Soldados Alerta",
         "CardCode": "EV111/133",
-        "CardImage": "soldados_alerta.png"
+        "CardImage": "soldados_alerta.webp"
       }
 
     ]

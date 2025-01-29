@@ -7,72 +7,72 @@
       {
         "Name": "Asesino",
         "CardCode": "CM01/10",
-        "CardImage": "asesino.png"
+        "CardImage": "asesino.webp"
       },
       {
         "Name": "Cazarrecompenzas",
         "CardCode": "CM02/10",
-        "CardImage": "cazarrecompenzas.png"
+        "CardImage": "cazarrecompenzas.webp"
       },
       {
         "Name": "Espía",
         "CardCode": "CM04/10",
-        "CardImage": "espia.png"
+        "CardImage": "espia.webp"
       },
       {
         "Name": "Hechicero Errante",
         "CardCode": "CM06/10",
-        "CardImage": "hechicero_errante.png"
+        "CardImage": "hechicero_errante.webp"
       },
       {
         "Name": "Ladrón",
         "CardCode": "CM03/10",
-        "CardImage": "ladron.png"
+        "CardImage": "ladron.webp"
       },
       {
         "Name": "Maldición",
         "CardCode": "CM05/10",
-        "CardImage": "maldicion.png"
+        "CardImage": "maldicion.webp"
       },
       {
         "Name": "Marcador Vacío",
         "CardCode": "CM07/10",
-        "CardImage": "marcador_vacio_1.png"
+        "CardImage": "marcador_vacio_1.webp"
       },
       {
         "Name": "Marcador Vacío",
         "CardCode": "CM07/10",
-        "CardImage": "marcador_vacio_2.png"
+        "CardImage": "marcador_vacio_2.webp"
       },
       {
         "Name": "Marcador Vacío",
         "CardCode": "CM07/10",
-        "CardImage": "marcador_vacio_3.png"
+        "CardImage": "marcador_vacio_3.webp"
       },
       {
         "Name": "Marcador Vacío",
         "CardCode": "CM07/10",
-        "CardImage": "marcador_vacio_4.png"
+        "CardImage": "marcador_vacio_4.webp"
       },
       {
         "Name": "Agua Envenenada",
         "CardCode": "CM11/15",
-        "CardImage": "agua_envenada.png"
+        "CardImage": "agua_envenada.webp"
       },
       {
         "Name": "Evento de Viaje",
         "CardCode": "CM15/15",
-        "CardImage": "evento_de_viaje.png"
+        "CardImage": "evento_de_viaje.webp"
       },
       {
         "Name": "Un Rayo Extraño",
         "CardCode": "CM12/15",
-        "CardImage": "un_rayo_extranio.png"
+        "CardImage": "un_rayo_extranio.webp"
       },
       {
         "Name": "Una Trampa",
         "CardCode": "CM14/15",
-        "CardImage": "una_trampa.png"
+        "CardImage": "una_trampa.webp"
       }
     ]
   }
