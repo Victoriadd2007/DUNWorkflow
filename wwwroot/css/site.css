@@ -39,10 +39,9 @@ body {
     overflow-x: hidden;
 }
 
-.sidebar-item:hover {
+.sidebar-item:hover, .subsidebar-item:hover {
     background-color: #444; /* Cambia el fondo al hacer hover */
     color: black; /* Cambia el color del texto al hacer hover */
-
 }
 
 #search-bar {
@@ -57,16 +56,33 @@ body {
     padding: 0;
 }
 
-.sidebar-item {
+.sidebar-item, .subsidebar-item {
     padding: 10px;
     cursor: pointer;
     border-bottom: 1px solid #ddd;
 }
 
-    .sidebar-item:hover {
+    .sidebar-item:hover, .subsidebar-item:hover {
         background-color: #eaeaea;
     }
 
+.sub-menu {
+    display: none; /* Inicialmente oculta */
+    margin-left: 20px;
+}
+
+.sub-item {
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+    .sub-item:hover {
+        background-color: #ffcc00;
+        color: black;
+    }
 #card-container {
     flex: 1;
     padding: 20px;

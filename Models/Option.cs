@@ -9,7 +9,7 @@
         public string OptionText { get; set; }
     }
 
-    public class CardData
+    public class GuideData
     {
         public string CodeNumber { get; set; }
         public string Header { get; set; }

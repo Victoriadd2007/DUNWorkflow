@@ -1,0 +1,267 @@
+[
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Alimañas: Enjambre",
+    "CardImage": "alimanias_enjambre.png",
+    "CardCode": "SP31/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Alimañas: Murciélagos",
+    "CardImage": "alimanias_murcielagos.png",
+    "CardCode": "SP15/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Alimañas: Ratas",
+    "CardImage": "alimanias_ratas.png",
+    "CardCode": "SP22/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Alimañas: Serpientes",
+    "CardImage": "alimanias_serpientes.png",
+    "CardCode": "SP25/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Altar",
+    "CardImage": "altar.png",
+    "CardCode": "SP01/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Aventurero Muerto",
+    "CardImage": "aventurero_muerto.png",
+    "CardCode": "SP38/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Bruja",
+    "CardImage": "bruja.png",
+    "CardCode": "SP08/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Burdel Orco",
+    "CardImage": "burdel_orco.png",
+    "CardCode": "SP39/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Círculo Mágico",
+    "CardImage": "circulo_magico.png",
+    "CardCode": "SP02/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Cripta",
+    "CardImage": "cripta.png",
+    "CardCode": "SP03/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Cubo Gelatinoso",
+    "CardImage": "cubo_gelatinoso.png",
+    "CardCode": "SP37/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Cubo Gelatinoso",
+    "CardImage": "cubo_gelatinoso.png",
+    "CardCode": "SP37/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Enredaderas",
+    "CardImage": "enredaderas.png",
+    "CardCode": "SP36/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Espejo Mágico",
+    "CardImage": "espejo_magico.png",
+    "CardCode": "SP04/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Estatua Especial",
+    "CardImage": "estatua_especial.png",
+    "CardCode": "SP05/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Fuente o Estanque Mágico",
+    "CardImage": "fuente_o_estanque_magico.png",
+    "CardCode": "SP06/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Gran Tesoro",
+    "CardImage": "gran_tesoro.png",
+    "CardCode": "SP33/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Madriguera de Gran Criatura",
+    "CardImage": "madriguera_de_gran_criatura.png",
+    "CardCode": "SP09/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Mamíferos Peligrosos",
+    "CardImage": "mamiferos_peligrosos.png",
+    "CardCode": "SP10/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Mecanismos",
+    "CardImage": "mecanismos.png",
+    "CardCode": "SP11/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Merrcader Errante",
+    "CardImage": "merrcader_errante.png",
+    "CardCode": "SP41/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Mina",
+    "CardImage": "mina.png",
+    "CardCode": "SP12/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Moho",
+    "CardImage": "moho.png",
+    "CardCode": "SP13/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Morada de Monstruo Acuático",
+    "CardImage": "morada_de_monstruo_acuatico.png",
+    "CardCode": "SP14/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Nido de Insectos Gigantes",
+    "CardImage": "nido_de_insectos_gigantes.png",
+    "CardCode": "SP32/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Niebla Misteriosa",
+    "CardImage": "niebla_misteriosa.png",
+    "CardCode": "SP16/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Plantas Carnívoras",
+    "CardImage": "plantas_carnivoras.png",
+    "CardCode": "SP34/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Portal de Teletransporte",
+    "CardImage": "portal_de_teletransporte.png",
+    "CardCode": "SP17/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Pozo de Lucha",
+    "CardImage": "pozo_de_lucha.png",
+    "CardCode": "SP35/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Precipicio",
+    "CardImage": "precipicio.png",
+    "CardCode": "SP18/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Prisión: Hombre de Armas",
+    "CardImage": "prision_hombre_de_armas.png",
+    "CardCode": "SP20/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Prisión: La Dama",
+    "CardImage": "prision_la_dama.png",
+    "CardCode": "SP21/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Prisión: El Civil",
+    "CardImage": "prision_el_civil.png",
+    "CardCode": "SP16/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Sala de los Enigmas",
+    "CardImage": "sala_de_los_enigmas.png",
+    "CardCode": "SP23/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Sala de los Enigmas",
+    "CardImage": "sala_de_los_enigmas.png",
+    "CardCode": "SP23/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Sala de los Espejos",
+    "CardImage": "sala_de_los_espejos.png",
+    "CardCode": "SP24/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Sección Inundada",
+    "CardImage": "seccion_inundada.png",
+    "CardCode": "SP26/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Setas",
+    "CardImage": "setas.png",
+    "CardCode": "SP07/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Suelo Ardiente",
+    "CardImage": "suelo_ardiente.png",
+    "CardCode": "SP27/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Taberna Enana",
+    "CardImage": "taberna_enana.png",
+    "CardCode": "SP40/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Telarañas",
+    "CardImage": "telaranias.png",
+    "CardCode": "SP28/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Trono Mágico",
+    "CardImage": "trono_magico.png",
+    "CardCode": "SP29/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Tumba Importante",
+    "CardImage": "tumba_importante.png",
+    "CardCode": "SP30/42"
+  },
+  {
+    "CardType": "SpecialPlaces",
+    "Name": "Veta de Cristales",
+    "CardImage": "veta_de_cristales.png",
+    "CardCode": "SP42/42"
+  }
+
+]

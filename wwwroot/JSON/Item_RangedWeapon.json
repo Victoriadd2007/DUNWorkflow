@@ -1,0 +1,99 @@
+[
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Arcabuz",
+    "CardCode": "RW02/30",
+    "CardImage": "arcabuz_64.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Arco Compuesto",
+    "CardCode": "RW04/30",
+    "CardImage": "arco_compuesto_65.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Arco Corto",
+    "CardCode": "RW05/30",
+    "CardImage": "arco_corto_66.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Arco Élfico",
+    "CardCode": "RW09/30",
+    "CardImage": "arco_elfico_67.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Arco Largo",
+    "CardCode": "RW11/30",
+    "CardImage": "arco_largo_68.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Ballesta",
+    "CardCode": "RW12/30",
+    "CardImage": "ballesta_69.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Ballesta de Repetición",
+    "CardCode": "RW14/30",
+    "CardImage": "ballesta_repeticion_70.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Cerbatana",
+    "CardCode": "RW15/30",
+    "CardImage": "cerbatana_71.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Honda",
+    "CardCode": "RW17/30",
+    "CardImage": "honda_72.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Honda con Proyectiles de Plomo",
+    "CardCode": "RW18/30",
+    "CardImage": "honda_proyectiles_plomo_146.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Jabalina",
+    "CardCode": "RW20/30",
+    "CardImage": "jabalina_73.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Jabalina Pesada",
+    "CardCode": "RW26/30",
+    "CardImage": "jabalina_pesada_147.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Pistola",
+    "CardCode": "RW22/30",
+    "CardImage": "pistola_76.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Pistola Ballesta",
+    "CardCode": "RW27/30",
+    "CardImage": "pistola_ballesta_148.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Red",
+    "CardCode": "RW24/30",
+    "CardImage": "red_78.jpg"
+  },
+  {
+    "CardType": "RangedWeapon",
+    "Name": "Shuriken",
+    "CardCode": "RW28/30",
+    "CardImage": "shuriken_149.jpg"
+  }
+
+]

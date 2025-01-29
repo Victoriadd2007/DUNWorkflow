@@ -25,7 +25,7 @@ namespace DUNWorkflow.Controllers
             // Cargar el archivo JSON y mostrar la primera tarjeta
             string jsonFilePath = Path.Combine(_webHostEnvironment.WebRootPath, "json", jsonFileName);
             string jsonData = System.IO.File.ReadAllText(jsonFilePath);
-            var cardDataArray = JsonConvert.DeserializeObject<CardData[]>(jsonData);
+            var cardDataArray = JsonConvert.DeserializeObject<GuideData[]>(jsonData);
             ViewBag.CardList = cardDataArray; // Lista completa
             var firstCard = cardDataArray.FirstOrDefault();
 
@@ -74,7 +74,7 @@ namespace DUNWorkflow.Controllers
             string jsonData = System.IO.File.ReadAllText(jsonFilePath);
 
             // Deserializar como array
-            var cardDataArray = JsonConvert.DeserializeObject<CardData[]>(jsonData);
+            var cardDataArray = JsonConvert.DeserializeObject<GuideData[]>(jsonData);
 
             // Buscar el objeto correspondiente al `codeNumber`
             var cardData = cardDataArray.FirstOrDefault(card => card.CodeNumber == codeNumber);

@@ -1,0 +1,216 @@
+[
+  {
+    "CardType": "Skill",
+    "Name": "Acróbata",
+    "CardCode": "EX01/25",
+    "CardImage": "acrobata_66.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Afortunado",
+    "CardCode": "EX02/25",
+    "CardImage": "afortunado_82.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Artificiero",
+    "CardCode": "EX03/25",
+    "CardImage": "artificiero_67.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Batidor",
+    "CardCode": "EX04/25",
+    "CardImage": "batidor_68.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Cazador",
+    "CardCode": "EX05/25",
+    "CardImage": "cazador_69.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Cerrajería",
+    "CardCode": "EX06/25",
+    "CardImage": "cerrajeria_70.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Colocar Trampas",
+    "CardCode": "EX28/35",
+    "CardImage": "colocar_trampas_175.jpg"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Emboscar",
+    "CardCode": "EX07/25",
+    "CardImage": "emboscar_71.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "En Pie de un Salto",
+    "CardCode": "EX08/25",
+    "CardImage": "en_pie_salto_72.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Escalada",
+    "CardCode": "EX09/25",
+    "CardImage": "escalada_73.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Escapista",
+    "CardCode": "EX27/35",
+    "CardImage": "escapista_176.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Esconderse",
+    "CardCode": "EX10/25",
+    "CardImage": "esconderse_74.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Escurridizo",
+    "CardCode": "EX11/25",
+    "CardImage": "escurridizo_75.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Fintar",
+    "CardCode": "EX30/35",
+    "CardImage": "fintar_177.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Gran Explorador",
+    "CardCode": "EX12/25",
+    "CardImage": "gran_explorador_77.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Inspeccionar Terreno",
+    "CardCode": "EX32/35",
+    "CardImage": "inspeccionar_terreno_178.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Intercambiar Posición",
+    "CardCode": "EX/29",
+    "CardImage": "intercambiar_posicion_179.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Jinete Experto",
+    "CardCode": "EX13/25",
+    "CardImage": "jinete_experto_78.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Lince",
+    "CardCode": "EX14/25",
+    "CardImage": "lince_84.jpg"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Manipular Trampas",
+    "CardCode": "EX15/25",
+    "CardImage": "manipular_trampas_79.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Manos Hábiles",
+    "CardCode": "EX16/25",
+    "CardImage": "manos_habiles_80.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Moverse Deprisa",
+    "CardCode": "EX35/35",
+    "CardImage": "moverse_deprisa_181.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Rastrear",
+    "CardCode": "EX17/25",
+    "CardImage": "rastrear_81.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Reflejos Felinos",
+    "CardCode": "EX18/25",
+    "CardImage": "reflejos_felinos_76.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Robar",
+    "CardCode": "EX19/25",
+    "CardImage": "robar_83.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Salto Volador",
+    "CardCode": "EX20/25",
+    "CardImage": "salto_volador_85.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Sigilo",
+    "CardCode": "EX21/25",
+    "CardImage": "sigilo_86.jpg"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Supervivencia",
+    "CardCode": "EX22/25",
+    "CardImage": "supervivencia_87.jpg"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Trampero",
+    "CardCode": "EX23/25",
+    "CardImage": "trampero_88.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Veloz",
+    "CardCode": "EX24/25",
+    "CardImage": "veloz_89.jpg",
+    "SkillType": "Exploration"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Vista de Águila",
+    "CardCode": "EX25/25",
+    "CardImage": "vista_aguila_90.jpg",
+    "SkillType": "Exploration"
+  }
+]
+

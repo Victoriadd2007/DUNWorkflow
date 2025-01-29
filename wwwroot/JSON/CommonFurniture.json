@@ -1,0 +1,212 @@
+[
+  {
+    "CardType": "Furniture",
+    "Name": "Alambique",
+    "CardImage": "alambique_fu_27.png",
+    "CardCode": "FU27/32",
+    "Description": "Lanza 1D6 si decides inspeccionar este artilugio: <br>1: Vaya, está roto. Seguramente lo abandonaron cuando dejó de ser útil. <br>2-3: Está en buen estado, aunque sin utilizar hace mucho tiempo. No ves nada de utilidad en los recipientes ni alrededor. <br>4-5: Hay suficiente cerveza suprema en el recipiente para llenar una cantimplora. Ganas 1 Cerveza suprema. <br>6: Alguien ha hecho grandes logros elaborando pociones. Queda cantidad suficiente para una persona. Ganas 1 Poción al azar."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Anforas o recipientes",
+    "CardImage": "anforas_o_recipientes_fu_02.png",
+    "CardCode": "FU02/32",
+    "Description": "Hay varios recipientes. Quien los registre, debe lanzar 5D6. Por cada resultado de 6, encuentra 1 moneda. Si se obtienen 2 o más resultados de 6, se encuentra además 1 Poción al azar."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Armario",
+    "CardImage": "armario_fu_03.png",
+    "CardCode": "FU03/32",
+    "Description": "Hay un armario. Quien lo registre debe lanzar 2D6:<br>2: Pifia. ¡Puede saltar una trampa! El Jugador Oscuro podrá activar una carta de cofre del mazo de Obstáculos (El JOA hará la oportuna tirada del Dado de Escenario).<br>3: Una rata oculta muerde la mano del personaje, causándole un dado de daño. Si le quita Vitalidad, este sufrirá los efectos de Enfermo;<br>4-7: No encuentra nada interesante; <br>8-9: Encuentra 1 Objeto común al azar; <br>10: Encuentra 1D3 monedas;<br>11: Encuentra 1 Objeto especial al azar; <br>12: Encuentra un tesoro (extrae una carta del mazo de Tesoro)."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Armeria",
+    "CardImage": "armeria_fu_04.png",
+    "CardCode": "FU04/32",
+    "Description": "Hay una armería en la habitación. Si un personaje decide registrarla, debe lanzar 2D6 y comprobar el resultado: <br>2: Pifia. ¡Puede saltar una trampa! El Jugador Oscuro podrá activar una carta de cofre del mazo de Obstáculos (el JOA hará la oportuna tirada del dado de Escenario). <br>3-4: Solo hay armas rotas o en mal estado; <br>5-6: Encuentra 1 Daga; <br>7: Encuentra 1 Lanza; <br>8: Encuentra 1 Arma de cuerpo a cuerpo al azar (que no sea infrecuente); <br>9: Encuentra 1 Escudo; <br>10: Encuentra 1 Arma a distancia al azar y 1 cuerda. <br>11-12: Encuentra 1 Armadura al azar (que no sea infrecuente)."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Biblioteca",
+    "CardImage": "biblioteca_fu_05.png",
+    "CardCode": "FU05/32",
+    "Description": "Hay una biblioteca en la habitación. Quien la registre, debe lanzar 1D6 y sumar su valor de Inteligencia:<br>1-7: No encuentra nada de interés;<br>8-9: Encuentra varios libros por valor de 1D3 monedas; <br>10 o más: Encuentra libros por valor de 3 monedas y un mapa. Todas las puertas secretas del escenario explorado deberán ser reveladas a los héroes."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Caballerizas",
+    "CardImage": "caballerizas_fu_29.png",
+    "CardCode": "FU29/32",
+    "Description": "En ocasiones puede escucharse el relinchar de los animales. Otras, en cambio, solo reina el silencio. Lanza 1D6 si decides entrar:<br>1-3: No hay mucho que pueda interesarte. Paja seca y excrementos.<br>4-5: No hay animales, pero alguien abandonó algo de interés. Ganas 1 Objeto común al azar. <br>6: Encuentras un caballo que podría servirte como montura. Si tu alineamiento es maligno o prefieres otro animal, podrás sustituirlo por otro animal del mazo de \"Animales y criaturas\" con la habilidad \"Montura\" o \"Montura furiosa\" y que tenga un PV igual o inferior que 3."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Cajas y barriles",
+    "CardImage": "cajas_y_barriles_fu_01.png",
+    "CardCode": "FU01/32",
+    "Description": "Hay varios barriles y cajas en la sección. Quien lo registre debe lanzar 2D6:<br>2: Una rata oculta muerde la mano del personaje, causándole un dado de daño. Si le quita Vitalidad, este sufrirá los efectos de Enfermo;<br>3-6: No encuentra nada interesante; <br>7: Encuentra 1 Paquete de Provisiones; <br>8: Encuentra 3 monedas. <br>9-10: Encuentra 1 Objeto común al azar; <br>11-12: Encuentra 1 Objeto especial al azar."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Camas",
+    "CardImage": "camas_fu_10.png",
+    "CardCode": "FU10/32",
+    "Description": "Hay varias camas en la habitación. Un héroe puede colocarse adyacente a una de ellas para registrar todas. Entonces, lanza 3D6. Por cada resultado de 6, encuentra objetos por valor de 1 moneda. Si se obtienen 2 o más resultados de 6, encuentra además 1 Objeto común al azar."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Carreta con caballos",
+    "CardImage": "carreta_con_caballos_fu_28.png",
+    "CardCode": "FU28/32",
+    "Description": "Lanza 1D6 si decides registrar la carreta:<br>1-3: No hay mucho que pueda interesarte. Algo de leña, mantas y herramientas de cocina.<br>4: En el cargamento encuentras algo de valor. Ganas 1 Objeto común al azar.<br>5: Es un cargamento bastante valioso. Ganas 2 Objetos comunes al azar. <br>6: Uno de los caballos está en buenas condiciones. Puedes quedártelo como montura (consulta el mazo de Animales y criaturas) además de 1 Objeto común al azar."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Chimenea",
+    "CardImage": "chimenea_fu_06.png",
+    "CardCode": "FU06/32",
+    "Description": "Hay una chimenea en la habitación. Lanzad 1D6. Con resultado de 2+, estará encendida (por tanto, la sección se considerará siempre iluminada) y quien la registre podrá coger un leño ardiendo y emplearlo como una Antorcha durante el resto de la aventura. Si alguien es empujado a una casilla ocupada por la chimenea encendida, no ocupará la casilla pero recibirá 3 dados de daño de fuego."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Cocina",
+    "CardImage": "cocina_fu_07.png",
+    "CardCode": "FU07/32",
+    "Description": "Hay una cocina en la habitación. Si un personaje la registra, debe lanzar 2D6:<br>2-3: Una rata oculta muerde la mano del personaje, causándole un dado de daño. Si le quita Vitalidad, este sufrirá los efectos de Enfermo;<br>4-6: No encuentra nada interesante;<br>7-8: Encuentra 1 Paquete de provisiones; <br>9: Encuentra 1 Hidromiel vigorosa; <br>10: Encuentra 1 Cerveza suprema; <br>11: Encuentra 1 Ristra de ajos y crucifijo; <br>12: encuentra 1 Raíz de mandrágora."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Columnas",
+    "CardImage": "columnas_fu_08.png",
+    "CardCode": "FU08/32",
+    "Description": "Hay varias columnas que adornan la sala y sostienen la bóveda. Un héroe puede colocarse adyacente a una de ellas para registrar todas. Entonces, lanza 5D6. Por cada resultado de 6, encuentra objetos por valor de 1 moneda. Si se obtienen 3 o más resultados de 6, encuentra además una Poción al azar."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Comedor",
+    "CardImage": "comedor_fu_09.png",
+    "CardCode": "FU09/32",
+    "Description": "Hay una mesa y varios asientos en la sala. Quien las registre, debe lanzar 3D6. Por cada resultado de 6, encuentra 1 Paquete de provisiones. Por cada resultado de 5, encuentra 1 Cerveza suprema."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Diana de arquería",
+    "CardImage": "diana_de_arqueria_fu_31.png",
+    "CardCode": "FU31/32",
+    "Description": "Lanza 2D6 si decides entrenar con esta diana:<br>2: Te has visto con tanta confianza que has convencido a un compañero (héroe o mercenario) al azar para que se coloque en la diana con una manzana sobre la cabeza. Pero has errado el disparo y lo dejas Fuera de combate. Si no tienes compañeros, la pifia te causa la pérdida de 1 punto de Vitalidad. <br>3-9: No te ha servido de mucho el entrenamiento, pero al menos has estirado los músculos. <br>10-11: El entrenamiento te ha servido para afinar tu puntería. Durante el próximo combate, tendrás +1 a tu valor en Disparo. <br>12: Ganas +1 punto de experiencia."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Estatuas",
+    "CardImage": "estatuas_fu_11.png",
+    "CardCode": "FU11/32",
+    "Description": "Hay varias estatuas. Un héroe puede colocarse adyacente a una de ellas para registrar todas. Quien las registre, debe lanzar 3D6. Por cada resultado de 6, encuentra 1 moneda. Si obtiene 2 o más resultados de 6, encuentra además un tesoro (extrae una carta del mazo de Tesoro)."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Forja",
+    "CardImage": "forja_fu_12.png",
+    "CardCode": "FU12/32",
+    "Description": "Hay una forja en la habitación. Si un personaje decide registrarla, deberá lanzar 2D6 y comprobar el resultado: <br>2: Pifia. ¡Puede saltar una trampa! El Jugador Oscuro podrá activar una carta de cofre del mazo de Obstáculos (el JOA hará la oportuna tirada del dado de Escenario). <br>3-6: No encuentra nada de interés; <br>7: Encuentra 1 Arma de cuerpo a cuerpo al azar (no infrecuente); <br>8-9: Encuentra 1 Espada ancha y objetos por valor de 2 monedas; <br>10-11: Encuentra 3 monedas y 1 Armadura al azar (no infrecuente). <br>12: Encuentra 1 Objeto Mágico al azar (que sea Arma de cuerpo a cuerpo)."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Fuente",
+    "CardImage": "fuente_fu_13.png",
+    "CardCode": "FU13/32",
+    "Description": "Hay una fuente. Si un personaje decide beber de ella, deberá lanzar 1D6 y comprobar el resultado (aplicable a todos los que beban):<br>1: Agua envenenada. El personaje sufre 1 dado de daño contra su Armadura natural, sufriendo los efectos de Envenenado si dicho dado le quita Vitalidad; <br>2-3: El agua es inocua; <br>4-6: El personaje recupera 1 punto de Vitalidad perdido."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Hoguera",
+    "CardImage": "hoguera_fu_32.png",
+    "CardCode": "FU32/32",
+    "Description": "Lanza 1D6 si decides inspeccionarla:<br>1-3: La hoguera está apagada y no encuentras nada de interés entre los restos. Apenas descubres los huesecillos de un conejo devorado. <br>4-5: El fuego aún está encendido y queda madera suficiente para aprovecharla. Quien la registre podrá coger 1 Antorcha y utilizarla hasta el final de esta aventura. Si empujas a alguien sobre esta hoguera, recibirá 2 dados de daño de fuego.<br>6: Alguien dejó provisiones junto al fuego. Ganas 1 Paquete de provisiones."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Letrina",
+    "CardImage": "letrina_fu_26.png",
+    "CardCode": "FU26/32",
+    "Description": "Hay una letrina maloliente aquí. Quien la utilice, deberá lanzar 1D6 y revisar la siguiente tabla:<br>1: Mala suerte. Te has sentido a gusto evacuando, pero enseguida sientes retortijones en las tripas. El personaje sufre 1 dado de daño contra su Armadura natural, quedando bajo los efectos de Enfermo si dicho dado le quita Vitalidad. <br>2: El olor es tan nauseabundo que sufres inmediatamente los efectos de Aturdido.  <br>3-5: Evacúas sin problema y solo te preguntas dónde diablos escondieron el papel higiénico. <br>6: ¡Ey, unas monedas! Alguien tuvo que salir corriendo de aquí y abandonó una bolsa con 2 monedas. Ahora son tuyas."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Máquinas de tortura",
+    "CardImage": "maquinas_de_tortura_fu_16.png",
+    "CardCode": "FU16/32",
+    "Description": "Hay varias máquinas de tortura en la sala (potros, guillotinas, patíbulos, etc.). Un héroe puede colocarse adyacente a una de ellas para registrar todas. Quien las registre, deberá lanzar 3D6. Por cada resultado de 6, encuentra objetos por valor de 1 moneda. Si obtiene 2 o más resultados de 6, encuentra además 1 Pócima de veneno."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Mesa de alquimia",
+    "CardImage": "mesa_de_alquimia_fu_17.png",
+    "CardCode": "FU17/32",
+    "Description": "Hay una mesa de alquimia en la sala. Quien la registre, deberá lanzar 1D6 y sumar su valor de Inteligencia. <br>1-6: el Jugador Oscuro recibe 3 Puntos de Reserva; <br>7: No hay nada de interés; <br>8: Encuentra 1 Poción al azar; <br>9: encuentra 1 Componentes para magia; <br>10: Encuentra 1 frasco de Fuego griego; <br>11 o más: Encuentra 3 Pociones al azar."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Mesa de especias",
+    "CardImage": "mesa_de_especias_fu_18.png",
+    "CardCode": "FU18/32",
+    "Description": "Hay una mesa de especias en la sala. Quien la registre, debe lanzar 1D6 y sumar su valor de Inteligencia. <br>1-7: No hay nada de interés; <br>8: Encuentra 1 frasco de Hidromiel vigorosa y 1 Hierbas curativas; <br>9: Encuentra 1 Componentes para magia. <br>10: Encuentra 1 Poción al azar y 1 Hierbas curativas. <br>11: Encuentra 1 Raíz de mandrágora."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Mesa de hechiceria",
+    "CardImage": "mesa_de_hechiceria_fu_19.png",
+    "CardCode": "FU19/32",
+    "Description": "Hay una mesa de hechicería en la sala. Quien la registre, debe lanzar 1D6 y sumará su valor de Inteligencia:<br>1-6: El Jugador Oscuro recibe 3 Puntos de Reserva; <br>7-8: No hay nada de interés; <br>9: Encuentra 1 Componentes para magia; <br>10 o más: encuentra 1 Poción al azar y 1 Pergamino de hechicería."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Muñeco de entrenamiento",
+    "CardImage": "muneco_de_entrenamiento_fu_30.png",
+    "CardCode": "FU30/32",
+    "Description": "Lanza 2D6 si decides entrenar con este muñeco: <br>2-3: Se te ha dado francamente mal y descubres que estás bastante oxidado. Pierdes 1 punto de Vitalidad, salvo que esto te suponga quedar fuera de combate. <br>4-9: Definitivamente nunca se te dieron bien estos aparatos. <br>10-11: El entrenamiento te ha servido para calentar los músculos y despertar los reflejos, aunque has hecho algo de ruido. Durante el próximo combate, tendrás +1 a tu valor en Cuerpo a Cuerpo, aunque tu bando tendrá -1 a la tirada de Iniciativa <br>12: Ganas +1 punto de experiencia."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Pozo",
+    "CardImage": "pozo_fu_20.png",
+    "CardCode": "FU20/32",
+    "Description": "Hay un pozo con un cubo. Si un personaje decide beber de este, deberá lanzar 1D6 y comprobar el resultado (aplicable a todos los que beban): <br>1: Agua corrompida. El personaje sufre 1 dado de daño contra su Armadura natural, quedando bajo los efectos de Enfermo si dicho dado le quita Vitalidad; <br>2: El agua corrompida le causará los efectos de Aturdido; <br>3: El agua es inocua; <br>4-6: El personaje recupera 1 punto de Vitalidad perdido."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Rejilla",
+    "CardImage": "rejilla_fu_21.png",
+    "CardCode": "FU21/32",
+    "Description": "Hay una reja en el centro de la habitación, en el suelo. Quien se coloque adyacente a esta podrá descubrir el contenido de la habitación inferior. Los personajes necesitarán una Cuerda para descender a ella fácilmente, o podrán hacerlo mediante un salto destacado de 4 casillas de altura. Tendrán +2 a la tirada de Iniciativa en caso de que existan enemigos en esa nueva habitación inferior. Los personajes que desciendan se colocarán en la casilla que se encuentra verticalmente bajo la reja o en las adyacentes."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Trampilla",
+    "CardImage": "trampilla_fu_22.png",
+    "CardCode": "FU22/32",
+    "Description": "Hay una trampilla en la sección. Abrirla para entrar por ella supone una Acción (no para salir). Conduce a un pasaje con escaleras (desemboca en un nivel inferior o conecta con otra zona del escenario, a elección del Jugador Oscuro, quien decide qué casillas están conectadas si no lo indica el mapa), o conecta con la siguiente trampilla que aparezca. Transitar por este pasaje conlleva un turno completo. Al inicio del turno siguiente, quien se internó aparecerá en la casilla del otro extremo. La casilla donde se ubica no podrá ser ocupada por ningún personaje, pero sí atravesada."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Trono",
+    "CardImage": "trono_fu_23.png",
+    "CardCode": "FU23/32",
+    "Description": "Hay un trono en la habitación. Si un personaje lo registra, debe lanzar 2D6: <br>2: Pifia. ¡Puede saltar una trampa! El Jugador Oscuro podrá activar una carta de cofre del mazo de Obstáculos; el JOA hará la oportuna tirada del dado de Escenario). <br>3-10: No encuentras nada interesante. <br>11: Encuentra objetos por valor de 1D3 monedas. <br>12: Activa una palanca que produce sonidos de cadenas y engranajes: todas las puertas secretas del escenario explorado deberán ser reveladas a los héroes."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Vacia con terreno irregular",
+    "CardImage": "vacia_con_terreno_irregular_fu_24.png",
+    "CardCode": "FU24/32",
+    "Description": "La sala (o sección de pasillo) está vacía, pero el suelo cavernoso no ha sido allanado y es muy irregular. Toda la sección se considerará terreno difícil (rocoso)."
+  },
+  {
+    "CardType": "Furniture",
+    "Name": "Vacía",
+    "CardImage": "vacia_fu_14.png",
+    "CardCode": "FU14/32",
+    "Description": "No hay nada en esta sección."
+  }
+]

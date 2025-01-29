@@ -1,0 +1,78 @@
+﻿@model DUNWorkflow.Models.GuideData
+
+<div class="main-container">
+    <div class="sidebar" style="overflow:hidden">
+        <div class="language-switcher mb-3">
+            <button id="btn-es" class="btn btn-light">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Español" width="32" height="20" /> Español
+            </button>
+            <button id="btn-en" class="btn btn-light">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English" width="32" height="20" /> English
+            </button>
+        </div>
+
+        @foreach (var item in ViewBag.MenuItems)
+        {
+            var hasSubItems = item.SubItems.Count > 0;
+            var itemType = hasSubItems ? "" : item.Name.Replace(" ", "_"); // Evita null en data-type
+
+            <div class="sidebar-item" data-type="@itemType">
+                @item.Name
+                @if (hasSubItems)
+                {
+                    <div class="sub-menu">
+                        @foreach (var subItem in item.SubItems)
+                        {
+                            var subItemType = subItem is string ? subItem.Replace(" ", "_") : subItem.Type;
+                            <div class="sub-item" data-type="@subItemType">@subItem.Name</div>
+                        }
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+    <div id="card-container">
+        @await Html.PartialAsync("_CardMixerPartial", Model)
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Cambio de idioma
+        $('#btn-es').on('click', function () { changeLanguage('es'); });
+        $('#btn-en').on('click', function () { changeLanguage('en'); });
+
+        // Evento para sidebar-item
+        $(document).on('click', '.sidebar-item', function () {
+            var subMenu = $(this).find('.sub-menu');
+            var type = $(this).data('type');
+
+            if (subMenu.length > 0) {
+                subMenu.slideToggle(); // Toggle submenú
+            } else if (type) {
+                loadCards(type);
+            }
+        });
+
+        // Evento para sub-items
+        $(document).on('click', '.sub-item', function (event) {
+            event.stopPropagation();
+            var type = $(this).data('type');
+            if (type) {
+                loadCards(type);
+            }
+        });
+
+        function loadCards(cardType) {
+            $.get('/CardMixer/LoadCards', { type: cardType })
+                .done(function (response) {
+                    $('#card-container').html(response);
+                })
+                .fail(function () {
+                    alert("No se pudieron cargar las cartas.");
+                });
+        }
+    });
+</script>

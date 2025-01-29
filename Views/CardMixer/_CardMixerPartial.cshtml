@@ -1,0 +1,72 @@
+﻿@model IEnumerable<DUNWorkflow.Models.BaseCard>
+
+<div class="main-container">
+    <div class="card-header">
+        <!-- Aquí podrías agregar contenido para el encabezado si es necesario -->
+    </div>
+    <div class="sidebar" style="overflow:auto">
+        @if (Model != null && Model.Any())
+        {
+            <input type="text" id="search-bar" placeholder="Search..." class="form-control mb-3" />
+        }
+
+        @if (Model != null)
+        {
+            @foreach (var card in Model)
+            {
+                <div class="subsidebar-item" data-card-name="@card.Name">
+                    <span>@card.Name</span>
+                </div>
+            }
+        }
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner" id="flipCardInner">
+            <div class="flip-card-front">
+                <img id="cardContainer" src="" alt="Card Image" class="cardContainer" style="display: none;" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Convierte el modelo en un array de objetos JavaScript
+        var cards = @Html.Raw(Json.Serialize(Model));
+        console.log(cards); // Verifica que 'cards' tiene los datos correctamente
+
+        if (!cards || cards.length === 0) {
+            console.error('No se encontraron datos de cartas.');
+            return; // Termina si no hay datos
+        }
+
+        // Filtrar los elementos según lo que escriba el usuario en el search bar
+        $('#search-bar').on('keyup', function () {
+            var query = $(this).val().toLowerCase();
+            $('.subsidebar-item').each(function () {
+                var cardName = $(this).find('span').text().toLowerCase();
+                if (cardName.indexOf(query) !== -1) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+
+        // Al hacer clic en el nombre de la carta, mostrar la imagen correspondiente
+         $(document).on('click', '.subsidebar-item', function () {
+            var cardName = $(this).data('card-name'); // Accede al 'data-card-name' de la carta
+            var selectedCard = cards.find(card => card.name === cardName); // Buscar la carta correspondiente en el array de JavaScript
+
+            if (selectedCard && selectedCard.cardImage) {
+                // Asegúrate de que el nombre de la imagen sea correcto
+                let imgSubfolder = selectedCard.cardType; // Si tienes alguna subcarpeta dentro de la carpeta de imágenes
+
+                $('#cardContainer').attr('src', `/images/ItemCards/${imgSubfolder}/${selectedCard.cardImage}`).show(); // Muestra la imagen correspondiente
+            } else {
+                console.error('No se encontró la imagen para la carta: ' + cardName);
+            }
+        });
+    });
+</script>

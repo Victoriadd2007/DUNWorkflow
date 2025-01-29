@@ -1,0 +1,214 @@
+[
+  {
+    "CardType": "Skill",
+    "Name": "Adiestrar Animal",
+    "CardCode": "AC01/25",
+    "CardImage": "adiestrar_animal_41.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Alquimia",
+    "CardCode": "AC02/25",
+    "CardImage": "alquimia_42.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Buenas Órdenes",
+    "CardCode": "AC30/40",
+    "CardImage": "buenas_ordenes_160.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Canalizar Divinidad",
+    "CardCode": "AC38/40",
+    "CardImage": "canalizar_divinidad_161.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Cazador de Recompensas",
+    "CardCode": "AC26/40",
+    "CardImage": "cazador_recompensas_162.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Confección de Venenos",
+    "CardCode": "AC03/25",
+    "CardImage": "confeccion_venenos_43.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Conocer las Lenguas",
+    "CardCode": "AC04/25",
+    "CardImage": "conocer_lenguas_44.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Despistar",
+    "CardCode": "AC05/25",
+    "CardImage": "despistar_45.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Domador de Gigantes",
+    "CardCode": "AC06/25",
+    "CardImage": "domador_gigantes_46.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Experto en Minerales",
+    "CardCode": "AC35/40",
+    "CardImage": "experto_minerales_163.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Extrema Curiosidad",
+    "CardCode": "AC40/40",
+    "CardImage": "extrema_curiosidad_164.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "El Favor de los Dioses Benignos",
+    "CardCode": "AC07/25",
+    "CardImage": "favor_dioses_benignos_47.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "El Favor de los Dioses Malignos",
+    "CardCode": "AC08/25",
+    "CardImage": "favor_dioses_malignos_145.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Forrajear",
+    "CardCode": "AC34/40",
+    "CardImage": "forrajear_165.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Habilidad Mental",
+    "CardCode": "AC10/25",
+    "CardImage": "habilidad_mental_50.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Hechicero Guerrero",
+    "CardCode": "AC11/25",
+    "CardImage": "hechicero_guerrero_51.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Hechicero Veterano",
+    "CardCode": "AC12/25",
+    "CardImage": "hechicero_veterano_52.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Herbología",
+    "CardCode": "AC13/25",
+    "CardImage": "herbologia_53.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Impasible",
+    "CardCode": "AC14/25",
+    "CardImage": "impasible_54.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Inspirador",
+    "CardCode": "AC15/25",
+    "CardImage": "inspirador_55.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Insuflar Ánimo",
+    "CardCode": "AC16/25",
+    "CardImage": "insuflar_animo_56.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Magia Temeraria",
+    "CardCode": "AC17/25",
+    "CardImage": "magia_temeraria_57.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Música Enardecedora",
+    "CardCode": "AC18/25",
+    "CardImage": "musica_enardecedora_58.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Primeros Auxilios",
+    "CardCode": "AC19/25",
+    "CardImage": "primeros_auxilios_59.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Profesor Marcial",
+    "CardCode": "AC20/25",
+    "CardImage": "profesor_marcial_60.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Recuperar Maná",
+    "CardCode": "AC21/25",
+    "CardImage": "recuperar_mana_61.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Sangre Fría",
+    "CardCode": "AC22/25",
+    "CardImage": "sangre_fria_62.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Secretos de la Magia",
+    "CardCode": "AC23/25",
+    "CardImage": "secretos_de_la_magia_63.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Torturador",
+    "CardCode": "AC24/25",
+    "CardImage": "torturador_64.jpg",
+    "SkillType": "Academic"
+  },
+  {
+    "CardType": "Skill",
+    "Name": "Voluntad Férrea",
+    "CardCode": "AC25/25",
+    "CardImage": "voluntad_ferrea_65.jpg",
+    "SkillType": "Academic"
+  }
+ 
+]
+

@@ -1,0 +1,362 @@
+[
+  {
+    "CardType": "MagicObject",
+    "Name": "Amuleto de Detección",
+    "CardCode": "MO17/80",
+    "CardImage": "amuleto_deteccion_177.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Amuleto Guardián",
+    "CardCode": "MO31/80",
+    "CardImage": "amuleto_guardian_189.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Amuleto Purificador",
+    "CardCode": "MO33/80",
+    "CardImage": "amuleto_purificador_191.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Amuleto de la Riqueza",
+    "CardCode": "MO66/80",
+    "CardImage": "amuleto_riqueza_224.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Anillo de Forzudos",
+    "CardCode": "MO70/80",
+    "CardImage": "anillo_forzudos_228.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Anillo del Sol",
+    "CardCode": "MO52/80",
+    "CardImage": "anillo_sol_210.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Anillo de la Venganza",
+    "CardCode": "MO71/80",
+    "CardImage": "anillo_venganza_229.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Arco Corto de Doc",
+    "CardCode": "MO76/80",
+    "CardImage": "arco_corto_doc_234.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Arco Corto de Poder",
+    "CardCode": "MO09/80",
+    "CardImage": "arco_corto_poder_169.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Arco Corto de Precisión",
+    "CardCode": "MO45/80",
+    "CardImage": "arco_corto_precision_203.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Arco Corto de la Rapidez",
+    "CardCode": "MO10/80",
+    "CardImage": "arco_corto_rapidez_170.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Arco Corto de Cuchillas",
+    "CardCode": "MO86/88",
+    "CardImage": "arco_cuchillas_271.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Arco Largo de Poder",
+    "CardCode": "MO08/80",
+    "CardImage": "arco_largo_poder_168.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Arco Largo de Precisión",
+    "CardCode": "MO44/80",
+    "CardImage": "arco_largo_precision_202.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Armadura de la Ingravidez",
+    "CardCode": "MO60/80",
+    "CardImage": "armadura_ingravidez_218.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Armadura Ultraligera",
+    "CardCode": "MO59/80",
+    "CardImage": "armadura_ultraligera_217.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Bastón Luminoso",
+    "CardCode": "MO34/80",
+    "CardImage": "baston_luminoso_192.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Bolsa Engullidora",
+    "CardCode": "MO53/80",
+    "CardImage": "bolsa_engullidora_211.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Botas de Agilidad",
+    "CardCode": "MO14/80",
+    "CardImage": "botas_agilidad_174.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Botas de Salto",
+    "CardCode": "MO82/88",
+    "CardImage": "botas_salto_270.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Botas de Velocidad",
+    "CardCode": "MO13/80",
+    "CardImage": "botas_velocidad_173.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Brazaletes Sensoriales",
+    "CardCode": "MO55/80",
+    "CardImage": "brazaletes_sensoriales_213.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Camisola de la Opacidad",
+    "CardCode": "MO16/80",
+    "CardImage": "camisola_opacidad_176.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Capa de Invisibilidad",
+    "CardCode": "MO15/80",
+    "CardImage": "capa_invisibilidad_175.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Capa Mística",
+    "CardCode": "MO61/80",
+    "CardImage": "capa_mistica_219.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Cuerda Inteligente",
+    "CardCode": "MO65/80",
+    "CardImage": "cuerda_inteligente_223.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Cuerno del Coraje",
+    "CardCode": "MO32/80",
+    "CardImage": "cuerno_coraje_190.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Daga Ceremonial",
+    "CardCode": "MO37/80",
+    "CardImage": "daga_ceremonial_195.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Daga Voladora",
+    "CardCode": "MO07/80",
+    "CardImage": "daga_voladora_167.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Escudo de Dragón",
+    "CardCode": "MO41/80",
+    "CardImage": "escudo_dragon_199.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Escudo Maligno",
+    "CardCode": "MO40/80",
+    "CardImage": "escudo_maligno_198.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Escudo Radiante",
+    "CardCode": "MO46/80",
+    "CardImage": "escudo_radiante_204.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Escudo Rechazahechizos",
+    "CardCode": "MO47/80",
+    "CardImage": "escudo_rechazahechizos_205.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Esfera de Protección",
+    "CardCode": "MO85/88",
+    "CardImage": "esfera_proteccion_272.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada Ancha de Agilidad",
+    "CardCode": "MO01/80",
+    "CardImage": "espada_ancha_agilidad_161.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada Ancha de la Cautela",
+    "CardCode": "MO69/80",
+    "CardImage": "espada_ancha_cautela_227.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada Ancha Exterminadora",
+    "CardCode": "MO06/80",
+    "CardImage": "espada_ancha_exterminadora_166.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada Ancha de Poder",
+    "CardCode": "MO03/80",
+    "CardImage": "espada_ancha_poder_163.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada Ancha del Averno",
+    "CardCode": "MO72/80",
+    "CardImage": "espada_ancha_averno_230.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada Bastarda Formidable",
+    "CardCode": "MO62/80",
+    "CardImage": "espada_bastarda_formidable_220.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada Bastarda Mataorcos",
+    "CardCode": "MO05/80",
+    "CardImage": "espada_bastarda_mataorcos_165.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada Bastarda del Poder",
+    "CardCode": "MO04/80",
+    "CardImage": "espada_bastarda_poder_164.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada Corta Delatora",
+    "CardCode": "MO02/80",
+    "CardImage": "espada_corta_delatora_162.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada de Filo Negro",
+    "CardCode": "MO49/80",
+    "CardImage": "espada_filo_negro_207.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Espada del Relámpago Rápido",
+    "CardCode": "MO88/88",
+    "CardImage": "espada_relampago_rapido_275.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Flauta Estridente",
+    "CardCode": "MO39/80",
+    "CardImage": "flauta_estridente_197.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Flecha Negra",
+    "CardCode": "MO22/80",
+    "CardImage": "flecha_negra_182.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Flecha de Plata",
+    "CardCode": "MO24/80",
+    "CardImage": "flecha_plata_184.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Gema Defensiva",
+    "CardCode": "MO48/80",
+    "CardImage": "gema_defensiva_206.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Gema Sanadora",
+    "CardCode": "MO51/80",
+    "CardImage": "gema_sanadora_209.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Gema del Valor",
+    "CardCode": "MO25/80",
+    "CardImage": "gema_valor_185.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Gema de la Velocidad",
+    "CardCode": "MO23/80",
+    "CardImage": "gema_velocidad_183.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Gran Escudo Atrapaflechas",
+    "CardCode": "MO11/80",
+    "CardImage": "gran_escudo_atrapaflechas_171.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Gran Martillo de Furia",
+    "CardCode": "MO21/80",
+    "CardImage": "gran_martillo_furia_181.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Grebas de Gacela",
+    "CardCode": "MO29/80",
+    "CardImage": "grebas_gacela_187.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Grimorio de Cobblestone",
+    "CardCode": "MO83/88",
+    "CardImage": "grimorio_cobblestone_273.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Guanteletes de Bronce",
+    "CardCode": "MO30/80",
+    "CardImage": "guanteletes_bronce_188.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Hacha de Agilidad",
+    "CardCode": "MO19/80",
+    "CardImage": "hacha_agilidad_179.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Hacha Arrojadiza Voladora",
+    "CardCode": "MO42/80",
+    "CardImage": "hacha_arrojadiza_voladora_200.jpg"
+  },
+  {
+    "CardType": "MagicObject",
+    "Name": "Hacha de Batalla de la Furia",
+    "CardCode": "MO20/80",
+    "CardImage": "hacha_batalla_furia_180.jpg"
+  }
+]

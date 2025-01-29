@@ -1,4 +1,4 @@
-﻿@model DUNWorkflow.Models.CardData
+﻿@model DUNWorkflow.Models.GuideData
 
 <div class="main-container">
    
@@ -15,7 +15,7 @@
         <div id="card-list">
             @if (ViewBag.CardList != null)
             {
-                foreach (var card in (CardData[])ViewBag.CardList)
+                foreach (var card in (GuideData[])ViewBag.CardList)
                 {
                     <div class="sidebar-item" data-code="@card.CodeNumber" data-header="@card.Header" data-text="@card.RulebookText">
                         <strong>@card.CodeNumber:</strong> @card.Header
