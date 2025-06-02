@@ -1,0 +1,54 @@
+[
+  {
+    "CardType": "Events_Forest",
+    "EventType": "Forest",
+    "MinimumRoll": 5,
+    "Cards": [
+      {
+        "Name": "La maldición de las Brujas",
+        "CardCode": "EV024/110",
+        "CardImage": "la_maldicion_de_las_brujas.webp"
+      },
+      {
+        "Name": "Lobos",
+        "CardCode": "EV025/110",
+        "CardImage": "lobos.webp"
+      },
+      {
+        "Name": "Perdidos",
+        "CardCode": "EV026/110",
+        "CardImage": "perdidos.webp"
+      },
+      {
+        "Name": "Persona Extraviada",
+        "CardCode": "EV027/110",
+        "CardImage": "persona_extraviada.webp"
+      },
+      {
+        "Name": "Telarañas",
+        "CardCode": "EV028/110",
+        "CardImage": "forest_telaranias.webp"
+      },
+      {
+        "Name": "Árboles Sagrados",
+        "CardCode": "EV019/110",
+        "CardImage": "arboles_sagrados.webp"
+      },
+      {
+        "Name": "Ayuda",
+        "CardCode": "EV020/110",
+        "CardImage": "ayuda.webp"
+      },
+      {
+        "Name": "Depredador al Acecho",
+        "CardCode": "EV021/110",
+        "CardImage": "depredador_al_acecho.webp"
+      },
+      {
+        "Name": "Encuentro con Gran Criatura",
+        "CardCode": "EV022/110",
+        "CardImage": "encuentro_con_gran_criatura.webp"
+      }
+    ]
+  }
+]

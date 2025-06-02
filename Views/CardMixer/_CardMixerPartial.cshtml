@@ -25,18 +25,17 @@
         {
             <button id="random-card-button" class="btn btn-primary mb-3">Extraer carta aleatoria</button>
         }
-        <div class="flip-card-inner" id="flipCardInner">
-            <div class="flip-card">
-                <div class="flip-card-inner" id="flipCardInner">
-                    <div class="flip-card-front">
-                        <img id="backCard" class="cardContainer" />
-                    </div>
-                    <div class="flip-card-back">
-                        <img id="frontCard" class="cardContainer" />
-                    </div>
+        <div class="flip-card">
+            <div class="flip-card-inner" id="flipCardInner">
+                <div class="flip-card-front">
+                    <img id="backCard" class="cardContainer" />
+                </div>
+                <div class="flip-card-back">
+                    <img id="frontCard" class="cardContainer" />
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -73,6 +72,8 @@
             const frontCardImage = document.getElementById("frontCard");
             frontCardImage.setAttribute('src', `/images/${extractedType}Cards/${imgSubfolder}/${randomCardImage}`);
             frontCardImage.style.display = 'none'; // Asegura que la imagen de la parte frontal no esté visible todavía
+            console.log('randomCardImage', randomCardImage);
+            console.log('frontCardImage', frontCardImage);
 
             // Voltear la carta para mostrar la parte trasera primero
             const flipCardInner = document.getElementById("flipCardInner");
@@ -102,7 +103,6 @@
         });
 
         // Al hacer clic en el nombre de la carta, mostrar la imagen correspondiente
-            // Al hacer clic en el nombre de la carta, mostrar la imagen correspondiente
         $(document).on('click', '.subsidebar-item', function () {
             var cardName = $(this).data('card-name'); // Accede al 'data-card-name' de la carta
             var selectedCard = cards.find(card => card.name === cardName); // Buscar la carta correspondiente en el array de JavaScript
@@ -127,6 +127,7 @@
                 // Un pequeño retraso para luego mostrar la parte frontal
                 setTimeout(() => {
                     frontCardImage.style.display = 'block'; // Ahora mostramos la imagen de la parte frontal
+                    console.log('frontCardImage', frontCardImage);
                     flipCardInner.style.transform = "rotateY(180deg)"; // Volteamos la carta hacia la parte frontal
                 }, 500); // Un pequeño retraso para ver el efecto
             }

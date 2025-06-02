@@ -1,0 +1,74 @@
+[
+  {
+    "CardType": "Events_Mountain",
+    "EventType": "Mountain",
+    "MinimumRoll": 5,
+    "Cards": [
+      {
+        "Name": "Cadáver",
+        "CardCode": "EV056/110",
+        "CardImage": "cadaver.webp"
+      },
+      {
+        "Name": "Camino Cortado",
+        "CardCode": "EV057/110",
+        "CardImage": "camino_cortado.webp"
+      },
+      {
+        "Name": "Caverna",
+        "CardCode": "EV058/110",
+        "CardImage": "caverna.webp"
+      },
+      {
+        "Name": "Criatura Enorme",
+        "CardCode": "EV059/110",
+        "CardImage": "criatura_enorme.webp"
+      },
+      {
+        "Name": "Desprendimiento",
+        "CardCode": "EV060/110",
+        "CardImage": "mountain_desprendimiento.webp"
+      },
+      {
+        "Name": "Emboscada entre las Rocas",
+        "CardCode": "EV061/110",
+        "CardImage": "emboscada_entre_las_rocas.webp"
+      },
+      {
+        "Name": "Estanque",
+        "CardCode": "EV064/110",
+        "CardImage": "estanque.webp"
+      },
+      {
+        "Name": "Información Privilegiada",
+        "CardCode": "EV062/110",
+        "CardImage": "informacion_privilegiada.webp"
+      },
+      {
+        "Name": "Manantial",
+        "CardCode": "EV063/110",
+        "CardImage": "manantial.webp"
+      },
+      {
+        "Name": "Monasterio",
+        "CardCode": "EV065/110",
+        "CardImage": "monasterio.webp"
+      },
+      {
+        "Name": "Águilas Gigantes",
+        "CardCode": "EV130/133",
+        "CardImage": "aguilas_gigantes.webp"
+      },
+      {
+        "Name": "Alud",
+        "CardCode": "EV131/133",
+        "CardImage": "alud.webp"
+      },
+      {
+        "Name": "Telarañas",
+        "CardCode": "EV129/133",
+        "CardImage": "mountain_telaranias.webp"
+      }
+    ]
+  }
+]

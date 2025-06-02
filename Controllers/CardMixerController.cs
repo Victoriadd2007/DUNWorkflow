@@ -33,7 +33,25 @@ namespace DUNWorkflow.Controllers
                                                                            new { Name =  "Combate",          Type = "Skill_Combat"},
                                                                            new { Name =  "Exploración",      Type = "Skill_Exploration"},
                                                                     }
-                }
+                },
+                /*new { Name = "Eventos", SubItems = new List<dynamic> {
+                                                                           new { Name =  "Castillo",  Type = "Events_Castle"},
+                                                                           new { Name =  "Ciudad",    Type = "Events_City"},
+                                                                           new { Name =  "Peligro",   Type = "Events_Danger"},
+                                                                           new { Name =  "Desierto",  Type = "Events_Desert"},
+                                                                           new { Name =  "Bosque",    Type = "Events_Forest"},
+                                                                           new { Name =  "Glaciar",   Type = "Events_Glacier"},
+                                                                           new { Name =  "Pantano",   Type = "Events_Marsh"},
+                                                                           new { Name =  "Montaña",   Type = "Events_Mountain"},
+                                                                           new { Name =  "Llanuras",  Type = "Events_Plains"},
+                                                                           new { Name =  "Río",       Type = "Events_River"},
+                                                                           new { Name =  "Camino",    Type = "Events_Road"},
+                                                                           new { Name =  "Mar",       Type = "Events_Sea"},
+                                                                           new { Name =  "Aldea",     Type = "Events_Village"},
+                                                                           new { Name =  "Volcán",    Type = "Events_Volcano"},
+            
+                                                                    }
+                }*/
             };
 
 

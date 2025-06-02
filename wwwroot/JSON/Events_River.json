@@ -1,0 +1,40 @@
+[
+  {
+    "CardType": "Events_River",
+    "EventType": "River",
+    "MinimumRoll": 5,
+    "Cards": [
+      {
+        "Name": "Agua Contaminada",
+        "CardCode": "EV066/110",
+        "CardImage": "agua_contaminada.webp"
+      },
+      {
+        "Name": "Embarcadero",
+        "CardCode": "EV067/110",
+        "CardImage": "embarcadero.webp"
+      },
+      {
+        "Name": "Enemigos",
+        "CardCode": "EV068/110",
+        "CardImage": "enemigos.webp"
+      },
+      {
+        "Name": "Informante",
+        "CardCode": "EV069/110",
+        "CardImage": "informante.webp"
+      },
+      {
+        "Name": "Más Caudal",
+        "CardCode": "EV070/110",
+        "CardImage": "mas_caudal.webp"
+      },
+      {
+        "Name": "Monstruo Fluvial",
+        "CardCode": "EV071/110",
+        "CardImage": "monstruo.webp"
+      }
+
+    ]
+  }
+]

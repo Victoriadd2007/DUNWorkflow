@@ -1,0 +1,54 @@
+[
+  {
+    "CardType": "Events_Desert",
+    "EventType": "Desert",
+    "MinimumRoll": 5,
+    "Cards": [
+      {
+        "Name": "Ataque De Escorpión",
+        "CardCode": "EV014/110",
+        "CardImage": "ataque_de_escorpion.webp"
+      },
+      {
+        "Name": "Gusano de Arena",
+        "CardCode": "EV015/110",
+        "CardImage": "gusano_de_arena.webp"
+      },
+      {
+        "Name": "Hambre",
+        "CardCode": "EV016/110",
+        "CardImage": "desert_hambre.webp"
+      },
+      {
+        "Name": "Nubes Negras",
+        "CardCode": "EV017/110",
+        "CardImage": "desert_nubes_negras.webp"
+      },
+      {
+        "Name": "Oasis",
+        "CardCode": "EV018/110",
+        "CardImage": "oasis.webp"
+      },
+      {
+        "Name": "Arenas Movedizas",
+        "CardCode": "EV013/110",
+        "CardImage": "arenas_movedizas.webp"
+      },
+      {
+        "Name": "Serpiente Venenosa",
+        "CardCode": "EV132/133",
+        "CardImage": "serpiente_venenosa.webp"
+      },
+      {
+        "Name": "Tormenta de Arena",
+        "CardCode": "EV133/133",
+        "CardImage": "tormenta_de_arena.webp"
+      },
+      {
+        "Name": "Tormenta de Arena",
+        "CardCode": "EV133/133",
+        "CardImage": "tormenta_de_arena.webp"
+      }
+    ]
+  }
+]

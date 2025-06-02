@@ -1,0 +1,70 @@
+[
+  {
+    "CardType": "Events_Plains",
+    "EventType": "Plains",
+    "MinimumRoll": 5,
+    "Cards": [
+      {
+        "Name": "Aldea Calcinada",
+        "CardCode": "EV001/110",
+        "CardImage": "aldea_calcinada.webp"
+      },
+      {
+        "Name": "Antiguo Cementerio",
+        "CardCode": "EV002/110",
+        "CardImage": "antiguo_cementerio.webp"
+      },
+      {
+        "Name": "Cuervo",
+        "CardCode": "EV003/110",
+        "CardImage": "cuervo.webp"
+      },
+      {
+        "Name": "Diluvio",
+        "CardCode": "EV011/110",
+        "CardImage": "diluvio.webp"
+      },
+      {
+        "Name": "Emboscada",
+        "CardCode": "EV004/110",
+        "CardImage": "emboscada.webp"
+      },
+      {
+        "Name": "Granja",
+        "CardCode": "EV005/110",
+        "CardImage": "granja.webp"
+      },
+      {
+        "Name": "Molino de Agua",
+        "CardCode": "EV006/110",
+        "CardImage": "molino_de_agua.webp"
+      },
+      {
+        "Name": "Molino de Viento",
+        "CardCode": "EV012/110",
+        "CardImage": "molino_de_viento.webp"
+      },
+      {
+        "Name": "Piedras Sagradas",
+        "CardCode": "EV008/110",
+        "CardImage": "piedras_sagradas.webp"
+      },
+      {
+        "Name": "Nubes Negras",
+        "CardCode": "EV007/110",
+        "CardImage": "plains_nubes_negras.webp"
+      },
+      {
+        "Name": "Refugiados",
+        "CardCode": "EV009/110",
+        "CardImage": "refugiados.webp"
+      },
+      {
+        "Name": "Rumores",
+        "CardCode": "EV010/110",
+        "CardImage": "plains_rumores.webp"
+      }
+    ]
+  }
+
+]
